@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Your Name / Site Title"
+locale                   : "es-ES"
+title                    : "Ph.D. Manuel Castillo-Cara"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Ph.D. Manuel Castillo-Cara"
+description              : &description "Postdoctoral researcher at Universidad Politécnica de Madrid"
 url                      : https://manwestc.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "manwestc/manwestc.github.io"
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "manwestc"
 facebook:
   username               :
   app_id                 :
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  name             : "Ph.D. Manuel Castillo-Cara"
+  avatar           : "profile.jpg"
+  bio              : "Postdoctoral researcher at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, Distributed Computing, Pattern Recognition and Artificial Intelligence."
+  location         : "Madrid, Spain"
+  employer         : "Universidad Politécnica de Madrid"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "https://scholar.google.es/citations?user=r0JytwIAAAAJ&hl=es"
+  email            : "jcastillo@fi.upm.es"
+  researchgate     :  "https://www.researchgate.net/profile/Manuel-Castillo-Cara"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,21 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/manwestc"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/manuelcastillocara"
+  orcid            : "https://orcid.org/0000-0002-2990-7090"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "https://twitter.com/manwestc"
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57200871251"  
   vine             :
   weibo            :
   xing             :
@@ -255,7 +256,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Madrid # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
