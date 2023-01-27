@@ -1,5 +1,5 @@
 ---
-title: "TINTO: Software to convert Tidy Data into Images"
+title: "Software: TINTO - Convert Tidy Data into Images"
 excerpt: "TINTO is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels.<br/><img src='/images/tinto1.png' width='320' height='300' align='center' />"
 collection: portfolio
 ---
