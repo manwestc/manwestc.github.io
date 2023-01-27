@@ -21,7 +21,7 @@ redirect_from:
 * 2014 - 2019: Computer Science Professor. Computer Science School. Unviersidad Nacional de Ingeniería (Peru).
 * 2015 - 2019: Head of Office. Center of Information Technology and Communication. Unviersidad Nacional de Ingeniería (Peru).
 
-## Skills
+## Research lines
 * Wireless Sensor Networks
   * Indoor Localization
   * Fog/Edge Computing
