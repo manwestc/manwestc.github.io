@@ -18,7 +18,7 @@ author_profile: true
 - **Team member**. “Validation of a microgravity machine measuring the levels of genetic expression coming from microarrays using parallel programming algorithms in a GRID computing architecture”. Founded by _Fondo para la Innovación, Ciencia y Tecnología (FINCyT)_. PIAP-1-P-622-13. 2013-2016. Peru.
 
 ## Process / industrial development:
-- **Project manager**. “Creation and installation of an integrated system for the automation of the processes of the academic and administrative activities of the postgraduate of the National University of Engineering”. _SNIP Project_. 2016. Peru.
+- **Project manager**. “Creation and installation of an integrated system for the automation of the processes of the academic and administrative activities of the postgraduate at Universidad Nacional de Ingeniería”. _SNIP Project_. 2016. Peru.
 
 ## Social development:
 - Project Manager. "Smart ubiquitous technologies and their context in a city developed by schoolchildren." Funded by _Innóvate Perú_. 2017-2018. Peru.
