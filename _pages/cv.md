@@ -36,7 +36,7 @@ redirect_from:
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
-## Software & Patents
+## Books, Software & Patents
   <ul>{% for post in site.portfolio %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
