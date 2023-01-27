@@ -1,21 +1,70 @@
 ---
-title: "Patent: Electronic device"
-excerpt: "Electronic device that is fixed in the body for tracking and geolocating people or animals; with positioning and tracking sensors, data transmission and optimization of energy and information.<br/><img src='/images/patent_pulsera.png' width='320' height='300' align='center' />"
+title: "TINTO: Software to convert Tidy Data into Images"
+excerpt: "TINTO is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels.<br/><img src='/images/tinto1.png' width='320' height='300' align='center' />"
 collection: portfolio
 ---
 
 ## Abstract
-Body-worn electronic device for tracking and tracing of persons or animals; with positioning and tracking sensors (GPS and Bluetooth/Wi-Fi), transmission or animals; with positioning and tracking sensors (GPS and Bluetooth/Wi-Fi), data transmission (GPRS) and energy data transmission (GPRS) and optimisation of energy and information (compass, altitude, temperature, gyroscope and accelerometer), gyroscope and accelerometer)
+[TINTO](https://doi.org/10.1016/j.inffus.2022.10.011) is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
 
-The following electronic device, which is attached to the body for tracking and tracing of people or animals, can be a bracelet, shackle or necklace. It is a hardware/software system that has the main objective to be able to track people both in Indoor and Outdoor for tracking and tracing. This device is built with different microcontrollers and sensors to be able to carry out this aspect. It has a GPS sensor for outdoor location, a Bluetooth/Wi-Fi sensor for indoor positioning, a GPRS module for mobile phone communication and compass, height, gyroscope and accelerometer sensors to optimise the energy consumed by the GPS module, i.e. outdoor positioning.
+**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011)**:
 
-[Link to the documentation](https://www.researchgate.net/publication/312230998_Dispositivo_electronico_que_se_fija_en_el_cuerpo_para_seguimiento_y_localizacion_de_personas_o_animales_con_sensores_de_posicionamiento_y_rastreo_GPS_y_BluetoothWi-Fi_transmision_de_datos_GPRS_y_optim?_sg%5B0%5D=JqsnBVPkAkQVk8cjd23Gd8Ys4bmL5q9qq-J4erWt6j4XT1k89VfSU--UektEFyEh9m8aUoCAczcQT_KIRZQUbHdvDxDpoLrmPb3C0uqD.66dndptvZqwIETSwqBLkvIkVIwdDMusCkqtGRg0DDf8t--7JYhbv4ZJQVtzb1VNRyvcn5HADQBtKNZlG6vD9zw)
+```bib
+@article{inffus_TINTO,
+    title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
+    journal = {Information Fusion},
+    author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
+    volume = {91},
+    pages = {173-186},
+    year = {2023},
+    issn = {1566-2535},
+    doi = {https://doi.org/10.1016/j.inffus.2022.10.011}
+}
+```
 
+## Documentation
 
-## Electronic Schematic
+You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO)
+
+## Video Example
 
 <div>
 <p style = 'text-align:center;'>
-<img src='/images/patent_pulsera.png'>
+<iframe width="500" height = "320"
+src="https://user-images.githubusercontent.com/102165947/212918739-89fca790-3360-4a8c-89b7-443f294fba6f.mp4">
+</iframe>
+</p>
+</div>
+
+## Main Features
+
+- Supports all CSV data in **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10)** format.
+- For now, the algorithm converts tabular data for binary and multi-class classification problems into machine learning.
+- Input data formats:
+    - **Tabular files**: The input data must be in **[CSV](https://en.wikipedia.org/wiki/Comma-separated_values)**, taking into account the **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10)** format.
+    - **Tidy Data**: The **target** (variable to be predicted) should be set as the last column of the dataset. Therefore, the first columns will be the features.
+    - All data must be in numerical form. TINTO does not accept data in string or any other non-numeric format.
+- Two dimensionality reduction algorithms are used in image creation, **[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA)** and **[*t*-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)** from the Scikit-learn Python library.
+- The synthetic images to be created will be in black and white, i.e. in 1 channel.
+- The synthetic image **dimensions** can be set as a parameter when creating them.
+- The synthetic images can be created using **characteristic pixels** or **blurring** painting technique (expressing an overlap of pixels as the **maximum** or **average**).
+- Runs on **Linux**, **Windows** and **macOS** systems.
+- Compatible with **[Python](https://www.python.org/)** 3.7 or higher.
+
+## Input
+The following table shows a classic example of the [IRIS CSV dataset](https://archive.ics.uci.edu/ml/datasets/iris) as it should look like for the run:
+
+| sepal length | sepal width | petal length | petal width | target |
+|--------------|-------------|--------------|-------------|--------|
+| 4.9          | 3.0         | 1.4          | 0.2         | 1      |
+| 7.0          | 3.2         | 4.7          | 1.4         | 2      |
+| 6.3          | 3.3         | 6.0          | 2.5         | 3      |
+
+## Output
+The following Figure show the output of TINTO:
+
+<div>
+<p style = 'text-align:center;'>
+<img src='/images/tinto1.png'>
 </p>
 </div>

@@ -1,45 +1,21 @@
 ---
-title: "Book: Geogebra en el aula"
-excerpt: "Geogebra en el aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Libro para aplicar el software Geogebra con ejemplos prácticos en el aula.<br/><img src='/images/geogebra.png' width='320' height='300' align='center' />"
+title: "Patent: Electronic device"
+excerpt: "Electronic device that is fixed in the body for tracking and geolocating people or animals; with positioning and tracking sensors, data transmission and optimization of energy and information.<br/><img src='/images/patent_pulsera.png' width='320' height='300' align='center' />"
 collection: portfolio
 ---
 
-## Resumen
+## Abstract
+Body-worn electronic device for tracking and tracing of persons or animals; with positioning and tracking sensors (GPS and Bluetooth/Wi-Fi), transmission or animals; with positioning and tracking sensors (GPS and Bluetooth/Wi-Fi), data transmission (GPRS) and energy data transmission (GPRS) and optimisation of energy and information (compass, altitude, temperature, gyroscope and accelerometer), gyroscope and accelerometer)
 
-El siguiente recurso didáctico pretende fomentar el uso de GeoGebra dentro del aula como recurso para facilitar y enriquecer la labor docente. Para ello se ha creado el libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"** que se encuentra diposible para poder tener un aprendizaje óptimo práctico para el alumnado.
+The following electronic device, which is attached to the body for tracking and tracing of people or animals, can be a bracelet, shackle or necklace. It is a hardware/software system that has the main objective to be able to track people both in Indoor and Outdoor for tracking and tracing. This device is built with different microcontrollers and sensors to be able to carry out this aspect. It has a GPS sensor for outdoor location, a Bluetooth/Wi-Fi sensor for indoor positioning, a GPRS module for mobile phone communication and compass, height, gyroscope and accelerometer sensors to optimise the energy consumed by the GPS module, i.e. outdoor positioning.
 
-GeoGebra permite realizar construcciones dinámicas, fácilmente exportables a aplicaciones web, en las que podemos manipular las expresiones (geométricas, numéricas, algebraicas o tabulares) y observar la naturaleza de las relaciones y propiedades matemáticas a partir de las variaciones producidas por nuestras propias acciones.
+[Link to the documentation](https://www.researchgate.net/publication/312230998_Dispositivo_electronico_que_se_fija_en_el_cuerpo_para_seguimiento_y_localizacion_de_personas_o_animales_con_sensores_de_posicionamiento_y_rastreo_GPS_y_BluetoothWi-Fi_transmision_de_datos_GPRS_y_optim?_sg%5B0%5D=JqsnBVPkAkQVk8cjd23Gd8Ys4bmL5q9qq-J4erWt6j4XT1k89VfSU--UektEFyEh9m8aUoCAczcQT_KIRZQUbHdvDxDpoLrmPb3C0uqD.66dndptvZqwIETSwqBLkvIkVIwdDMusCkqtGRg0DDf8t--7JYhbv4ZJQVtzb1VNRyvcn5HADQBtKNZlG6vD9zw)
 
-Esta manera de enfocar la enseñanza de las Matemática con el uso de herramientas digitales  facilitará el conocimiento de la asignatura entre los estudiantes.
 
-Los materiales que se construyan durante este curso serán, ante todo, un instrumento para facilitar la labor docente y que puedan ser útiles para la adquisición de los conceptos matemáticos del alumnado
-
-Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Conocimiento del programa Geogebra a nivel usuario; (ii) Aplicaciones a la Geometría plana; (iii) Aplicaciones a la Estadística y Probabilidad; (iv) Aplicaciones al Álgebra; (v) Aplicaciones al Análisis; y (vi) Aplicaciones a la Geometría espacial. Geogebra 3D.
-
-## Contenidos del Curso:
-
-- Introducción a GeoGebra.
-- Iniciación a GeoGebra
-- Movimientos en el plano
-- Estadística y Probabilidad
-- Álgebra con GeoGebra
-- Aplicaciones al Análisis
-- Aplicaciones a la geometría espacial
-
-## Cómo obtener el libro
-
-El libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"** es un libro completo que tiene muchos recursos didácticos para un aprendizaje óptimo, entre ellos:
-- Libro en formato PDF.
-- Vídeos tutoriales prácticos realizado por los autores.
-- Archivos fuentes Geogebra con la solución de los ejercicios.
-- Tendrás acceso al [curso de Udemy](https://www.udemy.com/course/matematicas-geogebra/?couponCode=ENE-BEST) totalmente **gratis** por la compra.
-
-El precio por el libro es de 30 euros e incluye todos los recursos descritos anteriormente
-
-Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmail.com">manwest@gmail.com</a>
+## Electronic Schematic
 
 <div>
 <p style = 'text-align:center;'>
-<img src='/images/geogebra.png'>
+<img src='/images/patent_pulsera.png'>
 </p>
 </div>
