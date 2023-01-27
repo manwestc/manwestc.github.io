@@ -40,6 +40,6 @@ Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmai
 
 <div>
 <p style = 'text-align:center;'>
-<img src='/images/geogebra.png'>
+<img src='/images/geogebra.png' width='320' height='300'>
 </p>
 </div>
