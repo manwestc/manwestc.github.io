@@ -17,4 +17,4 @@ I have more than 28 publications, including conferences and indexed journals, 15
 My experience and research works are focused on Artificial Intelligence and sensor networks within the thematic areas of signal transmission, distributed platforms and architectures such as Fog Computing, data analysis/processing, pattern recognition and Computer Vision. 
 
 ### Mis cursos de [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}
-Adicionalmente, soy un entusiasta en la formación práctica de la Inteligencia Artificial, sobre todo en el área de Ciencia de Datos. De esta manera, he creado varios cursos de Inteligencia Artificial en castellano que puedes encontrar en Udemy. Todos ellos tienen un cupón de descuento en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.
+Adicionalmente, soy un entusiasta en la formación práctica de la Inteligencia Artificial, sobre todo en el área de Ciencia de Datos. De esta manera, he creado varios cursos de Inteligencia Artificial en castellano que puedes encontrar en Udemy. Todos ellos tienen un cupón de descuento en la [sección Udemy](https://www.manuelcastillo.eu/udemy/).
