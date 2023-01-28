@@ -32,11 +32,11 @@ author_profile: true
 - Edmundo de Elvira Mori Orrillo. “Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning”. Universidad Nacional de Ingeniería (Perú). 2022. 
 
 ## B.Sc. Thesis
-- Edgar Jesús Huaranga Junco. “Optimización del Consumo de Energía en el Edge Level en arquitecturas distribuidas tipo Fog Computing”. Universidad Nacional de Ingeniería (Perú). 2021. [Link](http://hdl.handle.net/20.500.14076/22835). 
-- Victor Giovanny Mondragón Ruiz. “Evaluación y optimización de arquitecturas distribuidas tipo fog computing para Internet of Things”. Universidad Nacional de Ingeniería (Perú). 2019. [Link](http://hdl.handle.net/20.500.14076/18948).
-- Javier Enrique Villegas Herrera. “Desarrollo de un sistema IoT para la mejora de la seguridad ciudadana en una Smart City en el Perú”. Universidad Nacional de Ingeniería (Perú). 2018. [Link](http://hdl.handle.net/20.500.14076/18443). 
-- Jesús Enrique Lovón Melgarejo. “Técnicas para la localización en interiores basado en bluetooth-fingerprinting mediante algoritmos de inteligencia artificial”. Universidad Nacional de Ingeniería (Perú). 2018. [Link](http://hdl.handle.net/20.500.14076/15999).
-- Eduardo Yauri Lozano. “SnorUNI: Aplicación móvil para Sistemas de Detección y Prevención de Intrusiones basados en Snort”. Universidad Nacional de Ingeniería. (Perú) 2017. [Link](http://hdl.handle.net/20.500.14076/5651).
+- Edgar Jesús Huaranga Junco. “Optimización del Consumo de Energía en el Edge Level en arquitecturas distribuidas tipo Fog Computing”. Universidad Nacional de Ingeniería (Perú). 2021. [Link](http://hdl.handle.net/20.500.14076/22835){:target="_blank"}. 
+- Victor Giovanny Mondragón Ruiz. “Evaluación y optimización de arquitecturas distribuidas tipo fog computing para Internet of Things”. Universidad Nacional de Ingeniería (Perú). 2019. [Link](http://hdl.handle.net/20.500.14076/18948){:target="_blank"}.
+- Javier Enrique Villegas Herrera. “Desarrollo de un sistema IoT para la mejora de la seguridad ciudadana en una Smart City en el Perú”. Universidad Nacional de Ingeniería (Perú). 2018. [Link](http://hdl.handle.net/20.500.14076/18443){:target="_blank"}. 
+- Jesús Enrique Lovón Melgarejo. “Técnicas para la localización en interiores basado en bluetooth-fingerprinting mediante algoritmos de inteligencia artificial”. Universidad Nacional de Ingeniería (Perú). 2018. [Link](http://hdl.handle.net/20.500.14076/15999){:target="_blank"}.
+- Eduardo Yauri Lozano. “SnorUNI: Aplicación móvil para Sistemas de Detección y Prevención de Intrusiones basados en Snort”. Universidad Nacional de Ingeniería. (Perú) 2017. [Link](http://hdl.handle.net/20.500.14076/5651){:target="_blank"}.
 
 ## Courses, workshops and tutorials
 - 2021-2022. **Advanced techniques in Deep Learning**, Universidad Diego Portales. Chile.

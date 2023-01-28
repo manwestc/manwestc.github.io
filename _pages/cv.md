@@ -12,7 +12,7 @@ redirect_from:
 ## Education
 * M.S. in Computer Science, Universidad de Castilla-La Mancha (Spain).
 * Ph.D. in Computer Science, Universidad de Castilla-La Mancha (Spain). 
-  - Thesis: [Contributions to the advancement of wireless indoor localization techniques: signal characterization and distributed computing.](https://ruidera.uclm.es/xmlui/handle/10578/19354)
+  - Thesis: [Contributions to the advancement of wireless indoor localization techniques: signal characterization and distributed computing.](https://ruidera.uclm.es/xmlui/handle/10578/19354){:target="_blank"}
 
 ## Work experience (main)
 * 2021 - Current: Postdoctoral Research fellowship. Ontolgoy Engieneering Group. Artificial Intelligence Department. Universidad Politécnica de Madrid (Spain)

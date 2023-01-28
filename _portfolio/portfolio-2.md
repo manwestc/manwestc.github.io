@@ -5,9 +5,9 @@ collection: portfolio
 ---
 
 ## Abstract
-[TINTO](https://doi.org/10.1016/j.inffus.2022.10.011) is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
+[TINTO](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"} is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
 
-**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011)**:
+**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}**:
 
 ```bib
 @article{inffus_TINTO,
@@ -24,7 +24,7 @@ collection: portfolio
 
 ## Documentation
 
-You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO)
+You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.
 
 ## Video Example
 
@@ -38,21 +38,21 @@ src="https://user-images.githubusercontent.com/102165947/212918739-89fca790-3360
 
 ## Main Features
 
-- Supports all CSV data in **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10)** format.
+- Supports all CSV data in **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10){:target="_blank"}** format.
 - For now, the algorithm converts tabular data for binary and multi-class classification problems into machine learning.
 - Input data formats:
-    - **Tabular files**: The input data must be in **[CSV](https://en.wikipedia.org/wiki/Comma-separated_values)**, taking into account the **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10)** format.
+    - **Tabular files**: The input data must be in **[CSV](https://en.wikipedia.org/wiki/Comma-separated_values){:target="_blank"}**, taking into account the **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10){:target="_blank"}** format.
     - **Tidy Data**: The **target** (variable to be predicted) should be set as the last column of the dataset. Therefore, the first columns will be the features.
     - All data must be in numerical form. TINTO does not accept data in string or any other non-numeric format.
-- Two dimensionality reduction algorithms are used in image creation, **[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA)** and **[*t*-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)** from the Scikit-learn Python library.
+- Two dimensionality reduction algorithms are used in image creation, **[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA){:target="_blank"}** and **[*t*-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html){:target="_blank"}** from the Scikit-learn Python library.
 - The synthetic images to be created will be in black and white, i.e. in 1 channel.
 - The synthetic image **dimensions** can be set as a parameter when creating them.
 - The synthetic images can be created using **characteristic pixels** or **blurring** painting technique (expressing an overlap of pixels as the **maximum** or **average**).
 - Runs on **Linux**, **Windows** and **macOS** systems.
-- Compatible with **[Python](https://www.python.org/)** 3.7 or higher.
+- Compatible with **[Python](https://www.python.org/){:target="_blank"}** 3.7 or higher.
 
 ## Input
-The following table shows a classic example of the [IRIS CSV dataset](https://archive.ics.uci.edu/ml/datasets/iris) as it should look like for the run:
+The following table shows a classic example of the [IRIS CSV dataset](https://archive.ics.uci.edu/ml/datasets/iris){:target="_blank"} as it should look like for the run:
 
 | sepal length | sepal width | petal length | petal width | target |
 |--------------|-------------|--------------|-------------|--------|

@@ -32,9 +32,9 @@ El libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con
 - Libro en formato PDF.
 - Vídeos tutoriales prácticos realizado por los autores.
 - Archivos fuentes Geogebra con la solución de los ejercicios.
-- Tendrás acceso al [curso de Udemy](https://www.udemy.com/course/matematicas-geogebra/?couponCode=ENE-BEST) totalmente **gratis** por la compra.
+- Tendrás acceso al [curso de Udemy](https://www.udemy.com/course/matematicas-geogebra/?couponCode=ENE-BEST){:target="_blank"} totalmente **gratis** por la compra.
 
-El precio por el libro es de 30 euros e incluye todos los recursos descritos anteriormente
+El precio por el libro es de 25 euros e **incluye todos los recursos descritos anteriormente**.
 
 Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmail.com">manwest@gmail.com</a>
 
