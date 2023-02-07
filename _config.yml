@@ -10,7 +10,9 @@ locale                   : "es-ES"
 title                    : "Ph.D. Manuel Castillo-Cara"
 title_separator          : "-"
 name                     : &name "Ph.D. Manuel Castillo-Cara"
-description              : &description "Postdoctoral researcher at Universidad Politécnica de Madrid"
+description              : &description "Manuel Castillo Cara is an Udemy instructor and postdoctoral researcher at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, 
+Distributed Computing, Pattern Recognition and Artificial Intelligence. Manuel Castillo Cara es instructor Udemy e investigador postdoctoral en la Universidad Politécnica de Madrid. 
+Líneas de investigación: Redes de Sensores, Computación Distribuida, Reconocimiento de Patrones e Inteligencia Artificial."
 url                      : "https://www.manuelcastillo.eu" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "manwestc/manwestc.github.io"
