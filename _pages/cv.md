@@ -16,7 +16,7 @@ redirect_from:
 
 ## Work experience (main)
 * 2021 - Current: Postdoctoral Research fellowship. Ontolgoy Engieneering Group. Artificial Intelligence Department. Universidad Politécnica de Madrid (Spain)
-* 2020: Computer Science Professor. Computer Science School. Unviersidad de Lima (Peru).
+* 2020: Professor. Computer Science School. Unviersidad de Lima (Peru).
 * 2019 - 2020: Head of Office. Technology Infrastructure Office. Ministry of Education (Peru).
 * 2014 - 2019: Computer Science Professor. Computer Science School. Unviersidad Nacional de Ingeniería (Peru).
 * 2015 - 2019: Head of Office. Center of Information Technology and Communication. Unviersidad Nacional de Ingeniería (Peru).
@@ -64,8 +64,7 @@ redirect_from:
   - 2021-2022. **Artificial Neural Networks and Deep Learning**, *PhD in Computer Science*, Universidad de Almería. Spain.
 
 - Master courses:
-  - 2021-2022. **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima. Peru.
-  - 2021-2022. **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima. Peru.
+  - 2020-2022. **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima. Peru.
   - 2019-2020. **Machine Learning & Data Mining**, *MSc in Computer Science*, Universidad Nacional de Ingeniería. Peru.
 
 - Undergraduate courses:
