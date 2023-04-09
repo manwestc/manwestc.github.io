@@ -10,7 +10,7 @@ locale                   : "es-ES"
 title                    : "Ph.D. Manuel Castillo-Cara"
 title_separator          : "-"
 name                     : &name "Ph.D. Manuel Castillo-Cara"
-description              : &description "Manuel Castillo Cara is an Udemy instructor and postdoctoral researcher at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, 
+description              : &description "Manuel Castillo Cara is an Udemy instructor and postdoctoral researcher fellow at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, 
 Distributed Computing, Pattern Recognition and Artificial Intelligence. Manuel Castillo Cara es instructor Udemy e investigador postdoctoral en la Universidad Politécnica de Madrid. 
 Líneas de investigación: Redes de Sensores, Computación Distribuida, Reconocimiento de Patrones e Inteligencia Artificial."
 url                      : "https://www.manuelcastillo.eu" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Ph.D. Manuel Castillo-Cara"
   avatar           : "profile.jpg"
-  bio              : "Postdoctoral researcher at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, Distributed Computing, Pattern Recognition and Artificial Intelligence."
+  bio              : "Postdoctoral researcher fellow at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, Distributed Computing, Pattern Recognition and Artificial Intelligence."
   location         : "Madrid, Spain"
   employer         : "Universidad Politécnica de Madrid"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
