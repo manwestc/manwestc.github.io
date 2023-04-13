@@ -4,8 +4,6 @@ excerpt: "TINTO is an open-source, user-extendable framework that offers new opp
 collection: portfolio
 ---
 
-# TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks
-
 ## Abstract
 [TINTO](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"} is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
 
