@@ -12,7 +12,7 @@ This is Dr. Manuel Castillo Cara account's academic home page on the web!
 
 I am a postdoctoral researcher in the Ontology Engieneering Group (OEG) of the Artificial Intelligence Department at the Universidad Politécnica de Madrid. I am Ph. D. in Computer Science from the Universidad de Castilla-La Mancha (Spain). 
 
-I have more than 28 publications, including conferences and indexed journals, 15 of which are in high impact journals, a patent, books and softwares. In addtion, I have an execution of more than 15 national and international research projects.
+I have more than 30 scientific papers, including conferences and indexed journals, 16 of which are in high impact journals, a patent, books and softwares. In addtion, I have an execution of more than 15 national and international research projects.
 
 My experience and research works are focused on Artificial Intelligence and sensor networks within the thematic areas of signal transmission, distributed platforms and architectures such as Fog Computing, data analysis/processing, pattern recognition and Computer Vision. 
 

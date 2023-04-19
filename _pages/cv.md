@@ -43,7 +43,7 @@ redirect_from:
 
 ## Publications
 * All publications can be found in the following academic databases:
-  - [My personal web page](https://manuelcastillo.eu/publications/)
+  - [My personal website](https://manuelcastillo.eu/publications/)
   * [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ)
   * [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200871251)
   * [Web of Science](https://www.webofscience.com/wos/author/record/O-9762-2017)

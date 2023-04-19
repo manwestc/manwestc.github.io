@@ -22,6 +22,18 @@ collection: portfolio
 }
 ```
 
+And the **[SoftwareX paper](XXX){:target="_blank"}**
+```bib
+@article{softwarex_TINTO,
+    title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
+    journal = {SoftwareX},
+    author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
+    year = {2023},
+    issn = {2352-7110},
+    doi = {https://doi.org/10.1016/j.inffus.2022.10.011}
+}
+```
+
 ## Documentation
 
 You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.
