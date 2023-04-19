@@ -15,7 +15,7 @@ collection: portfolio
 
 <div>
 <p style = 'text-align:center;'>
-<img src='/images/tinto-framework.eps'>
+<img src='/images/tinto-framework.png'>
 </p>
 </div>
 
