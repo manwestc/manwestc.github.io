@@ -4,11 +4,13 @@ excerpt: "TINTO is an open-source, user-extendable framework that offers new opp
 collection: portfolio
 ---
 
+
 <div>
-<p style = 'text-align:center;'>
-<img src='/images/tinto-logo.svg'>
+<p align = "center">
+<img src="/images/tinto-logo.svg" alt="TINTO Logo" width="200">
 </p>
 </div>
+
 
 ## Abstract
 [TINTO](https://github.com/oeg-upm/TINTO){:target="_blank"} is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
