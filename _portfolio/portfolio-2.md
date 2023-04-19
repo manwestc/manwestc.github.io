@@ -23,6 +23,7 @@ collection: portfolio
 ```
 
 And the **[SoftwareX paper](XXX){:target="_blank"}**
+
 ```bib
 @article{softwarex_TINTO,
     title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
