@@ -1,6 +1,6 @@
 ---
 title: "Book: GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"
-excerpt: "Geogebra en el aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Libro para aplicar el software Geogebra con ejemplos prácticos en el aula.<br/><img src='/images/geogebra.png' width='320' height='300' align='center' />"
+excerpt: "Geogebra en el aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Libro para aplicar el software Geogebra con ejemplos prácticos en el aula.<br/><img src='/images/geogebra.png' width='200' align='center' />"
 collection: portfolio
 ---
 
