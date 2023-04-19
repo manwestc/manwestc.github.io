@@ -6,7 +6,7 @@ collection: portfolio
 
 <div>
 <p style = 'text-align:center;'>
-<img src='/images/tinto-logo.png'>
+<img src='/images/tinto-logo.svg'>
 </p>
 </div>
 
@@ -15,7 +15,7 @@ collection: portfolio
 
 <div>
 <p style = 'text-align:center;'>
-<img src='/images/tinto-framework.png'>
+<img src='/images/tinto-framework.eps'>
 </p>
 </div>
 
@@ -93,3 +93,5 @@ The following Figure show the output of TINTO:
 <img src='/images/tinto1.png'>
 </p>
 </div>
+
+
