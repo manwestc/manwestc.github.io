@@ -36,7 +36,7 @@ collection: portfolio
 }
 ```
 
-And the **[SoftwareX paper](XXX){:target="_blank"}**
+And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target="_blank"}**
 
 ```bib
 @article{softwarex_TINTO,
@@ -45,7 +45,7 @@ And the **[SoftwareX paper](XXX){:target="_blank"}**
     author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
     year = {2023},
     issn = {2352-7110},
-    doi = {https://doi.org/10.1016/j.inffus.2022.10.011}
+    doi = {https://doi.org/10.1016/j.softx.2023.1013911}
 }
 ```
 
