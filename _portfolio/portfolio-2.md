@@ -45,6 +45,8 @@ And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target
     author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
     year = {2023},
     issn = {2352-7110},
+    volume = {22},
+    pages = {101391},
     doi = {https://doi.org/10.1016/j.softx.2023.1013911}
 }
 ```

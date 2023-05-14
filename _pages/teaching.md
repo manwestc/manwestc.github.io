@@ -29,6 +29,7 @@ author_profile: true
 - 2017-2019 **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú. Peru. 
 
 ## M.Sc. Thesis
+- Eduardo Yauri. "Redes generativas antagónicas para la síntesis y generación de texto a imagen : un análisis cuantitativo y cualitativo de codificadores de procesamiento de lenguaje natural para el idioma español". Universidad Nacional de Ingeniería (Perú). 2023
 - Edmundo de Elvira Mori Orrillo. “Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning”. Universidad Nacional de Ingeniería (Perú). 2022. 
 
 ## B.Sc. Thesis
