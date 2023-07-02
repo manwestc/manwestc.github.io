@@ -21,7 +21,7 @@ collection: portfolio
 </p>
 </div>
 
-**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://github.com/oeg-upm/TINTO){:target="_blank"}**:
+**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}**:
 
 ```bib
 @article{inffus_TINTO,

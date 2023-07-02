@@ -15,7 +15,7 @@ collection: portfolio
 ## Abstract
 [TINTOlib](https://github.com/oeg-upm/TINTOlib){:target="_blank"} is a state-of-the-art library that wraps the most important techniques for the construction of Synthetic Images from Sorted Data (also known as Tabular Data).
 
-**Citing TINTO**: If you used TINTOlib in your work, please cite the **[INFFUS Paper](https://github.com/oeg-upm/TINTO){:target="_blank"}**:
+**Citing TINTO**: If you used TINTOlib in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}**:
 
 ```bib
 @article{inffus_TINTO,
@@ -74,6 +74,23 @@ src="https://user-images.githubusercontent.com/102165947/212918739-89fca790-3360
 - Runs on **Linux**, **Windows** and **macOS** systems.
 - Compatible with **[Python](https://www.python.org/){:target="_blank"}** 3.7 or higher.
 
+# Models
+
+|                              Model                               |    Class     | Features |                                                                Hyperparameters                                                                 |
+|:----------------------------------------------------------------:|:------------:|:--------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
+|            [TINTO](https://github.com/oeg-upm/TINTO){:target="_blank"}             |  `TINTO()`   |  `blur`  |                   `problem` `algorithm` `pixels` `blur` `amplification` `distance` `steps` `option` `seed` `times` `verbose`                   |
+| [SuperTML](https://tintolib.readthedocs.io/en/latest/supertml.html){:target="_blank"} | `SuperTML()` |          |                                             `problem` `columns` `font_size` `image_size` `verbose`                                             |
+|             [IGTD](https://tintolib.readthedocs.io/en/latest/igtd.html){:target="_blank"}             |   `IGTD()`   |          | `problem` `scale` `fea_dost_method` `image_dist_method` `save_image_size` `max_step` `val_step` `error` `switch_t` `min_gain` `seed` `verbose` |
+|       [REFINED](https://tintolib.readthedocs.io/en/latest/refined.html){:target="_blank"}        | `REFINED()`  |          |                                                      `problem` `hcIterations`  `verbose`                                                       |
+|                           [BarGraph](https://tintolib.readthedocs.io/en/latest/bargraph.html){:target="_blank"}                           | `BarGraph()`  |          |                                                    `problem` `pixel_width` `gap`  `verbose`                                                    |
+|                        [DistanceMatrix](https://tintolib.readthedocs.io/en/latest/distancematrix.html){:target="_blank"}                        | `DistanceMatrix()`  |          |                                                          `problem` `scale`  `verbose`                                                          |
+|                         [Combination](https://tintolib.readthedocs.io/en/latest/combination.html){:target="_blank"}                          | `Combination()`  |          |                                                             `problem` `pixel_width` `gap`  `verbose`                                                              |
+
+## Documentation
+
+**[Read the documentation](https://tintolib.readthedocs.io/en/latest/)**.
+
+
 ## Input
 The following table shows a classic example of the [IRIS CSV dataset](https://archive.ics.uci.edu/ml/datasets/iris){:target="_blank"} as it should look like for the run:
 
@@ -92,4 +109,36 @@ The following Figure show the output of TINTO:
 </p>
 </div>
 
+
+## Getting Started
+
+**You can install Data2Image using [Pypi(test)](https://pypi.org/project/data2image-alpha/){:target="_blank"}**:
+
+```
+    pip install TINTOlib
+```
+
+
+To import a specific model use 
+```
+    from TINTOlib.tinto import TINTO
+```
+
+Create the model. If you don't set any hyperparameter, the model will use the default values ([read documentation](https://tintolib.readthedocs.io/en/latest/){:target="_blank"}).
+````
+    model = tinto(blur=True)
+````
+To generate the synthetic images use ``.genereateImages(data,folder)`` method.
+````
+    model.generateImages(data, resultsFolderPath)
+````
+
+## License
+
+Data2Image is available under the **[Apache License 2.0](https://github.com/oeg-upm/TINTOlib/blob/main/LICENSE){:target="_blank"}**.
+
+## Authors
+- **[Borja Reinoso](https://github.com/borjarei){:target="_blank"} - [borjareinoso@gmail.com](borjareinoso@gmail.com)**
+- **[Manuel Castillo-Cara](https://github.com/manwestc){:target="_blank"} - [jcastillo@fi.upm.es](mailto:jcastillo@fi.upm.es)**
+- **[Raúl García-Castro](https://github.com/rgcmme){:target="_blank"}**
 
