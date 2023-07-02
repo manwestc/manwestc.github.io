@@ -1,6 +1,6 @@
 ---
-title: "Software: TINTO - Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks"
-excerpt: "TINTO is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
+title: "Software: TINTOlib - Python library for transforming tabular data into images with 2-Dimensional Convolutional Neural Networks"
+excerpt: "TINTOlib is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through differents algorithmic methods.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
 collection: portfolio
 ---
 
@@ -13,15 +13,9 @@ collection: portfolio
 
 
 ## Abstract
-[TINTO](https://github.com/oeg-upm/TINTO){:target="_blank"} is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
+[TINTOlib](https://github.com/oeg-upm/TINTOlib){:target="_blank"} is a state-of-the-art library that wraps the most important techniques for the construction of Synthetic Images from Sorted Data (also known as Tabular Data).
 
-<div>
-<p style = 'text-align:center;' width='200'>
-<img src='/images/tinto-framework.png'>
-</p>
-</div>
-
-**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://github.com/oeg-upm/TINTO){:target="_blank"}**:
+**Citing TINTO**: If you used TINTOlib in your work, please cite the **[INFFUS Paper](https://github.com/oeg-upm/TINTO){:target="_blank"}**:
 
 ```bib
 @article{inffus_TINTO,
@@ -53,8 +47,9 @@ And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target
 
 ## Documentation
 
-You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.
+You can find all the documentation and sources of TINTOlib in [Read the Docs](https://tintolib.readthedocs.io/en/latest/){:target="_blank"}.
 
+<!--
 ## Video Example
 
 <div>
@@ -64,19 +59,18 @@ src="https://user-images.githubusercontent.com/102165947/212918739-89fca790-3360
 </iframe>
 </p>
 </div>
+-->
 
 ## Main Features
 
+- TINTOlib use seven different state-of-art methods: [TINTO](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}, [IGTD](https://tintolib.readthedocs.io/en/latest/igtd.html){:target="_blank"}, [Refined](https://tintolib.readthedocs.io/en/latest/refined.html){:target="_blank"}, [SuperTML](https://tintolib.readthedocs.io/en/latest/supertml.html){:target="_blank"}, [DistanceMatrix](https://tintolib.readthedocs.io/en/latest/distancematrix.html){:target="_blank"}, [BarGraph](https://tintolib.readthedocs.io/en/latest/bargraph.html){:target="_blank"} and [Combination](https://tintolib.readthedocs.io/en/latest/combination.html){:target="_blank"}.
 - Supports all CSV data in **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10){:target="_blank"}** format.
-- For now, the algorithm converts tabular data for binary and multi-class classification problems into machine learning.
+- For now, the algorithm converts tabular data for regression and classification problems into machine learning.
 - Input data formats:
     - **Tabular files**: The input data must be in **[CSV](https://en.wikipedia.org/wiki/Comma-separated_values){:target="_blank"}**, taking into account the **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10){:target="_blank"}** format.
     - **Tidy Data**: The **target** (variable to be predicted) should be set as the last column of the dataset. Therefore, the first columns will be the features.
-    - All data must be in numerical form. TINTO does not accept data in string or any other non-numeric format.
-- Two dimensionality reduction algorithms are used in image creation, **[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA){:target="_blank"}** and **[*t*-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html){:target="_blank"}** from the Scikit-learn Python library.
-- The synthetic images to be created will be in black and white, i.e. in 1 channel.
-- The synthetic image **dimensions** can be set as a parameter when creating them.
-- The synthetic images can be created using **characteristic pixels** or **blurring** painting technique (expressing an overlap of pixels as the **maximum** or **average**).
+    - All data must be in numerical form. TINTOlib does not accept data in string or any other non-numeric format.
+- Depends on the method, the synthetic images to be created will be in black and white, i.e. in 1-channel, o RGB, i.e., 3-channel.
 - Runs on **Linux**, **Windows** and **macOS** systems.
 - Compatible with **[Python](https://www.python.org/){:target="_blank"}** 3.7 or higher.
 
