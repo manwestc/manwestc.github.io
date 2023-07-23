@@ -15,7 +15,8 @@ redirect_from:
   - Thesis: [Contributions to the advancement of wireless indoor localization techniques: signal characterization and distributed computing.](https://ruidera.uclm.es/xmlui/handle/10578/19354){:target="_blank"}
 
 ## Work experience (main)
-* 2021 - Current: Postdoctoral Research fellowship. Ontolgoy Engieneering Group. Artificial Intelligence Department. Universidad Politécnica de Madrid (Spain)
+* 2023 - Current: Professor / Research. Artificial Intelligence Department. Universidad Universidad Nacional de Educación a Distancia (UNED) - Spain. 
+* 2021 - 2023 Current: Postdoctoral Research fellowship. Ontolgoy Engieneering Group. Artificial Intelligence Department. Universidad Politécnica de Madrid (UPM) - Spain.
 * 2020: Professor. Computer Science School. Unviersidad de Lima (Peru).
 * 2019 - 2020: Head of Office. Technology Infrastructure Office. Ministry of Education (Peru).
 * 2014 - 2019: Computer Science Professor. Computer Science School. Unviersidad Nacional de Ingeniería (Peru).

@@ -10,7 +10,7 @@ redirect_from:
 
 This is Dr. Manuel Castillo Cara account's academic home page on the web!
 
-I am a postdoctoral researcher in the Ontology Engieneering Group (OEG) of the Artificial Intelligence Department at the Universidad Politécnica de Madrid. I am Ph. D. in Computer Science from the Universidad de Castilla-La Mancha (Spain). 
+I am a professor / researcher of the Artificial Intelligence Department at Universidad Nacional de Educación a Distancia (UNED) - Spain. I am Ph. D. in Computer Science from the Universidad de Castilla-La Mancha (UCLM) - Spain. 
 
 I have more than 30 scientific papers, including conferences and indexed journals, 17 of which are in high impact journals, a patent, books and softwares. In addtion, I have an execution of more than 15 national and international research projects.
 
