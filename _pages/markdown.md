@@ -21,7 +21,7 @@ author_profile: true
 - **Project Manager**. "Smart ubiquitous technologies and their context in a city developed by schoolchildren." Funded by _Innóvate Perú_. 2017-2018. Peru.
 
 ## Research networks
-- **Team member**. "AgIoT: Agricultural internet of things and data analytics to make better decisions in the precision agriculture context". Participation of universities from 9 partner countries. Founded by _CYTED_. PID2021-123627OB-C52. 2021 – 2024. [Link](http://www.cyted.org/AgIoT){:target="_blank"}.
+- **Team member**. "AgIoT: Agricultural internet of things and data analytics to make better decisions in the precision agriculture context". Participation of universities from 9 partner countries. Founded by _CYTED_. 520RT0011. 2021 – 2024. [Link](http://www.cyted.org/AgIoT){:target="_blank"}.
 
 ## Process / industrial development:
 - **Project manager**. "Creation and installation of an integrated system for the automation of the processes of the academic and administrative activities of the postgraduate at Universidad Nacional de Ingeniería". _SNIP Project_. 2016. Peru.
