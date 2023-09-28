@@ -33,7 +33,7 @@ author_profile: true
 
 ## M.Sc. Thesis
 - Borja Reinoso. "TINTOlib: Librería en Python de Transformación de Datos Tabulares en Imágenes para Redes Neuronales Convolucionales de dos Dimensiones". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/75351/){:target="_blank"}. 
-- Jiayun Liu. "Sistema de recomendación de revistas para artículos académicos: Un enfoque léxico y semántico basado en redes neuronales por grafo". Universidad Politécnica de Madrid (UPM) - Spain. 2023.
+- Jiayun Liu. "Sistema de recomendación de revistas para artículos académicos: Un enfoque léxico y semántico basado en redes neuronales por grafo". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/75794/){:target="_blank"}. 
 - Eduardo Yauri. "Redes generativas antagónicas para la síntesis y generación de texto a imagen : un análisis cuantitativo y cualitativo de codificadores de procesamiento de lenguaje natural para el idioma español". Universidad Nacional de Ingeniería (UNI) - Perú. 2023.
 - Edmundo de Elvira Mori Orrillo. “Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning”. Universidad Nacional de Ingeniería (UNI) - Perú. 2022. 
 
