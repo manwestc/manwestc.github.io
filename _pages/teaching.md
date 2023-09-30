@@ -13,7 +13,7 @@ author_profile: true
 
 ## Master courses
 - 2023-Current. **Data mining**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain.
-- 2023-Current. **Machine Learning II**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain.
+- 2023-Current. **Machine Learning II**, *MSc in Engineering and Data Science*, Universidad Nacional de Educación a Distancia (UNED). Spain.
 - 2020-2022. **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima (ULima). Peru.
 - 2019-2020. **Machine Learning & Data Mining**, *MSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 
