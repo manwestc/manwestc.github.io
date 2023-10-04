@@ -52,8 +52,11 @@ author_profile: true
 - Castillo-Cara, Manuel et al. Ray: Smart indoor/outdoor routes for the blind using Bluetooth 4.0 BLE. *Procedia Computer Science - 7th International Conference on Ambient Systems, Networks and Technologies (ANT)*. 2016. DOI: [10.1016/j.prcocs.2016.04.153](https://doi.org/10.1016/j.prcocs.2016.04.153){:target="_blank"}. (SJR: 0.258).
 
 ## Derechos de autor de Software:
-- Manuel Castillo-Cara y Raúl García Castro. TINTORERA. Registro Propiedad Intelectual de la Comunidad de Madrid: M-002752/2023. 2023.
-- Manuel Castillo-Cara y Raúl García Castro. TINTORETTO. Registro  Propiedad Intelectual de la Comunidad de Madrid: M-004873/2023. 2023.
+- Manuel Castillo-Cara y Raúl García Castro. TINTORERA. Registro Propiedad Intelectual de la Comunidad de Madrid: 16/2023/4624.
+- Manuel Castillo-Cara y Raúl García Castro. TINTORETTO. Registro  Propiedad Intelectual de la Comunidad de Madrid: 16/2023/5491.
+
+## Patents
+- Dispositivo electrónico que se fija en el cuerpo para seguimiento y localización de personas o animales; con sensores de posicionamiento y rastreo, transmisión de datos y optimización de energía e información. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151. Perú. 2019. (Otorgada)..
 
 ## Technical Reports
 - Principles and recommendations to make data.europa.eu data more reusable – A estrategy mapping report. *European Data Portal. Publications Office of the European Union*. 2022. DOI: [10.2830/9342](https://doi.org/10.2830/9342){:target="_blank"}.
