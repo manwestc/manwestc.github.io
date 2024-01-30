@@ -38,7 +38,7 @@ author_profile: true
 - Edmundo de Elvira Mori Orrillo. “Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning”. Universidad Nacional de Ingeniería (UNI) - Perú. 2022. 
 
 ## B.Sc. Thesis
-- Javier Pérez Tárraga. “Desarrollo de una aplicación web que permita tratar convenientemente los datos procedentes de sensores u otras bases de datos”. Universidad de Castilla-La Mancha (UCLM) - Perú. 2021. [Link](){:target="_blank"}.
+- Javier Pérez Tárraga. “Desarrollo de una aplicación web que permita tratar convenientemente los datos procedentes de sensores u otras bases de datos”. Universidad de Castilla-La Mancha (UCLM) - Spain. 2021. [Link](){:target="_blank"}.
 - Edgar Jesús Huaranga Junco. “Optimización del Consumo de Energía en el Edge Level en arquitecturas distribuidas tipo Fog Computing”. Universidad Nacional de Ingeniería (UNI) - Perú. 2021. [Link](http://hdl.handle.net/20.500.14076/22835){:target="_blank"}. 
 - Victor Giovanny Mondragón Ruiz. “Evaluación y optimización de arquitecturas distribuidas tipo fog computing para Internet of Things”. Universidad Nacional de Ingeniería (UNI) - Perú. 2019. [Link](http://hdl.handle.net/20.500.14076/18948){:target="_blank"}.
 - Javier Enrique Villegas Herrera. “Desarrollo de un sistema IoT para la mejora de la seguridad ciudadana en una Smart City en el Perú”. Universidad Nacional de Ingeniería (UNI) - Perú. 2018. [Link](http://hdl.handle.net/20.500.14076/18443){:target="_blank"}. 
