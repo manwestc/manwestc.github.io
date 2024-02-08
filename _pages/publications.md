@@ -22,7 +22,7 @@ author_profile: true
 
 
 ## Journals
-- Eduardo Yauri-Lozano, Manuel Castillo-Cara et al. Generative Adversarial Networks for Text-to-Face Synthesis & Generation: A Quantitative-Qualitative Analysis of Natural Language Processing Encoders for Spanish. *Information Processing & Management*. 2023. DOI: [10.1016/j.ipm.2024.103667](https://doi.org/10.1016/j.ipm.2024.103667){:target="_blank"}. (IF: 8.6,  Q1 – SJR: 2.11, Q1). 
+- Eduardo Yauri-Lozano, Manuel Castillo-Cara et al. Generative Adversarial Networks for Text-to-Face Synthesis & Generation: A Quantitative-Qualitative Analysis of Natural Language Processing Encoders for Spanish. *Information Processing & Management*. 2024. DOI: [10.1016/j.ipm.2024.103667](https://doi.org/10.1016/j.ipm.2024.103667){:target="_blank"}. (IF: 8.6,  Q1 – SJR: 2.11, Q1). 
 - Michael Vera, Kewin Cuadros, Manuel Castillo-Cara et al. BeeGOns!: A Wireless Sensor Node for Fog-Computing based Smart City Platforms. *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems*. 2024. DOI: [10.1109/TCAD.2023.3305575](https://doi.org/10.1109/TCAD.2023.3305575){:target="_blank"}.(IF: 2.9,  Q2 – SJR: 0.97, Q1).
 - Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. A Novel Deep Learning Approach using Blurring Image Techniques for Bluetooth-based Indoor Localisation. *Information Fusion*. 2023. DOI: [10.1016/j.inffus.2022.10.011](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}. (IF: 18.6,  Q1 – SJR: 4.76, Q1)   
 - Manuel Castillo-Cara et al. TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks. *SoftwareX*. 2023. DOI: [10.1016/j.softx.2023.1013911](https://doi.org/10.1016/j.softx.2023.101391){:target="_blank"}. (IF: 3.4,  Q2 – SJR: 0.57, Q2).  
