@@ -52,7 +52,7 @@ author_profile: true
 - Gusseppe Bravo Rocca, Manuel Castillo-Cara et al. Citizen security using Machine Learning algorithms through Open Data. *8th IEEE Latin-American Conference on Communications (LATINCOM)*. Colombia. 2016. DOI: [10.1109/LATINCOM.2016.7811562](https://doi.org/10.1109/LATINCOM.2016.7811562){:target="_blank"}. (SJR: 0.22).
 - Castillo-Cara, Manuel et al. Ray: Smart indoor/outdoor routes for the blind using Bluetooth 4.0 BLE. *Procedia Computer Science - 7th International Conference on Ambient Systems, Networks and Technologies (ANT)*. 2016. DOI: [10.1016/j.prcocs.2016.04.153](https://doi.org/10.1016/j.prcocs.2016.04.153){:target="_blank"}. (SJR: 0.258).
 
-## Derechos de autor de Software:
+## Software copyrights:
 - Manuel Castillo-Cara y Raúl García Castro. TINTORERA. Registro Propiedad Intelectual de la Comunidad de Madrid: 16/2023/4624.
 - Manuel Castillo-Cara y Raúl García Castro. TINTORETTO. Registro  Propiedad Intelectual de la Comunidad de Madrid: 16/2023/5491.
 
