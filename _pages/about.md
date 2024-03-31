@@ -17,15 +17,15 @@ Manuel Castillo Cara is a computer scientist and earned his PhD in Computer Scie
 During his teaching period, he has participated in over 15 research projects, 2 of which he was the Principal Investigator.  He was also a team member in a social development project that aimed to develop technological skills for children in depressed areas of Peru. The project had over 2000 students between the ages of 8 and 15 in total. The courses covered topics such as educational robotics and programming with Scratch. Additionally, the teacher has received teaching awards for achieving the highest scores in academic surveys at UNI on four separate occasions.
 
 His research interests are in Artificial Intelligence and computing architectures, specifically in sensor networks (WSN), distributed platforms and architectures like Fog Computing, data analysis/processing, pattern recognition and Computer Vision. He is the main developer of the [TINTOlib](https://github.com/oeg-upm/TINTOlib) library for developing Hybrid Neural Networks. He also implemented the method to convert tabular data into synthetic images, known as [TINTO](https://github.com/oeg-upm/TINTO). He has presented multiple seminars on AI and the use of [TINTOlib](https://github.com/oeg-upm/TINTOlib) in both Peru and Spain. Below are his general indicators of scientific production quality:
-- 18 articles in indexed impact journals (WoS: 5 in Q1 and 9 in Q2).
+- 18 articles in indexed impact journals.
 - 7 international congresses (4 in Scopus)
 - 2 IEEE robotics competitions, achieving third place.
 - 1 utility model paten
 - 2 software copyright registrations
 - 1 academic book
-- WOS Impact (JCR): Total citations: 137 / Q1 Publications: 5 / H Index: 7
-- Scopus Impact (SJR): Total citations: 237 / Q1 publications: 13 / H Index: 8
-- Scholar Impact: Total citations: 388 / H Index: 9
+- WOS Impact (JCR): Total citations: 145 / Q1: 5 - Q2: 9 / H Index: 7
+- Scopus Impact (SJR): Total citations: 247 / Q1: 13 - Q2: 5 / H Index: 8
+- Scholar Impact: Total citations: 404 / H Index: 10
 - 4 Master's Thesis
 - 6 Bachelor's Thesis
 - 2 co-directions of doctoral theses (not yet completed or presented)
