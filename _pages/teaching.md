@@ -10,6 +10,7 @@ author_profile: true
 ## Doctoral courses
 - 2021-2022. **Research Methodology**, *PhD in Computer Science*, Universidad de Castilla-La Mancha (UCLM). Spain.
 - 2021-2022. **Artificial Neural Networks and Deep Learning**, *PhD in Computer Science*, Universidad de Almería (UAL). Spain.
+- 2021-2022. **Improving Deep Learning by Exploiting Synthetic Images**, *PhD in Computer Science*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/oeg-upm/TINTOlib){:target="_blank"}.
 
 ## Master courses
 - 2023-Current. **Data mining** & **Deep Learning**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain.
