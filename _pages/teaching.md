@@ -29,7 +29,7 @@ author_profile: true
 - 2013-2014. **Algorithms**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 
 ## Seminars and other technical courses
-- 2023-2024. **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/oeg-upm/TINTOlib){:target="_blank"}.
+- 2023-2024. **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/manwestc/UPM-MUIA){:target="_blank"}.
 - 2017-2019. **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
 
 ## M.Sc. Thesis
