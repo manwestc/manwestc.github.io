@@ -49,7 +49,7 @@ author_profile: true
 ## Courses, workshops and tutorials
 - 2021-2022. **Advanced techniques in Deep Learning**, Universidad Diego Portales. Chile.
 - 2021-2022. **Big data, machine learning, deep learning technologies applied to business engineering**, Universidad Nacional Jorge Basadre Grohmann. Peru.
-- 2020-2021. **Deep Learning for Computer Vision: A Macro-Tour of Models in Science and Technology**, I Jornada de Investigación Tecnológica Cajamarca. Universidad Nacional de Cajamarca.. Peru.
+- 2020-2021. **Deep Learning for Computer Vision: A Macro-Tour of Models in Science and Technology**, I Jornada de Investigación Tecnológica Cajamarca. Universidad Nacional de Cajamarca. Peru.
 - 2018-2020. **Machine Learning with Python**, Universidad Peruana Cayetano Heredia. Peru.
 - 2018-2020. **Deep Learning with Python**, Universidad Peruana Cayetano Heredia. Peru.
 - 2018-2020. **Data Analytics with R**, Universidad Peruana Cayetano Heredia. Peru.
