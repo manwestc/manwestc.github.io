@@ -10,7 +10,6 @@ author_profile: true
 ## Doctoral courses
 - 2021-2022. **Research Methodology**, *PhD in Computer Science*, Universidad de Castilla-La Mancha (UCLM). Spain.
 - 2021-2022. **Artificial Neural Networks and Deep Learning**, *PhD in Computer Science*, Universidad de Almería (UAL). Spain.
-- 2021-2022. **Improving Deep Learning by Exploiting Synthetic Images**, *PhD in Computer Science*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/oeg-upm/TINTOlib){:target="_blank"}.
 
 ## Master courses
 - 2023-Current. **Data mining** & **Deep Learning**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain.
@@ -29,7 +28,8 @@ author_profile: true
 - 2015-2017. **Programming on mobile devices**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 - 2013-2014. **Algorithms**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 
-## Other graduate courses
+## Seminars and other technical courses
+- 2024. **Improving Deep Learning by Exploiting Synthetic Images**, *PhD in Computer Science*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/oeg-upm/TINTOlib){:target="_blank"}.
 - 2017-2019 **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
 
 ## M.Sc. Thesis

@@ -23,9 +23,9 @@ His research interests are in Artificial Intelligence and computing architecture
 - 1 utility model paten
 - 2 software copyright registrations
 - 1 academic book
-- WOS Impact (JCR): Total citations: 145 / Q1: 5 - Q2: 10 / H Index: 7
-- Scopus Impact (SJR): Total citations: 247 / Q1: 14 - Q2: 5 / H Index: 8
-- Scholar Impact: Total citations: 404 / H Index: 10
+- WOS Impact (JCR): Total citations: 153 / Q1: 7 - Q2: 10 / H Index: 7
+- Scopus Impact (SJR): Total citations: 273 / Q1: 13 - Q2: 7 / H Index: 8
+- Scholar Impact: Total citations: 433 / H Index: 10
 - 4 Master's Thesis
 - 6 Bachelor's Thesis
 - 2 co-directions of doctoral theses (not yet completed or presented)
