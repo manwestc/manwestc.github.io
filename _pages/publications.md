@@ -19,6 +19,8 @@ author_profile: true
 - [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"}.
 - [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"}.
 - [Web of Science](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"}.
+- [UNED Researcher](https://portalcientifico.uned.es/investigadores/818430/detalle){:target="_blank"}.
+- [UNED Professor](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}.
 
 
 ## Journals

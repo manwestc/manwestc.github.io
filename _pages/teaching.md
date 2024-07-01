@@ -29,8 +29,8 @@ author_profile: true
 - 2013-2014. **Algorithms**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 
 ## Seminars and other technical courses
-- 2024. **Improving Deep Learning by Exploiting Synthetic Images**, *PhD in Computer Science*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/oeg-upm/TINTOlib){:target="_blank"}.
-- 2017-2019 **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
+- 2023-2024. **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/oeg-upm/TINTOlib){:target="_blank"}.
+- 2017-2019. **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
 
 ## M.Sc. Thesis
 - Borja Reinoso. "TINTOlib: Librería en Python de Transformación de Datos Tabulares en Imágenes para Redes Neuronales Convolucionales de dos Dimensiones". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/75351/){:target="_blank"}. 
