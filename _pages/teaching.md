@@ -33,6 +33,7 @@ author_profile: true
 - 2017-2019. **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
 
 ## M.Sc. Thesis
+- David González. "Transformación de Datos Tabulares a Imágenes Sintéticas: Optimización y Evaluación de la Librería TINTOlib en Python". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/82830/){:target="_blank"}. 
 - Borja Reinoso. "TINTOlib: Librería en Python de Transformación de Datos Tabulares en Imágenes para Redes Neuronales Convolucionales de dos Dimensiones". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/75351/){:target="_blank"}. 
 - Jiayun Liu. "Sistema de recomendación de revistas para artículos académicos: Un enfoque léxico y semántico basado en redes neuronales por grafo". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/75794/){:target="_blank"}. 
 - Eduardo Yauri. "Redes generativas antagónicas para la síntesis y generación de texto a imagen : un análisis cuantitativo y cualitativo de codificadores de procesamiento de lenguaje natural para el idioma español". Universidad Nacional de Ingeniería (UNI) - Perú. 2023. [Link](http://hdl.handle.net/20.500.14076/26927){:target="_blank"}. 
