@@ -32,7 +32,7 @@ El libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con
 - Libro en formato PDF.
 - Vídeos tutoriales prácticos realizado por los autores.
 - Archivos fuentes Geogebra con la solución de los ejercicios.
-- Tendrás acceso al [**curso de UDEMY**](https://www.udemy.com/course/matematicas-geogebra/?couponCode=JUL_2024){:target="_blank"} totalmente **gratis** por la compra.
+- Tendrás acceso al [**curso de UDEMY**](https://www.udemy.com/course/matematicas-geogebra/?couponCode=AGO_2024){:target="_blank"} totalmente **gratis** por la compra.
 
 El precio por el libro es de 25 euros e **incluye todos los recursos descritos anteriormente**.
 
@@ -43,3 +43,12 @@ Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmai
 <img src='/images/geogebra.png' width='320' height='300'>
 </p>
 </div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+<div id="paypal-container-UX7UBGJ8TCPTW"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "UX7UBGJ8TCPTW",
+  }).render("#paypal-container-UX7UBGJ8TCPTW")
+</script>
+
