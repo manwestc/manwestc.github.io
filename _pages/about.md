@@ -26,7 +26,7 @@ His research interests are in Artificial Intelligence and computing architecture
 - 1 academic book.
 - WOS Impact (JCR): Total citations: 153 / Q1: 7 - Q2: 10 / H Index: 7.
 - Scopus Impact (SJR): Total citations: 278 / Q1: 13 - Q2: 7 / H Index: 8.
-- Scholar Impact: Total citations: 448 / H Index: 11.
+- Scholar Impact: Total citations: 450 / H Index: 11.
 - 5 Master's Theses.
 - 6 Bachelor's Theses.
 - 4 co-directions of doctoral theses (not yet completed or presented).
