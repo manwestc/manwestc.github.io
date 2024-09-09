@@ -60,8 +60,8 @@ author_profile: true
 - T. Tabuchi, L. Leon, A.Carrillo, B. Arotoma, M. Capcha, L.Carrion and M. Castillo-Cara. Fast and accurate robot for moving small containers for the OPEN LARC 2018 – Team CTIC-UNI. **3er Place**. *IEEE OPEN XVII Latin American Robotics Competition (LARC/CBR)*. Brasil. 2018.
 
 ## Chapters and Books
-- Hancco et al. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. Sustainability Applied to Unconventional Oil and Gas Field Exploration and Development. IGI Global. 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009).
-- Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Número de asiento registral: 04/2023/802. ISBN: 9798379088873. Ed.: Amazon. [Link](https://www.manuelcastillo.eu/portfolio/portfolio-1/).
+- Hancco et al. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. Sustainability Applied to Unconventional Oil and Gas Field Exploration and Development. IGI Global. 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}.
+- Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Número de asiento registral: 04/2023/802. ISBN: 9798379088873. Ed.: Amazon. [Link](https://www.manuelcastillo.eu/portfolio/portfolio-1/){:target="_blank"}.
 
 ## Technical Reports
 - Principles and recommendations to make data.europa.eu data more reusable – A estrategy mapping report. *European Data Portal. Publications Office of the European Union*. 2022. DOI: [10.2830/9342](https://doi.org/10.2830/9342){:target="_blank"}.
