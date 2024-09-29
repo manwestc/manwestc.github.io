@@ -8,8 +8,8 @@ author_profile: true
 {% include base_path %}
 
 ## Doctoral courses
-- 2021-2022. **Research Methodology**, *PhD in Computer Science*, Universidad de Castilla-La Mancha (UCLM). Spain.
-- 2021-2022. **Artificial Neural Networks and Deep Learning**, *PhD in Computer Science*, Universidad de Almería (UAL). Spain.
+- **Research Methodology**, *PhD in Computer Science*, Universidad de Castilla-La Mancha (UCLM). Spain.
+- **Artificial Neural Networks and Deep Learning**, *PhD in Computer Science*, Universidad de Almería (UAL). Spain.
 
 ## Master courses
 - 2023-Current. **Data mining** & **Deep Learning**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain.
@@ -28,9 +28,9 @@ author_profile: true
 - 2013-2014. **Algorithms**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 
 ## Seminars and other technical courses
-- 2023-2024. **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/manwestc/UPM-MUIA){:target="_blank"}.
-- 2024. **Deep Leaning con Pyhton**, Universidad Nacional Autónoma de México (UNAM). México. [Materials](https://github.com/manwestc/UNAM-Curso-ML-y-DL){:target="_blank"}.
-- 2017-2019. **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
+- **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/manwestc/UPM-MUIA){:target="_blank"}.
+- **Deep Leaning con Pyhton**, Universidad Nacional Autónoma de México (UNAM). México. [Materials](https://github.com/manwestc/UNAM-Curso-ML-y-DL){:target="_blank"}.
+- **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
 
 ## M.Sc. Thesis
 - David González. "Transformación de Datos Tabulares a Imágenes Sintéticas: Optimización y Evaluación de la Librería TINTOlib en Python". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/82830/){:target="_blank"}. 
