@@ -17,7 +17,6 @@ author_profile: true
 - 2020-2022. **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima (ULima). Peru.
 - 2019-2020. **Machine Learning & Data Mining**, *MSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
 
-
 ## Undergraduate courses
 - 2023-Current. **Data mining**, *BSc in Computer Science*, Universidad Nacional de Educación a Distancia (UNED). Spain.
 - 2022-2023. **Probability and statistics I**, *BSc in Computer Science*, Universidad Politécnica de Madrid (UPM). Spain.
@@ -30,6 +29,7 @@ author_profile: true
 
 ## Seminars and other technical courses
 - 2023-2024. **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/manwestc/UPM-MUIA){:target="_blank"}.
+- 2024. **Deep Leaning con Pyhton**, Universidad Nacional Autónoma de México (UNAM). México. [Materials](https://github.com/manwestc/UNAM-Curso-ML-y-DL){:target="_blank"}.
 - 2017-2019. **Internet of Things & Fog Computing**, *Diploma in Agrotics and Precision Farming*, Pontificia Universidad Católica del Perú (PUCP). Peru. 
 
 ## M.Sc. Thesis

@@ -23,7 +23,7 @@ author_profile: true
 - [UNED Researcher](https://portalcientifico.uned.es/investigadores/818430/detalle){:target="_blank"}.
 - [UNED Professor](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}.
 
-### Last ten papers:
+### Last 10-papers:
 - Eduardo Yauri-Lozano, Manuel Castillo-Cara et al. Generative Adversarial Networks for Text-to-Face Synthesis & Generation: A Quantitative-Qualitative Analysis of Natural Language Processing Encoders for Spanish. *Information Processing & Management*. 2024. DOI: [10.1016/j.ipm.2024.103667](https://doi.org/10.1016/j.ipm.2024.103667){:target="_blank"}. (IF: 7.4,  Q1 – SJR: 2.13, Q1). 
 - Edgar Huaranga-Junco, Salvador González-Gerpe, Manuel Castillo-Cara et al. From cloud and fog computing to federated-fog computing: A comparative analysis of computational resources in real-time IoT applications based on semantic interoperability. *Future Generation Computer Systems*. 2024. DOI: [10.1016/j.future.2024.05.001](https://doi.org/10.1016/j.future.2024.05.001){:target="_blank"}. (IF: 6.2,  Q1 – SJR: 1.95, Q1). 
 - Michael Vera, Kewin Cuadros, Manuel Castillo-Cara et al. BeeGOns!: A Wireless Sensor Node for Fog-Computing based Smart City Platforms. *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems*. 2024. DOI: [10.1109/TCAD.2023.3305575](https://doi.org/10.1109/TCAD.2023.3305575){:target="_blank"}.(IF: 2.7,  Q2 – SJR: 0.96, Q1).
