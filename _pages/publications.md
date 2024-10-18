@@ -48,6 +48,10 @@ author_profile: true
 - Jesús Martínez-Gómez, Miguel Martínez del Horno, Manuel Castillo-Cara et al. Spatial statistical analysis for the design of indoor particle-filter-based localization mechanisms. *International Journal of Distributed Sensor Networks*. 2016. DOI: [10.1177/1550147716661953](https://doi.org/10.1177/1550147716661953){:target="_blank"}. (IF: 1.239, Q3 – SJR: 0.32, Q2).
 -->
 
+## Chapters and Books
+- Hancco et al. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. Sustainability Applied to Unconventional Oil and Gas Field Exploration and Development. IGI Global. 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}.
+- Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Número de asiento registral: 04/2023/802. ISBN: 9798379088873. Ed.: Amazon. [Link](https://www.manuelcastillo.eu/portfolio/portfolio-1/){:target="_blank"}.
+
 ## Software copyrights:
 - Manuel Castillo-Cara y Raúl García Castro. TINTORERA. Registro Propiedad Intelectual de la Comunidad de Madrid: 16/2023/4624.
 - Manuel Castillo-Cara y Raúl García Castro. TINTORETTO. Registro  Propiedad Intelectual de la Comunidad de Madrid: 16/2023/5491.
@@ -55,13 +59,12 @@ author_profile: true
 ## Patents
 - Dispositivo electrónico que se fija en el cuerpo para seguimiento y localización de personas o animales; con sensores de posicionamiento y rastreo, transmisión de datos y optimización de energía e información. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151. Perú. 2019. (Otorgada).
 
+## International Tutorials
+- Improving Deep Learning by Exploiting Synthetic Images. *27TH European Conference on Artificial Intelligence (ECAI)*. 2024. [Link](https://www.ecai2024.eu/programme/tutorials). [Materials](https://github.com/DCY1117/ECAI2024-Material){:target="_blank"}. (Core 2203 - Rank A).
+
 ## International Competitions
 - P. Inocente, C. Calixtro, A. Chira, Z. Salcedo, M. Vera, F. Castro  and M. Castillo-Cara. Robot with autonomous navigation using fuzzy logic and smart vision – Team CTIC-UNI. **3er Place**. *IEEE OPEN XVIII Latin American Robotics Competition (LARC/CBR)*. Brasil. 2019.
 - T. Tabuchi, L. Leon, A.Carrillo, B. Arotoma, M. Capcha, L.Carrion and M. Castillo-Cara. Fast and accurate robot for moving small containers for the OPEN LARC 2018 – Team CTIC-UNI. **3er Place**. *IEEE OPEN XVII Latin American Robotics Competition (LARC/CBR)*. Brasil. 2018.
-
-## Chapters and Books
-- Hancco et al. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. Sustainability Applied to Unconventional Oil and Gas Field Exploration and Development. IGI Global. 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}.
-- Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Número de asiento registral: 04/2023/802. ISBN: 9798379088873. Ed.: Amazon. [Link](https://www.manuelcastillo.eu/portfolio/portfolio-1/){:target="_blank"}.
 
 ## Technical Reports
 - Principles and recommendations to make data.europa.eu data more reusable – A estrategy mapping report. *European Data Portal. Publications Office of the European Union*. 2022. DOI: [10.2830/9342](https://doi.org/10.2830/9342){:target="_blank"}.
