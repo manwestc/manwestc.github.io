@@ -60,7 +60,7 @@ author_profile: true
 - Dispositivo electrónico que se fija en el cuerpo para seguimiento y localización de personas o animales; con sensores de posicionamiento y rastreo, transmisión de datos y optimización de energía e información. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151. Perú. 2019. (Otorgada).
 
 ## International Tutorials
-- Improving Deep Learning by Exploiting Synthetic Images. *27TH European Conference on Artificial Intelligence (ECAI)*. 2024. [Link](https://www.ecai2024.eu/programme/tutorials). [Materials](https://github.com/DCY1117/ECAI2024-Material){:target="_blank"}. (Core 2203 - Rank A).
+- Improving Deep Learning by Exploiting Synthetic Images. *27TH European Conference on Artificial Intelligence (ECAI)*. 2024. [Link](https://www.ecai2024.eu/programme/tutorials). [Materials](https://github.com/DCY1117/ECAI2024-Material){:target="_blank"}. (Core 2023 - Rank A).
 
 ## International Competitions
 - P. Inocente, C. Calixtro, A. Chira, Z. Salcedo, M. Vera, F. Castro  and M. Castillo-Cara. Robot with autonomous navigation using fuzzy logic and smart vision – Team CTIC-UNI. **3er Place**. *IEEE OPEN XVIII Latin American Robotics Competition (LARC/CBR)*. Brasil. 2019.
