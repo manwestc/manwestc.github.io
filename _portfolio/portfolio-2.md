@@ -12,7 +12,7 @@ collection: portfolio
 </div>
 
 
-<## Description
+## Description
 **[TINTOlib](https://tintolib.readthedocs.io/en/latest/)** is a state-of-the-art library that wraps the most important techniques for the construction of **Synthetic Images** from [Tidy Data](https://www.jstatsoft.org/article/view/v059i10) (also known as **Tabular Data**). 
 
 ## Features
@@ -130,11 +130,7 @@ For example, the following table shows a classic example of the [IRIS CSV datase
 
 
 ### Simple example with TINTO method
-The following example shows how to create 20x20 images with characteristic pixels, i.e. without blurring. 
-Also, as no other parameters are indicated, you will choose the following parameters which are set by default:
-- **Image size**: 20x20 pixels
-- **Blurring**: No blurring will be used.
-- **Seed**: with the seed set to 20.
+The following example shows how to create 20x20 images with characteristic pixels with TINTO method:
 
 <div>
 <p style = 'text-align:center;'>
