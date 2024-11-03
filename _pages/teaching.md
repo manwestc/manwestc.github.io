@@ -8,29 +8,25 @@ author_profile: true
 {% include base_path %}
 
 ## Doctoral courses
-- **Improving Deep Learning by Exploiting Synthetic Images**, *PhD in Computer Science*, Universidad de Almería (UAL). Spain. [Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}.
-- **Research Methodology**, *PhD in Computer Science*, Universidad de Castilla-La Mancha (UCLM). Spain.
-- **Artificial Neural Networks and Deep Learning**, *PhD in Computer Science*, Universidad de Almería (UAL). Spain.
+- **Improving Deep Learning by Exploiting Synthetic Images**, Universidad de Almería (UAL). Spain. 2024. [Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}. 
+- **Research Methodology**, Universidad de Castilla-La Mancha (UCLM). Spain. 2022.
+- **Artificial Neural Networks and Deep Learning**, Universidad de Almería (UAL). Spain. 2022.
 
 ## Master courses
-- 2023-Current. **Data mining** & **Deep Learning**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain.
-- 2023-Current. **Machine Learning II** & **Deep Learning**, *MSc in Engineering and Data Science*, Universidad Nacional de Educación a Distancia (UNED). Spain.
-- 2020-2022. **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima (ULima). Peru.
-- 2019-2020. **Machine Learning & Data Mining**, *MSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
+- **Data mining** & **Deep Learning**, *MSc in Artificial Intelligence*, Universidad Nacional de Educación a Distancia (UNED). Spain. 2023-Current.
+- **Machine Learning II** & **Deep Learning**, *MSc in Engineering and Data Science*, Universidad Nacional de Educación a Distancia (UNED). Spain. 2023-Current. 
+- **International Seminar I - Artificial Intelligence**, *MSc in Strategic Content Management*, Universidad de Lima (ULima). Peru. 2020-2022. 
+- **Machine Learning & Data Mining**, *MSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru. 2019-2020. 
 
 ## Seminars and other technical courses
-- **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. [Materials](https://github.com/manwestc/UPM-MUIA){:target="_blank"}.
-- **Deep Leaning con Pyhton**, Universidad Nacional Autónoma de México (UNAM). México. [Materials](https://github.com/manwestc/UNAM-Curso-ML-y-DL){:target="_blank"}.
+- **Improving Deep Learning by Exploiting Synthetic Images**, *MSc in Artificial Intelligence*, Universidad Politécnica de Madrid (UPM). Spain. 2024. [Materials](https://github.com/manwestc/UPM-MUIA){:target="_blank"}.
+- **Deep Leaning con Pyhton**, Universidad Nacional Autónoma de México (UNAM). México. 2024. [Materials](https://github.com/manwestc/UNAM-Curso-ML-y-DL){:target="_blank"}.
 
 ## Undergraduate courses
-- 2023-Current. **Data mining**, *BSc in Computer Science*, Universidad Nacional de Educación a Distancia (UNED). Spain.
-- 2022-2023. **Probability and statistics I**, *BSc in Computer Science*, Universidad Politécnica de Madrid (UPM). Spain.
-- 2021-2021. **Workshop on Research Proposal**, *BSc in Computer Science*, Universidad de Lima (ULima). Peru.
-- 2014-2020. **Network management**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
-- 2015-2020. **Thesis Seminar**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
-- 2013-2017. **Fundamentals of programming**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
-- 2015-2017. **Programming on mobile devices**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
-- 2013-2014. **Algorithms**, *BSc in Computer Science*, Universidad Nacional de Ingeniería (UNI). Peru.
+- **Data mining**. *BSc in Computer Science*. Universidad Nacional de Educación a Distancia (UNED). Spain. 2023-Current. 
+- **Probability and statistics I**. *BSc in Computer Science*. Universidad Politécnica de Madrid (UPM). Spain. 2022-2023. 
+- **Workshop on Research Proposal**. *BSc in Computer Science*, Universidad de Lima (ULima). Peru. 2021. 
+- **Network management**, , **Thesis Seminar**, **Fundamentals of programming**, **Programming on mobile devices** and **Algorithms**. *BSc in Computer Science*. Universidad Nacional de Ingeniería (UNI). Peru. 2014-2020.
 
 ## M.Sc. Thesis
 - David González. "Transformación de Datos Tabulares a Imágenes Sintéticas: Optimización y Evaluación de la Librería TINTOlib en Python". Universidad Politécnica de Madrid (UPM) - Spain. 2023. [Link](https://oa.upm.es/82830/){:target="_blank"}. 
