@@ -36,7 +36,7 @@ El libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con
 
 El precio por el libro es de 25 euros e **incluye todos los recursos descritos anteriormente**.
 
-Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmail.com">manwest@gmail.com</a>
+Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmail.com">manwest.c@gmail.com</a>
 
 <div>
 <p style = 'text-align:center;'>
