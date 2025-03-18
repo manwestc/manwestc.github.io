@@ -13,47 +13,45 @@ redirect_from:
 Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **castellano**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
 
 
-## 👨‍🎓 **Biografía**  
+## 👨‍🎓 **Biography**  
 
-Soy Manuel Castillo-Cara, **doctor en Ciencias de la Computación**, especializado en Inteligencia Artificial, por la Universidad de Castilla-La Mancha (UCLM), donde obtuve la distinción Cum Laude en 2018.  
+I am Manuel Castillo-Cara, **PhD in Computer Science**, specialized in Artificial Intelligence, from the University of Castilla-La Mancha (UCLM), where I received the Cum Laude distinction in 2018.  
 
-| Periodo       | Cargo | Institución |
+| Period       | Position | Institution |
 |--------------|------------------------------------------------|------------------------------------------------|
-| **2014 - 2020** | Profesor/Investigador en Perú | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) |
-| **2021 - 2023** | Contrato postdoctoral | Universidad Politécnica de Madrid (UPM) - Programa europeo Recualificación María Zambrano. |
-| **Desde 2023** | Profesor/Investigador | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
+| **2014 - 2020** | Professor/Researcher in Peru | - National University of Engineering (UNI) <br> - University of Lima (ULima) |
+| **2021 - 2023** | Postdoctoral Contract | Polytechnic University of Madrid (UPM) - European Requalification María Zambrano Program. |
+| **Since 2023** | Professor/Researcher | [National University of Distance Education (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
 
+## 🔬 **Research and Projects**  
 
-## 🔬 **Investigación y Proyectos**  
+Throughout my career, I have participated in **more than 15 research projects**, leading 2 of them as Principal Investigator.  
 
-A lo largo de mi carrera, he participado en **más de 15 proyectos de investigación**, liderando 2 de ellos como Investigador Principal.  
+I highlight my participation in a social development project in Peru, where we contributed to education in educational robotics and Scratch programming for more than 2000 children aged 8 to 15 in vulnerable areas.  
 
-Destaco mi participación en un proyecto de desarrollo social en Perú, donde contribuimos a la formación en robótica educativa y programación con Scratch para más de 2000 niños entre 8 y 15 años en zonas vulnerables.  
+### **Research Interests**  
+- Artificial Intelligence and computational architectures.  
+- Wireless Sensor Networks (WSN) and distributed platforms such as Fog Computing.  
+- Data processing, pattern recognition, and computer vision.  
+- Development of Hybrid Neural Networks with **synthetic images** using the Python library [**TINTOlib**](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
+- Implementation of the **TINTO** method, an innovative conversion of tabular data into synthetic images, available on [GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.  
 
-### **Áreas de interés**  
-- Inteligencia Artificial y arquitecturas computacionales.  
-- Redes de Sensores Inalámbricos (WSN) y plataformas distribuidas como Fog Computing.  
-- Procesamiento de datos, reconocimiento de patrones y visión por computadora.  
-- Desarrollo de Redes Neuronales Híbridas con **imágenes sintéticas** mediante la librería en Python [**TINTOlib**](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
-- Implementación del método **TINTO**, una conversión innovadora de datos tabulares a imágenes sintéticas, disponible en [GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.  
+🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America.  
 
-🗣️ He impartido múltiples seminarios sobre IA y TINTOlib en España y América.  
+## 📊 **Scientific Production**  
 
+### **Publications and Conferences**  
+- 23 articles in indexed impact journals.  
+- 8 international conferences.  
+- 2 IEEE robotics competitions, achieving 3rd place.  
+- 1 utility model patent.  
+- 2 software registrations.  
+- 1 academic book.  
+- 2 book chapters.  
 
-## 📊 **Producción Científica**  
+### **Impact in the Scientific Community**  
 
-### **Publicaciones y congresos**  
-- 23 artículos en revistas de impacto indexadas.  
-- 8 congresos internacionales.  
-- 2 competiciones de robótica IEEE, obteniendo el 3er lugar.
-- 1 patente de modelo de utilidad.
-- 2 registros de software. 
-- 1 libro académico. 
-- 2 capítulos de libro.
-
-### **Impacto en la comunidad científica**  
-
-| Fuente | Citas | Q1 | Q2 | Índice H |
+| Source | Citations | Q1 | Q2 | H-Index |
 |--------|------|----|----|----------|
 | [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
 | [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
