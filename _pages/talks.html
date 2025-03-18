@@ -5,7 +5,6 @@ permalink: /udemy/
 author_profile: true
 ---
 
-
 {% assign categorias = site.talks | group_by: "category" %}
 
 {% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
@@ -13,16 +12,16 @@ author_profile: true
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
-      <h2 style="font-size: 2.5rem; margin-top: 3rem; font-weight: bold;">{{ categoria.name }}</h2>  
-      <div class="course-grid" style="padding-left: 2rem;">  <!-- Sangría para todos los cursos de la categoría -->
+      <h2 style="font-size: 2rem; margin-top: 2rem; font-weight: bold;">{{ categoria.name }}</h2>  
+      <div class="course-grid" style="padding-left: 1rem;">  <!-- Se reduce la sangría -->
         {% for post in categoria.items %}
-          <div style="margin-left: 2rem; padding: 1rem 0; border-bottom: 2px solid #ddd; display: flex; align-items: center;">
+          <div style="margin-left: 1rem; padding: 0.5rem 0; border-bottom: 1px solid #ccc; display: flex; align-items: center; gap: 0.5rem;">
             
             <!-- Imagen identificativa del curso alineada a la izquierda -->
-            <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 200px; height: auto; margin-right: 1rem; border-radius: 5px;">
+            <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 80px; height: auto; margin-right: 0.5rem; border-radius: 5px;">
             
-            <!-- Información del curso -->
-            <div style="flex: 1;">
+            <!-- Información del curso con tamaño reducido -->
+            <div style="flex: 1; font-size: 0.9rem; line-height: 1.2;">
               {% include archive-single-talk.html %}
             </div>
           
