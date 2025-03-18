@@ -7,8 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
-
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
+    {% include archive-single.html %}
+  </div>
 {% endfor %}
-
