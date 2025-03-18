@@ -31,10 +31,10 @@ A lo largo de mi carrera, he participado en **más de 15 proyectos de investigac
 Destaco mi participación en un proyecto de desarrollo social en Perú, donde contribuimos a la formación en robótica educativa y programación con Scratch para más de 2000 niños entre 8 y 15 años en zonas vulnerables.  
 
 ### **Áreas de interés**  
-- **Inteligencia Artificial** y arquitecturas computacionales.  
-- **Redes de Sensores Inalámbricos (WSN)** y plataformas distribuidas como **Fog Computing**.  
-- **Procesamiento de datos, reconocimiento de patrones y visión por computadora**.  
-- Desarrollo de **redes neuronales híbridas** con **imágenes sintéticas** mediante la librería en Python [TINTOlib](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
+- Inteligencia Artificial y arquitecturas computacionales.  
+- Redes de Sensores Inalámbricos (WSN) y plataformas distribuidas como Fog Computing.  
+- Procesamiento de datos, reconocimiento de patrones y visión por computadora.  
+- Desarrollo de Redes Neuronales Híbridas con **imágenes sintéticas** mediante la librería en Python [**TINTOlib**](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
 - Implementación del método **TINTO**, una conversión innovadora de datos tabulares a imágenes sintéticas, disponible en [GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.  
 
 🗣️ He impartido múltiples seminarios sobre IA y TINTOlib en España y América.  
@@ -42,7 +42,7 @@ Destaco mi participación en un proyecto de desarrollo social en Perú, donde co
 
 ## 📊 **Producción Científica**  
 
-**Publicaciones y congresos**  
+### **Publicaciones y congresos**  
 - 23 artículos en revistas de impacto indexadas.  
 - 8 congresos internacionales.  
 - 2 competiciones de robótica IEEE, obteniendo el 3er lugar.
@@ -51,7 +51,8 @@ Destaco mi participación en un proyecto de desarrollo social en Perú, donde co
 - 1 libro académico. 
 - 2 capítulos de libro.
 
-**Impacto en la comunidad científica**  
+### **Impacto en la comunidad científica**  
+
 | Fuente | Citas | Q1 | Q2 | Índice H |
 |--------|------|----|----|----------|
 | [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
