@@ -20,7 +20,7 @@ Soy Manuel Castillo-Cara, **doctor en Ciencias de la Computación**, especializa
 | Periodo       | Cargo | Institución |
 |--------------|------------------------------------------------|------------------------------------------------|
 | **2014 - 2020** | Profesor/Investigador en Perú | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) |
-| **2021 - 2023** | Contrato postdoctoral | Universidad Politécnica de Madrid (UPM), dentro del programa de recualificación María Zambrano. |
+| **2021 - 2023** | Contrato postdoctoral | Universidad Politécnica de Madrid (UPM) - Programa europeo Recualificación María Zambrano. |
 | **Desde 2023** | Profesor/Investigador | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
 
 
