@@ -17,14 +17,11 @@ Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con u
 
 Soy Manuel Castillo-Cara, **doctor en Ciencias de la Computación**, especializado en Inteligencia Artificial, por la Universidad de Castilla-La Mancha (UCLM), donde obtuve la distinción Cum Laude en 2018.  
 
-- 2014 - 2020:  Profesor investigador en Perú:  
-  - Universidad Nacional de Ingeniería (UNI)  
-  - Universidad de Lima (ULima)
-
-- 2021 - 2023: Contrato postdoctoral en la Universidad Politécnica de Madrid (UPM), dentro del programa de recualificación María Zambrano, destinado a la reincorporación de doctores a España.  
-
-- Desde 2023: Profesor Ayudante Doctor en la [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}.  
-  - Acreditado como 'Profesor Titular' por ANECA.  
+| Periodo       | Cargo | Institución |
+|--------------|------------------------------------------------|------------------------------------------------|
+| **2014 - 2020** | Profesor/Investigador en Perú | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) |
+| **2021 - 2023** | Contrato postdoctoral | Universidad Politécnica de Madrid (UPM), dentro del programa de recualificación María Zambrano. |
+| **Desde 2023** | Profesor/Investigador | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
 
 
 ## 🔬 **Investigación y Proyectos**  
