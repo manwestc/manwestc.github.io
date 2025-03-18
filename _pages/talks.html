@@ -19,9 +19,11 @@ author_profile: true
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
       <h1 style="font-size: 2.5rem; margin-top: 3rem; font-weight: bold;">{{ categoria.name }}</h1>  
-      <div class="course-grid">
+      <div class="course-grid" style="padding-left: 2rem;">  <!-- Agrega sangría -->
         {% for post in categoria.items %}
-          {% include archive-single-talk.html %}
+          <div style="margin-left: 2rem;">  <!-- Sangría para cada curso -->
+            {% include archive-single-talk.html %}
+          </div>
         {% endfor %}
       </div>
     {% endif %}
