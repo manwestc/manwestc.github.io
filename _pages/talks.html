@@ -13,7 +13,7 @@ author_profile: true
 
 {% assign categorias = site.talks | group_by: "category" %}
 
-{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con el lenguaje de programación R:,Otros cursos de formación avanzada:" | split: "," %}
 
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
@@ -21,15 +21,15 @@ author_profile: true
       <h1 style="font-size: 2.5rem; margin-top: 3rem; font-weight: bold;">{{ categoria.name }}</h1>  
       <div class="course-grid" style="padding-left: 2rem;">  <!-- Sangría para todos los cursos de la categoría -->
         {% for post in categoria.items %}
-          <div style="margin-left: 2rem; padding: 1rem 0; border-bottom: 2px solid #ddd; display: flex; align-items: center; justify-content: space-between;">
+          <div style="margin-left: 2rem; padding: 1rem 0; border-bottom: 2px solid #ddd; display: flex; align-items: center;">
+            
+            <!-- Imagen identificativa del curso alineada a la izquierda -->
+            <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 100px; height: auto; margin-right: 1rem; border-radius: 5px;">
             
             <!-- Información del curso -->
             <div style="flex: 1;">
               {% include archive-single-talk.html %}
             </div>
-            
-            <!-- Imagen identificativa del curso alineada a la derecha -->
-            <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 100px; height: auto; margin-left: 1rem; border-radius: 5px;">
           
           </div>
         {% endfor %}
