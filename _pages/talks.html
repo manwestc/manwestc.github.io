@@ -13,11 +13,17 @@ author_profile: true
 
 {% assign categorias = site.talks | group_by: "category" %}
 
-{% for categoria in categorias %}
-  <h2>{{ categoria.name }}</h2>
-  <div class="course-grid">
-    {% for post in categoria.items limit: 4 %}
-      {% include archive-single-talk.html %}
-    {% endfor %}
-  </div>
+{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con el lenguaje de programación R:,Otros cursos de formación avanzada:" | split: "," %}
+
+{% for orden in orden_categorias %}
+  {% for categoria in categorias %}
+    {% if categoria.name == orden %}
+      <h1 style="font-size: 2.5rem; margin-top: 3rem; font-weight: bold;">{{ categoria.name }}</h1>  
+      <div class="course-grid">
+        {% for post in categoria.items %}
+          {% include archive-single-talk.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
 {% endfor %}
