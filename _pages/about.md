@@ -1,32 +1,71 @@
 ---
 permalink: /
-title: "Manuel Castillo-Cara - About me"
-excerpt: "About me"
+title: "Manuel Castillo-Cara - About Me"
+excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-### Mis cursos de [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}
-Soy un entusiasta en la formación práctica de la Inteligencia Artificial, sobre todo en el área de Ciencia de Datos. De esta manera, he creado varios cursos de Inteligencia Artificial en castellano que puedes encontrar en Udemy. Todos ellos tienen un cupón de descuento en la [sección Udemy](https://www.manuelcastillo.eu/udemy/).
+# 📚 **Mis cursos en [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}**  
 
-### Biography
-Manuel Castillo-Cara is a computer scientist who earned his PhD in Computer Science from the Universidad de Castilla-La Mancha (UCLM) in 2018 with the distinction of outstanding cum laude. From 2014 to 2020, he worked as a research professor in Peru, primarily at the Universidad Nacional de Ingeniería (UNI) and the Universidad de Lima (ULima). Between 2021 and 2023, he held a postdoctoral contract under the Recualificación - María Zambrano program at the Universidad Politécnica de Madrid (UPM), as part of a program to bring doctors back to Spain. Since 2023, he has been working at the [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html) as an Assistant Professor Doctor. He is currently accredited as an 'Associate Professor' by ANECA.
+Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **castellano**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/).  
 
-During his teaching period, he has participated in over 15 research projects, 2 of which he was the Principal Investigator. He was also a team member in a social development project that aimed to develop technological skills for children in depressed areas of Peru. The project had over 2000 students between the ages of 8 and 15 in total. The courses covered topics such as educational robotics and programming with Scratch. Additionally, he has received teaching awards for achieving the highest scores in academic surveys at UNI on four separate occasions.
+---
 
-His research interests are in Artificial Intelligence and computing architectures, specifically in Wireless Sensor Networks (WSN), distributed platforms and architectures like Fog Computing, data analysis/processing, pattern recognition, and Computer Vision. He is the main developer of the [TINTOlib](https://tintolib.readthedocs.io/en/latest/tinto.html) library for developing Hybrid Neural Networks with synthetic images. He also implemented the method to convert tabular data into synthetic images, known as [TINTO](https://github.com/oeg-upm/TINTO). He has presented multiple seminars on AI and the use of [TINTOlib](https://pypi.org/project/TINTOlib/) in both Peru and Spain. Below are his general indicators of scientific production quality:
+## 👨‍🎓 **Biografía**  
 
-- 19 articles in indexed impact journals.
-- 7 international congresses (4 in Scopus).
-- 2 IEEE robotics competitions, achieving third place.
-- 1 utility model patent.
-- 2 software copyright registrations.
-- 1 academic book.
-- WOS Impact (JCR): Total citations: 153 / Q1: 7 - Q2: 10 / H Index: 7.
-- Scopus Impact (SJR): Total citations: 278 / Q1: 13 - Q2: 7 / H Index: 8.
-- Scholar Impact: Total citations: 450 / H Index: 11.
-- 5 Master's Theses.
-- 6 Bachelor's Theses.
-- 4 co-directions of doctoral theses (not yet completed or presented).
+Soy **Manuel Castillo-Cara**, doctor en **Ciencias de la Computación** por la **Universidad de Castilla-La Mancha (UCLM)**, donde obtuve la distinción **cum laude** en 2018.  
+
+- 📍 **2014 - 2020** | Profesor investigador en Perú:  
+  - **Universidad Nacional de Ingeniería (UNI)**  
+  - **Universidad de Lima (ULima)**  
+
+- 📍 **2021 - 2023** | Contrato postdoctoral en la **Universidad Politécnica de Madrid (UPM)**, dentro del programa de recualificación **María Zambrano**, destinado a la reincorporación de doctores a España.  
+
+- 📍 **Desde 2023** | **Profesor Ayudante Doctor** en la [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html).  
+  - **Acreditado como 'Profesor Titular' por ANECA**.  
+
+---
+
+# 🔬 **Investigación y Proyectos**  
+
+A lo largo de mi carrera, he participado en **más de 15 proyectos de investigación**, liderando **2 de ellos** como **Investigador Principal**.  
+
+🚀 Destaco mi participación en un proyecto de **desarrollo social en Perú**, donde contribuimos a la formación en **robótica educativa y programación con Scratch** para **más de 2000 niños** entre **8 y 15 años** en zonas vulnerables.  
+
+### 📌 **Áreas de interés**  
+- **Inteligencia Artificial** y arquitecturas computacionales.  
+- **Redes de Sensores Inalámbricos (WSN)** y plataformas distribuidas como **Fog Computing**.  
+- **Procesamiento de datos, reconocimiento de patrones y visión por computadora**.  
+- Desarrollo de **redes neuronales híbridas** con **imágenes sintéticas** mediante [TINTOlib](https://tintolib.readthedocs.io/en/latest/tinto.html).  
+- Implementación del método **TINTO**, una conversión innovadora de datos tabulares a imágenes sintéticas, disponible en [GitHub](https://github.com/oeg-upm/TINTO).  
+
+🗣️ **He impartido múltiples seminarios** sobre **IA y TINTOlib** en **España y Perú**.  
+
+---
+
+## 📊 **Producción Científica**  
+
+📄 **Publicaciones y congresos**  
+- **19 artículos en revistas de impacto indexadas.**  
+- **7 congresos internacionales (4 indexados en Scopus).**  
+- **2 competiciones de robótica IEEE, obteniendo el 3er lugar.**  
+- **1 patente de modelo de utilidad.**  
+- **2 registros de software.**  
+- **1 libro académico.**  
+
+📈 **Impacto en la comunidad científica**  
+- **WOS (JCR)** → Citas: **153** | **Q1: 7** | **Q2: 10** | **Índice H: 7**  
+- **Scopus (SJR)** → Citas: **278** | **Q1: 13** | **Q2: 7** | **Índice H: 8**  
+- **Google Scholar** → Citas: **450** | **Índice H: 11**  
+
+🎓 **Supervisión académica**  
+- **5 tesis de máster dirigidas.**  
+- **6 tesis de grado dirigidas.**  
+- **4 co-direcciones de doctorado (en progreso).**  
+
+---
+
+Si quieres conocer más sobre mi trabajo y mis cursos, puedes visitar mi página web **[www.manuelcastillo.eu](https://www.manuelcastillo.eu/)** 🚀
