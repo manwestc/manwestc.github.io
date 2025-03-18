@@ -15,15 +15,15 @@ Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con u
 
 ## 👨‍🎓 **Biografía**  
 
-Soy Manuel Castillo-Cara, **doctor en Ciencias de la Computación** por la Universidad de Castilla-La Mancha (UCLM), donde obtuve la distinción Cum Laude en 2018.  
+Soy Manuel Castillo-Cara, **doctor en Ciencias de la Computación**, especializado en Inteligencia Artificial, por la Universidad de Castilla-La Mancha (UCLM), donde obtuve la distinción Cum Laude en 2018.  
 
-- 2014 - 2020 | Profesor investigador en Perú:  
+- 2014 - 2020:  Profesor investigador en Perú:  
   - Universidad Nacional de Ingeniería (UNI)  
   - Universidad de Lima (ULima)
 
-- 2021 - 2023 | Contrato postdoctoral en la Universidad Politécnica de Madrid (UPM), dentro del programa de recualificación María Zambrano, destinado a la reincorporación de doctores a España.  
+- 2021 - 2023: Contrato postdoctoral en la Universidad Politécnica de Madrid (UPM), dentro del programa de recualificación María Zambrano, destinado a la reincorporación de doctores a España.  
 
-- Desde 2023 | Profesor Ayudante Doctor en la [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}.  
+- Desde 2023: Profesor Ayudante Doctor en la [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}.  
   - Acreditado como 'Profesor Titular' por ANECA.  
 
 
@@ -55,6 +55,8 @@ Destaco mi participación en un proyecto de desarrollo social en Perú, donde co
 - 2 capítulos de libro.
 
 **Impacto en la comunidad científica**  
-- [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} → Citas: 180 | Q1: 9 | Q2: 10 | Índice H: 8  
-- [Scopus (SJR)])(https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} → Citas: 320 | Q1: 15 | Q2: 8 | Índice H: 10  
-- [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} → Citas: 500 | Índice H: 11  
+| Fuente | Citas | Q1 | Q2 | Índice H |
+|--------|------|----|----|----------|
+| [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
+| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
+| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 500 | - | - | 11 |
