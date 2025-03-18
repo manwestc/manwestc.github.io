@@ -58,7 +58,3 @@ Destaco mi participación en un proyecto de desarrollo social en Perú, donde co
 - [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} → Citas: 180 | Q1: 9 | Q2: 10 | Índice H: 8  
 - [Scopus (SJR)])(https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} → Citas: 320 | Q1: 15 | Q2: 8 | Índice H: 10  
 - [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} → Citas: 500 | Índice H: 11  
-
----
-
-Si quieres conocer más sobre mi trabajo y mis cursos, puedes visitar mi página web **[www.manuelcastillo.eu](https://www.manuelcastillo.eu/){:target="_blank"}** 🚀
