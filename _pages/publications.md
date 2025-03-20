@@ -11,8 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-## 📖 **Journals**  
-### Todas las publicaciones están disponibles en:
+## 📖 **Scientific databases** 
 - 🔗 [**Google Scholar**](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"}  
 - 🔗 [**Scopus**](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"}  
 - 🔗 [**Web of Science**](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"}  
@@ -21,7 +20,7 @@ author_profile: true
 
 ---
 
-### 🔍 **Últimos 10 Artículos**
+## 🔍 **Last 10 Journal Scientific Articles**
 - Eduardo Yauri-Lozano, Manuel Castillo-Cara et al. Generative Adversarial Networks for Text-to-Face Synthesis & Generation: A Quantitative-Qualitative Analysis of Natural Language Processing Encoders for Spanish. *Information Processing & Management*. 2024. DOI: [10.1016/j.ipm.2024.103667](https://doi.org/10.1016/j.ipm.2024.103667){:target="_blank"}. (IF: 7.4,  Q1 – SJR: 2.13, Q1). 
 - Edgar Huaranga-Junco, Salvador González-Gerpe, Manuel Castillo-Cara et al. From cloud and fog computing to federated-fog computing: A comparative analysis of computational resources in real-time IoT applications based on semantic interoperability. *Future Generation Computer Systems*. 2024. DOI: [10.1016/j.future.2024.05.001](https://doi.org/10.1016/j.future.2024.05.001){:target="_blank"}. (IF: 6.2,  Q1 – SJR: 1.95, Q1). 
 - Michael Vera, Kewin Cuadros, Manuel Castillo-Cara et al. BeeGOns!: A Wireless Sensor Node for Fog-Computing based Smart City Platforms. *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems*. 2024. DOI: [10.1109/TCAD.2023.3305575](https://doi.org/10.1109/TCAD.2023.3305575){:target="_blank"}.(IF: 2.7,  Q2 – SJR: 0.96, Q1).
@@ -35,44 +34,45 @@ author_profile: true
 
 ---
 
-## 📚 **Libros y Capítulos**
-- **Hancco _et al_**. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. _IGI Global_, 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}
-- **Manuel Castillo-Cara.** GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra.  
+## 📚 **Books and chapters**
+- Book: Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra.  
 📖 ISBN: 9798379088873, Ed. Amazon. [📕 Ver libro](https://www.manuelcastillo.eu/portfolio/portfolio-1/){:target="_blank"}.
+- Chapter: Hancco _et al_. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. _IGI Global_, 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}
+- Chapter: Manuel Castillo-Cara. Combating Multipath Fading in Indoor Positioning with Asynchronous Power Transmission Techniques. _COST Action INTERACT WG2 Whitepaper_. COST CA20120 INTERACT Working Group 2 (Signal Processing and Localisation). 2024. [Link](https://interactca20120.org/work-in-progress/){:target="_blank"}.
 
 ---
 
-## 💻 **Software Registrado**
-- **TINTORERA** – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/4624  
-- **TINTORETTO** – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/5491  
+## 💻 **Software copy rights**
+- TINTORERA – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/4624  
+- TINTORETTO – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/5491  
 
 ---
 
-## 🏅 **Patentes**
-- **Dispositivo electrónico para seguimiento y localización de personas o animales**. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151, Perú, 2019.
+## 🏅 **Patents**
+- Dispositivo electrónico para seguimiento y localización de personas o animales. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151, Perú, 2019.
 
 ---
 
-## 🎓 **Tutoriales Internacionales**
-- **Improving Deep Learning by Exploiting Synthetic Images**. *27th European Conference on Artificial Intelligence (ECAI)*, 2024  
+## 🎓 **International Tutorials**
+- Improving Deep Learning by Exploiting Synthetic Images. *27th European Conference on Artificial Intelligence (ECAI)*, 2024  
    [Link al evento](https://www.ecai2024.eu/programme/tutorials) | [📂 Materiales](https://github.com/DCY1117/ECAI2024-Material){:target="_blank"}  
 
 ---
 
-## 🏆 **Competiciones Internacionales**
-- **3er lugar** – IEEE OPEN XVIII Latin American Robotics Competition (LARC/CBR). *Robot con navegación autónoma usando lógica difusa y visión inteligente*  
-- **3er lugar** – IEEE OPEN XVII Latin American Robotics Competition (LARC/CBR). *Robot rápido y preciso para mover pequeños contenedores*  
+## 🏆 **International Competitions**
+- 3th postion – _IEEE OPEN XVIII Latin American Robotics Competition (LARC/CBR)_. Robot with autonomous navigation using fuzzy logic and intelligent vision.
+- 3th postion – _IEEE OPEN XVII Latin American Robotics Competition (LARC/CBR)_. Fast and precise robot for moving small containers.
 
 ---
 
-## 📜 **Informes Técnicos**
-- **Principles and recommendations to make data.europa.eu data more reusable**. *European Data Portal, Publications Office of the European Union*, 2022  
+## 📜 **Technical reports**
+- Principles and recommendations to make data.europa.eu data more reusable. *European Data Portal, Publications Office of the European Union*, 2022  
 DOI: [10.2830/9342](https://doi.org/10.2830/9342){:target="_blank"}  
 
 ---
 
-## 🌍 **Congresos Internacionales**
-- **Rodrigo M. Carrillo-Larco _et al_**. Phenotypes of non-alcoholic fatty liver disease (NAFLD) and all-cause mortality. *2022 Annual Meeting of the American College of Epidemiology*, USA, 2022. DOI: [10.1016/j.annepidem.2022.08.036](https://doi.org/10.1016/j.annepidem.2022.08.036){:target="_blank"}  
-- **Lovón-Melgarejo, J. _et al_**. *16Th International Multi-Conference for Engineering, Education, and Technology (LACCEI)*, Perú, 2018.  
+## 🌍 **Congress**
+- Rodrigo M. Carrillo-Larco _et al_. Phenotypes of non-alcoholic fatty liver disease (NAFLD) and all-cause mortality. *2022 Annual Meeting of the American College of Epidemiology*, USA, 2022. DOI: [10.1016/j.annepidem.2022.08.036](https://doi.org/10.1016/j.annepidem.2022.08.036){:target="_blank"}  
+- Lovón-Melgarejo, J. _et al_. *16Th International Multi-Conference for Engineering, Education, and Technology (LACCEI)*, Perú, 2018.  
 DOI: [10.18687/laccei2018.1.1.413](https://doi.org/10.18687/laccei2018.1.1.413){:target="_blank"}  
-- **Gusseppe Bravo Rocca _et al_**. *8th IEEE Latin-American Conference on Communications (LATINCOM)*, Colombia, 2016. DOI: [10.1109/LATINCOM.2016.7811562](https://doi.org/10.1109/LATINCOM.2016.7811562){:target="_blank"}  
+- Gusseppe Bravo Rocca _et al_. *8th IEEE Latin-American Conference on Communications (LATINCOM)*, Colombia, 2016. DOI: [10.1109/LATINCOM.2016.7811562](https://doi.org/10.1109/LATINCOM.2016.7811562){:target="_blank"}  
