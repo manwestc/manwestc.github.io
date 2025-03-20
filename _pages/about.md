@@ -19,7 +19,7 @@ I am Manuel Castillo-Cara, **PhD in Computer Science**, specialized in Artificia
 
 | Period       | Position | Institution |
 |--------------|------------------------------------------------|------------------------------------------------|
-| **2014 - 2020** | Professor/Researcher in Peru | - Universidad Nacional de Ingeniería (UNI) <br> - University of Lima (ULima) |
+| **2014 - 2020** | Professor/Researcher in Peru | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) |
 | **2021 - 2023** | Postdoctoral Contract | Universidad Politécnica de Madrid (UPM) - European Program: María Zambrano. |
 | **Since 2023** | Professor/Researcher | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
 
@@ -30,9 +30,8 @@ Throughout my career, I have participated in **more than 15 research projects**,
 I highlight my participation in a social development project in Peru, where we contributed to education in educational robotics and Scratch programming for more than 2000 children aged 8 to 15 in vulnerable areas.  
 
 ### **Research Interests**  
-- Artificial Intelligence and computational architectures.  
-- Wireless Sensor Networks (WSN) and distributed platforms such as Fog Computing.  
-- Data processing, pattern recognition, and computer vision.  
+- Artificial Intelligence and computational architectures (Fog Computing)
+- Data science, pattern recognition, and computer vision.  
 - Development of Hybrid Neural Networks with **synthetic images** using the Python library [**TINTOlib**](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
 - Implementation of the **TINTO** method, an innovative conversion of tabular data into synthetic images, available on [GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.  
 
