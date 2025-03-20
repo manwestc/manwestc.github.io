@@ -73,4 +73,7 @@ author_profile: true
 ---
 
 ## 🏭 **Process / Industrial Development**
-- **Project Manager**. *"Creation and Installation of an Integrated System for the Automation of the Processes of the Academic and Administrative Activities of the Postgraduate at Universidad Nacional de Ingeniería"*. _SNIP Project_. 2016. Peru.
+📌 **Project Manager**  
+*"Creation and Installation of an Integrated System for the Automation of the Processes of the Academic and Administrative Activities of the Postgraduate at Universidad Nacional de Ingeniería"*. 
+🏛️ _SNIP Project_  
+📆 2016 | 📍 Peru  
