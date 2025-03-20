@@ -8,9 +8,9 @@ author_profile: true
 {% include base_path %}
 
 ## 🔍 **Doctoral Courses**
-- **Improving Deep Learning by Exploiting Synthetic Images**. *Universidad de Almería (UAL), Spain. 2024*. [📂 Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}.
-- **Research Methodology**. *Universidad de Castilla-La Mancha (UCLM), Spain. 2022*  
-- **Artificial Neural Networks and Deep Learning**. *Universidad de Almería (UAL), Spain. 2022*. [📂 Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}.
+- **Improving Deep Learning by Exploiting Synthetic Images**. Universidad de Almería (UAL), Spain. 2024. [📂 Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}.
+- **Research Methodology**. Universidad de Castilla-La Mancha (UCLM), Spain. 2022.  
+- **Artificial Neural Networks and Deep Learning**. Universidad de Almería (UAL), Spain. 2022. [📂 Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}.
 
 ---
 
@@ -42,7 +42,7 @@ author_profile: true
 - David González. "Transformación de Datos Tabulares a Imágenes Sintéticas: Optimización y Evaluación de la Librería TINTOlib en Python". Universidad Politécnica de Madrid (UPM), Spain. 2023. [📂 Link](https://oa.upm.es/82830/){:target="_blank"}  
 - Borja Reinoso. "TINTOlib: Librería en Python de Transformación de Datos Tabulares en Imágenes para Redes Neuronales Convolucionales de dos Dimensiones". Universidad Politécnica de Madrid (UPM), Spain. 2023. [📂 Link](https://oa.upm.es/75351/){:target="_blank"}  
 - Jiayun Liu. "Sistema de recomendación de revistas para artículos académicos: Un enfoque léxico y semántico basado en redes neuronales por grafo". Universidad Politécnica de Madrid (UPM), Spain. 2023. [📂 Link](https://oa.upm.es/75794/){:target="_blank"}  
-- Eduardo Yauri. *"Redes generativas antagónicas para la síntesis y generación de texto a imagen"*. Universidad Nacional de Ingeniería (UNI), Peru. 2023. [📂 Link](http://hdl.handle.net/20.500.14076/26927){:target="_blank"}  
+- Eduardo Yauri. "Redes generativas antagónicas para la síntesis y generación de texto a imagen". Universidad Nacional de Ingeniería (UNI), Peru. 2023. [📂 Link](http://hdl.handle.net/20.500.14076/26927){:target="_blank"}  
 - Edmundo de Elvira Mori Orrillo. "Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning". Universidad Nacional de Ingeniería (UNI), Peru. 2022. [📂 Link](http://hdl.handle.net/20.500.14076/26917){:target="_blank"}  
 
 ---
@@ -58,7 +58,7 @@ author_profile: true
 ---
 
 ## 📚 **Courses, Workshops & Tutorials**
-- Advanced Techniques in Deep Learning**. Universidad Diego Portales, Chile. 2021-2022  
+- Advanced Techniques in Deep Learning. Universidad Diego Portales, Chile. 2021-2022  
 - Big Data, Machine Learning, Deep Learning for Business Engineering. Universidad Nacional Jorge Basadre Grohmann, Peru. 2021-2022  
 - Deep Learning for Computer Vision. Universidad Nacional de Cajamarca, Peru. 2020-2021  
 - Machine Learning with Python & Deep Learning with Python. Universidad Peruana Cayetano Heredia, Peru. 2018-2020  
