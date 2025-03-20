@@ -50,7 +50,7 @@ I highlight my participation in a social development project in Peru, where we c
 
 ### **Impact in the Scientific Community**  
 
-| Source | Citations | Q1 | Q2 | H-Index |
+| Source | Citations | #Q1 | #Q2 | H-Index |
 |--------|------|----|----|----------|
 | [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
 | [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
