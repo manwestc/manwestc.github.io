@@ -37,25 +37,25 @@ redirect_from:
 
 ### 📚 Udemy Courses
 
-### 🐍 Inteligencia Artificial con Python
+### Inteligencia Artificial con Python
 <ul>
-{% assign cursos_python = site.talks | where: "category", "Inteligencia Artificial con Python" %}
+{% assign cursos_python = site.talks | where: "category", "Inteligencia Artificial con Python:" %}
 {% for post in cursos_python %}
   {% include archive-single-talk-cv.html %}
 {% endfor %}
 </ul>
 
-### 📊 Inteligencia Artificial con R
+### Inteligencia Artificial con R
 <ul>
-{% assign cursos_r = site.talks | where: "category", "Inteligencia Artificial con R" %}
+{% assign cursos_r = site.talks | where: "category", "Inteligencia Artificial con R:" %}
 {% for post in cursos_r %}
   {% include archive-single-talk-cv.html %}
 {% endfor %}
 </ul>
 
-### 🎓 Otros cursos de formación avanzada
+### Otros cursos de formación avanzada
 <ul>
-{% assign cursos_otros = site.talks | where: "category", "Otros cursos de formación avanzada" %}
+{% assign cursos_otros = site.talks | where: "category", "Otros cursos de formación avanzada:" %}
 {% for post in cursos_otros %}
   {% include archive-single-talk-cv.html %}
 {% endfor %}
@@ -63,9 +63,9 @@ redirect_from:
 
 ---
 
-## 📚 Books, Software & Patents
+## 💻 Books, Software & Patents
 
-### 📘 Books
+### Books
 <ul>
 {% assign books = site.portfolio | where: "category", "Books" %}
 {% for post in books %}
@@ -73,7 +73,7 @@ redirect_from:
 {% endfor %}
 </ul>
 
-### 💻 Software
+### Software
 <ul>
 {% assign software = site.portfolio | where: "category", "Software" %}
 {% for post in software %}
@@ -81,7 +81,7 @@ redirect_from:
 {% endfor %}
 </ul>
 
-### 🧾 Patents
+### Patents
 <ul>
 {% assign patents = site.portfolio | where: "category", "Patents" %}
 {% for post in patents %}
