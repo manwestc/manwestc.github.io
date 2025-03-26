@@ -12,6 +12,20 @@ category: "Software"
 </p>
 </div>
 
+<div style="border: 2px solid #4CAF50; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f9fff9;">
+  <h2 style="color: #2e7d32; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
+  <p style="text-align: center; font-size: 1.1em;">
+    We’ve just launched a <strong>100% free course on Udemy</strong> about <strong>using TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.<br/>
+    Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures like a pro.
+  </p>
+  <p style="text-align: center;">
+    <a href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" 
+       style="background-color: #4CAF50; color: white; padding: 0.7em 1.2em; text-decoration: none; font-weight: bold; border-radius: 5px;">
+      👉 Access the Course on Udemy
+    </a>
+  </p>
+</div>
+
 
 ## Abstract
 [TINTO](https://github.com/oeg-upm/TINTO){:target="_blank"} is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
