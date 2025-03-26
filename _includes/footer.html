@@ -18,6 +18,8 @@
       <li><a href="{{ site.author.researchgate }}"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
     {% endif %}
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <!-- ✅ Nuevo ítem "Terms" -->
+    <li><a href="https://www.manuelcastillo.eu/terms/"><i class="fa fa-file-alt" aria-hidden="true"></i> Terms</a></li>
   </ul>
 </div>
 
