@@ -1,9 +1,10 @@
 ---
 title: "GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"
-excerpt: "Geogebra en el aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra. Libro para aplicar el software Geogebra con ejemplos prácticos en el aula.<br/><img src='/images/geogebra.png' width='200' align='center' />"
+excerpt: "Libro práctico para aplicar GeoGebra en el aula con módulos de geometría, estadística, álgebra y análisis. Incluye acceso gratuito a un curso de Udemy y materiales descargables."
 collection: portfolio
 category: "Books"
 image: "/images/geogebra.png"
+permalink: /portfolio/geogebra-en-el-aula/
 ---
 
 ## Resumen
@@ -28,22 +29,23 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
 - Aplicaciones al Análisis
 - Aplicaciones a la geometría espacial
 
-## Cómo obtener el libro
+---
 
-El libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"** es un libro completo que tiene muchos recursos didácticos para un aprendizaje óptimo, entre ellos:
-- Libro en formato PDF.
-- Vídeos tutoriales prácticos realizado por los autores.
-- Archivos fuentes Geogebra con la solución de los ejercicios.
-- Tendrás acceso al [**curso de UDEMY**](https://www.udemy.com/course/matematicas-geogebra/?couponCode=MAR_2025){:target="_blank"} totalmente **gratis** por la compra.
+## ¿Qué incluye la compra?
 
-El precio por el libro es de 20 euros e **incluye todos los recursos descritos anteriormente**.
+- 📕 Libro en formato PDF  
+- 🎥 Vídeos tutoriales prácticos  
+- 📂 Archivos fuente de GeoGebra  
+- 🎓 Acceso gratuito al [curso Udemy](https://www.udemy.com/course/matematicas-geogebra/?couponCode=MAR_2025){:target="_blank"}
 
-Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmail.com">manwest.c@gmail.com</a>
+💰 **Precio**: 20€ (incluye todos los recursos)
 
-<div>
-<p style='text-align:center;'>
-<img src='/images/geogebra.png' width='320' height='300'>
-</p>
+📩 Para adquirirlo, escríbeme a: [manwest.c@gmail.com](mailto:manwest.c@gmail.com)
+
+---
+
+<div style="text-align:center; margin: 2rem 0;">
+  <img src="/images/geogebra.png" width="320" height="300" alt="Portada del libro GeoGebra en el Aula">
 </div>
 
 <!-- SEO Structured Data -->
