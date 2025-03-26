@@ -1,19 +1,34 @@
 ---
 layout: archive
 title: "Books, Software & Patents"
-description: "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Sofware TINTOlib to transform tabular data into synthetic images"
+description: "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Software TINTOlib to transform tabular data into synthetic images"
 permalink: /software/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<!-- SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Books, Software & Patents",
+  "description": "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Software TINTOlib to transform tabular data into synthetic images",
+  "url": "{{ site.url }}{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name | default: 'Author' }}"
+  }
+}
+</script>
+
 {% assign books = site.portfolio | where: "category", "Books" %}
 {% assign software = site.portfolio | where: "category", "Software" %}
 {% assign patents = site.portfolio | where: "category", "Patents" %}
 
 {% if books.size > 0 %}
-  <h2>Books</h2>
+  <h1>Books</h1>
   {% for post in books %}
     <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
       {% include archive-single.html %}
@@ -22,7 +37,7 @@ author_profile: true
 {% endif %}
 
 {% if software.size > 0 %}
-  <h2>Software</h2>
+  <h1>Software</h1>
   {% for post in software %}
     <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
       {% include archive-single.html %}
@@ -31,7 +46,7 @@ author_profile: true
 {% endif %}
 
 {% if patents.size > 0 %}
-  <h2>Patents</h2>
+  <h1>Patents</h1>
   {% for post in patents %}
     <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
       {% include archive-single.html %}
