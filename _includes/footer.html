@@ -1,33 +1,33 @@
 {% include base_path %}
 
-<footer class="page__footer" role="contentinfo" style="background-color: #f9f9f9; border-top: 1px solid #ddd; padding: 2rem 0;">
-  <div class="page__footer-inner" style="max-width: 960px; margin: 0 auto; padding: 0 1rem;">
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
 
-    <div class="page__footer-follow" style="text-align: center; margin-bottom: 1.5rem;">
-      <ul class="social-icons" style="list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-        <li><strong>Contacto y redes</strong></li>
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+    {% endif %}
 
-        {% if site.author.email %}
-          <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i> Email</a></li>
-        {% endif %}
-        {% if site.author.googlescholar %}
-          <li><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
-        {% endif %}
-        {% if site.author.orcid %}
-          <li><a href="{{ site.author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-        {% endif %}
-        {% if site.author.scopus %}
-          <li><a href="{{ site.author.scopus }}"><i class="fas fa-microscope"></i> Scopus</a></li>
-        {% endif %}
-        {% if site.author.github %}
-          <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github"></i> GitHub</a></li>
-        {% endif %}
-      </ul>
-    </div>
+    {% if site.author.github %}
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
 
-    <div style="text-align: center; font-size: 0.85em; color: #555;">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}. Todos los derechos reservados.</p>
-    </div>
+    {% if site.author.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    {% endif %}
 
-  </div>
-</footer>
+    {% if site.author.researchgate %}
+      <li><a href="{{ site.author.researchgate }}"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+    {% endif %}
+
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
+  <a href="http://manuelcastillo.eu" rel="nofollow">Manuel Castillo-Cara</a> &amp;
+  <a href="https://github.com/manwestc">GitHub profile</a>.
+</div>
