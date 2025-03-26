@@ -21,20 +21,27 @@
       {% if teaser %}
         <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
              alt="{{ title }}"
-             style="width: 180px; border: 1px solid #ccc;">
+             style="width: 200px; border: 1px solid #ccc;">
       {% endif %}
     </div>
 
     <!-- Contenido a la derecha -->
     <div>
-      <!-- Título sin enlace -->
-      <h3 class="archive__item-title p-name" itemprop="headline" style="margin-top: 0;">
+      <!-- Título grande, sin enlace, con hover subrayado -->
+      <h3 class="archive__item-title p-name" itemprop="headline" style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.4rem;">
         {{ title }}
       </h3>
+      <style>
+        /* Subrayado en hover y cursor puntero */
+        .archive__item-title:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      </style>
 
-      <!-- Lógica de fecha y/o read_time si la usas -->
+      <!-- Lógica de fecha y/o read_time -->
       {% if post.read_time %}
-        <p class="page__meta">
+        <p class="page__meta" style="margin-bottom: 0.8rem;">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
           {% include read-time.html %}
         </p>
@@ -45,7 +52,7 @@
       {% elsif post.collection == 'publications' %}
         <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
       {% elsif post.date %}
-        <p class="page__date">
+        <p class="page__date" style="margin-bottom: 0.8rem;">
           <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
           <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
             {{ post.date | date: "%B %d, %Y" }}
@@ -53,11 +60,13 @@
         </p>
       {% endif %}
 
-      <!-- Excerpt -->
+      <!-- Excerpt (descripción) -->
       {% if post.excerpt and site.read_more != 'enabled' %}
-        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+        <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
+          {{ post.excerpt | markdownify }}
+        </p>
       {% elsif post.excerpt and site.read_more == 'enabled' %}
-        <p class="archive__item-excerpt" itemprop="description">
+        <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
           {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
           <strong><a href="{{ base_path }}{{ post.url }}" rel="bookmark">Read more</a></strong>
         </p>
@@ -72,13 +81,15 @@
         <p>Download <a href="{{ post.paperurl }}"><u>here</u></a></p>
       {% endif %}
 
-      <!-- Botón More information -->
-      <p style="margin-top: 1rem;">
-        <a href="{{ base_path }}{{ post.url }}" class="btn" style="text-decoration: none;">
+      <!-- Botón More information (grande, centrado) -->
+      <div style="margin-top: 1.5rem; text-align: center;">
+        <a href="{{ base_path }}{{ post.url }}"
+           class="btn"
+           style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-block; text-decoration: none; border: 1px solid #ccc;">
           More information
         </a>
-      </p>
-    </div>
+      </div>
 
+    </div>
   </article>
 </div>
