@@ -12,6 +12,8 @@ redirect_from:
 
 Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **español**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
 
+---
+
 <div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 1.5em; border-radius: 4px; background-color: #f5f8fa;">
   <h2 style="color: #1565c0; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
   <p style="text-align: center; font-size: 1em; color: #37474f;">
@@ -20,6 +22,7 @@ Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con u
   </p>
   <p style="text-align: center;">
     <a href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" 
+       target="_blank"
        style="background-color: #1976d2; color: white; padding: 0.7em 1.2em; text-decoration: none; font-weight: bold; border-radius: 5px;">
       👉 Access the Course on Udemy
     </a>

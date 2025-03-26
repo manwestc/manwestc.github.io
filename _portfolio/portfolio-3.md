@@ -21,6 +21,7 @@ image: "/images/tinto-logo.svg"
   </p>
   <p style="text-align: center;">
     <a href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" 
+       target="_blank"
        style="background-color: #1976d2; color: white; padding: 0.7em 1.2em; text-decoration: none; font-weight: bold; border-radius: 5px;">
       👉 Access the Course on Udemy
     </a>
