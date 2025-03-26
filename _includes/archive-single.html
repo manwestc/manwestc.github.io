@@ -41,13 +41,6 @@
         {{ title }}
       </h3>
 
-      <style>
-        .archive__item-title:hover {
-          text-decoration: underline;
-          cursor: pointer;
-        }
-      </style>
-
       {% if post.read_time %}
         <p class="page__meta" style="margin-bottom: 0.8rem;">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -68,9 +61,10 @@
       {% endif %}
 
       {% if post.excerpt %}
-        <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1.2rem;">
-          {{ post.excerpt | markdownify | strip_html }}
-        </p>
+      <p class="archive__item-excerpt" itemprop="description"
+        style="margin-bottom: 1.2rem; font-size: 1.15rem; line-height: 1.5;">
+        {{ post.excerpt | markdownify | strip_html }}
+      </p>
       {% endif %}
     </div>
   </article>
