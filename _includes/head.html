@@ -1,6 +1,7 @@
 {% include base_path %}
 
 <meta charset="utf-8">
+<title>{{ page.title | default: site.title }}</title>
 <meta http-equiv="cleartype" content="on">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="True">
@@ -27,14 +28,16 @@
 <meta name="twitter:title" content="{{ page.title | default: site.title }}">
 <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}">
 <meta name="twitter:image" content="{{ site.og_image | default: site.url | append: '/images/profile.jpg' }}">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Robots -->
 <meta name="robots" content="index, follow">
 
 <!-- Favicon (optional, add if you have one) -->
-{%- comment -%}
-<link rel="icon" href="{{ base_path }}/favicon.ico" type="image/x-icon">
-{%- endcomment -%}
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-96x96.png" sizes="96x96">
+<link rel="shortcut icon" href="{{ base_path }}/images/favicon.ico" type="image/x-icon">
 
 <!-- Styles -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
