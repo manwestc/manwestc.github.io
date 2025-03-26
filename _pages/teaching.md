@@ -3,9 +3,27 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+description: "University teaching, thesis supervision, and technical training by Manuel Castillo-Cara at undergraduate, master’s and doctoral levels."
 ---
 
 {% include base_path %}
+
+<!-- ✅ SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Manuel Castillo-Cara",
+  "jobTitle": "Professor & Researcher",
+  "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Universidad Nacional de Educación a Distancia (UNED)"
+  },
+  "url": "{{ site.url }}{{ page.url }}",
+  "hasCredential": "PhD in Computer Science",
+  "description": "University teaching and thesis supervision at doctoral, master’s, and undergraduate levels, along with technical workshops in artificial intelligence, data science, and deep learning."
+}
+</script>
 
 ## 🔍 **Doctoral Courses**
 - **Improving Deep Learning by Exploiting Synthetic Images**. Universidad de Almería (UAL), Spain. 2024. [📂 Materials](https://github.com/oeg-upm/TINTOlib-Crash_Course){:target="_blank"}.

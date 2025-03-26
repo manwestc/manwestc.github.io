@@ -1,39 +1,75 @@
 ---
+layout: archive
 permalink: /terms/
 title: "Terms and Privacy Policy"
-modified: 2016-06-06
+description: "Terms of use and privacy policy for the website manuelcastillo.eu, managed by Professor Manuel Castillo-Cara."
+author_profile: true
 ---
 
 {% include base_path %}
-{% include toc %}
 
-## Privacy Policy
+## 🔒 Privacy Policy
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+The privacy of visitors to **manuelcastillo.eu** is very important. This page describes how personal data is collected and handled when you visit this website, contact me, or access linked external resources.
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+---
 
-### Log Files
+### 📩 Contact and Personal Data
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+I do not collect personal data unless you voluntarily provide it via email or contact forms. I will **never share** your email or personal information with third parties without your explicit consent.
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+You may be contacted only in response to a message you sent or when you request resources such as:
+- Courses or tutorials (e.g., Udemy)
+- Books or software
+- Research collaborations or academic supervision
 
-All of this information is not linked to anything that is personally identifiable.
+---
 
-### Cookies and Web Beacons
+### 📈 Analytics and Cookies
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
+This site uses basic analytics tools (such as **Google Analytics**) to understand website traffic and improve user experience. These tools may collect non-personal data such as:
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+- IP address (anonymized)
+- Browser type and operating system
+- Referring and exit pages
+- Time spent on pages
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
+You can disable cookies via your browser settings.
 
-#### Google Analytics
+🔗 [Google Analytics Privacy Policy](https://www.google.com/analytics/learn/privacy.html)
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+---
+
+### 🧠 External Services
+
+Some pages may embed or link to external services:
+
+- **GitHub** (for course/project materials)
+- **Udemy** (for online courses)
+- **Google Scholar**, **Scopus**, and **Web of Science** (for publications)
+- **YouTube** or **Google Drive** (for educational resources)
+
+These services may collect data independently. Please consult their respective privacy policies.
+
+---
+
+### 📝 Comments and Feedback
+
+This website does **not use a public comment system**. If you wish to contact me, you may do so via email:
+📧 [manwest.c@gmail.com](mailto:manwest.c@gmail.com)
+
+---
+
+## 📘 Terms of Use
+
+- All content (books, software, courses, blog posts) is the intellectual property of **Manuel Castillo-Cara**, unless stated otherwise.
+- You may cite and share the content for educational and non-commercial purposes, always giving proper attribution.
+- Redistribution, modification, or commercial use of materials without permission is not allowed.
+
+---
+
+## 🔁 Updates to this Policy
+
+This privacy policy may be updated to reflect changes in legal requirements or site functionalities. Last updated: **March 2025**.
+
+---
