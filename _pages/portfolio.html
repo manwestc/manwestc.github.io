@@ -12,7 +12,7 @@ author_profile: true
 {% assign patents = site.portfolio | where: "category", "Patents" %}
 
 {% if books.size > 0 %}
-  <h4>Books</h4>
+  <h2>Books</h2>
   {% for post in books %}
     <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
       {% include archive-single.html %}
@@ -21,7 +21,7 @@ author_profile: true
 {% endif %}
 
 {% if software.size > 0 %}
-  <h4>Software</h4>
+  <h2>Software</h2>
   {% for post in software %}
     <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
       {% include archive-single.html %}
@@ -30,7 +30,7 @@ author_profile: true
 {% endif %}
 
 {% if patents.size > 0 %}
-  <h4>Patents</h4>
+  <h2>Patents</h2>
   {% for post in patents %}
     <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
       {% include archive-single.html %}
