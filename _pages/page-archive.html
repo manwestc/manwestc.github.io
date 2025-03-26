@@ -3,9 +3,14 @@ layout: archive
 title: "Page Archive"
 permalink: /page-archive/
 author_profile: false
+description: "List of all pages published on the site, including portfolio, teaching materials, and more."
 ---
 
 {% include base_path %}
+
+<h2>All Pages</h2>
+<p>A complete archive of all pages available on the site.</p>
+
 {% for post in site.pages %}
   {% include archive-single.html %}
 {% endfor %}

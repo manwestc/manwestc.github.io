@@ -41,8 +41,27 @@ redirect_from:
 </ul>
 
 ## 📚 Books, Software & Patents
+
+### 📘 Books
 <ul>
-{% for post in site.portfolio %}
+{% assign books = site.portfolio | where: "category", "Books" %}
+{% for post in books %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+</ul>
+
+### 💻 Software
+<ul>
+{% assign software = site.portfolio | where: "category", "Software" %}
+{% for post in software %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+</ul>
+
+### 🧾 Patents
+<ul>
+{% assign patents = site.portfolio | where: "category", "Patents" %}
+{% for post in patents %}
   {% include archive-single-cv.html %}
 {% endfor %}
 </ul>
