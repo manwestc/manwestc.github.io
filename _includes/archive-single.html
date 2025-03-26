@@ -1,6 +1,8 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
+{% if post.image %}
+  {% capture teaser %}{{ post.image }}{% endcapture %}
+{% elsif post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
   {% assign teaser = site.teaser %}
@@ -17,10 +19,10 @@
            itemscope itemtype="http://schema.org/CreativeWork"
            style="
              display: flex;
-             flex-wrap: nowrap;       /* evita que la imagen se vaya abajo */
-             align-items: flex-start; /* alinea texto e imagen arriba */
+             flex-wrap: wrap;
+             align-items: flex-start;
              gap: 1.5rem;
-             margin-bottom: 2rem;
+             margin-bottom: 2.5rem;
            ">
 
     <!-- Imagen a la izquierda -->
@@ -28,27 +30,25 @@
       {% if teaser %}
         <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
              alt="{{ title }}"
-             style="width: 200px; border: 1px solid #ccc;">
+             style="width: 180px; border: 1px solid #ccc; border-radius: 4px;">
       {% endif %}
     </div>
 
     <!-- Contenido a la derecha -->
-    <div style="flex: 1;">
-      <!-- Título más grande, con hover subrayado (sin enlace) -->
+    <div style="flex: 1; min-width: 250px;">
       <h3 class="archive__item-title p-name"
           itemprop="headline"
-          style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.4rem;">
+          style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.5rem;">
         {{ title }}
       </h3>
+
       <style>
-        /* subrayado en hover, cursor puntero */
         .archive__item-title:hover {
           text-decoration: underline;
           cursor: pointer;
         }
       </style>
 
-      <!-- Lógica de fecha / read_time si procede -->
       {% if post.read_time %}
         <p class="page__meta" style="margin-bottom: 0.8rem;">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -78,37 +78,17 @@
         </p>
       {% endif %}
 
-      <!-- Descripción (excerpt) -->
-      {% if post.excerpt and site.read_more != 'enabled' %}
-        <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
-          {{ post.excerpt | markdownify }}
-        </p>
-      {% elsif post.excerpt and site.read_more == 'enabled' %}
-        <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
-          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-          <strong><a href="{{ base_path }}{{ post.url }}" rel="bookmark">Read more</a></strong>
+      {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1.2rem;">
+          {{ post.excerpt | markdownify | strip_html }}
         </p>
       {% endif %}
 
-      <!-- Citation o Paper URL si existe -->
-      {% if post.citation and post.paperurl %}
-        <p style="margin-bottom: 1rem;">
-          Recommended citation: {{ post.citation }}
-          <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a>
-        </p>
-      {% elsif post.citation %}
-        <p style="margin-bottom: 1rem;">
-          Recommended citation: {{ post.citation }}
-        </p>
-      {% elsif post.paperurl %}
-        <p style="margin-bottom: 1rem;">
-          Download <a href="{{ post.paperurl }}"><u>here</u></a>
-        </p>
-      {% endif %}
-
-      <!-- Botón More information centrado (usa la clase .btn del tema) -->
-      <div style="margin-top: 1.5rem; text-align: center;">
-        <a href="{{ base_path }}{{ post.url }}" class="btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem;">
+      <!-- Botón centrado -->
+      <div style="text-align: center; margin-top: 1.2rem;">
+        <a href="{{ base_path }}{{ post.url }}"
+           class="btn"
+           style="padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600;">
           More information
         </a>
       </div>
