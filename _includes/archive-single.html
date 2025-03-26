@@ -15,7 +15,13 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item h-entry"
            itemscope itemtype="http://schema.org/CreativeWork"
-           style="display: flex; align-items: center; gap: 1rem;">
+           style="
+             display: flex;
+             flex-wrap: nowrap;       /* evita que la imagen se vaya abajo */
+             align-items: flex-start; /* alinea texto e imagen arriba */
+             gap: 1.5rem;
+             margin-bottom: 2rem;
+           ">
 
     <!-- Imagen a la izquierda -->
     <div style="flex-shrink: 0;">
@@ -26,23 +32,23 @@
       {% endif %}
     </div>
 
-    <!-- Texto a la derecha -->
+    <!-- Contenido a la derecha -->
     <div style="flex: 1;">
-      <!-- Título sin enlace, más grande, con hover subrayado -->
+      <!-- Título más grande, con hover subrayado (sin enlace) -->
       <h3 class="archive__item-title p-name"
           itemprop="headline"
           style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.4rem;">
         {{ title }}
       </h3>
       <style>
-        /* subrayado en hover y cursor puntero */
+        /* subrayado en hover, cursor puntero */
         .archive__item-title:hover {
           text-decoration: underline;
           cursor: pointer;
         }
       </style>
 
-      <!-- Fecha / read_time si procede -->
+      <!-- Lógica de fecha / read_time si procede -->
       {% if post.read_time %}
         <p class="page__meta" style="margin-bottom: 0.8rem;">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -72,7 +78,7 @@
         </p>
       {% endif %}
 
-      <!-- Descripción -->
+      <!-- Descripción (excerpt) -->
       {% if post.excerpt and site.read_more != 'enabled' %}
         <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
           {{ post.excerpt | markdownify }}
@@ -80,13 +86,11 @@
       {% elsif post.excerpt and site.read_more == 'enabled' %}
         <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
           {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-          <strong>
-            <a href="{{ base_path }}{{ post.url }}" rel="bookmark">Read more</a>
-          </strong>
+          <strong><a href="{{ base_path }}{{ post.url }}" rel="bookmark">Read more</a></strong>
         </p>
       {% endif %}
 
-      <!-- Citation / Paper URL -->
+      <!-- Citation o Paper URL si existe -->
       {% if post.citation and post.paperurl %}
         <p style="margin-bottom: 1rem;">
           Recommended citation: {{ post.citation }}
@@ -102,21 +106,12 @@
         </p>
       {% endif %}
 
-      <!-- Botón "More information" grande y centrado -->
-      <div style="margin-top: 1rem; text-align: left;">
-        <a href="{{ base_path }}{{ post.url }}"
-           class="btn"
-           style="
-             font-size: 1.1rem;
-             padding: 0.75rem 1.5rem;
-             text-decoration: none;
-             border: 1px solid #ccc;
-             background-color: #f3f3f3;
-           ">
+      <!-- Botón More information centrado (usa la clase .btn del tema) -->
+      <div style="margin-top: 1.5rem; text-align: center;">
+        <a href="{{ base_path }}{{ post.url }}" class="btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem;">
           More information
         </a>
       </div>
-
     </div>
   </article>
 </div>
