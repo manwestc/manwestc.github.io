@@ -1,37 +1,46 @@
 ---
 layout: archive
-title: "Sitemap"
+title: "🗺️ Sitemap"
 permalink: /sitemap/
 author_profile: true
+description: "Visual sitemap of all content on the website: pages, posts and collections."
 ---
 
 {% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+A list of all the posts, pages and collections on this site.  
+For search engines, there's also an [**XML version**]({{ base_path }}/sitemap.xml).
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
+---
+
+## 📄 Pages
+{% for page in site.pages %}
+  {% unless page.title == nil or page.title == "" or page.exclude_from_nav == true %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
 
-<h2>Posts</h2>
+---
+
+## 📝 Blog Posts
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
 
-{% capture written_label %}'None'{% endcapture %}
+---
 
+## 📦 Collections
+
+{% assign written_label = '' %}
 {% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
   {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
+    {% capture label %}{{ collection.label | capitalize }}{% endcapture %}
+    {% if label != written_label %}
+      <h2 style="margin-top: 2rem;">📁 {{ label }}</h2>
+      {% assign written_label = label %}
+    {% endif %}
+    {% for post in collection.docs %}
+      {% include archive-single.html %}
+    {% endfor %}
   {% endunless %}
-{% endfor %}
 {% endfor %}

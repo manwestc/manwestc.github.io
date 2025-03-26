@@ -1,31 +1,61 @@
 ---
 layout: archive
-title: "Mis cursos en Udemy"
-description: "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Software TINTOlib to transform tabular data into synthetic images"
+title: "🎓 Mis cursos en Udemy"
+description: "Cursos de Inteligencia Artificial, GeoGebra y Ciencia de Datos impartidos por Manuel Castillo-Cara en Udemy. Aprende desde cero hasta nivel avanzado."
 permalink: /udemy/
 author_profile: true
 ---
 
-{% assign categorias = site.talks | group_by: "category" %}
+{% include base_path %}
 
+<!-- ✅ SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Cursos Udemy de Manuel Castillo-Cara",
+  "itemListElement": [
+    {% assign all_courses = site.talks %}
+    {% for course in all_courses %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "name": "{{ course.title | escape }}",
+      "url": "{{ site.url }}{{ course.url }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% assign categorias = site.talks | group_by: "category" %}
 {% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
 
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
-      <h4 style="font-size: 2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: bold;">{{ categoria.name }}</h4>  
-      <div class="course-grid" style="padding-left: 1rem;">  
+      <h2 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.7rem; font-weight: bold;">
+        {{ categoria.name }}
+      </h2>
+
+      <div class="course-grid" style="padding-left: 1rem;">
         {% for post in categoria.items %}
-          <div style="margin-left: 1rem; padding: 0.3rem 0; border-bottom: 1px solid #ccc; display: flex; align-items: center; gap: 0.5rem;">
-            
-            <!-- Imagen identificativa del curso alineada a la izquierda -->
-            <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 120px; height: auto; margin-right: 0.5rem; border-radius: 5px;">
-            
-            <!-- Información del curso con tamaño reducido -->
-            <div style="flex: 1; font-size: 0.9rem; line-height: 1.2;">
+          <div style="
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #ccc;
+            margin-left: 0.5rem;
+          ">
+            <!-- Imagen a la izquierda -->
+            <img src="{{ post.image }}" alt="{{ post.title }}"
+                 style="width: 110px; height: auto; border-radius: 6px; border: 1px solid #ddd;">
+
+            <!-- Texto del curso -->
+            <div style="flex: 1; font-size: 1rem; line-height: 1.4;">
               {% include archive-single-talk.html %}
             </div>
-          
           </div>
         {% endfor %}
       </div>

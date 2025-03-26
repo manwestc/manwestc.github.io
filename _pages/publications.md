@@ -1,9 +1,31 @@
 ---
 layout: archive
-title: "Publications"
+title: "📄 Publications"
 permalink: /publications/
 author_profile: true
+description: "Scientific publications, books, patents and software contributions by Manuel Castillo-Cara"
 ---
+
+{% include base_path %}
+
+<!-- ✅ SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Manuel Castillo-Cara",
+  "url": "https://www.manuelcastillo.eu/",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Universidad Nacional de Educación a Distancia (UNED)"
+  },
+  "sameAs": [
+    "https://scholar.google.es/citations?user=r0JytwIAAAAJ",
+    "https://www.scopus.com/authid/detail.uri?authorId=57200871251",
+    "https://www.webofscience.com/wos/author/record/O-9762-2017"
+  ]
+}
+</script>
 
 {% if author.googlescholar %}
 📚 También puedes encontrar mis artículos en <a href="{{author.googlescholar}}" style="text-decoration: underline; font-weight: bold;">Google Scholar</a>.
