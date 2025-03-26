@@ -1,31 +1,33 @@
 {% include base_path %}
 
-<footer class="page__footer" role="contentinfo" style="padding: 2rem 0; border-top: 1px solid #ddd; background-color: #f9f9f9;">
+<footer class="page__footer" role="contentinfo" style="border-top: 1px solid #ddd; background-color: #f9f9f9; padding: 2rem 0;">
+  <div class="page__footer-inner" style="max-width: 960px; margin: 0 auto; padding: 0 1rem;">
 
-  <div class="page__footer-follow" style="text-align: center; margin-bottom: 1rem;">
-    <ul class="social-icons" style="list-style: none; padding-left: 0; display: inline-block;">
-      <li><strong>Contacto y redes</strong></li>
+    <div class="page__footer-follow" style="text-align: center; margin-bottom: 1rem;">
+      <ul class="social-icons" style="list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <li><strong>Contacto y redes</strong></li>
 
-      {% if site.author.email %}
-        <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i> Email</a></li>
-      {% endif %}
-      {% if site.author.googlescholar %}
-        <li><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
-      {% endif %}
-      {% if site.author.orcid %}
-        <li><a href="{{ site.author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-      {% endif %}
-      {% if site.author.scopus %}
-        <li><a href="{{ site.author.scopus }}"><i class="fas fa-microscope"></i> Scopus</a></li>
-      {% endif %}
-      {% if site.author.github %}
-        <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github"></i> GitHub</a></li>
-      {% endif %}
-    </ul>
+        {% if site.author.email %}
+          <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i> Email</a></li>
+        {% endif %}
+        {% if site.author.googlescholar %}
+          <li><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
+        {% endif %}
+        {% if site.author.orcid %}
+          <li><a href="{{ site.author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+        {% endif %}
+        {% if site.author.scopus %}
+          <li><a href="{{ site.author.scopus }}"><i class="fas fa-microscope"></i> Scopus</a></li>
+        {% endif %}
+        {% if site.author.github %}
+          <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github"></i> GitHub</a></li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="page__footer-copyright" style="text-align: center; font-size: 0.85em;">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}. Todos los derechos reservados.</p>
+    </div>
+
   </div>
-
-  <div class="page__footer-copyright" style="text-align: center; font-size: 0.85em;">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}. Todos los derechos reservados.</p>
-  </div>
-
 </footer>
