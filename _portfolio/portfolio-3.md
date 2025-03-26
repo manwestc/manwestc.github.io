@@ -99,4 +99,34 @@ The following Figure show the output of TINTO:
 </p>
 </div>
 
+<!-- SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TINTO",
+  "operatingSystem": "Linux, macOS, Windows",
+  "applicationCategory": "Machine Learning Library",
+  "description": "TINTO is an open-source Python framework that transforms tabular (tidy) data into black-and-white images using PCA, t-SNE and blurring techniques. It is compatible with CNN-based classification tasks.",
+  "url": "{{ site.url }}{{ page.url }}",
+  "image": "{{ site.url }}/images/tinto-logo.svg",
+  "softwareVersion": "1.0",
+  "author": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ontology Engineering Group, UPM"
+  },
+  "license": "https://github.com/oeg-upm/TINTO/blob/main/LICENSE",
+  "codeRepository": "https://github.com/oeg-upm/TINTO",
+  "programmingLanguage": "Python",
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "EUR"
+  }
+}
+</script>
 

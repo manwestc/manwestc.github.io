@@ -156,3 +156,34 @@ TINTOlib is available under the **[Apache License 2.0](https://github.com/oeg-up
 - **[Manuel Castillo-Cara](https://github.com/manwestc){:target="_blank"} - [manuelcastillo@dia.uned.es](mailto:manuelcastillo@dia.uned.es)**
 - **[Raúl García-Castro](https://github.com/rgcmme){:target="_blank"}**
 
+<!-- SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TINTOlib",
+  "operatingSystem": "Linux, macOS, Windows",
+  "applicationCategory": "Machine Learning Library",
+  "description": "TINTOlib is a Python library that converts tabular (tidy) data into synthetic images using various algorithmic methods. It enables the use of CNNs, ViTs and hybrid models with tabular data.",
+  "url": "{{ site.url }}{{ page.url }}",
+  "image": "{{ site.url }}/images/tinto-logo.svg",
+  "softwareVersion": "1.0",
+  "author": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ontology Engineering Group, UPM"
+  },
+  "license": "https://github.com/oeg-upm/TINTOlib-Documentation/blob/main/LICENSE",
+  "downloadUrl": "https://pypi.org/project/TINTOlib/",
+  "codeRepository": "https://github.com/oeg-upm/TINTOlib",
+  "programmingLanguage": "Python",
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "EUR"
+  }
+}
+</script>
