@@ -14,6 +14,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item h-event" itemscope itemtype="http://schema.org/Event">
+
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ title }}">
@@ -23,20 +24,26 @@
     <h2 class="archive__item-title p-name" itemprop="name">
       {% if post.link %}
         <a href="{{ post.link }}" itemprop="url">{{ title }}</a>
-        <a href="{{ base_path }}{{ post.url }}" rel="bookmark"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ base_path }}{{ post.url }}" rel="bookmark">
+          <i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Permalink</span>
+        </a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="bookmark" itemprop="url">{{ title }}</a>
       {% endif %}
     </h2>
 
     {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="page__meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+      </p>
     {% endif %}
 
     {% if post.date %}
       <p class="page__meta">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        <time class="dt-start" datetime="{{ post.date | date_to_xmlschema }}" itemprop="startDate">{{ post.date | date: '%B %d, %Y' }}</time>
+        <time class="dt-start" datetime="{{ post.date | date_to_xmlschema }}" itemprop="startDate">
+          {{ post.date | date: '%B %d, %Y' }}
+        </time>
       </p>
     {% endif %}
 
@@ -51,5 +58,14 @@
     {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
+
+    {% if post.coupon_url %}
+      <p style="margin: 0.4rem 0 0 0;">
+        <a href="{{ post.coupon_url }}" target="_blank" style="color: #5c6bc0; font-weight: 600;">
+          🎟️ Acceda a un cupón de descuento aquí
+        </a>
+      </p>
+    {% endif %}
+
   </article>
 </div>
