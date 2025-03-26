@@ -5,12 +5,13 @@ collection: portfolio
 category: "Software"
 ---
 
-
+<!--
 <div>
 <p align = "center">
 <img src="/images/tinto-logo.svg" alt="TINTO Logo" width="200">
 </p>
 </div>
+-->
 
 
 ## TINTOlib
