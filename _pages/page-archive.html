@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Page Archive"
+title: "📄 Page Archive"
 permalink: /page-archive/
 author_profile: false
 description: "List of all pages published on the site, including portfolio, teaching materials, and more."
@@ -8,9 +8,15 @@ description: "List of all pages published on the site, including portfolio, teac
 
 {% include base_path %}
 
-<h2>All Pages</h2>
-<p>A complete archive of all pages available on the site.</p>
-
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+<section>
+  <h2 class="archive__title">🗂️ All Pages</h2>
+  <p class="archive__description">Below is a complete list of all public pages published on this website.</p>
+  <ul class="archive__list">
+    {% assign excluded_pages = "/404.html,/offline.html,/page-archive/" | split: "," %}
+    {% for post in site.pages %}
+      {% unless excluded_pages contains post.url or post.hidden %}
+        {% include archive-single.html %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</section>

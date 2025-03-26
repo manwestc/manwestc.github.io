@@ -35,23 +35,31 @@ redirect_from:
 
 ---
 
-## 🎓 Udemy Courses
+### 📚 Udemy Courses
 
-{% assign categorias_udemy = site.talks | group_by: "category" %}
-{% assign orden_udemy = "Inteligencia Artificial con Python,Inteligencia Artificial con R,Otros cursos de formación avanzada" | split: "," %}
-
-{% for orden in orden_udemy %}
-  {% for categoria in categorias_udemy %}
-    {% if categoria.name == orden %}
-### {{ categoria.name }}
+### 🐍 Inteligencia Artificial con Python
 <ul>
-  {% for post in categoria.items %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}
-</ul>
-    {% endif %}
-  {% endfor %}
+{% assign cursos_python = site.talks | where: "category", "Inteligencia Artificial con Python" %}
+{% for post in cursos_python %}
+  {% include archive-single-talk-cv.html %}
 {% endfor %}
+</ul>
+
+### 📊 Inteligencia Artificial con R
+<ul>
+{% assign cursos_r = site.talks | where: "category", "Inteligencia Artificial con R" %}
+{% for post in cursos_r %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}
+</ul>
+
+### 🎓 Otros cursos de formación avanzada
+<ul>
+{% assign cursos_otros = site.talks | where: "category", "Otros cursos de formación avanzada" %}
+{% for post in cursos_otros %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}
+</ul>
 
 ---
 
