@@ -34,11 +34,22 @@ redirect_from:
   - Computer Vision
 
 ## 🎓 Udemy Courses
-<ul>
-{% for post in site.talks %}
-  {% include archive-single-talk-cv.html %}
+
+{% assign categorias_udemy = site.talks | group_by: "category" %}
+{% assign orden_udemy = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+
+{% for orden in orden_udemy %}
+  {% for categoria in categorias_udemy %}
+    {% if categoria.name == orden %}
+      <h4 style="margin-bottom: 0.5rem;">{{ categoria.name }}</h4>
+      <ul>
+      {% for post in categoria.items %}
+        {% include archive-single-talk-cv.html %}
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
 {% endfor %}
-</ul>
 
 ## 📚 Books, Software & Patents
 
