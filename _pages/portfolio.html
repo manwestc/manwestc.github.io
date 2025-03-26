@@ -1,14 +1,14 @@
 ---
 layout: archive
-title: "Books, Software & Patents"
-description: "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Software TINTOlib to transform tabular data into synthetic images"
+title: "📚 Books, 💻 Software & 🧾 Patents"
+description: "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Software TINTOlib to transform tabular data into synthetic images."
 permalink: /software/
 author_profile: true
 ---
 
 {% include base_path %}
 
-<!-- SEO Structured Data -->
+<!-- ✅ SEO Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -23,32 +23,34 @@ author_profile: true
 }
 </script>
 
+<!-- ✅ Contenido agrupado por categoría -->
+
 {% assign books = site.portfolio | where: "category", "Books" %}
 {% assign software = site.portfolio | where: "category", "Software" %}
 {% assign patents = site.portfolio | where: "category", "Patents" %}
 
 {% if books.size > 0 %}
-  <h1>Books</h1>
+  <h2 style="margin-top: 2rem;">📘 Books</h2>
   {% for post in books %}
-    <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
+    <div style="padding: 1rem 0; border-bottom: 1px solid #ddd;">
       {% include archive-single.html %}
     </div>
   {% endfor %}
 {% endif %}
 
 {% if software.size > 0 %}
-  <h1>Software</h1>
+  <h2 style="margin-top: 2rem;">💻 Software</h2>
   {% for post in software %}
-    <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
+    <div style="padding: 1rem 0; border-bottom: 1px solid #ddd;">
       {% include archive-single.html %}
     </div>
   {% endfor %}
 {% endif %}
 
 {% if patents.size > 0 %}
-  <h1>Patents</h1>
+  <h2 style="margin-top: 2rem;">🧾 Patents</h2>
   {% for post in patents %}
-    <div style="padding: 1rem 0; border-bottom: 2px solid #ddd;">
+    <div style="padding: 1rem 0; border-bottom: 1px solid #ddd;">
       {% include archive-single.html %}
     </div>
   {% endfor %}
