@@ -1,9 +1,9 @@
 {% include base_path %}
 
 {% if post.image %}
-  {% capture teaser %}{{ post.image }}{% endcapture %}
+  {% assign teaser = post.image %}
 {% elsif post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+  {% assign teaser = post.header.teaser %}
 {% else %}
   {% assign teaser = site.teaser %}
 {% endif %}
@@ -14,28 +14,27 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="{{ include.type | default: "list" }}__item" style="margin-bottom: 2.5rem;">
   <article class="archive__item h-entry"
            itemscope itemtype="http://schema.org/CreativeWork"
            style="
              display: flex;
-             flex-wrap: wrap;
+             flex-wrap: nowrap;
              align-items: flex-start;
              gap: 1.5rem;
-             margin-bottom: 2.5rem;
            ">
 
     <!-- Imagen a la izquierda -->
+    {% if teaser %}
     <div style="flex-shrink: 0;">
-      {% if teaser %}
-        <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
-             alt="{{ title }}"
-             style="width: 180px; border: 1px solid #ccc; border-radius: 4px;">
-      {% endif %}
+      <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
+           alt="{{ title }}"
+           style="width: 180px; border: 1px solid #ccc; border-radius: 4px;">
     </div>
+    {% endif %}
 
     <!-- Contenido a la derecha -->
-    <div style="flex: 1; min-width: 250px;">
+    <div style="flex: 1;">
       <h3 class="archive__item-title p-name"
           itemprop="headline"
           style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.5rem;">
@@ -56,17 +55,7 @@
         </p>
       {% endif %}
 
-      {% if post.collection == 'teaching' %}
-        <p style="margin-bottom: 0.8rem;">
-          <span itemprop="about">{{ post.type }}</span>,
-          <i>{{ post.venue }}</i>,
-          {{ post.date | date: "%Y" }}
-        </p>
-      {% elsif post.collection == 'publications' %}
-        <p style="margin-bottom: 0.8rem;">
-          Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}
-        </p>
-      {% elsif post.date %}
+      {% if post.date %}
         <p class="page__date" style="margin-bottom: 0.8rem;">
           <strong>
             <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
@@ -83,15 +72,15 @@
           {{ post.excerpt | markdownify | strip_html }}
         </p>
       {% endif %}
-
-      <!-- Botón centrado -->
-      <div style="text-align: center; margin-top: 1.2rem;">
-        <a href="{{ base_path }}{{ post.url }}"
-           class="btn"
-           style="padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600;">
-          More information
-        </a>
-      </div>
     </div>
   </article>
+
+  <!-- Botón debajo, centrado -->
+  <div style="text-align: center; margin-top: 1.2rem;">
+    <a href="{{ base_path }}{{ post.url }}"
+       class="btn"
+       style="padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600;">
+      More information
+    </a>
+  </div>
 </div>
