@@ -10,7 +10,7 @@ redirect_from:
 
 ## 📚 **Mis cursos en [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}**  
 
-Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **castellano**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
+Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **español**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
 
 <div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 1.5em; border-radius: 4px; background-color: #f5f8fa;">
   <h2 style="color: #1565c0; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
