@@ -14,9 +14,9 @@ image: "/images/tinto-logo.svg"
 </div>
 
 
-<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f5f8fa;">
+<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 1.5em; border-radius: 4px; background-color: #f5f8fa;">
   <h2 style="color: #1565c0; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
-  <p style="text-align: center; font-size: 1.1em; color: #37474f;">
+  <p style="text-align: center; font-size: 1em; color: #37474f;">
     We’ve just launched a <strong>100% free course on Udemy</strong> about <strong>using TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.<br/>
     Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures like a pro.
   </p>
@@ -28,6 +28,7 @@ image: "/images/tinto-logo.svg"
   </p>
 </div>
 
+---
 
 
 <!--

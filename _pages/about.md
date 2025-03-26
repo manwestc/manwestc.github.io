@@ -26,6 +26,7 @@ Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con u
   </p>
 </div>
 
+---
 
 ## 👨‍🎓 **Biography**  
 

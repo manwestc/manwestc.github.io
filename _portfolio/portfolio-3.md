@@ -13,9 +13,9 @@ image: "/images/tinto-logo.svg"
 </p>
 </div>
 
-<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f5f8fa;">
+<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 1.5em; border-radius: 4px; background-color: #f5f8fa;">
   <h2 style="color: #1565c0; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
-  <p style="text-align: center; font-size: 1.1em; color: #37474f;">
+  <p style="text-align: center; font-size: 1em; color: #37474f;">
     We’ve just launched a <strong>100% free course on Udemy</strong> about <strong>using TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.<br/>
     Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures like a pro.
   </p>
@@ -27,6 +27,7 @@ image: "/images/tinto-logo.svg"
   </p>
 </div>
 
+---
 
 ## Abstract
 [TINTO](https://github.com/oeg-upm/TINTO){:target="_blank"} is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels. For this transformation, TINTO implemented two-dimensional reduction algorithms, such as PCA and t-SNE. Our proposal also includes a technique used in painting known as blurring, which adds more ordered information to the image and can improve the classification task in CNNs.
@@ -36,6 +37,10 @@ image: "/images/tinto-logo.svg"
 <img src='/images/tinto-framework.png'>
 </p>
 </div>
+
+--- 
+
+## 📖 Citation
 
 **Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}**:
 
@@ -67,36 +72,35 @@ And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target
 }
 ```
 
+--- 
+
 ## Documentation
 
 You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.
 
 ## Video Example
 
-<div>
-<p style = 'text-align:center;'>
-<iframe width="500" height = "320"
-src="https://user-images.githubusercontent.com/102165947/212918739-89fca790-3360-4a8c-89b7-443f294fba6f.mp4">
-</iframe>
-</p>
+<div style="text-align: center;">
+  <video width="500" controls>
+    <source src="https://user-images.githubusercontent.com/102165947/212918739-89fca790-3360-4a8c-89b7-443f294fba6f.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
-## Main Features
+--- 
 
-- Supports all CSV data in **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10){:target="_blank"}** format.
-- For now, the algorithm converts tabular data for binary and multi-class classification problems into machine learning.
-- Input data formats:
-    - **Tabular files**: The input data must be in **[CSV](https://en.wikipedia.org/wiki/Comma-separated_values){:target="_blank"}**, taking into account the **[Tidy Data](https://www.jstatsoft.org/article/view/v059i10){:target="_blank"}** format.
-    - **Tidy Data**: The **target** (variable to be predicted) should be set as the last column of the dataset. Therefore, the first columns will be the features.
-    - All data must be in numerical form. TINTO does not accept data in string or any other non-numeric format.
-- Two dimensionality reduction algorithms are used in image creation, **[PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA){:target="_blank"}** and **[*t*-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html){:target="_blank"}** from the Scikit-learn Python library.
-- The synthetic images to be created will be in black and white, i.e. in 1 channel.
-- The synthetic image **dimensions** can be set as a parameter when creating them.
-- The synthetic images can be created using **characteristic pixels** or **blurring** painting technique (expressing an overlap of pixels as the **maximum** or **average**).
-- Runs on **Linux**, **Windows** and **macOS** systems.
-- Compatible with **[Python](https://www.python.org/){:target="_blank"}** 3.7 or higher.
+## 🔍 Main Features
 
-## Input
+- 📄 Works with CSV files in Tidy Data{:target=”_blank”} format
+- 🧪 Input: All numeric data; target variable in the last column
+- 🔧 Supports two projection methods: PCA{:target=”_blank”} and t-SNE{:target=”_blank”}
+- 🖼️ Output: Black-and-white synthetic images
+- 🌀 Blurring technique for pixel blending
+- 🐍 Python 3.7+, compatible with Linux, Windows, macOS
+
+---
+
+## 📥 Input
 The following table shows a classic example of the [IRIS CSV dataset](https://archive.ics.uci.edu/ml/datasets/iris){:target="_blank"} as it should look like for the run:
 
 | sepal length | sepal width | petal length | petal width | target |
@@ -105,14 +109,20 @@ The following table shows a classic example of the [IRIS CSV dataset](https://ar
 | 7.0          | 3.2         | 4.7          | 1.4         | 2      |
 | 6.3          | 3.3         | 6.0          | 2.5         | 3      |
 
-## Output
+-- 
+
+## 📥 Output
 The following Figure show the output of TINTO:
 
-<div>
-<p style = 'text-align:center;'>
-<img src='/images/tinto1.png'>
-</p>
+<div style="text-align:center;">
+  <img src="/images/tinto1.png" alt="TINTO output example" width="250" />
 </div>
+
+---
+
+## License & Links
+- 📦 Code: [GitHub Repository](https://github.com/oeg-upm/TINTO){:target=”_blank”}
+- 📄 License: Apache 2.0
 
 <!-- SEO Structured Data -->
 <script type="application/ld+json">
