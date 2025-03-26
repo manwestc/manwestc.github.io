@@ -29,7 +29,7 @@
     <div style="flex-shrink: 0;">
       <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: base_path }}{% endif %}"
            alt="{{ title }}"
-           style="width: 180px; border: 1px solid #ccc; border-radius: 4px;">
+           style="width: 140px; border: 1px solid #ccc; border-radius: 4px;">
     </div>
     {% endif %}
 
@@ -37,9 +37,16 @@
     <div style="flex: 1;">
       <h3 class="archive__item-title p-name"
           itemprop="headline"
-          style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.5rem;">
+          style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.5rem; text-decoration: none;">
         {{ title }}
       </h3>
+
+      <style>
+        .archive__item-title:hover {
+          text-decoration: none !important;
+          cursor: default;
+        }
+      </style>
 
       {% if post.read_time %}
         <p class="page__meta" style="margin-bottom: 0.8rem;">
@@ -62,7 +69,7 @@
 
       {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description"
-        style="margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.5;">
+         style="margin-bottom: 1.2rem; font-size: 1.1rem; line-height: 1.6;">
         {{ post.excerpt | markdownify | strip_html }}
       </p>
       {% endif %}
