@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "📚 Books, 💻 Software & 🧾 Patents"
+title: "📚 Books, Software & Patents"
 description: "GeoGebra en el Aula. Libro de GeoGebra. Curso de GeoGebra. Software TINTOlib to transform tabular data into synthetic images."
 permalink: /software/
 author_profile: true
@@ -30,27 +30,27 @@ author_profile: true
 {% assign patents = site.portfolio | where: "category", "Patents" %}
 
 {% if books.size > 0 %}
-  <h2 style="margin-top: 2rem; margin-bottom: 0.75rem;">📘 Books</h2>
+  <h2 style="margin-top: 3rem; margin-bottom: 0.5rem;">📘 Books</h2>
   {% for post in books %}
-    <div style="padding: 0.5rem 0 1rem 0; border-bottom: 1px solid #ddd;">
+    <div style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
       {% include archive-single.html %}
     </div>
   {% endfor %}
 {% endif %}
 
 {% if software.size > 0 %}
-  <h2 style="margin-top: 2rem; margin-bottom: 0.75rem;">💻 Software</h2>
+  <h2 style="margin-top: 3rem; margin-bottom: 0.5rem;">💻 Software</h2>
   {% for post in software %}
-    <div style="padding: 0.5rem 0 1rem 0; border-bottom: 1px solid #ddd;">
+    <div style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
       {% include archive-single.html %}
     </div>
   {% endfor %}
 {% endif %}
 
 {% if patents.size > 0 %}
-  <h2 style="margin-top: 2rem; margin-bottom: 0.75rem;">🧾 Patents</h2>
+  <h2 style="margin-top: 3rem; margin-bottom: 0.5rem;">🧾 Patents</h2>
   {% for post in patents %}
-    <div style="padding: 0.5rem 0 1rem 0; border-bottom: 1px solid #ddd;">
+    <div style="margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem;">
       {% include archive-single.html %}
     </div>
   {% endfor %}
