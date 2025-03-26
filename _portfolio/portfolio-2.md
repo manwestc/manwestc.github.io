@@ -2,6 +2,7 @@
 title: "Software: TINTOlib - Python library for transforming tabular data into images with 2-Dimensional Convolutional Neural Networks"
 excerpt: "TINTOlib is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through differents algorithmic methods.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
 collection: portfolio
+category: "Software"
 ---
 
 

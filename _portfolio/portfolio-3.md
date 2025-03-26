@@ -2,6 +2,7 @@
 title: "Software: TINTO - Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks"
 excerpt: "TINTO is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
 collection: portfolio
+category: "Software"
 ---
 
 
