@@ -12,9 +12,9 @@ redirect_from:
 
 Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **castellano**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
 
-<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f5f8fa;">
+<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 1.5em; border-radius: 4px; background-color: #f5f8fa;">
   <h2 style="color: #1565c0; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
-  <p style="text-align: center; font-size: 1.1em; color: #37474f;">
+  <p style="text-align: center; font-size: 1em; color: #37474f;">
     We’ve just launched a <strong>100% free course on Udemy</strong> about <strong>using TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.<br/>
     Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures like a pro.
   </p>
