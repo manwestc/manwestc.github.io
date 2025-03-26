@@ -13,8 +13,9 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item h-entry" itemscope itemtype="http://schema.org/CreativeWork"
-           style="display: flex; gap: 1rem; margin-bottom: 2rem; align-items: flex-start;">
+  <article class="archive__item h-entry"
+           itemscope itemtype="http://schema.org/CreativeWork"
+           style="display: flex; align-items: center; gap: 1rem;">
 
     <!-- Imagen a la izquierda -->
     <div style="flex-shrink: 0;">
@@ -25,42 +26,53 @@
       {% endif %}
     </div>
 
-    <!-- Contenido a la derecha -->
-    <div>
-      <!-- Título grande, sin enlace, con hover subrayado -->
-      <h3 class="archive__item-title p-name" itemprop="headline" style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.4rem;">
+    <!-- Texto a la derecha -->
+    <div style="flex: 1;">
+      <!-- Título sin enlace, más grande, con hover subrayado -->
+      <h3 class="archive__item-title p-name"
+          itemprop="headline"
+          style="margin-top: 0; margin-bottom: 0.6rem; font-size: 1.4rem;">
         {{ title }}
       </h3>
       <style>
-        /* Subrayado en hover y cursor puntero */
+        /* subrayado en hover y cursor puntero */
         .archive__item-title:hover {
           text-decoration: underline;
           cursor: pointer;
         }
       </style>
 
-      <!-- Lógica de fecha y/o read_time -->
+      <!-- Fecha / read_time si procede -->
       {% if post.read_time %}
         <p class="page__meta" style="margin-bottom: 0.8rem;">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
           {% include read-time.html %}
         </p>
       {% endif %}
-      
+
       {% if post.collection == 'teaching' %}
-        <p><span itemprop="about">{{ post.type }}</span>, <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+        <p style="margin-bottom: 0.8rem;">
+          <span itemprop="about">{{ post.type }}</span>,
+          <i>{{ post.venue }}</i>,
+          {{ post.date | date: "%Y" }}
+        </p>
       {% elsif post.collection == 'publications' %}
-        <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+        <p style="margin-bottom: 0.8rem;">
+          Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}
+        </p>
       {% elsif post.date %}
         <p class="page__date" style="margin-bottom: 0.8rem;">
-          <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+          <strong>
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+            {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
+          </strong>
           <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
             {{ post.date | date: "%B %d, %Y" }}
           </time>
         </p>
       {% endif %}
 
-      <!-- Excerpt (descripción) -->
+      <!-- Descripción -->
       {% if post.excerpt and site.read_more != 'enabled' %}
         <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
           {{ post.excerpt | markdownify }}
@@ -68,24 +80,39 @@
       {% elsif post.excerpt and site.read_more == 'enabled' %}
         <p class="archive__item-excerpt" itemprop="description" style="margin-bottom: 1rem;">
           {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
-          <strong><a href="{{ base_path }}{{ post.url }}" rel="bookmark">Read more</a></strong>
+          <strong>
+            <a href="{{ base_path }}{{ post.url }}" rel="bookmark">Read more</a>
+          </strong>
         </p>
       {% endif %}
 
       <!-- Citation / Paper URL -->
       {% if post.citation and post.paperurl %}
-        <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
+        <p style="margin-bottom: 1rem;">
+          Recommended citation: {{ post.citation }}
+          <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a>
+        </p>
       {% elsif post.citation %}
-        <p>Recommended citation: {{ post.citation }}</p>
+        <p style="margin-bottom: 1rem;">
+          Recommended citation: {{ post.citation }}
+        </p>
       {% elsif post.paperurl %}
-        <p>Download <a href="{{ post.paperurl }}"><u>here</u></a></p>
+        <p style="margin-bottom: 1rem;">
+          Download <a href="{{ post.paperurl }}"><u>here</u></a>
+        </p>
       {% endif %}
 
-      <!-- Botón More information (grande, centrado) -->
-      <div style="margin-top: 1.5rem; text-align: center;">
+      <!-- Botón "More information" grande y centrado -->
+      <div style="margin-top: 1rem; text-align: left;">
         <a href="{{ base_path }}{{ post.url }}"
            class="btn"
-           style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-block; text-decoration: none; border: 1px solid #ccc;">
+           style="
+             font-size: 1.1rem;
+             padding: 0.75rem 1.5rem;
+             text-decoration: none;
+             border: 1px solid #ccc;
+             background-color: #f3f3f3;
+           ">
           More information
         </a>
       </div>
