@@ -31,11 +31,11 @@ The following electronic device, which is attached to the body for tracking and 
   "description": "Electronic device worn on the body (e.g., bracelet or necklace) for tracking people or animals. Equipped with GPS, Bluetooth/Wi-Fi, GPRS, and environmental sensors for indoor and outdoor positioning.",
   "brand": {
     "@type": "Brand",
-    "name": "Research Project UPM"
+    "name": "Research Project UNED"
   },
   "manufacturer": {
     "@type": "Organization",
-    "name": "Ontology Engineering Group, UPM"
+    "name": "Manuel Castillo-Cara"
   },
   "url": "{{ site.url }}{{ page.url }}",
   "isAccessoryOrSparePartFor": "Tracking and positioning systems",
