@@ -12,15 +12,15 @@ redirect_from:
 
 Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **castellano**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
 
-<div style="border: 2px solid #4CAF50; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f9fff9;">
-  <h2 style="color: #2e7d32; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
-  <p style="text-align: center; font-size: 1.1em;">
+<div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f5f8fa;">
+  <h2 style="color: #1565c0; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
+  <p style="text-align: center; font-size: 1.1em; color: #37474f;">
     We’ve just launched a <strong>100% free course on Udemy</strong> about <strong>using TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.<br/>
     Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures like a pro.
   </p>
   <p style="text-align: center;">
     <a href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" 
-       style="background-color: #4CAF50; color: white; padding: 0.7em 1.2em; text-decoration: none; font-weight: bold; border-radius: 5px;">
+       style="background-color: #1976d2; color: white; padding: 0.7em 1.2em; text-decoration: none; font-weight: bold; border-radius: 5px;">
       👉 Access the Course on Udemy
     </a>
   </p>
