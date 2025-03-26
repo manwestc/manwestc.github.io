@@ -27,7 +27,7 @@
     <!-- Imagen a la izquierda -->
     {% if teaser %}
     <div style="flex-shrink: 0;">
-      <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
+      <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: base_path }}{% endif %}"
            alt="{{ title }}"
            style="width: 180px; border: 1px solid #ccc; border-radius: 4px;">
     </div>
