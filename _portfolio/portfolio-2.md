@@ -6,8 +6,10 @@ category: "Software"
 image: "/images/tinto-logo.svg"
 ---
 
-<div style="text-align: center;">
-  <img src="/images/tinto-logo.svg" alt="TINTO Logo" width="200">
+<div>
+<p align = "center">
+<img src="/images/tinto-logo.svg" alt="TINTO Logo" width="170">
+</p>
 </div>
 
 <div style="border: 1px solid #cfd8dc; padding: 1em; margin-bottom: 1.5em; border-radius: 4px; background-color: #f5f8fa;">
