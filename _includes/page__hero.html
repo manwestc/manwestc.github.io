@@ -43,7 +43,11 @@
         <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
-        <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+        <p>
+          <a href="{{ cta_path }}" class="btn btn--light-outline btn--large">
+            <i class="fas fa-play-circle" style="margin-right: 0.3em;"></i>{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}
+          </a>
+        </p>
       {% endif %}
     </div>
   {% else %}
