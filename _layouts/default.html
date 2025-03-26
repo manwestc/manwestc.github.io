@@ -16,10 +16,12 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <main id="main" role="main">
+      {{ content }}
+    </main>
 
     <div class="page__footer">
-      <footer>
+      <footer aria-label="Pie de página">
         {% include footer/custom.html %}
         {% include footer.html %}
       </footer>
