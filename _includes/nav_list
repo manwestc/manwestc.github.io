@@ -13,8 +13,11 @@
           {% else %}
             {% assign domain = base_path %}
           {% endif %}
-
-          <a href="{{ domain }}{{ nav.url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+          <a href="{{ domain }}{{ nav.url }}">
+            <span class="nav__icon"><i class="fas fa-folder-open"></i></span>
+            <span class="nav__sub-title">{{ nav.title }}</span>
+          </a>
+        <!--<a href="{{ domain }}{{ nav.url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>-->
         {% else %}
           <span class="nav__sub-title">{{ nav.title }}</span>
         {% endif %}
