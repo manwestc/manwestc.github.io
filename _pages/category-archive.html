@@ -1,17 +1,22 @@
 ---
 layout: archive
 permalink: /categories/
-title: "Posts by Category"
+title: "Entradas por categoría"
+description: "Navega por las publicaciones agrupadas según sus categorías temáticas."
 author_profile: true
 ---
 
 {% include base_path %}
 {% include group-by-array collection=site.posts field="categories" %}
 
-{% for category in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
+<section aria-label="Listado de publicaciones por categoría">
+  {% for category in group_names %}
+    {% assign posts = group_items[forloop.index0] %}
+    <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+    <ul class="taxonomy-post-list">
+      {% for post in posts %}
+        <li>{% include archive-single.html %}</li>
+      {% endfor %}
+    </ul>
   {% endfor %}
-{% endfor %}
+</section>
