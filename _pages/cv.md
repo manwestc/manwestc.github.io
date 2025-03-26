@@ -33,6 +33,8 @@ redirect_from:
   - Pattern Recognition
   - Computer Vision
 
+---
+
 ## 🎓 Udemy Courses
 
 {% assign categorias_udemy = site.talks | group_by: "category" %}
@@ -50,6 +52,8 @@ redirect_from:
     {% endif %}
   {% endfor %}
 {% endfor %}
+
+---
 
 ## 📚 Books, Software & Patents
 
@@ -77,6 +81,8 @@ redirect_from:
 {% endfor %}
 </ul>
 
+---
+
 ## 📄 Publications
 All publications are listed on:
 - [Website](https://manuelcastillo.eu/publications/)
@@ -94,6 +100,8 @@ All publications are listed on:
 - **Principal Investigator**. "Smart City for geolocation", PIAP-363, Peru (2014–2017).
 - **Co-investigator**. "Optimization of multimedia content distribution", TIN2015-66972-C05-2-R, Spain (2017–2018).
 - **Co-investigator**. "Genetic expression analysis in microgravity", PIAP-1-P-622-13, Peru (2013–2016).
+
+---
 
 ## 👨‍🏫 Teaching Experience
 
