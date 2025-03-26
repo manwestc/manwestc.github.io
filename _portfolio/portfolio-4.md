@@ -20,3 +20,46 @@ The following electronic device, which is attached to the body for tracking and 
 <img src='/images/patent_pulsera.png'>
 </p>
 </div>
+
+<!-- SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Electronic Device for Tracking and Geolocation",
+  "image": "{{ site.url }}/images/patent_pulsera.png",
+  "description": "Electronic device worn on the body (e.g., bracelet or necklace) for tracking people or animals. Equipped with GPS, Bluetooth/Wi-Fi, GPRS, and environmental sensors for indoor and outdoor positioning.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Research Project UPM"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Ontology Engineering Group, UPM"
+  },
+  "url": "{{ site.url }}{{ page.url }}",
+  "isAccessoryOrSparePartFor": "Tracking and positioning systems",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Positioning Sensors",
+      "value": "GPS, Bluetooth, Wi-Fi"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Transmission",
+      "value": "GPRS"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Energy Optimization Sensors",
+      "value": "Compass, Altitude, Temperature, Gyroscope, Accelerometer"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Form Factor",
+      "value": "Bracelet, Necklace, or Shackle"
+    }
+  ]
+}
+</script>
