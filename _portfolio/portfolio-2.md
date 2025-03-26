@@ -13,6 +13,20 @@ category: "Software"
 </div>
 
 
+<div style="border: 2px solid #4CAF50; padding: 1em; margin-bottom: 2em; border-radius: 8px; background-color: #f9fff9;">
+  <h2 style="color: #2e7d32; text-align: center;">🎉 New Free Course on Udemy! 🎉</h2>
+  <p style="text-align: center; font-size: 1.1em;">
+    We’ve just launched a <strong>100% free course on Udemy</strong> about <strong>using TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.<br/>
+    Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures like a pro.
+  </p>
+  <p style="text-align: center;">
+    <a href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" 
+       style="background-color: #4CAF50; color: white; padding: 0.7em 1.2em; text-decoration: none; font-weight: bold; border-radius: 5px;">
+      👉 Access the Course on Udemy
+    </a>
+  </p>
+</div>
+
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/oeg-upm/TINTOlib-Documentation/blob/main/LICENSE)
 [![Python Version](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)](https://pypi.python.org/pypi/)
@@ -95,46 +109,6 @@ TINTOlib includes a variety of models for generating synthetic images. Below is 
 
 ---
 
-## ⚠️ Platform-Specific Requirements for Certain Transformation Methods
-
-Some transformation methods in TINTOlib have specific system requirements or limitations when used on platforms such as Google Colab, Windows, Linux, or macOS.
-
-### REFINED
-
-This method relies on `mpi4py`, which enables parallel computation using MPI (Message Passing Interface). However, `mpi4py` requires administrative permissions to utilize multiple processors, making it incompatible with platforms like Google Colab. 
-
-- **Linux**:
-  Ensure that the MPI environment is set up before installing `mpi4py`. Run the following commands:
-  ```bash
-  sudo apt-get install python3
-  sudo apt install python3-pip
-  sudo apt install python3-mpi4py
-
-Once MPI is installed:
-    ```
-    pip install mpi4py
-    ```
-
-**macOS / Windows:** Direct installation is usually supported:
-    ```
-    pip install mpi4py
-    ```
-
-### SuperTML
-
-The **SuperTML** method generates text-based synthetic images and requires the **MS Sans Serif** font.
-
-- On **Windows**, this font is typically available by default.
-- On **Linux** and **macOS**, it must be installed manually to avoid rendering issues.
-
-#### Font Installation
-
-- **Linux**: Install Microsoft Core Fonts:
-  ```bash
-  sudo apt install ttf-mscorefonts-installer
-
-On **Google Colab**, installing additional fonts is not permitted due to administrative restrictions.
-
 ## Getting Started
 
 **You can install TINTOlib using [Pypi](https://pypi.org/project/TINTOlib/)**:
@@ -167,7 +141,7 @@ To import a specific model use
 
 Create the model. If you don't set any hyperparameter, the model will use the default values, refer to the **[Models Section](#models)** or the **[TINTO Documentation](https://tintolib.readthedocs.io/en/latest/)**.
 
-``` python
+```python
     model = TINTO(blur=True)
 ```
 
@@ -176,32 +150,26 @@ To generate synthetic images, use the following workflow with the `fit`, `transf
 
 #### **Fitting the Model**
 The `fit` method trains the model on the tabular data and prepares it for image generation.
+
 ```python
 model.fit(data)
 ```
-**Parameters**:
-- **data**: A path to a CSV file or a Pandas DataFrame containing the features and targets.  
-  - The target column must be the last column.
 
 #### **Generating Synthetic Images**
 The `transform` method generates and saves synthetic images in a specified folder. It requires the model to be fitted first.
+
 ```python
 model.transform(data, folder)
 ```
-**Parameters**:
-- **data**: A path to a CSV file or a Pandas DataFrame containing the features and targets.
-  - The target column must be the last column.
-- **folder**: Path to the folder where the synthetic images will be saved.
+
 
 #### **Combining Fit and Transform**
 The `fit_transform` method combines the training and image generation steps. It fits the model to the data and generates synthetic images in one step.
+
 ```python
 model.fit_transform(data, folder)
 ```
-**Parameters**:
-- **data**: A path to a CSV file or a Pandas DataFrame containing the features and targets.
-  - The target column must be the last column.
-- **folder**: Path to the folder where the synthetic images will be saved.
+
 
 #### Notes:
 - **The model must be fitted** before using the `transform` method. If the model isn't fitted, a `RuntimeError` will be raised.
@@ -236,29 +204,8 @@ For example, the following table shows a classic example of the [IRIS CSV datase
 | 6.3 | 3.3 | 6.0 | 2.5 | 3 |
 
 
-### Simple example without Blurring
-The following example shows how to create 20x20 images with characteristic pixels, i.e. without blurring. 
-Also, as no other parameters are indicated, you will choose the following parameters which are set by default:
-- **Image size**: 20x20 pixels
-- **Blurring**: No blurring will be used.
-- **Seed**: with the seed set to 20.
+### Simple example with TINTO Method
 
-<div>
-<p align = "center">
-<kbd><img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/characteristic.png" alt="TINTO characteristic pixel" width="250"></kbd>
-</p>
-</div>
-
-
-### More specific example
-The following example shows how to create with blurring with a more especific parameters.
-
-The images are created with the following considerations regarding the parameters used:
-- **Blurring (-B)**: Create the images with blurring technique.
-- **Dimensional Reduction Algorithm (-alg)**: t-SNE is used.
-- **Blurring option (-oB)**: Create de images with maximum value of overlaping pixel
-- **Image size (-px)**: 30x30 pixels
-- **Blurring steps (-sB)**: Expand 5 pixels the blurring.
 
 <div>
 <p align = "center">
@@ -275,7 +222,7 @@ TINTOlib is available under the **[Apache License 2.0](https://github.com/oeg-up
 ## Authors
 - **[Manuel Castillo-Cara](https://github.com/manwestc)**
 - **[Raúl García-Castro](https://github.com/rgcmme)**
-- **[Borja Reinoso](https://github.com/borjarei) -[borjareinoso@gmail.com](borjareinoso@gmail.com)**
+- **[Borja Reinoso](https://github.com/borjarei)**
 - **[David González Fernández](https://github.com/DavidGonzalezFernandez)**
 - **[Jiayun Liu](https://github.com/DCY1117)**
 
