@@ -35,22 +35,39 @@ El libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con
 - Archivos fuentes Geogebra con la solución de los ejercicios.
 - Tendrás acceso al [**curso de UDEMY**](https://www.udemy.com/course/matematicas-geogebra/?couponCode=MAR_2025){:target="_blank"} totalmente **gratis** por la compra.
 
-El precio por el libro es de 25 euros e **incluye todos los recursos descritos anteriormente**.
+El precio por el libro es de 20 euros e **incluye todos los recursos descritos anteriormente**.
 
 Si estás interesado escribe al siguiente correo: <a href="mailto:manwest.c@gmail.com">manwest.c@gmail.com</a>
 
 <div>
-<p style = 'text-align:center;'>
+<p style='text-align:center;'>
 <img src='/images/geogebra.png' width='320' height='300'>
 </p>
 </div>
 
-<!--
-<script src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
-<div id="paypal-container-UX7UBGJ8TCPTW"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "UX7UBGJ8TCPTW",
-  }).render("#paypal-container-UX7UBGJ8TCPTW")
+<!-- SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra",
+  "author": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara"
+  },
+  "description": "Libro educativo para el uso práctico de GeoGebra en el aula. Incluye módulos sobre geometría, álgebra, estadística, análisis y geometría 3D, además de recursos descargables y acceso a curso online.",
+  "image": "{{ site.url }}/images/geogebra.png",
+  "url": "{{ site.url }}{{ page.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Autoedición"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "20.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+}
 </script>
--->
