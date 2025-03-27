@@ -1,9 +1,10 @@
 ---
 title: "Electronic device for tracking and geolocating people or animals"
 excerpt: "Electronic device that is fixed in the body for tracking and geolocating people or animals; with positioning and tracking sensors, data transmission and optimization of energy and information.<br/><img src='/images/patent_pulsera.png' width='320' height='300' align='center' />"
-collection: portfolio
+collection: libros-software
 category: "Patents"
 image: "/images/patent_pulsera.png"
+permalink: /libros-software/patente/
 ---
 
 ## Abstract

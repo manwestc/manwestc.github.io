@@ -1,9 +1,11 @@
 ---
 title: "TINTOlib - Python library for transforming tabular data into synthetic images"
 excerpt: "TINTOlib is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through differents algorithmic methods.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
-collection: portfolio
+collection: libros-software
 category: "Software"
 image: "/images/tinto-logo.svg"
+permalink: /libros-software/software-TINTOlib/
+
 ---
 
 <div>
