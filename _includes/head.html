@@ -39,6 +39,9 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-96x96.png" sizes="96x96">
 <link rel="shortcut icon" href="{{ base_path }}/images/favicon.ico" type="image/x-icon">
 
+<!-- Desactivar sugerencia de instalación en móviles -->
+<link rel="manifest" href="data:application/manifest+json,{}">
+
 <!-- Styles -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
@@ -47,3 +50,4 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
+
