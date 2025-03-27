@@ -6,6 +6,7 @@ collection: libros-software
 category: "Software"
 image: "/images/tinto-logo.svg"
 permalink: /libros-software/software-TINTO/
+author_profile: true
 ---
 
 

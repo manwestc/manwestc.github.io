@@ -6,6 +6,7 @@ collection: libros-software
 category: "Books"
 image: "/images/geogebra.png"
 permalink: /libros-software/libro-curso-GeoGebra-Aula/
+author_profile: true
 ---
 
 ## Resumen

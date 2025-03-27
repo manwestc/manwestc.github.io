@@ -6,6 +6,7 @@ collection: libros-software
 category: "Patents"
 image: "/images/patent_pulsera.png"
 permalink: /libros-software/patente/
+author_profile: true
 ---
 
 ## Abstract
