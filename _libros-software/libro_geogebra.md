@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: "GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"
 excerpt: "Libro práctico para aplicar GeoGebra en el aula con módulos de geometría, estadística, álgebra y análisis. Incluye acceso gratuito a un curso de Udemy y materiales descargables."
 collection: libros-software
