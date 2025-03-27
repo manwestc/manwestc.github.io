@@ -185,7 +185,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  libros-software:
     output: true
     permalink: /:collection/:path/
   talks:
