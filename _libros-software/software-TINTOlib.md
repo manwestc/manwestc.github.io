@@ -31,40 +31,11 @@ author_profile: true
   </p>
 </div>
 
+--- 
+
 ## 🧠 Overview
 
 **TINTOlib** is a powerful Python library that transforms **tidy tabular data** into **synthetic images**, enabling the use of deep learning models like **CNNs** and **Vision Transformers (ViTs)**. This bridges the gap between structured and image-based data for tasks such as classification and regression.
-
-## 📚 Cite TINTOlib
-
-If you use TINTOlib, please cite the following papers:
-
-- [SoftwareX Paper](https://doi.org/10.1016/j.softx.2023.101391):
-```bib
-@article{softwarex_TINTO,
-  title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
-  journal = {SoftwareX},
-  author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
-  volume={22},
-  pages={101391},
-  year = {2023},
-  issn = {2352-7110},
-  doi = {10.1016/j.softx.2023.101391}
-}
-```
-- [INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011):
-```bib
-@article{inffus_TINTO,
-  title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
-  journal = {Information Fusion},
-  author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
-  volume = {91},
-  pages = {173-186},
-  year = {2023},
-  issn = {1566-2535},
-  doi = {10.1016/j.inffus.2022.10.011}
-}
-```
 
 
 ---
@@ -122,17 +93,49 @@ To run examples:
 - Use `requirements-example.txt` for full deep learning workflows
 
 ### 🧩 Example Code
-```python
-from TINTOlib.tinto import TINTO
-model = TINTO(blur=True)
-model.fit_transform(data, folder)
-```
+  ```python
+    from TINTOlib.tinto import TINTO
+    model = TINTO(problem="supervised, "blur=True)
+    model.fit_transform(data, folder)
+  ```
 ---
 
 ## 💬 Learn More
 - [📘 Documentation](https://tintolib.readthedocs.io/en/latest/)
 - [🚀 GitHub](https://github.com/oeg-upm/TINTOlib)
 - [📹 Crash Course](https://github.com/oeg-upm/TINTOlib-Crash_Course)
+
+--- 
+## 📚 Cite TINTOlib
+
+If you use TINTOlib, please cite the following papers:
+
+- [SoftwareX Paper](https://doi.org/10.1016/j.softx.2023.101391):
+```bib
+@article{softwarex_TINTO,
+  title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
+  journal = {SoftwareX},
+  author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
+  volume={22},
+  pages={101391},
+  year = {2023},
+  issn = {2352-7110},
+  doi = {10.1016/j.softx.2023.101391}
+}
+```
+- [INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011):
+```bib
+@article{inffus_TINTO,
+  title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
+  journal = {Information Fusion},
+  author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
+  volume = {91},
+  pages = {173-186},
+  year = {2023},
+  issn = {1566-2535},
+  doi = {10.1016/j.inffus.2022.10.011}
+}
+```
 
 ---
 

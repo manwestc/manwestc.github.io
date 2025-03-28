@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "TINTO - Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks"
+title: "TINTO - Transform Tabular Data into Synthetic Images for Deep Neural Netowoks"
 excerpt: "TINTO is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through the representation of characteristic pixels.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
 collection: libros-software
 category: "Software"
@@ -42,39 +42,6 @@ author_profile: true
 </p>
 </div>
 
---- 
-
-## 📖 Citation
-
-**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}**:
-
-```bib
-@article{inffus_TINTO,
-    title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
-    journal = {Information Fusion},
-    author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
-    volume = {91},
-    pages = {173-186},
-    year = {2023},
-    issn = {1566-2535},
-    doi = {https://doi.org/10.1016/j.inffus.2022.10.011}
-}
-```
-
-And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target="_blank"}**
-
-```bib
-@article{softwarex_TINTO,
-    title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
-    journal = {SoftwareX},
-    author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
-    year = {2023},
-    issn = {2352-7110},
-    volume = {22},
-    pages = {101391},
-    doi = {https://doi.org/10.1016/j.softx.2023.1013911}
-}
-```
 
 --- 
 
@@ -110,9 +77,9 @@ You can find all the documentation and sources of TINTO in [OEG GitHub](https://
 
 ## 🔍 Main Features
 
-- 📄 Works with CSV files in Tidy Data{:target=”_blank”} format
+- 📄 Works with CSV files in Tidy Data format
 - 🧪 Input: All numeric data; target variable in the last column
-- 🔧 Supports two projection methods: PCA{:target=”_blank”} and t-SNE{:target=”_blank”}
+- 🔧 Supports two projection methods: PCA and t-SNE
 - 🖼️ Output: Black-and-white synthetic images
 - 🌀 Blurring technique for pixel blending
 - 🐍 Python 3.7+, compatible with Linux, Windows, macOS
@@ -137,7 +104,42 @@ The following Figure show the output of TINTO:
   <img src="/images/tinto1.png" alt="TINTO output example" width="250" />
 </div>
 
+--- 
+
+## 📖 Citation
+
+**Citing TINTO**: If you used TINTO in your work, please cite the **[INFFUS Paper](https://doi.org/10.1016/j.inffus.2022.10.011){:target="_blank"}**:
+
+```bib
+@article{inffus_TINTO,
+    title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
+    journal = {Information Fusion},
+    author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
+    volume = {91},
+    pages = {173-186},
+    year = {2023},
+    issn = {1566-2535},
+    doi = {https://doi.org/10.1016/j.inffus.2022.10.011}
+}
+```
+
+And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target="_blank"}**
+
+```bib
+@article{softwarex_TINTO,
+    title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
+    journal = {SoftwareX},
+    author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
+    year = {2023},
+    issn = {2352-7110},
+    volume = {22},
+    pages = {101391},
+    doi = {https://doi.org/10.1016/j.softx.2023.1013911}
+}
+```
+
 ---
+
 
 ## License & Links
 - 📦 Code: [GitHub Repository](https://github.com/oeg-upm/TINTO){:target=”_blank”}
