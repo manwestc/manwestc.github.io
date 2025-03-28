@@ -145,7 +145,6 @@ TINTOlib is released under the **Apache License 2.0**.
 ## 👥 Authors
 - **[Manuel Castillo-Cara](https://github.com/manwestc)**
 - **[Raúl García-Castro](https://github.com/rgcmme)**
-- **[Borja Reinoso](https://github.com/borjarei)**
 - **[David González Fernández](https://github.com/DavidGonzalezFernandez)**
 - **[Jiayun Liu](https://github.com/DCY1117)**
 
