@@ -78,7 +78,22 @@ And the **[SoftwareX paper](https://doi.org/10.1016/j.softx.2023.101391){:target
 
 --- 
 
-## Documentation
+## 📺 VideoTutorial Course (English/Spanish)
+
+🎥 Prefer not to register on Udemy or looking for the English version of the course? No worries — you can follow the full course directly on GitHub!
+
+This hands-on tutorial includes **bilingual videos (English/Spanish)** and **practical notebooks** to help you learn how to use **TINTOlib** with deep learning models like CNNs, ViTs, and hybrid architectures.
+
+<p align="center">
+  <a href="./5_TINTOlib%20Videotutorial%20course/README.md" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access the Course on GitHub"/>
+  </a>
+</p>
+
+---
+
+
+## 📄 Documentation
 
 You can find all the documentation and sources of TINTO in [OEG GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.
 

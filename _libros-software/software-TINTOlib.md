@@ -66,12 +66,31 @@ If you use TINTOlib, please cite the following papers:
 }
 ```
 
+
+---
+
+## 📺 VideoTutorial Course (English/Spanish)
+
+🎥 Prefer not to register on Udemy or looking for the English version of the course? No worries — you can follow the full course directly on GitHub!
+
+This hands-on tutorial includes **bilingual videos (English/Spanish)** and **practical notebooks** to help you learn how to use **TINTOlib** with deep learning models like CNNs, ViTs, and hybrid architectures.
+
+<p align="center">
+  <a href="./5_TINTOlib%20Videotutorial%20course/README.md" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access the Course on GitHub"/>
+  </a>
+</p>
+
+---
+
 ## 🔧 Features
 - Input formats: **CSV** or **Pandas DataFrame**
 - Designed for tidy data (target column last)
 - Output: grayscale images from reduction and transformation methods
 - Compatible with **Linux**, **Windows**, **macOS**
 - Requires **Python 3.7+**
+
+---
 
 ## 🧪 Supported Models
 Supported image transformation models include:
@@ -91,6 +110,8 @@ Supported image transformation models include:
 
 Each model has its own hyperparameters and behaviors. See [documentation](https://tintolib.readthedocs.io/en/latest/) for usage.
 
+---
+
 ## 🚀 Getting Started
 Install via pip:
 ```bash
@@ -100,12 +121,13 @@ To run examples:
 - Use `requirements.txt` for the base environment
 - Use `requirements-example.txt` for full deep learning workflows
 
-## 🧩 Example Code
+### 🧩 Example Code
 ```python
 from TINTOlib.tinto import TINTO
 model = TINTO(blur=True)
 model.fit_transform(data, folder)
 ```
+---
 
 ## 💬 Learn More
 - [📘 Documentation](https://tintolib.readthedocs.io/en/latest/)
