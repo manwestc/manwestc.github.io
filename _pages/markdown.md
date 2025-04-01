@@ -30,11 +30,6 @@ description: "List of competitive research and development projects led or co-le
 🏛️ *FONDECYT* — **401-FONDECYT**  
 📅 *2020 – 2023* | 📍 *Peru*
 
-📌 **Co-investigator**  
-*"AgIoT: IoT and Data Analytics in Precision Agriculture"*  
-🏛️ *CYTED*  
-📅 *2020 – 2022* | [🔗 Link](http://www.cyted.org/AgIoT){:target="_blank"}
-
 📌 **Principal Investigator**  
 *"Smart Technologies for Ibero-American Cities"*  
 🏛️ *FONDECYT* — **138-2017-FONDECYT**  
