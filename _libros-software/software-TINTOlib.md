@@ -108,7 +108,23 @@ To run examples:
 --- 
 ## 📚 Cite TINTOlib
 
+
 If you use TINTOlib, please cite the following papers:
+
+If you used TINTOlib with Hybrid Neural Networks in your work, please cite the **[IEEE Journal of Selected Topics in Signal Processing](https://doi.org/10.1109/JSTSP.2025.3555067){:target="_blank"}**:
+
+```bib
+@ARTICLE{10946146,
+  author={Castillo-Cara, Manuel and Martínez-Gómez, Jesus and Ballesteros-Jerez, Javier and García-Varea, Ismael and García-Castro, Raúl and Orozco-Barbosa, Luis},
+  journal={IEEE Journal of Selected Topics in Signal Processing}, 
+  title={MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-13},
+  keywords={Location awareness;Accuracy;Neural networks;Measurement;Deep learning;Complexity theory;Antennas;Antenna measurements;Base stations;Signal processing algorithms;Massive MIMO;Deep Learning;Hybrid Neural Network;Synthetic Images;Positioning;Indoor Localisation},
+  doi={10.1109/JSTSP.2025.3555067}}
+```
 
 - [SoftwareX Paper](https://doi.org/10.1016/j.softx.2023.101391):
 ```bib
