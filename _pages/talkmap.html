@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: archive
 title: "TalkMap"
 permalink: /talkmap.html
 ---
@@ -49,14 +49,19 @@ permalink: /talkmap.html
   }
 </style>
 
+<p style="font-size: 1.1rem; margin-top: 2rem;">
+  <strong>Key academic conferences and seminars</strong> where I have presented my research or conducted workshops, especially on the development and application of the <strong>TINTOlib</strong> Python library for transforming tabular data into synthetic images. This interactive map highlights the cities where these events took place.
+</p>
+
 <!-- ✅ Contenedor del Mapa -->
 <div id="map"></div>
 
 <script>
   var map = L.map('map').setView([20, -30], 2);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors',
+  // Estilo CartoDB Positron (claro)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 18
   }).addTo(map);
 
