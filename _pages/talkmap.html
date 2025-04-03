@@ -89,15 +89,16 @@ description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, C
 
   var customIcon = L.icon({
     iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-    iconSize: [12, 20],        // ✅ Tamaño reducido
-    iconAnchor: [6, 20],       // ✅ Centro base del icono
-    popupAnchor: [0, -18],     // ✅ Posición del popup
+    iconSize: [20, 32],
+    iconAnchor: [10, 32],
+    popupAnchor: [0, -30],
     shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-    shadowSize: [18, 22],      // ✅ Sombra adaptada
-    shadowAnchor: [4, 20]
+    shadowSize: [30, 40],
+    shadowAnchor: [8, 38]
   });
 
   for (var i = 0; i < addressPoints.length; i++) {
+    var a = addressPoints[i];
     var marker = L.marker(new L.LatLng(a[1], a[2]), {
       title: a[0],
       icon: customIcon
