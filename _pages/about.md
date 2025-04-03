@@ -53,10 +53,10 @@ I highlight my participation in a social development project in Peru, where we c
 - Artificial Intelligence and Data Science.
 - Pattern Recognition and Computer Vision.
 - Transform Tabular Data into Synthetic Images
-- Development of Hybrid Neural Networks with **synthetic images** using the Python library [**TINTOlib**](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
-- Implementation of the **TINTO** method, an innovative conversion of tabular data into synthetic images, available on [GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.  
+- Development of Hybrid Neural Networks with **synthetic images** using the Python library [**TINTOlib**](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/){:target="_blank"}.  
+- Implementation of the **TINTO** method, an innovative conversion of tabular data into synthetic images, available on [GitHub](https://www.manuelcastillo.eu/libros-software/software-TINTO/){:target="_blank"}.  
 
-🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America.  
+🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America. See the [TINTOlib Talk Map](https://www.manuelcastillo.eu/talkmap.html){:target="_blank"}.
 
 ---
 
