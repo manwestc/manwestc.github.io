@@ -9,6 +9,7 @@ main:
     url: /talkmap.html
 
   - title: "Academic"
+    url: "#"  # ← esto evita redirección
     children:
       - title: "Projects"
         url: /projects/
