@@ -64,7 +64,7 @@ Main Research area is about Synthetic Images and Hybrid Neural Networks:
 - 1 academic book and 1 book chapter  
 - 5 Master's theses and 6 Bachelor's theses supervised    
 
-### 🔬 **Impact in the Scientific Community**  
+#### **Impact in the Scientific Community**  
 
 | Source | Citations | #Q1 | #Q2 | H-Index |
 |--------|------|----|----|----------|
