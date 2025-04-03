@@ -50,11 +50,11 @@ I highlight my participation in a social development project in Peru, where we c
 ---
 
 ## 🎓 **Research Interests**  
+- Lead developer of the Python library [**TINTOlib**](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/){:target="_blank"}, designed for building hybrid neural networks with synthetic images. 
+- Creator of the [**TINTO**](https://www.manuelcastillo.eu/libros-software/software-TINTO/){:target="_blank"} method, an innovative technique to convert tabular data into synthetic images.
 - Artificial Intelligence and Data Science.
 - Pattern Recognition and Computer Vision.
-- Synthetic images and Hybrid Neural Networks.
-- Lead developer of the Python library [**TINTOlib**](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/){:target="_blank"}, designed for building hybrid neural networks with synthetic images. 
-- Creator of the [**TINTO**](https://www.manuelcastillo.eu/libros-software/software-TINTO/){:target="_blank"} method, an innovative technique to convert tabular data into synthetic images.  
+- Synthetic images and Hybrid Neural Networks.  
 
 🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America. See the [TINTOlib Talk Map](https://www.manuelcastillo.eu/talkmap.html){:target="_blank"}.
 
