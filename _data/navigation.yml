@@ -8,14 +8,14 @@ main:
   - title: "TalkMap"
     url: /talkmap.html
 
-- title: "Academic"
-  children:
-    - title: "Projects"
-      url: /projects/
-    - title: "Publications"
-      url: /publications/
-    - title: "Teaching"
-      url: /teaching/
+  - title: "Academic"
+    children:
+      - title: "Projects"
+        url: /projects/
+      - title: "Publications"
+        url: /publications/
+      - title: "Teaching"
+        url: /teaching/
 
   - title: "CV"
     url: /cv/
