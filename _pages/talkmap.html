@@ -35,9 +35,9 @@ description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, C
 }
 </script>
 
-<!-- ✅ Leaflet & Custom Assets -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<!-- ✅ Leaflet Assets SIN integrity (evita errores CORS/SRI) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="/talkmap/org-locations.js"></script>
 
 <style>
@@ -90,7 +90,7 @@ description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, C
   for (var i = 0; i < addressPoints.length; i++) {
     var a = addressPoints[i];
     var marker = L.marker(new L.LatLng(a[1], a[2]), {
-      title: a[0] // icon default Leaflet azul
+      title: a[0]
     });
     marker.bindPopup('<b>' + a[0] + '</b>');
     marker.addTo(map);
