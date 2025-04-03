@@ -66,10 +66,3 @@ I highlight my participation in a social development project in Peru, where we c
 - 1 academic book.  
 - 2 book chapters.  
 
-### **Impact in the Scientific Community**  
-
-| Source | Citations | #Q1 | #Q2 | H-Index |
-|--------|------|----|----|----------|
-| [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
-| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
-| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 500 | - | - | 11 |

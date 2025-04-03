@@ -41,6 +41,15 @@ description: "Scientific publications, books, patents and software contributions
 - 🔗 [**UNED Professor**](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}  
 
 ---
+## **Impact in the Scientific Community**  
+
+| Source | Citations | #Q1 | #Q2 | H-Index |
+|--------|------|----|----|----------|
+| [WOS (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
+| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
+| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 500 | - | - | 11 |
+
+---
 
 ## 🔍 **Last 10 Journal Scientific Articles**
 - Manuel Castillo-Cara, et al. MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning. *IEEE Journal of Selected Topics in Signal Processing*. DOI: [10.1109/JSTSP.2025.3555067](https://doi.org/10.1109/JSTSP.2025.3555067){:target="_blank"}. (IF: 8.7 , Q1 – SJR: 3.82, Q1).
