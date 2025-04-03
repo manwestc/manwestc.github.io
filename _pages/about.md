@@ -33,7 +33,7 @@ Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con u
 
 ## 👨‍🎓 **Biography**  
 
-I am Manuel Castillo-Cara, **PhD in Computer Science**, specialized in Artificial Intelligence, from the Universidad de Castilla-La Mancha (UCLM), where I received the Cum Laude distinction in 2018.  
+I am Manuel Castillo-Cara, PhD in Computer Science, specialized in **Artificial Intelligence**, from the Universidad de Castilla-La Mancha (UCLM), where I received the Cum Laude distinction in 2018.  
 
 | Period       | Position | Institution |
 |--------------|------------------------------------------------|------------------------------------------------|
