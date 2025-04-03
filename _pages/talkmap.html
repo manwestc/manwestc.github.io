@@ -1,9 +1,72 @@
 ---
-layout: archive
-title: "Talk map"
+layout: page
+title: "TalkMap"
 permalink: /talkmap.html
-author_profile: true
 ---
 
-<p>This map is generated from a Jupyter Notebook file in <a href="https://github.com/academicpages/academicpages.github.io/blob/master/_talks/talkmap.ipynb">/_talks/talkmap.ipynb</a>, which mines the location fields in the .md files in _talks/.</p>
-<iframe src="/talkmap/map.html" height="700" width="850" style="border:none;"></iframe>
+<!-- ✅ SEO Meta Tags -->
+<meta name="description" content="Mapa interactivo de conferencias, charlas y actividades académicas de Manuel Castillo-Cara. Talk map of academic activities.">
+<meta name="keywords" content="Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, Conferencias, Research, Presentations, Locations">
+<meta name="author" content="Manuel Castillo-Cara">
+<meta property="og:title" content="TalkMap - Manuel Castillo-Cara">
+<meta property="og:description" content="Mapa interactivo de conferencias, charlas y actividades académicas.">
+<meta property="og:url" content="https://www.manuelcastillo.eu/talkmap.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.manuelcastillo.eu/images/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TalkMap - Manuel Castillo-Cara">
+<meta name="twitter:description" content="Mapa interactivo de conferencias, charlas y actividades académicas.">
+<meta name="twitter:image" content="https://www.manuelcastillo.eu/images/profile.jpg">
+
+<!-- ✅ SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "TalkMap",
+  "description": "Mapa interactivo con las localizaciones académicas de Manuel Castillo-Cara.",
+  "url": "https://www.manuelcastillo.eu/talkmap.html",
+  "author": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara"
+  }
+}
+</script>
+
+<!-- ✅ Leaflet Assets -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-sA+4jDEkXzTbZZk2yyH7fHiDgfP0Wv13Zr3qMBPpPFE=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-o9N1jG8z9gL3xZJLN1Pp0u8rVnHukKQ6f3/rs1N30+8=" crossorigin=""></script>
+
+<script src="/talkmap/org-locations.js"></script>
+
+<!-- ✅ Mapa Estilizado -->
+<style>
+  #map {
+    height: 500px;
+    margin: 2rem 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+</style>
+
+<!-- ✅ Contenedor del Mapa -->
+<div id="map"></div>
+
+<script>
+  var map = L.map('map').setView([20, -30], 2);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 18
+  }).addTo(map);
+
+  for (var i = 0; i < addressPoints.length; i++) {
+    var a = addressPoints[i];
+    var title = a[0];
+    var marker = L.marker(new L.LatLng(a[1], a[2]), { title: title });
+    marker.bindPopup(title);
+    marker.addTo(map);
+  }
+</script>
