@@ -47,7 +47,7 @@ Throughout my career, I have participated in **more than 15 research projects**,
 
 I highlight my participation in a social development project in Peru, where we contributed to education in educational robotics and Scratch programming for more than 2000 children aged 8 to 15 in vulnerable areas.  
 
-The main research area is about Synthetic Images and Hybrid Neural Networks:
+The main research area is about **Synthetic Images and Hybrid Neural Networks**:
 - Lead developer of the Python library [**TINTOlib**](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/){:target="_blank"}, designed for building hybrid neural networks with synthetic images. 
 - Creator of the [**TINTO**](https://www.manuelcastillo.eu/libros-software/software-TINTO/){:target="_blank"} method, an innovative technique to convert tabular data into synthetic images.
 
