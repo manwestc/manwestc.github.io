@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: archive
 title: "TalkMap"
 permalink: /talkmap.html
+author_profile: true
+description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, Conferencias, Research, Presentations, Locations"
 ---
 
 <!-- ✅ SEO Meta Tags -->
@@ -50,10 +52,10 @@ permalink: /talkmap.html
 
   .map-description {
     background: #f9f9f9;
-    padding: 1.5rem;
-    border-left: 5px solid #0055aa;
-    margin-top: 1rem;
-    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    border-left: 5px solid #4682B4;
+    margin: 1rem 0 2rem 0;
+    border-radius: 8px;
   }
 
   @keyframes fadeIn {
@@ -63,12 +65,12 @@ permalink: /talkmap.html
 </style>
 
 <!-- ✅ Descripción -->
-<div class="map-description" style="margin: 1rem 0; padding: 0;">
-  <h2 style="margin-bottom: 0.5rem;">🌍 Talk Map: TINTOlib Around the World</h2>
-  <p style="margin: 0.2rem 0;">
+<div class="map-description">
+  <h2 style="margin-bottom: 0.8rem;">🌍 Talk Map: TINTOlib Around the World</h2>
+  <p style="margin: 0.5rem 0;">
     <strong>Key academic conferences and seminars</strong> where I have presented research or led workshops—especially around the development and applications of <strong>TINTOlib</strong>, a Python library that transforms tabular data into synthetic images.
   </p>
-  <p style="margin: 0.2rem 0;">
+  <p style="margin: 0.5rem 0;">
     This interactive map shows the global reach of these academic activities.
   </p>
 </div>
@@ -85,16 +87,18 @@ permalink: /talkmap.html
     maxZoom: 18
   }).addTo(map);
 
-  var customIcon = L.icon({
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/447/447038.png',
-    iconSize: [25, 25],
-    iconAnchor: [12, 25],
-    popupAnchor: [0, -28]
+  var blueIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-azure.png',
+    shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
   });
 
   for (var i = 0; i < addressPoints.length; i++) {
     var a = addressPoints[i];
-    var marker = L.marker(new L.LatLng(a[1], a[2]), { title: a[0], icon: customIcon });
+    var marker = L.marker(new L.LatLng(a[1], a[2]), { title: a[0], icon: blueIcon });
     marker.bindPopup('<b>' + a[0] + '</b>');
     marker.addTo(map);
   }
