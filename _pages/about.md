@@ -41,26 +41,21 @@ I am Manuel Castillo-Cara, **PhD in Computer Science**, specialized in Artificia
 | **2021 - 2023** | Postdoctoral Contract | Universidad Politécnica de Madrid (UPM) - European Program: María Zambrano. |
 | **Since 2023** | Professor/Researcher | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
 
-## 🔬 **Research and Projects**  
+## 🎓 **Research Inteterest and Projects**  
 
 Throughout my career, I have participated in **more than 15 research projects**, leading 2 of them as Principal Investigator.  
 
 I highlight my participation in a social development project in Peru, where we contributed to education in educational robotics and Scratch programming for more than 2000 children aged 8 to 15 in vulnerable areas.  
 
----
-
-## 🎓 **Research Interests**  
+Main Research area is about Synthetic Images and Hybrid Neural Networks:
 - Lead developer of the Python library [**TINTOlib**](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/){:target="_blank"}, designed for building hybrid neural networks with synthetic images. 
 - Creator of the [**TINTO**](https://www.manuelcastillo.eu/libros-software/software-TINTO/){:target="_blank"} method, an innovative technique to convert tabular data into synthetic images.
-- Artificial Intelligence and Data Science.
-- Pattern Recognition and Computer Vision.
-- Synthetic images and Hybrid Neural Networks.  
 
 🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America. See the [TINTOlib Talk Map](https://www.manuelcastillo.eu/talkmap.html){:target="_blank"}.
 
 ---
 
-## 📊 **Scientific Production**  
+## 🔬 **Scientific Production**  
 - 25 articles published in peer-reviewed journals  
 - 7 presentations (4 indexed in Scopus) and 1 tutorial in international conferences  
 - 2 participations in IEEE international robotics competitions, achieving 3rd place  
@@ -69,3 +64,10 @@ I highlight my participation in a social development project in Peru, where we c
 - 1 academic book and 1 book chapter  
 - 5 Master's theses and 6 Bachelor's theses supervised    
 
+### 🔬 **Impact in the Scientific Community**  
+
+| Source | Citations | #Q1 | #Q2 | H-Index |
+|--------|------|----|----|----------|
+| [Web Of Science (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
+| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
+| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 500 | - | - | 11 |
