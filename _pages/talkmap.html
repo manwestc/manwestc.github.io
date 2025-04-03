@@ -35,7 +35,7 @@ description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, C
 }
 </script>
 
-<!-- ✅ Leaflet Assets SIN integrity -->
+<!-- ✅ Leaflet Assets SIN crossorigin -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="/talkmap/org-locations.js"></script>
@@ -89,7 +89,7 @@ description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, C
 
   var customIcon = L.icon({
     iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-    iconSize: [20, 32], // Tamaño reducido
+    iconSize: [20, 32],
     iconAnchor: [10, 32],
     popupAnchor: [0, -30],
     shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
