@@ -10,7 +10,7 @@ redirect_from:
 
 ## 📚 **Mis cursos en [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}**  
 
-Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado varios cursos en **español**, disponibles en **Udemy**, donde puedes acceder a contenido especializado con un **cupón de descuento** en la [sección Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}.  
+Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado múltiples cursos en español en la plataforma **Udemy**, accesibles desde la sección [**Udemy**](https://www.manuelcastillo.eu/udemy/){:target="_blank"} con cupones de descuento.
 
 ---
 
@@ -47,22 +47,25 @@ Throughout my career, I have participated in **more than 15 research projects**,
 
 I highlight my participation in a social development project in Peru, where we contributed to education in educational robotics and Scratch programming for more than 2000 children aged 8 to 15 in vulnerable areas.  
 
-### **Research Interests**  
-- Artificial Intelligence and computational architectures (Fog Computing)
-- Data science, pattern recognition, and computer vision.  
+---
+
+## 🎓 **Research Interests**  
+- Artificial Intelligence and Data Science.
+- Pattern Recognition and Computer Vision.
+- Transform Tabular Data into Synthetic Images
 - Development of Hybrid Neural Networks with **synthetic images** using the Python library [**TINTOlib**](https://tintolib.readthedocs.io/en/latest/tinto.html){:target="_blank"}.  
 - Implementation of the **TINTO** method, an innovative conversion of tabular data into synthetic images, available on [GitHub](https://github.com/oeg-upm/TINTO){:target="_blank"}.  
 
 🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America.  
 
-## 📊 **Scientific Production**  
+---
 
-### **Publications and Conferences**  
-- 23 articles in indexed impact journals.  
-- 8 international conferences.  
-- 2 IEEE robotics competitions, achieving 3rd place.  
-- 1 utility model patent.  
-- 2 software registrations.  
-- 1 academic book.  
-- 2 book chapters.  
+## 📊 **Scientific Production**  
+- 25 articles published in peer-reviewed journals  
+- 7 presentations (4 indexed in Scopus) and 1 tutorial in international conferences  
+- 2 participations in IEEE international robotics competitions, achieving 3rd place  
+- 1 utility model patent  
+- 2 software copyright registrations  
+- 1 academic book and 1 book chapter  
+- 5 Master's theses and 6 Bachelor's theses supervised    
 
