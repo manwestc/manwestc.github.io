@@ -87,17 +87,11 @@ description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, C
     maxZoom: 18
   }).addTo(map);
 
-  // Icono personalizado azul suave
-  var customIcon = L.icon({
-    iconUrl: 'assets/images/icons/marker-blue.png',
-    iconSize: [38, 38],
-    iconAnchor: [19, 38],
-    popupAnchor: [0, -36]
-  });
-
   for (var i = 0; i < addressPoints.length; i++) {
     var a = addressPoints[i];
-    var marker = L.marker(new L.LatLng(a[1], a[2]), { title: a[0], icon: customIcon });
+    var marker = L.marker(new L.LatLng(a[1], a[2]), {
+      title: a[0] // icon default Leaflet azul
+    });
     marker.bindPopup('<b>' + a[0] + '</b>');
     marker.addTo(map);
   }
