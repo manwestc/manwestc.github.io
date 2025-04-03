@@ -9,6 +9,7 @@
 locale                   : "es-ES"
 title                    : "Ph.D. Manuel Castillo-Cara"
 title_separator          : "-"
+theme                    : minimal-mistakes-jekyll
 name                     : &name "Ph.D. Manuel Castillo-Cara"
 description              : &description "Manuel Castillo Cara is an Udemy instructor and postdoctoral researcher fellow at Universidad Politécnica de Madrid. Research lines: Wireless Sensor Networks, 
 Distributed Computing, Pattern Recognition and Artificial Intelligence. Manuel Castillo Cara es instructor Udemy e investigador postdoctoral en la Universidad Politécnica de Madrid. 
