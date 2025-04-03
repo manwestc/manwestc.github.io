@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: page
 title: "TalkMap"
 permalink: /talkmap.html
 ---
@@ -33,27 +33,43 @@ permalink: /talkmap.html
 }
 </script>
 
-<!-- ✅ Leaflet Assets -->
+<!-- ✅ Leaflet & Custom Assets -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-
 <script src="/talkmap/org-locations.js"></script>
 
-<!-- ✅ Mapa Estilizado -->
 <style>
   #map {
-    height: 500px;
+    height: 550px;
     margin: 2rem 0;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  .map-description {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 5px solid #0055aa;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 </style>
 
-<p style="font-size: 1.1rem; margin-top: 2rem;">
-  <strong>Key academic conferences and seminars</strong> where I have presented my research or conducted workshops, especially on the development and application of the <strong>TINTOlib</strong> Python library for transforming tabular data into synthetic images. This interactive map highlights the cities where these events took place.
-</p>
+<!-- ✅ Descripción -->
+<div class="map-description">
+  <h2>🌍 TalkMap: TINTOlib Around the World</h2>
+  <p><strong>Key academic conferences and seminars</strong> where I have presented research or led workshops—especially around the development and applications of <strong>TINTOlib</strong>, a Python library that transforms tabular data into synthetic images.</p>
+  <p>This interactive map shows the global reach of these academic activities.</p>
+</div>
 
-<!-- ✅ Contenedor del Mapa -->
+<!-- ✅ Mapa -->
 <div id="map"></div>
 
 <script>
@@ -65,11 +81,17 @@ permalink: /talkmap.html
     maxZoom: 18
   }).addTo(map);
 
+  var customIcon = L.icon({
+    iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -28]
+  });
+
   for (var i = 0; i < addressPoints.length; i++) {
     var a = addressPoints[i];
-    var title = a[0];
-    var marker = L.marker(new L.LatLng(a[1], a[2]), { title: title });
-    marker.bindPopup(title);
+    var marker = L.marker(new L.LatLng(a[1], a[2]), { title: a[0], icon: customIcon });
+    marker.bindPopup('<b>' + a[0] + '</b>');
     marker.addTo(map);
   }
 </script>
