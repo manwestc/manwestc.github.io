@@ -14,5 +14,7 @@ var addressPoints = [
   ["San Andrés, Colombia", 12.584719, -81.700562],
   ["Porto Alegre, Brasil", -30.034647, -51.217659],
   ["Huánuco, Perú", -9.93062, -76.24223],
-  ["Tacna, Perú", -18.01465, -70.25378]
+  ["Tacna, Perú", -18.01465, -70.25378],
+  ["Barcelona, España", 41.385064, 2.173403],
+  ["Ibiza, España", 38.908832, 1.432065]
 ];
