@@ -7,6 +7,7 @@ author_profile: true
 ---
 
 {% include base_path %}
+{% assign all_courses = site.talks %}
 
 <!-- ✅ SEO Structured Data -->
 <script type="application/ld+json">
@@ -16,7 +17,6 @@ author_profile: true
   "name": "Cursos Udemy de Manuel Castillo-Cara",
   "numberOfItems": {{ all_courses | size }},
   "itemListElement": [
-    {% assign all_courses = site.talks %}
     {% for course in all_courses %}
     {
       "@type": "ListItem",
@@ -49,11 +49,9 @@ author_profile: true
             border-bottom: 1px solid #ccc;
             margin-left: 0.5rem;
           ">
-            <!-- Imagen a la izquierda -->
             <img src="{{ post.image }}" alt="{{ post.title }}"
                  style="width: 110px; height: auto; border-radius: 6px; border: 1px solid #ddd;">
 
-            <!-- Texto del curso -->
             <div style="flex: 1; font-size: 1rem; line-height: 1.4;">
               {% include archive-single-talk.html %}
             </div>
