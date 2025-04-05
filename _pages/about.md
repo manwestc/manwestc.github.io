@@ -8,6 +8,75 @@ redirect_from:
   - /about.html
 ---
 
+<!-- ✅ Structured Data for About Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Manuel Castillo-Cara",
+  "image": "https://www.manuelcastillo.eu/images/profile.jpg",
+  "url": "https://www.manuelcastillo.eu",
+  "sameAs": [
+    "https://scholar.google.es/citations?user=r0JytwIAAAAJ",
+    "https://www.scopus.com/authid/detail.uri?authorId=57200871251",
+    "https://www.webofscience.com/wos/author/record/O-9762-2017",
+    "https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html",
+    "https://portalcientifico.uned.es/investigadores/818430/detalle",
+    "https://www.udemy.com/user/manuel-castillo-cara/",
+    "https://www.linkedin.com/in/manuelcastillocara/",
+    "https://orcid.org/0000-0002-2990-7090"
+  ],
+  "jobTitle": "Professor and Researcher in Artificial Intelligence",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Universidad Nacional de Educación a Distancia (UNED)",
+    "url": "https://www.uned.es"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Universidad de Castilla-La Mancha (UCLM)"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Artificial Intelligence Scientist",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Data Science",
+    "Data Analytics",
+    "Tabular Data",
+    "Synthetic Data",
+    "Synthetic Images",
+    "TINTO",
+    "TINTOlib",
+    "Tabular data into synthetic images",
+    "Tabular-to-images",
+    "UNED",
+    "Universidad Nacional de Educación a Distancia",
+    "Udemy",
+    "Researcher",
+    "Computer Science",
+    "Data science"
+    "Hybrid Neural Networks",
+    "Python Programming",
+    "R Programming",
+    "Scikit-learn",
+    "Keras",
+    "TensorFlow",
+    "PyTorch",
+    "GeoGebra",
+    "LaTeX",
+    "Educational Technology",
+    "Online Teaching",
+    "Scientific Writing",
+    "Open Science",
+    "Higher Education",
+    "Research Methodology"
+  ]
+}
+</script>
+
 ## 📚 **Mis cursos en [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}**  
 
 Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado múltiples cursos en español en la plataforma **Udemy**, accesibles desde la sección [**Udemy**](https://www.manuelcastillo.eu/udemy/){:target="_blank"} con cupones de descuento.
@@ -68,6 +137,6 @@ The main research area is about **Synthetic Images and Hybrid Neural Networks**:
 
 | Source | Citations | #Q1 | #Q2 | H-Index |
 |--------|------|----|----|----------|
-| [Web Of Science (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 180 | 9 | 10 | 8 |
+| [Web Of Science (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 190 | 9 | 10 | 8 |
 | [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 320 | 15 | 8 | 10 |
-| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 500 | - | - | 11 |
+| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 510 | - | - | 11 |
