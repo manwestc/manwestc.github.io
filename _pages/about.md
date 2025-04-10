@@ -57,7 +57,7 @@ redirect_from:
     "Udemy",
     "Researcher",
     "Computer Science",
-    "Data science"
+    "Data science",
     "Hybrid Neural Networks",
     "Python Programming",
     "R Programming",
