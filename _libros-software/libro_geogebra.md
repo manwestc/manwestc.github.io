@@ -79,13 +79,17 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
 }
 </script>
 
+<!-- Contenedor con escalado reducido -->
+<div style="transform: scale(0.85); transform-origin: top left; width: max-content;">
+  <div id="paypal-container-UX7UBGJ8TCPTW"></div>
+</div>
+
+<!-- Script de PayPal -->
 <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
 </script>
-
-<div id="paypal-container-UX7UBGJ8TCPTW"></div>
 <script>
   paypal.HostedButtons({
     hostedButtonId: "UX7UBGJ8TCPTW",
-  }).render("#paypal-container-UX7UBGJ8TCPTW")
+  }).render("#paypal-container-UX7UBGJ8TCPTW");
 </script>
