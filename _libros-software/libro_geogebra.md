@@ -84,7 +84,7 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
   }
 }
 </script>
-<!--
+
 <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
 </script>
@@ -94,33 +94,4 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
   paypal.HostedButtons({
     hostedButtonId: "UX7UBGJ8TCPTW",
   }).render("#paypal-container-UX7UBGJ8TCPTW")
-</script>
--->
-
-<!-- Estilos CSS para centrar y escalar el botón -->
-<style>
-  /* Seleccionamos el contenedor del botón de PayPal por su ID */
-  #paypal-container-UX7UBGJ8TCPTW {
-    display: inline-block;               /* Lo hacemos inline-block para poder centrarlo */
-    transform: scale(0.8);              /* Escala al 80% del tamaño original (ajustable) */
-    transform-origin: center center;    /* Escala desde el centro (mantiene alineación) */
-  }
-</style>
-
-<!-- Contenedor padre para centrar el botón -->
-<div style="text-align: center;">
-  <!-- Contenedor del botón PayPal (escalado via CSS arriba) -->
-  <div id="paypal-container-UX7UBGJ8TCPTW"></div>
-</div>
-
-<!-- SDK de PayPal Hosted Buttons -->
-<script 
-  src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
-</script>
-
-<!-- Script para renderizar el botón hospedado -->
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "UX7UBGJ8TCPTW"
-  }).render("#paypal-container-UX7UBGJ8TCPTW");
 </script>
