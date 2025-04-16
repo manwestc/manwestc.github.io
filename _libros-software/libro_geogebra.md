@@ -9,6 +9,12 @@ permalink: /libros-software/libro-curso-GeoGebra-Aula/
 author_profile: true
 ---
 
+<div style="text-align: center;">
+  <img src="/images/courses/geogebra.jpg" alt="Curso GeoGebra" width="400" style="border-radius: 8px; border: 1px solid #ccc; margin-bottom: 1rem;">
+</div>
+
+---
+
 ## Resumen
 
 El siguiente recurso didáctico pretende fomentar el uso de GeoGebra dentro del aula como recurso para facilitar y enriquecer la labor docente. Para ello se ha creado el libro **"GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra"** que se encuentra diposible para poder tener un aprendizaje óptimo práctico para el alumnado.
@@ -78,25 +84,43 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
   }
 }
 </script>
-
-<!-- Contenedor completo alineado al centro -->
-<div style="text-align: center; margin-top: 2rem;">
-  <p style="font-size: 1em; margin-bottom: 1em;">
-    También puedes adquirir este curso mediante PayPal:
-  </p>
-  
-  <!-- Escalado del botón PayPal -->
-  <div style="display: inline-block; transform: scale(0.85); transform-origin: top center;">
-    <div id="paypal-container-UX7UBGJ8TCPTW"></div>
-  </div>
-</div>
-
-<!-- Script de PayPal (puede ir una única vez al final de la página si usas más botones) -->
+<!--
 <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
 </script>
+
+<div id="paypal-container-UX7UBGJ8TCPTW"></div>
 <script>
   paypal.HostedButtons({
     hostedButtonId: "UX7UBGJ8TCPTW",
+  }).render("#paypal-container-UX7UBGJ8TCPTW")
+</script>
+-->
+
+<!-- Estilos CSS para centrar y escalar el botón -->
+<style>
+  /* Seleccionamos el contenedor del botón de PayPal por su ID */
+  #paypal-container-UX7UBGJ8TCPTW {
+    display: inline-block;               /* Lo hacemos inline-block para poder centrarlo */
+    transform: scale(0.8);              /* Escala al 80% del tamaño original (ajustable) */
+    transform-origin: center center;    /* Escala desde el centro (mantiene alineación) */
+  }
+</style>
+
+<!-- Contenedor padre para centrar el botón -->
+<div style="text-align: center;">
+  <!-- Contenedor del botón PayPal (escalado via CSS arriba) -->
+  <div id="paypal-container-UX7UBGJ8TCPTW"></div>
+</div>
+
+<!-- SDK de PayPal Hosted Buttons -->
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+</script>
+
+<!-- Script para renderizar el botón hospedado -->
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "UX7UBGJ8TCPTW"
   }).render("#paypal-container-UX7UBGJ8TCPTW");
 </script>
