@@ -45,11 +45,11 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
 📩 Para adquirirlo, escríbeme a: [manwest.c@gmail.com](mailto:manwest.c@gmail.com)
 
 ---
-
+<!-->
 <div style="text-align:center; margin: 2rem 0;">
   <img src="/images/geogebra.png" width="320" height="300" alt="Portada del libro GeoGebra en el Aula">
 </div>
-
+-->
 <!-- SEO Structured Data -->
 <script type="application/ld+json">
 {
