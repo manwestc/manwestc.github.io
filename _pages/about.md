@@ -104,11 +104,12 @@ Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con u
 
 I am Manuel Castillo-Cara, PhD in Computer Science, specialized in **Artificial Intelligence**, from the Universidad de Castilla-La Mancha (UCLM), where I received the Cum Laude distinction in 2018.  
 
-| Period       | Position | Institution |
-|--------------|------------------------------------------------|------------------------------------------------|
-| **2014 - 2020** | Professor/Researcher in Peru | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) |
-| **2021 - 2023** | Postdoctoral Contract | Universidad Politécnica de Madrid (UPM) - European Program: María Zambrano. |
-| **Since 2023** | Professor/Researcher | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} |
+| Period       | Position | Institution | Research Group |
+|--------------|------------------------------------------------|------------------------------------------------|------------------|
+| **2014 - 2020** | Professor/Researcher in Peru | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) | IUT-SCi  |
+| **2021 - 2023** | Postdoctoral Contract | Universidad Politécnica de Madrid (UPM) - European Program: María Zambrano. | [OEG](https://oeg.fi.upm.es/){:target="_blank"} |
+| **Since 2023** | Professor/Researcher | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} | [CISIAD](https://portalcientifico.uned.es/grupos/17475/detalle){:target="_blank"} |
+
 
 ## 🎓 **Research Inteterest and Projects**  
 

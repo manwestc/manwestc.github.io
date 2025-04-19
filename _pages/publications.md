@@ -39,6 +39,7 @@ description: "Scientific publications, books, patents and software contributions
 - 🔗 [**Web of Science**](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"}  
 - 🔗 [**UNED Researcher**](https://portalcientifico.uned.es/investigadores/818430/detalle){:target="_blank"}  
 - 🔗 [**UNED Professor**](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"}  
+- 🔗 [**CISIAD Research Group**](https://portalcientifico.uned.es/grupos/17475/detalle){:target="_blank"} 
 
 
 
@@ -60,7 +61,7 @@ description: "Scientific publications, books, patents and software contributions
 
 ## 📚 **Books and chapters**
 - Book: Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra.  
-📖 ISBN: 9798379088873, Ed. Amazon. [📕 Ver libro](https://www.manuelcastillo.eu/portfolio/portfolio-1/){:target="_blank"}.
+📖 ISBN: 9798379088873, Ed. Amazon. [📕 Ver libro](https://www.manuelcastillo.eu/libros-software/libro-curso-GeoGebra-Aula/){:target="_blank"}.
 - Chapter: Hancco _et al_. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. _IGI Global_, 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}
 - Chapter: Manuel Castillo-Cara. Combating Multipath Fading in Indoor Positioning with Asynchronous Power Transmission Techniques. _COST Action INTERACT WG2 Whitepaper_. COST CA20120 INTERACT Working Group 2 (Signal Processing and Localisation). 2024. [Link](https://interactca20120.org/work-in-progress/){:target="_blank"}.
 
