@@ -138,6 +138,6 @@ The main research area is about **Synthetic Images and Hybrid Neural Networks**:
 
 | Source | Citations | #Q1 | #Q2 | H-Index |
 |--------|------|----|----|----------|
-| [Web Of Science (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 190 | 9 | 10 | 8 |
-| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 322 | 15 | 8 | 10 |
-| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 510 | - | - | 11 |
+| [Web Of Science (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 192 | 9 | 10 | 8 |
+| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 326 | 15 | 8 | 10 |
+| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 513 | - | - | 12 |
