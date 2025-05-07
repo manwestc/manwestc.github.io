@@ -49,7 +49,6 @@ description: "University teaching, thesis supervision, and technical training by
 ## 📚 **Undergraduate Courses**
  - **Inteligent Systems**. BSc in Computer Science, Universidad Nacional de Educación a Distancia (UNED), Spain. 2024-Current.
  - **Data Mining**. BSc in Computer Science, Universidad Nacional de Educación a Distancia (UNED), Spain. 2023-Current.
- - **Data Mining**. BSc in Computer Science, Universidad Nacional de Educación a Distancia (UNED), Spain. 2023-Current.
  - **Probability and Statistics I**. BSc in Computer Science, Universidad Politécnica de Madrid (UPM), Spain. 2022-2023.
  - **Workshop on Research Proposal**. BSc in Computer Science, Universidad de Lima (ULima), Peru. 2021.
  - **Network Management**, **Thesis Seminar**, **Fundamentals of Programming**, **Programming on Mobile Devices** & **Algorithms**. BSc in Computer Science, Universidad Nacional de Ingeniería (UNI), Peru. 2014-2020.
