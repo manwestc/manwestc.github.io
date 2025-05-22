@@ -69,6 +69,7 @@ description: "List of competitive research and development projects led or co-le
 📅 *2021 – 2024*  
 🔗 [More Info](http://www.cyted.org/AgIoT){:target="_blank"}
 
+<!--
 ---
 
 ## 🏭 **Process & Industrial Development**
@@ -77,3 +78,4 @@ description: "List of competitive research and development projects led or co-le
 *"Automation System for Postgraduate Academic and Administrative Activities at UNI"*  
 🏛️ *SNIP Project*  
 📅 *2016* | 📍 *Peru*
+-->
