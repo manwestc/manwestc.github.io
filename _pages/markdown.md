@@ -10,7 +10,7 @@ description: "List of competitive research and development projects led or co-le
 
 ## 🚀 **Competitive R&D&i Projects**
 
-### Ongoing
+### **Ongoing**
 
 📌 **Co-investigator**  
 *"Cost-Effective Screening of Breast Cancer and Rheumatic Heart Disease Using Artificial Intelligence"*  
@@ -22,7 +22,7 @@ description: "List of competitive research and development projects led or co-le
 🏛️ *State Agency for Investigation* — **PID2021-123627OB-C52**  
 📅 *Sept. 2022 – Sept. 2025* | 📍 *Spain*
 
-### Completed
+### **Completed**
 
 📌 **Co-investigator**  
 *"Supercapacitor-based system for small electric vehicles and wireless devices"*  

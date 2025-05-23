@@ -45,7 +45,7 @@ description: "Scientific publications, books, patents and software contributions
 
 ---
 
-## 🔍 **Last 10 Journal Scientific Articles**
+## 🔍 **Most recent 10 publications in IA**
 - Manuel Castillo-Cara, et al. MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning. *IEEE Journal of Selected Topics in Signal Processing*. DOI: [10.1109/JSTSP.2025.3555067](https://doi.org/10.1109/JSTSP.2025.3555067){:target="_blank"}. (IF: 8.7 , Q1 – SJR: 4.12, Q1).
 - Jiayun Liu, Manuel Castillo-Cara, et al. On the Significance of Graph Neural Networks with Pretrained Transformers in Content-Based Recommender Systems for Academic Articles Classification. *Expert Systems*. DOI: [10.1111/exsy.70073](https://doi.org/10.1111/exsy.70073){:target="_blank"}. (IF: 3, Q2 – SJR: 0.74, Q2).
 - Eduardo Yauri-Lozano, Manuel Castillo-Cara et al. Generative Adversarial Networks for Text-to-Face Synthesis & Generation: A Quantitative-Qualitative Analysis of Natural Language Processing Encoders for Spanish. *Information Processing & Management*. 2024. DOI: [10.1016/j.ipm.2024.103667](https://doi.org/10.1016/j.ipm.2024.103667){:target="_blank"}. (IF: 7.4, Q1 – SJR: 2.06, Q1). 
