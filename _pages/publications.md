@@ -61,20 +61,20 @@ description: "Scientific publications, books, patents and software contributions
 
 ## 📚 **Books and chapters**
 - Book: Manuel Castillo-Cara. GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra.  
-📖 ISBN: 9798379088873, Ed. Amazon. [📕 Ver libro](https://www.manuelcastillo.eu/libros-software/libro-curso-GeoGebra-Aula/){:target="_blank"}.
+📖 ISBN: 9798379088873, Ed. Amazon. [📕 Ver libro](https://www.manuelcastillo.eu/libros-software/libro-curso-GeoGebra-Aula/).
 - Chapter: Hancco _et al_. Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach. _IGI Global_, 2024. DOI: [10.4018/979-8-3693-0740-3.ch009](https://doi.org/10.4018/979-8-3693-0740-3.ch009){:target="_blank"}
 - Chapter: Manuel Castillo-Cara. Combating Multipath Fading in Indoor Positioning with Asynchronous Power Transmission Techniques. _COST Action INTERACT WG2 Whitepaper_. COST CA20120 INTERACT Working Group 2 (Signal Processing and Localisation). 2024. [Link](https://interactca20120.org/work-in-progress/){:target="_blank"}.
 
 ---
 
 ## 💻 **Software copy rights**
-- TINTORERA – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/4624  
-- TINTORETTO – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/5491  
+- TINTORERA – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/4624. [Link](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/).
+- TINTORETTO – Manuel Castillo-Cara y Raúl García Castro. Registro Propiedad Intelectual: 16/2023/5491. [Link](https://www.manuelcastillo.eu/libros-software/software-TINTO/).
 
 ---
 
 ## 🏅 **Patents**
-- Dispositivo electrónico para seguimiento y localización de personas o animales. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151, Perú, 2019.
+- Dispositivo electrónico para seguimiento y localización de personas o animales. Expediente: 002758-2016/DIN. Resolución: 000417-2019/DIN-INDECOPI. Título N.º: 1151, Perú, 2019. [Link](https://www.manuelcastillo.eu/libros-software/patente/)
 
 ---
 
@@ -97,7 +97,10 @@ DOI: [10.2830/9342](https://doi.org/10.2830/9342){:target="_blank"}
 ---
 
 ## 🌍 **Congress**
-- Rodrigo M. Carrillo-Larco _et al_. Phenotypes of non-alcoholic fatty liver disease (NAFLD) and all-cause mortality. *2022 Annual Meeting of the American College of Epidemiology*, USA, 2022. DOI: [10.1016/j.annepidem.2022.08.036](https://doi.org/10.1016/j.annepidem.2022.08.036){:target="_blank"}  
-- Lovón-Melgarejo, J. _et al_. *16Th International Multi-Conference for Engineering, Education, and Technology (LACCEI)*, Perú, 2018.  
-DOI: [10.18687/laccei2018.1.1.413](https://doi.org/10.18687/laccei2018.1.1.413){:target="_blank"}  
-- Gusseppe Bravo Rocca _et al_. *8th IEEE Latin-American Conference on Communications (LATINCOM)*, Colombia, 2016. DOI: [10.1109/LATINCOM.2016.7811562](https://doi.org/10.1109/LATINCOM.2016.7811562){:target="_blank"}  
+- Hybrid Neural Network-Based Indoor Localisation System for Mobile Robots Using CSI Data in a Robotics Simulator. *5th International Conference on Robotics, Computer Vision and Intelligent Systems (ROBOVIS)*. Portugal. 2025. [Link](https://www.insticc.org/node/TechnicalProgram/robovis/2025/personDetails/1d6991cc-c792-4bba-990d-91aed2148de6){:target="_blank"}.
+- Phenotypes of non-alcoholic fatty liver disease (NAFLD) and all-cause mortality. *2022 Annual Meeting of the American College of Epidemiology*. USA, 2022. DOI: [10.1016/j.annepidem.2022.08.036](https://doi.org/10.1016/j.annepidem.2022.08.036){:target="_blank"}  
+- Identification of risk zones for road safety through unsupervised learning algorithms. *16Th International Multi-Conference for Engineering, Education, and Technology (LACCEI)*. Peru. 2018.  
+DOI: [10.18687/laccei2018.1.1.413](https://doi.org/10.18687/laccei2018.1.1.413){:target="_blank"}. 
+- Supervised learning algorithms for indoor localization fingerprinting using BLE4.0 Beacons. *4th IEEE Latin American Conference on Computational Intelligence*. Peru. 2017. DOI: [10.1109/LA-CCI.2017.8285716](https://doi.org/10.1109/LA-CCI.2017.8285716){:target="_blank"}. (SJR: 0.12).
+- Citizen security using Machine Learning algorithms through Open Data. *8th IEEE Latin-American Conference on Communications (LATINCOM)*. Colombia. 2016. DOI: [10.1109/LATINCOM.2016.7811562](https://doi.org/10.1109/LATINCOM.2016.7811562){:target="_blank"}. (SJR: 0.22).
+- Ray: Smart indoor/outdoor routes for the blind using Bluetooth 4.0 BLE. *Procedia Computer Science - 7th International Conference on Ambient Systems, Networks and Technologies (ANT)*. Madrid. 2016. DOI: [10.1016/j.prcocs.2016.04.153](https://doi.org/10.1016/j.prcocs.2016.04.153){:target="_blank"}. (SJR: 0.258).
