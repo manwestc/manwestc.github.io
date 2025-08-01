@@ -44,7 +44,7 @@ Así, el libro tiene 6 módulos de aprendizaje: (i) Iniciación al Geogebra. Con
 - 📕 Libro en formato PDF  
 - 🎥 Vídeos tutoriales prácticos  
 - 📂 Archivos fuente de GeoGebra  
-- 🎓 Acceso gratuito al [curso Udemy](https://www.udemy.com/course/matematicas-geogebra/?couponCode=JUL_2025){:target="_blank"}
+- 🎓 Acceso gratuito al [curso Udemy](https://www.udemy.com/course/matematicas-geogebra/?couponCode=AGO_2025){:target="_blank"}
 
 💰 **Precio**: 20€ (incluye todos los recursos)
 
