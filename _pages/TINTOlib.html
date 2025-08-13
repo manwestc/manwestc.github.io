@@ -1,10 +1,10 @@
 ---
 layout: archive
-title: "TINTOlib: Transform tabular data into synthetic images"
-excerpt: "TINTOlib is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through different algorithmic methods."
+title: "TINTOlib — From Tabular Data to Synthetic Images for Deep Learning"
+excerpt: "TINTOlib is an open-source Python library that transforms tabular data into synthetic images using multiple algorithmic methods, enabling deep learning with CNNs, Vision Transformers, and hybrid models."
 permalink: /TINTOlib.html
 author_profile: true
-description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Conferences, Software, Publications, Manuel Castillo-Cara"
+description: "TINTOlib is a Python library that converts tabular data into synthetic images for deep learning with CNNs, Vision Transformers, and hybrid architectures. Includes tutorials, publications, and conference presentations by Manuel Castillo-Cara."
 ---
 <!-- ✅ SEO -->
 <meta name="description" content="TINTOlib: a Python library that transforms tabular data into synthetic images for Deep Learning (CNNs, ViTs, and hybrid models). Includes an interactive map, publications, and tutorials.">
@@ -49,7 +49,7 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
   "mainEntity": [
     { "@type": "Question", "name": "What is TINTOlib?",
       "acceptedAnswer": { "@type": "Answer",
-        "text": "TINTOlib is a Python library that transforms tabular data into synthetic images, enabling the use of Deep Learning models such as CNNs and Vision Transformers on structured datasets."
+        "text": "TINTOlib is a Python library that transforms tabular data into synthetic images, enabling the use of Deep Learning models such as CNNs and Vision Transformers on tabular data."
       }
     },
     { "@type": "Question", "name": "Which deep learning models can I use with TINTOlib?",
@@ -59,7 +59,7 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
     },
     { "@type": "Question", "name": "Why convert tabular data into images?",
       "acceptedAnswer": { "@type": "Answer",
-        "text": "Converting tabular data into images allows leveraging computer vision models for structured data tasks, often improving accuracy and generalization."
+        "text": "Converting tabular data into images allows leveraging computer vision models for tabular data tasks, often improving accuracy and generalization."
       }
     },
     { "@type": "Question", "name": "Where can I learn to use TINTOlib?",
@@ -108,6 +108,21 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
   .methods-table tbody tr:nth-child(even){background:#fafbfc}
   @keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
   @media (max-width:720px){.tinto-hero{flex-direction:column;text-align:center}.tinto-hero img{width:72px;height:72px}}
+
+  .center-buttons {
+    text-align: center;
+  }
+
+  .center-buttons .btn {
+    display: inline-block;
+    margin: 0.3rem; /* espacio entre botones */
+  }
+
+  .tinto-card a.btn,
+  .tinto-card img {
+    display: block;
+    margin: 0.5rem auto; /* centrado horizontal + separación */
+  }
 </style>
 
 <div class="tinto-container">
@@ -116,8 +131,8 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
     <img src="/images/tinto-logo.svg" alt="TINTOlib logo" loading="lazy">
     <div>
       <h1>TINTOlib — Tabular Data → Synthetic Images</h1>
-      <p>Open-source Python library for applying CNNs, ViTs, and hybrid models to structured data.</p>
-      <div style="margin-top:.6rem">
+      <p>Open-source Python library that transforms tabular data into synthetic images, enabling the use of vision-based models such as CNNs, ViTs, and hybrid architectures.</p>
+      <div style="margin-top:.6rem" class="center-buttons">
         <a class="btn btn-ghost btn-inline" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">Documentation</a>
         <a class="btn btn-primary btn-inline" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">GitHub</a>
       </div>
@@ -131,13 +146,23 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
       <div class="tinto-card" style="flex:1 1 280px">
         <h3 style="margin-top:0">📚 Udemy</h3>
         <p style="margin:.25rem 0 .75rem">Free course with video lessons and practical examples.</p>
-        <a class="btn btn-primary" href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" target="_blank" rel="noopener">Access Udemy</a>
+        <a class="btn btn-primary" 
+          href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" 
+          target="_blank" 
+          rel="noopener" 
+          style="display:block; margin:0.5rem auto; width:max-content;">
+          Access Udemy
+        </a>
       </div>
       <div class="tinto-card" style="flex:1 1 280px">
         <h3 style="margin-top:0">📺 GitHub</h3>
         <p style="margin:.25rem 0 .75rem">Bilingual video tutorials + notebooks.</p>
-        <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course/tree/main/5_TINTOlib%20Videotutorial%20course" target="_blank" rel="noopener">
-          <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access GitHub Course" loading="lazy">
+        <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course" 
+          target="_blank" 
+          rel="noopener" 
+          style="display:block; margin:0.5rem auto; width:max-content;">
+          <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" 
+              alt="Access GitHub Course" loading="lazy">
         </a>
       </div>
     </div>
@@ -170,7 +195,7 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
     <thead><tr><th style="width:25%;">Method</th><th style="width:75%;">Description</th></tr></thead>
     <tbody>
       <tr><td><a href="https://github.com/oeg-upm/TINTO" target="_blank" rel="noopener">TINTO</a></td><td>Converts tidy tabular data into synthetic images using several layout algorithms and optional image preprocessing.</td></tr>
-      <tr><td><a href="https://github.com/zhuyitan/igtd" target="_blank" rel="noopener">IGTD</a></td><td>Places features on a grid based on correlations, producing structured images that preserve variable relationships.</td></tr>
+      <tr><td><a href="https://github.com/zhuyitan/igtd" target="_blank" rel="noopener">IGTD</a></td><td>Places features on a grid based on correlations, producing synthetic images that preserve variable relationships.</td></tr>
       <tr><td><a href="https://github.com/omidbazgirTTU/REFINED" target="_blank" rel="noopener">REFINED</a></td><td>Optimizes the 2D placement of variables to enhance feature locality for CNN processing.</td></tr>
       <tr><td><a href="https://github.com/anuraganands/Non-image-data-classification-with-CNN/" target="_blank" rel="noopener">BarGraph</a></td><td>Represents each sample as a bar-chart image of its feature values for direct CNN classification.</td></tr>
       <tr><td><a href="https://github.com/anuraganands/Non-image-data-classification-with-CNN/" target="_blank" rel="noopener">DistanceMatrix</a></td><td>Builds an image from pairwise feature distances, revealing similarity patterns in a matrix form.</td></tr>
@@ -180,6 +205,26 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
       <tr><td><a href="https://ieeexplore.ieee.org/document/10278393" target="_blank" rel="noopener">BIE</a></td><td>Generates compact, binary-encoded images from tabular features for classification.</td></tr>
     </tbody>
   </table>
+</div>
+
+<!-- ✅ Partner Institutions -->
+<h2>🏛️ Partner Institutions</h2>
+<p style="text-align:center; max-width:750px; margin:0 auto 1rem; color:#555;">
+TINTOlib has been developed in collaboration with leading research groups from several universities and institutions.
+</p>
+<div style="text-align: center;">
+  <a href="https://oeg.fi.upm.es/" target="_blank">
+    <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-oeg.png" width="130" alt="Ontology Engineering Group">
+  </a>
+  <a href="https://www.upm.es/" target="_blank">
+    <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-upm.png" width="130" alt="Universidad Politécnica de Madrid">
+  </a>
+  <a href="https://www.uned.es/" target="_blank">
+    <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-uned-.jpg" width="130" alt="Universidad Nacional de Educación a Distancia">
+  </a>
+  <a href="https://www.uclm.es/" target="_blank">
+    <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-uclm.png" width="130" alt="Universidad de Castilla-La Mancha">
+  </a>
 </div>
 
 <!-- Init map after scripts load -->
@@ -202,3 +247,4 @@ description: "TINTOlib: Tabular Data into Synthetic Images, Deep Learning, Confe
     }
   });
 </script>
+
