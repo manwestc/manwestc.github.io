@@ -3,11 +3,11 @@ main:
   - title: "Udemy"
     url: /udemy/   
 
-  - title: "Books & Software"
-    url: /libros-software/
-
   - title: "TINTOlib"
     url: /TINTOlib.html
+  
+  - title: "Books & Software"
+    url: /libros-software/
 
   - title: "Publications"
     url: /publications/ 
