@@ -6,8 +6,8 @@ main:
   - title: "Books & Software"
     url: /libros-software/
 
-  - title: "TalkMap"
-    url: /talkmap.html
+  - title: "TINTOlib"
+    url: /TINTOlib.html
 
   - title: "Publications"
     url: /publications/ 
