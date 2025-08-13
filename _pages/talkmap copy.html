@@ -1,0 +1,140 @@
+---
+layout: archive
+title: "TalkMap"
+permalink: /talkmap.html
+author_profile: true
+description: "Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, Conferencias, Research, Presentations, Locations"
+---
+
+<!-- ✅ SEO Meta Tags -->
+<meta name="description" content="Mapa interactivo de conferencias, charlas y actividades académicas de Manuel Castillo-Cara. Talk map of academic activities.">
+<meta name="keywords" content="Talks, Conferences, Academic Map, Manuel Castillo-Cara, Eventos, Conferencias, Research, Presentations, Locations">
+<meta name="author" content="Manuel Castillo-Cara">
+<meta property="og:title" content="TalkMap - Manuel Castillo-Cara">
+<meta property="og:description" content="Mapa interactivo de conferencias, charlas y actividades académicas.">
+<meta property="og:url" content="https://www.manuelcastillo.eu/talkmap.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.manuelcastillo.eu/images/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TalkMap - Manuel Castillo-Cara">
+<meta name="twitter:description" content="Mapa interactivo de conferencias, charlas y actividades académicas.">
+<meta name="twitter:image" content="https://www.manuelcastillo.eu/images/profile.jpg">
+
+<!-- ✅ SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "TalkMap",
+  "description": "Mapa interactivo con las localizaciones académicas de Manuel Castillo-Cara.",
+  "url": "https://www.manuelcastillo.eu/talkmap.html",
+  "author": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara"
+  }
+}
+</script>
+
+<!-- ✅ Leaflet Assets SIN crossorigin -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/talkmap/org-locations.js"></script>
+
+<style>
+  #map {
+    height: 550px;
+    margin: 2rem 0;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  .map-description {
+    background: #f9f9f9;
+    padding: 1.25rem 1.5rem;
+    border-left: 5px solid #4682B4;
+    margin: 1rem 0 2rem 0;
+    border-radius: 8px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<!-- ✅ Descripción -->
+<div class="map-description">
+  <h2 style="margin-bottom: 0.8rem;">🌍 Talk Map: TINTOlib Around the World</h2>
+  <p style="margin: 0.5rem 0;">
+    <strong>Key academic conferences and seminars</strong> where I have presented research or led workshops—especially around the development and applications of <strong>TINTOlib</strong>, a Python library that transforms tabular data into synthetic images.
+  </p>
+  <p style="margin: 0.5rem 0;">
+    This interactive map shows the global reach of these academic activities.
+  </p>
+</div>
+
+<!-- ✅ Mapa -->
+<div id="map"></div>
+
+<script>
+  var map = L.map('map').setView([20, -30], 2);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 18
+  }).addTo(map);
+
+  var customIcon = L.icon({
+    iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+    iconSize: [20, 32],
+    iconAnchor: [10, 32],
+    popupAnchor: [0, -30],
+    shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+    shadowSize: [30, 40],
+    shadowAnchor: [8, 38]
+  });
+
+  for (var i = 0; i < addressPoints.length; i++) {
+    var a = addressPoints[i];
+    var marker = L.marker(new L.LatLng(a[1], a[2]), {
+      title: a[0],
+      icon: customIcon
+    });
+    marker.bindPopup('<b>' + a[0] + '</b>');
+    marker.addTo(map);
+  }
+</script>
+
+<!-- ✅ TINTOlib Publications -->
+<div class="map-description">
+  <h2 style="margin-bottom: 0.8rem;">🧠 Research and Software Publications Related to TINTOlib</h2>
+
+  <h3 style="margin-top: 1rem;">📄 Research Articles</h3>
+  <ul>
+    <li>
+      Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</strong>. 
+      <em>IEEE Journal of Selected Topics in Signal Processing</em>. 
+      DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank">10.1109/JSTSP.2025.3555067</a> 
+      (IF: 13.7 , Q1 – SJR: 4.12, Q1).
+    </li>
+    <li>
+      Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. <strong>A Novel Deep Learning Approach using Blurring Image Techniques for Bluetooth-based Indoor Localisation</strong>. 
+      <em>Information Fusion</em>, 2023. 
+      DOI: <a href="https://doi.org/10.1016/j.inffus.2022.10.011" target="_blank">10.1016/j.inffus.2022.10.011</a> 
+      (IF: 14.7, Q1 – SJR: 5.65, Q1).
+    </li>
+  </ul>
+
+  <h3 style="margin-top: 1rem;">💾 Software Articles</h3>
+  <ul>
+    <li>
+      Manuel Castillo-Cara et al. <strong>TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks</strong>. 
+      <em>SoftwareX</em>, 2023. 
+      DOI: <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank">10.1016/j.softx.2023.101391</a> 
+      (IF: 2.4, Q2 – SJR: 0.54, Q2).
+    </li>
+  </ul>
+</div>
