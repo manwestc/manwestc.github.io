@@ -1,0 +1,147 @@
+---
+permalink: /
+title: "About Me"
+excerpt: "About Me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+<!-- ✅ Structured Data for About Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Manuel Castillo-Cara",
+  "image": "https://www.manuelcastillo.eu/images/profile.jpg",
+  "url": "https://www.manuelcastillo.eu",
+  "sameAs": [
+    "https://scholar.google.es/citations?user=r0JytwIAAAAJ",
+    "https://www.scopus.com/authid/detail.uri?authorId=57200871251",
+    "https://www.webofscience.com/wos/author/record/O-9762-2017",
+    "https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html",
+    "https://portalcientifico.uned.es/investigadores/818430/detalle",
+    "https://www.udemy.com/user/manuel-castillo-cara/",
+    "https://www.linkedin.com/in/manuelcastillocara/",
+    "https://orcid.org/0000-0002-2990-7090"
+  ],
+  "jobTitle": "Professor and Researcher in Artificial Intelligence",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Universidad Nacional de Educación a Distancia (UNED)",
+    "url": "https://www.uned.es"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Universidad de Castilla-La Mancha (UCLM)"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Artificial Intelligence Scientist",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Data Science",
+    "Data Analytics",
+    "Tabular Data",
+    "Synthetic Data",
+    "Synthetic Images",
+    "TINTO",
+    "TINTOlib",
+    "Tabular data into synthetic images",
+    "Tabular-to-images",
+    "UNED",
+    "Universidad Nacional de Educación a Distancia",
+    "Udemy",
+    "Researcher",
+    "Computer Science",
+    "Data science",
+    "Hybrid Neural Networks",
+    "Python Programming",
+    "R Programming",
+    "Scikit-learn",
+    "Keras",
+    "TensorFlow",
+    "PyTorch",
+    "GeoGebra",
+    "LaTeX",
+    "Educational Technology",
+    "Online Teaching",
+    "Scientific Writing",
+    "Open Science",
+    "Higher Education",
+    "Research Methodology"
+  ]
+}
+</script>
+
+## 📚 **Mis cursos en [Udemy](https://www.manuelcastillo.eu/udemy/){:target="_blank"}**  
+
+Soy un apasionado de la **Inteligencia Artificial y la Ciencia de Datos**, con un enfoque práctico en la formación de nuevas generaciones. He desarrollado múltiples cursos en español en la plataforma **Udemy**, accesibles desde la sección [**Udemy**](https://www.manuelcastillo.eu/udemy/){:target="_blank"} con cupones de descuento.
+
+---
+
+  <!-- Courses (Udemy + GitHub) -->
+  <section class="tinto-card soft">
+    <h2 class="section-title" style="color:#1565c0">🎉 Learn TINTOlib for Free</h2>
+    <div class="tinto-row">
+      <div class="tinto-card" style="flex:1 1 280px">
+        <h3 style="margin-top:0">📚 Udemy</h3>
+        <p style="margin:.25rem 0 .75rem">Free course with videos and practical examples.</p>
+        <a class="btn btn-primary" href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" target="_blank" rel="noopener">Access Udemy</a>
+      </div>
+      <div class="tinto-card" style="flex:1 1 280px">
+        <h3 style="margin-top:0">📺 GitHub</h3>
+        <p style="margin:.25rem 0 .75rem">Bilingual video tutorials + notebooks.</p>
+        <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access GitHub Course" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+---
+
+## 👨‍🎓 **Biography**  
+
+I am Manuel Castillo-Cara, PhD in Computer Science, specialized in **Artificial Intelligence**, from the Universidad de Castilla-La Mancha (UCLM), where I received the Cum Laude distinction in 2018.  
+
+| Period       | Position | Institution | Research Group |
+|--------------|------------------------------------------------|------------------------------------------------|------------------|
+| **2014 - 2020** | Professor/Researcher in Peru | - Universidad Nacional de Ingeniería (UNI) <br> - Universidad de Lima (ULima) | IUT-SCi  |
+| **2021 - 2023** | Postdoctoral Contract | Universidad Politécnica de Madrid (UPM) - European Program: María Zambrano. | [OEG](https://oeg.fi.upm.es/){:target="_blank"} |
+| **Since 2023** | Professor/Researcher | [Universidad Nacional de Educación a Distancia (UNED)](https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html){:target="_blank"} | [CISIAD](https://portalcientifico.uned.es/grupos/17475/detalle){:target="_blank"} |
+
+
+## 🎓 **Research Inteterest and Projects**  
+
+Throughout my career, I have participated in **more than 15 research projects**, leading 2 of them as Principal Investigator.  
+
+I highlight my participation in a social development project in Peru, where we contributed to education in educational robotics and Scratch programming for more than 2000 children aged 8 to 15 in vulnerable areas.  
+
+The main research area is about **Synthetic Images and Hybrid Neural Networks**:
+- Lead developer of the Python library [**TINTOlib**](https://www.manuelcastillo.eu/libros-software/software-TINTOlib/){:target="_blank"}, designed for building hybrid neural networks with synthetic images. 
+- Creator of the [**TINTO**](https://www.manuelcastillo.eu/libros-software/software-TINTO/){:target="_blank"} method, an innovative technique to convert tabular data into synthetic images.
+
+🗣️ I have delivered multiple seminars on AI and TINTOlib in Spain and America. See the [TINTOlib Talk Map](https://www.manuelcastillo.eu/talkmap.html){:target="_blank"}.
+
+---
+
+## 🔬 **Scientific Production**  
+- 25 articles published in peer-reviewed journals  
+- 7 presentations (4 indexed in Scopus) and 1 tutorial in international conferences  
+- 2 participations in IEEE international robotics competitions, achieving 3rd place  
+- 1 utility model patent  
+- 2 software copyright registrations  
+- 1 academic book and 1 book chapter  
+- 6 Master's theses and 6 Bachelor's theses supervised    
+
+### 📊 **Impact in the Scientific Community**  
+
+| Source | Citations | #Q1 | #Q2 | H-Index |
+|--------|------|----|----|----------|
+| [Web Of Science (JCR)](https://www.webofscience.com/wos/author/record/O-9762-2017){:target="_blank"} | 210 | 9 | 10 | 9 |
+| [Scopus (SJR)](https://www.scopus.com/authid/detail.uri?authorId=57200871251){:target="_blank"} | 344 | 15 | 8 | 11 |
+| [Google Scholar](https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ){:target="_blank"} | 548 | - | - | 13 |
