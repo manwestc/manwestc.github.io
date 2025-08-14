@@ -167,6 +167,28 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   }
 </style>
 
+<style>
+  /* Añade esto junto al resto de estilos de TINTOlib */
+  :root{
+    --ink: var(--tinto-ink, #37474f);
+    --brand: #1565c0; /* azul que usas en el resto del sitio */
+  }
+
+  /* (re)defino el estilo de section-title con fallback */
+  .section-title{
+    display:flex; align-items:center; gap:.5rem;
+    font-size:1.4rem; font-weight:800; color:var(--ink);
+    background:linear-gradient(90deg, rgba(21,101,192,.08), #fff);
+    border-left:6px solid var(--brand);
+    border-radius:12px; padding:.5rem .8rem; width:100%;
+  }
+  .section-title::after{
+    content:""; flex:1; height:3px;
+    background:linear-gradient(to right, #4a90e2, #e91e63);
+    border-radius:2px; margin-left:.8rem;
+  }
+</style>
+
 <div class="tinto-container">
   <!-- Hero -->
   <section class="tinto-hero">
@@ -183,7 +205,6 @@ description: "TINTOlib is a Python library that converts tabular data into synth
 
   <!-- Courses (Udemy + GitHub) -->
   <section class="tinto-card soft">
-    <div class="section tinto-section">
     <h2>🎉 Learn TINTOlib for Free</h2>
     <div class="tinto-row">
       <div class="tinto-card" style="flex:1 1 280px">
@@ -199,7 +220,6 @@ description: "TINTOlib is a Python library that converts tabular data into synth
         </a>
       </div>
     </div>
-  </div>
   </section>
 
   <!-- Talk Map -->
@@ -211,7 +231,6 @@ description: "TINTOlib is a Python library that converts tabular data into synth
 
   <!-- Publications -->
   <section class="tinto-card soft">
-    <div class="section tinto-section">
     <h2>🧠 Research and Software Publications</h2>
     <h3 style="margin:.25rem 0">📄 Research Articles</h3>
     <ul class="pub-list">
@@ -222,7 +241,6 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     <ul class="pub-list">
       <li>Manuel Castillo-Cara et al. <strong>TINTO: Converting Tidy Data into Images</strong>. <em>SoftwareX</em>. DOI: <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener">10.1016/j.softx.2023.101391</a></li>
     </ul>
-  </div>
   </section>
 
   <!-- Methods table -->
