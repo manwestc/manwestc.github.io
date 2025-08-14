@@ -218,19 +218,20 @@ model = TINTO(problem="supervised", blur=True, pixels=64, random_seed=42)
 model.fit_transform(data, folder="outputs")
 </code></pre>
 
-    <div class="pillbar">
-      <a class="pill" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">📘 Documentation</a>
-      <a class="pill" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">🚀 GitHub</a>
-      <a class="pill" href="https://github.com/oeg-upm/TINTOlib-Crash_Course" target="_blank" rel="noopener">📹 Crash Course</a>
-    </div>
+<!-- Recursos adicionales -->
+<div class="card">
+  <h2 class="section-title">📚 Additional Resources</h2>
+  <div class="pillbar">
+    <a class="pill" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">📘 Documentation</a>
+    <a class="pill" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">🚀 GitHub</a>
+    <a class="pill" href="https://github.com/oeg-upm/TINTOlib-Crash_Course" target="_blank" rel="noopener">📹 Crash Course</a>
+  </div>
+</div>
   </div>
 
   <!-- Cite -->
   <div class="card">
-    <h2 class="section-title">📚 Cite TINTOlib</h2>
-    <p>If you use TINTOlib, please cite the following papers:</p>
-    <section class="tinto-card soft">
-      <h2>🧠 Research and Software Publications</h2>
+    <h2 class="section-title">🧠 Research and Software Publications</h2>
       <h3 style="margin:.25rem 0">📄 Research Articles</h3>
       <ul class="pub-list">
         <li>Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>. <em>IEEE JSTSP</em>. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">10.1109/JSTSP.2025.3555067</a></li>
@@ -240,7 +241,6 @@ model.fit_transform(data, folder="outputs")
       <ul class="pub-list">
         <li>Manuel Castillo-Cara et al. <strong>TINTO: Converting Tidy Data into Images</strong>. <em>SoftwareX</em>. DOI: <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener">10.1016/j.softx.2023.101391</a></li>
       </ul>
-    </section>
   </div>
 
   <div class="card">
