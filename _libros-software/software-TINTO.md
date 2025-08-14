@@ -85,10 +85,58 @@ description: "TINTO is an open-source Python framework that converts tidy tabula
   /* CTA inferior grande */
   .cta-center{display:flex;justify-content:center;margin:2rem 0}
   .cta-center .btn-primary{padding:1em 2.5em;font-size:1.15rem;min-width:clamp(240px,48vw,420px)}
+  /* === Callout / Aviso importante === */
+  .callout{
+    display:flex; gap:.8rem; align-items:flex-start;
+    border:1px solid #f2e8c6;               /* borde suave ámbar */
+    border-left:6px solid #d97706;          /* acento ámbar oscuro */
+    background:linear-gradient(180deg,#fffef8,#fff7e6);
+    border-radius:12px; padding:1rem 1.1rem; 
+    box-shadow:0 2px 10px rgba(0,0,0,.04); margin:1rem 0;
+  }
+  .callout .ico{
+    flex:0 0 34px; width:34px; height:34px; border-radius:8px;
+    display:inline-flex; align-items:center; justify-content:center;
+    background:#fff3cd; color:#92400e; font-size:18px;
+    border:1px solid #fde68a;
+  }
+  .callout h3{
+    margin:.1rem 0 .35rem; font-size:1.05rem; font-weight:800; color:var(--ink);
+  }
+  .callout p{ margin:.25rem 0; color:#1f2937 }
+  .callout ul{ margin:.4rem 0 .2rem .95rem }
+  .callout li{ margin:.2rem 0; line-height:1.5 }
+  .callout a{ color:#0b67b8; font-weight:800; text-decoration:none }
+  .callout a:hover{ text-decoration:underline }
 </style>
 
 <div class="wrap">
   <!-- HERO -->
+  <section class="callout" role="note" aria-label="Important notice about TINTO">
+    <span class="ico" aria-hidden="true">⚠️</span>
+    <div>
+      <h3>Important Notice</h3>
+      <p>
+        This repository contains the original implementation of <strong>TINTO</strong>, an engine for converting tidy tabular data into synthetic images using dimensionality reduction and convolution techniques.
+      </p>
+      <p>
+        📦 <strong>We strongly recommend using the updated library 
+        <a href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">TINTOlib</a></strong>, which includes:
+      </p>
+      <ul>
+        <li>The original <strong>TINTO</strong> method</li>
+        <li>Additional methods: <strong>IGTD</strong>, <strong>REFINED</strong>, <strong>BarGraph</strong>, <strong>DistanceMatrix</strong>, <strong>Combination</strong>, <strong>FeatureWrap</strong>, <strong>SuperTML</strong>, and <strong>BIE</strong></li>
+        <li>A more user-friendly and flexible interface</li>
+        <li>Complete and regularly updated documentation</li>
+        <li>A free course with examples, notebooks, and video tutorials</li>
+      </ul>
+      <p>🔄 <strong>TINTOlib</strong> is under active development and continues to receive improvements.</p>
+      <p>👉 For new projects, we highly recommend switching to 
+        <a href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">TINTOlib</a>.
+      </p>
+    </div>
+  </section>
+
   <section class="hero">
     <img src="/images/tinto-logo.svg" alt="TINTO logo" loading="lazy">
     <div style="flex:1">

@@ -159,7 +159,7 @@ author_profile: true
     <h2 class="section-title">📺 VideoTutorial Course (English/Spanish)</h2>
     <p>Prefer not to register on Udemy or looking for the English version? Follow the full bilingual course on GitHub, with videos and practical notebooks covering CNNs, ViTs, and hybrid architectures.</p>
     <p style="text-align:center;margin:.4rem 0 0">
-      <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course/tree/main/5_TINTOlib%20Videotutorial%20course" target="_blank" rel="noopener">
+      <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course" target="_blank" rel="noopener">
         <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access the Course on GitHub">
       </a>
     </p>
