@@ -354,4 +354,14 @@ description: "Scientific publications, books, patents and software contributions
 
       <article class="pub-card">
         <p class="pub-title">Citizen security using Machine Learning algorithms through Open Data. 8th IEEE LATINCOM, Colombia, 2016.</p>
-        <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.
+        <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/LATINCOM.2016.7811562" target="_blank" rel="noopener">Open DOI</a></div>
+      </article>
+
+      <article class="pub-card">
+        <p class="pub-title">Ray: Smart indoor/outdoor routes for the blind using Bluetooth 4.0 BLE. Procedia Computer Science (ANT), Madrid, 2016.</p>
+        <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.procs.2016.04.153" target="_blank" rel="noopener">Open DOI</a></div>
+      </article>
+    </div>
+  </div>
+
+</div>
