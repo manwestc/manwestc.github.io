@@ -151,6 +151,20 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     margin-left: 0.8rem;
     opacity: 0.3; /* línea más suave */
   }
+  /* Estilo clásico solo para secciones en TINTOlib */
+  .tinto-section h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0.25rem 0 0.75rem;
+    color: var(--ink);
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .tinto-section h2::after {
+    content: none; /* elimina la línea final */
+  }
 </style>
 
 <div class="tinto-container">
@@ -168,8 +182,9 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   </section>
 
   <!-- Courses (Udemy + GitHub) -->
-  <section class="tinto-card soft">
-    <h2 class="section-title" style="color:#1565c0">🎉 Learn TINTOlib for Free</h2>
+
+<div class="section tinto-section">
+    <h2>🎉 Learn TINTOlib for Free</h2>
     <div class="tinto-row">
       <div class="tinto-card" style="flex:1 1 280px">
         <h3 style="margin-top:0">📚 Udemy</h3>
@@ -184,7 +199,7 @@ description: "TINTOlib is a Python library that converts tabular data into synth
         </a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Talk Map -->
   <section>
@@ -194,8 +209,8 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   </section>
 
   <!-- Publications -->
-  <section class="tinto-card soft">
-    <h2 class="section-title">🧠 Research and Software Publications</h2>
+  <div class="section tinto-section">
+    <h2>🧠 Research and Software Publications</h2>
     <h3 style="margin:.25rem 0">📄 Research Articles</h3>
     <ul class="pub-list">
       <li>Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>. <em>IEEE JSTSP</em>. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">10.1109/JSTSP.2025.3555067</a></li>
@@ -205,7 +220,7 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     <ul class="pub-list">
       <li>Manuel Castillo-Cara et al. <strong>TINTO: Converting Tidy Data into Images</strong>. <em>SoftwareX</em>. DOI: <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener">10.1016/j.softx.2023.101391</a></li>
     </ul>
-  </section>
+  </div>
 
   <!-- Methods table -->
   <h2 class="section-title">🧪 Supported Methods in TINTOlib</h2>
