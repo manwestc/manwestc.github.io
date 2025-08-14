@@ -72,72 +72,41 @@ author_profile: true
 </style>
 
 <style>
-  /* ===== Overrides de presentación para tarjetas Udemy ===== */
-  .course-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
-    gap: 1.2rem;
-    padding: 0.8rem;
+  /* ===== Tarjetas Udemy: grid y estilo compacto ===== */
+  .course-grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0,1fr)); /* 4 columnas escritorio */
+    gap:.9rem;                                      /* menos espacio entre tarjetas */
+    padding:.6rem 0;
   }
-  @media (max-width: 768px) {
-    .course-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
-    }
+  @media (max-width: 1024px){
+    .course-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); } /* tablet */
   }
-  .ud-card {
-    display: flex;
-    flex-direction: column; /* Imagen arriba, texto debajo */
-    align-items: center;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+  @media (max-width: 768px){
+    .course-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } /* móvil */
   }
-  .ud-thumb {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0.8rem;
+
+  .ud-card{
+    display:flex; flex-direction:column; align-items:center;
+    padding:.75rem;                                 /* menos padding interno */
+    background:#fff; border-radius:8px; 
+    border:1px solid #cfd8dc; box-shadow:0 1px 4px rgba(0,0,0,.03);
   }
-  .ud-thumb img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 6px;
-    border: 1px solid #ddd;
+  .ud-thumb{ width:100%; display:flex; justify-content:center; margin-bottom:.6rem; }
+  .ud-thumb img{
+    width:100%; max-width:160px; height:auto; object-fit:contain;
+    border-radius:6px; border:1px solid #e5e7eb;
   }
-  .ud-body {
-    flex: 1;
-    text-align: center;
-  }
-  .ud-title {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 0.8rem;
-  }
-  .ud-title a {
-    font-weight: bold;
-    color: #1565c0;
-    text-decoration: none;
-  }
-  .ud-title a:hover {
-    text-decoration: underline;
-  }
-  .ud-actions {
-    display: flex;
-    justify-content: center;
-  }
-  .btn {
-    display: inline-block;
-    background: #1976d2;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none !important;
-    font-weight: bold;
-    min-width: 120px;
-    text-align: center;
+  .ud-body{ width:100%; text-align:center; }
+  .ud-title{ font-size:1rem; line-height:1.35; margin:.4rem 0 .5rem; }
+  .ud-title a{ color:#1565c0; text-decoration:none; font-weight:700; }
+  .ud-title a:hover{ text-decoration:underline; }
+
+  .ud-actions{ display:flex; justify-content:center; margin-top:.5rem; }
+  .btn{
+    display:inline-block; background:#1976d2; color:#fff;
+    padding:.45rem .9rem; border-radius:6px; text-decoration:none !important;
+    font-weight:700; min-width:110px; text-align:center;
   }
 </style>
 
@@ -147,7 +116,7 @@ author_profile: true
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
-      <h2 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.7rem; font-weight: bold;">
+      <h2 style="font-size:1.6rem; margin:1.4rem 0 .6rem; font-weight:700;">
         {{ categoria.name }}
       </h2>
 
@@ -161,12 +130,13 @@ author_profile: true
                 <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
               </a>
             </div>
+
             <div class="ud-body">
               <div class="ud-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               </div>
 
-              <!-- 🔽 Eliminado el bloque de metadatos -->
+              <!-- (Metadatos ocultos en todas las tarjetas) -->
 
               <div class="ud-actions">
                 {% if post.coupon_url %}
