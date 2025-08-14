@@ -71,6 +71,69 @@ author_profile: true
   .ud-section p{margin:0;color:var(--muted)}
 </style>
 
+<style>
+  /* ===== Overrides de presentación para tarjetas Udemy ===== */
+  .ud-card {
+    display: flex;
+    align-items: center;              /* Centra verticalmente imagen y texto */
+    gap: 1rem;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.5rem;
+    background: #fff;
+    border-radius: 6px;
+  }
+  .ud-thumb {
+    flex: 0 0 130px;                   /* Ancho fijo para imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;           /* Centra la imagen en la columna */
+  }
+  .ud-thumb img {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  .ud-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;           /* Centra el bloque texto/botón */
+    gap: 0.5rem;
+    flex: 1;
+  }
+  .ud-title {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+  .ud-title a {
+    font-weight: bold;
+    color: #1565c0;
+    text-decoration: none;
+  }
+  .ud-title a:hover {
+    text-decoration: underline;
+  }
+  .ud-actions {
+    display: flex;
+    justify-content: center;           /* Centra el botón */
+    margin-top: 0.25rem;
+  }
+  .btn {
+    display: inline-block;
+    background: #1976d2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none !important;
+    font-weight: bold;
+    min-width: 140px;
+    text-align: center;
+  }
+</style>
+
 <div class="ud-wrap">
 
   <!-- 🔎 Toolbar: buscador rápido -->
@@ -84,65 +147,46 @@ author_profile: true
   </div>
 
   {% assign categorias = site.talks | group_by: "category" %}
-  {% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
 
-  {% for orden in orden_categorias %}
-    {% for categoria in categorias %}
-      {% if categoria.name == orden %}
+{% for orden in orden_categorias %}
+  {% for categoria in categorias %}
+    {% if categoria.name == orden %}
+      <h2 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.7rem; font-weight: bold;">
+        {{ categoria.name }}
+      </h2>
 
-        <section class="ud-section">
-          <h2>
-            {% if categoria.name contains "Python" %}🤖{% elsif categoria.name contains "R" %}📈{% else %}🧩{% endif %}
-            {{ categoria.name | replace: ":", "" }}
-          </h2>
-          <p>{{ categoria.items | size }} course{% if categoria.items.size != 1 %}s{% endif %}</p>
-        </section>
-
-        <div class="ud-grid" data-category="{{ categoria.name | downcase }}">
-          {% for post in categoria.items %}
-
-            {% assign days_old = post.date | date: "%s" | plus: 0 | divided_by: 86400 | minus: 'now' | times: -1 %}
-            {% comment %}
-              Alternativa simple: marcar “New” si el año coincide con el año actual.
-            {% endcomment %}
-            {% assign is_new = false %}
-            {% if post.date and post.date contains site.time | date: "%Y" %}
-              {% assign is_new = true %}
-            {% endif %}
-
-            <article class="ud-card ud-item"
-                     data-title="{{ post.title | downcase }}"
-                     data-cat="{{ categoria.name | downcase }}">
-              <div class="ud-thumb">
-                <a href="{{ post.url | relative_url }}">
-                  <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
-                </a>
+      <div class="course-grid" style="padding-left: 1rem;">
+        {% for post in categoria.items %}
+          <article class="ud-card ud-item"
+                   data-title="{{ post.title | downcase }}"
+                   data-cat="{{ categoria.name | downcase }}">
+            <div class="ud-thumb">
+              <a href="{{ post.url | relative_url }}">
+                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
+              </a>
+            </div>
+            <div class="ud-body">
+              <div class="ud-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               </div>
-              <div class="ud-body">
-                <div class="ud-title">
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                  {% if is_new %}<span class="ud-badge">New</span>{% endif %}
-                </div>
-                <div class="ud-meta">
-                  {{ post.venue }}{% if post.location %} · {{ post.location }}{% endif %}
-                  {% if post.date %} · {{ post.date | date: "%b %d, %Y" }}{% endif %}
-                </div>
-                <div class="ud-actions">
-                  {% if post.coupon_url %}
-                    <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Access with coupon</a>
-                  {% else %}
-                    <a class="btn" href="{{ post.url | relative_url }}">Course page</a>
-                  {% endif %}
-                </div>
+
+              <!-- 🔽 Eliminado el bloque de metadatos -->
+
+              <div class="ud-actions">
+                {% if post.coupon_url %}
+                  <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
+                {% else %}
+                  <a class="btn" href="{{ post.url | relative_url }}">Acceso</a>
+                {% endif %}
               </div>
-            </article>
-
-          {% endfor %}
-        </div>
-
-      {% endif %}
-    {% endfor %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endfor %}
+{% endfor %}
 
 </div>
 
