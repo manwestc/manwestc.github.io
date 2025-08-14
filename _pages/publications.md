@@ -67,7 +67,9 @@ description: "Scientific publications, books, patents and software contributions
   .btn-doi:hover{background:var(--brand2)}
   .btn-row{display:flex;justify-content:center;gap:.5rem;margin-top:.35rem}
 
-  hr.soft{border:none;height:1px;background:var(--bd);margin:1.25rem 0}
+  hr.soft {
+    display: none;
+  }
 </style>
 
 <style>
@@ -209,7 +211,7 @@ description: "Scientific publications, books, patents and software contributions
   </div>
 </div>
 
-  <hr>
+  <hr class="soft">
 
   <!-- Articles (1 column) -->
   <div class="section">
@@ -299,7 +301,7 @@ description: "Scientific publications, books, patents and software contributions
   </div>
 </div>
 
-  <hr>
+  <hr class="soft">
 
   <!-- Books & Chapters (GeoGebra first full row; others two columns) -->
   <div class="section">
@@ -322,7 +324,7 @@ description: "Scientific publications, books, patents and software contributions
     </div>
   </div>
 
-  <hr>
+  <hr class="soft">
 
   <!-- Software & Patents (merged) -->
   <div class="section">
@@ -343,7 +345,7 @@ description: "Scientific publications, books, patents and software contributions
     </div>
   </div>
 
-  <hr>
+  <hr class="soft">
 
   <!-- Conferences (now includes the tutorial) -->
   <div class="section">
