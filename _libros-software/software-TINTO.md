@@ -112,30 +112,28 @@ description: "TINTO is an open-source Python framework that converts tidy tabula
 
 <div class="wrap">
   <!-- HERO -->
-  <section class="callout" role="note" aria-label="Important notice about TINTO">
-    <span class="ico" aria-hidden="true">⚠️</span>
-    <div>
-      <h3>Important Notice</h3>
-      <p>
-        This repository contains the original implementation of <strong>TINTO</strong>, an engine for converting tidy tabular data into synthetic images using dimensionality reduction and convolution techniques.
-      </p>
-      <p>
-        📦 <strong>We strongly recommend using the updated library 
-        <a href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">TINTOlib</a></strong>, which includes:
-      </p>
-      <ul>
-        <li>The original <strong>TINTO</strong> method</li>
-        <li>Additional methods: <strong>IGTD</strong>, <strong>REFINED</strong>, <strong>BarGraph</strong>, <strong>DistanceMatrix</strong>, <strong>Combination</strong>, <strong>FeatureWrap</strong>, <strong>SuperTML</strong>, and <strong>BIE</strong></li>
-        <li>A more user-friendly and flexible interface</li>
-        <li>Complete and regularly updated documentation</li>
-        <li>A free course with examples, notebooks, and video tutorials</li>
-      </ul>
-      <p>🔄 <strong>TINTOlib</strong> is under active development and continues to receive improvements.</p>
-      <p>👉 For new projects, we highly recommend switching to 
-        <a href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">TINTOlib</a>.
-      </p>
-    </div>
-  </section>
+<section class="callout" role="note" aria-label="Important notice about TINTO">
+  <span class="ico" aria-hidden="true">⚠️</span>
+  <div>
+    <h3>Important Notice</h3>
+    <p>
+      This repository contains the original <strong>TINTO</strong> engine for converting tabular data into synthetic images.
+    </p>
+    <p>
+      📦 <strong>We now recommend using 
+      <a href="https://www.manuelcastillo.eu/TINTOlib.html" target="_blank" rel="noopener">TINTOlib</a></strong>, which includes:
+    </p>
+    <ul>
+      <li>Original <strong>TINTO</strong> + extra methods (IGTD, REFINED, BarGraph, DistanceMatrix, FeatureWrap, SuperTML, BIE)</li>
+      <li>More flexible interface and better documentation</li>
+      <li>Free course with examples and video tutorials</li>
+    </ul>
+    <p>🔄 <strong>TINTOlib</strong> is actively developed with regular improvements.</p>
+    <p>👉 For new projects, switch to 
+      <a href="https://www.manuelcastillo.eu/TINTOlib.html" target="_blank" rel="noopener">TINTOlib</a>.
+    </p>
+  </div>
+</section>
 
   <section class="hero">
     <img src="/images/tinto-logo.svg" alt="TINTO logo" loading="lazy">
