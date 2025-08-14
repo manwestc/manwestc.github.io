@@ -1,3 +1,13 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+description: "List of competitive research and development projects led or co-led by Manuel Castillo-Cara."
+---
+
+{% include base_path %}
+
 <style>
   :root{
     --ink:#1f2937; --muted:#64748b; --bd:#e5e7eb; --soft:#f8fafc;
