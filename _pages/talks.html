@@ -9,7 +9,7 @@ author_profile: true
 {% include base_path %}
 {% assign all_courses = site.talks %}
 
-<!-- ✅ SEO Structured Data -->
+<!-- ✅ SEO Structured Data (conservado) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,35 +29,136 @@ author_profile: true
 }
 </script>
 
-{% assign categorias = site.talks | group_by: "category" %}
-{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+<style>
+  :root{
+    --ink:#1f2937; --muted:#6b7280; --bd:#e5e7eb; --soft:#f8fafc;
+    --brand:#1565c0; --brand-2:#0b67b8; --card:#ffffff;
+  }
+  .ud-wrap{max-width:1100px;margin:0 auto;padding:0 1rem;}
+  .ud-toolbar{
+    display:flex;gap:.75rem;align-items:center;justify-content:space-between;
+    padding:.8rem 1rem;background:var(--soft);border:1px solid var(--bd);border-radius:12px;margin:1rem 0 1.25rem;
+  }
+  .ud-search{flex:1;display:flex;align-items:center;gap:.5rem}
+  .ud-search input{
+    width:100%;padding:.6rem .8rem;border:1px solid var(--bd);border-radius:10px;font-size:.95rem
+  }
+  .ud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  @media (max-width:980px){ .ud-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:640px){ .ud-grid{grid-template-columns:1fr} .ud-toolbar{flex-direction:column;align-items:stretch} }
 
-{% for orden in orden_categorias %}
-  {% for categoria in categorias %}
-    {% if categoria.name == orden %}
-      <h2 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.7rem; font-weight: bold;">
-        {{ categoria.name }}
-      </h2>
+  .ud-card{
+    background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden;
+    display:flex;gap:.9rem;padding:.9rem;box-shadow:0 2px 10px rgba(0,0,0,.03)
+  }
+  .ud-thumb{flex:0 0 120px}
+  .ud-thumb img{width:120px;height:auto;border-radius:8px;border:1px solid var(--bd)}
+  .ud-body{display:flex;flex-direction:column;gap:.35rem}
+  .ud-title{font-weight:700;line-height:1.25;margin:.1rem 0}
+  .ud-meta{font-size:.9rem;color:var(--muted)}
+  .ud-actions{margin-top:.35rem}
+  .btn{
+    display:inline-block;background:var(--brand);color:#fff;text-decoration:none !important;
+    padding:.5rem .8rem;border-radius:8px;font-weight:700;font-size:.92rem
+  }
+  .btn:hover{background:var(--brand-2)}
+  .ud-badge{
+    display:inline-block;background:#e0ecff;color:#0f3d8a;border-radius:999px;
+    padding:.15rem .5rem;font-size:.75rem;font-weight:700;margin-left:.4rem
+  }
+  .ud-section{margin:1.6rem 0 .8rem}
+  .ud-section h2{font-size:1.35rem;margin:0 0 .4rem;font-weight:800}
+  .ud-section p{margin:0;color:var(--muted)}
+</style>
 
-      <div class="course-grid" style="padding-left: 1rem;">
-        {% for post in categoria.items %}
-          <div style="
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 0.8rem 0;
-            border-bottom: 1px solid #ccc;
-            margin-left: 0.5rem;
-          ">
-            <img src="{{ post.image }}" alt="{{ post.title }}"
-                 style="width: 110px; height: auto; border-radius: 6px; border: 1px solid #ddd;">
+<div class="ud-wrap">
 
-            <div style="flex: 1; font-size: 1rem; line-height: 1.4;">
-              {% include archive-single-talk.html %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+  <!-- 🔎 Toolbar: buscador rápido -->
+  <div class="ud-toolbar">
+    <div class="ud-search">
+      <input id="udSearch" type="search" placeholder="Search courses by title or category…" aria-label="Search courses">
+    </div>
+    <div style="font-size:.92rem;color:var(--muted)">
+      Total courses: <strong>{{ all_courses | size }}</strong>
+    </div>
+  </div>
+
+  {% assign categorias = site.talks | group_by: "category" %}
+  {% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+
+  {% for orden in orden_categorias %}
+    {% for categoria in categorias %}
+      {% if categoria.name == orden %}
+
+        <section class="ud-section">
+          <h2>
+            {% if categoria.name contains "Python" %}🤖{% elsif categoria.name contains "R" %}📈{% else %}🧩{% endif %}
+            {{ categoria.name | replace: ":", "" }}
+          </h2>
+          <p>{{ categoria.items | size }} course{% if categoria.items.size != 1 %}s{% endif %}</p>
+        </section>
+
+        <div class="ud-grid" data-category="{{ categoria.name | downcase }}">
+          {% for post in categoria.items %}
+
+            {% assign days_old = post.date | date: "%s" | plus: 0 | divided_by: 86400 | minus: 'now' | times: -1 %}
+            {% comment %}
+              Alternativa simple: marcar “New” si el año coincide con el año actual.
+            {% endcomment %}
+            {% assign is_new = false %}
+            {% if post.date and post.date contains site.time | date: "%Y" %}
+              {% assign is_new = true %}
+            {% endif %}
+
+            <article class="ud-card ud-item"
+                     data-title="{{ post.title | downcase }}"
+                     data-cat="{{ categoria.name | downcase }}">
+              <div class="ud-thumb">
+                <a href="{{ post.url | relative_url }}">
+                  <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
+                </a>
+              </div>
+              <div class="ud-body">
+                <div class="ud-title">
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                  {% if is_new %}<span class="ud-badge">New</span>{% endif %}
+                </div>
+                <div class="ud-meta">
+                  {{ post.venue }}{% if post.location %} · {{ post.location }}{% endif %}
+                  {% if post.date %} · {{ post.date | date: "%b %d, %Y" }}{% endif %}
+                </div>
+                <div class="ud-actions">
+                  {% if post.coupon_url %}
+                    <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Access with coupon</a>
+                  {% else %}
+                    <a class="btn" href="{{ post.url | relative_url }}">Course page</a>
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+
+          {% endfor %}
+        </div>
+
+      {% endif %}
+    {% endfor %}
   {% endfor %}
-{% endfor %}
+
+</div>
+
+<!-- 🔎 Filtro en vivo por título/categoría -->
+<script>
+  (function(){
+    var input = document.getElementById('udSearch');
+    if(!input) return;
+    input.addEventListener('input', function(e){
+      var q = e.target.value.trim().toLowerCase();
+      document.querySelectorAll('.ud-item').forEach(function(card){
+        var hay = !q ||
+          card.getAttribute('data-title').includes(q) ||
+          card.getAttribute('data-cat').includes(q);
+        card.style.display = hay ? '' : 'none';
+      });
+    });
+  }());
+</script>

@@ -1,0 +1,63 @@
+---
+layout: archive
+title: "🎓 Mis cursos en Udemy"
+description: "Cursos de Inteligencia Artificial, GeoGebra y Ciencia de Datos impartidos por Manuel Castillo-Cara en Udemy. Aprende desde cero hasta nivel avanzado."
+permalink: /udemy/
+author_profile: true
+---
+
+{% include base_path %}
+{% assign all_courses = site.talks %}
+
+<!-- ✅ SEO Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Cursos Udemy de Manuel Castillo-Cara",
+  "numberOfItems": {{ all_courses | size }},
+  "itemListElement": [
+    {% for course in all_courses %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "name": "{{ course.title | escape }}",
+      "url": "{{ site.url }}{{ course.url }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% assign categorias = site.talks | group_by: "category" %}
+{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+
+{% for orden in orden_categorias %}
+  {% for categoria in categorias %}
+    {% if categoria.name == orden %}
+      <h2 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.7rem; font-weight: bold;">
+        {{ categoria.name }}
+      </h2>
+
+      <div class="course-grid" style="padding-left: 1rem;">
+        {% for post in categoria.items %}
+          <div style="
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #ccc;
+            margin-left: 0.5rem;
+          ">
+            <img src="{{ post.image }}" alt="{{ post.title }}"
+                 style="width: 110px; height: auto; border-radius: 6px; border: 1px solid #ddd;">
+
+            <div style="flex: 1; font-size: 1rem; line-height: 1.4;">
+              {% include archive-single-talk.html %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
