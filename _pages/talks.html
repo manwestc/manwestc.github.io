@@ -9,7 +9,7 @@ author_profile: true
 {% include base_path %}
 {% assign all_courses = site.talks %}
 
-<!-- ✅ SEO Structured Data (conservado) -->
+<!-- ✅ SEO Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,40 +33,48 @@ author_profile: true
   :root{
     --ink:#1f2937;
     --muted:#6b7280;
-    --bd:#d7dee6;           /* borde un poco más visible */
-    --card-bg:#f4f7fb;      /* fondo sólido suave para la tarjeta */
-    --frame:#ffffff;        /* marco de la miniatura */
+    --bd:#cfd8dc;          /* borde más visible */
+    --card-bg:#f4f7fb;     /* fondo sólido suave */
+    --frame:#ffffff;       /* marco de la miniatura */
     --brand:#1976d2;
     --brand-2:#0f60b6;
+    --grad-a:#1565c0;      /* decoración del heading */
+    --grad-b:#ff0f5e;
   }
 
-  /* ===== Grilla de cursos ===== */
+  /* ===== Grilla ===== */
   .course-grid{
     display:grid;
-    grid-template-columns:repeat(4, minmax(0,1fr)); /* 4 en escritorio */
+    grid-template-columns:repeat(4, minmax(0,1fr));  /* 4 columnas escritorio */
     gap:1rem;
+    align-items:stretch; /* estira las filas a la altura del más alto */
   }
-  @media (max-width: 1024px){
+  @media (max-width:1024px){
     .course-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); }
   }
-  @media (max-width: 768px){
+  @media (max-width:768px){
     .course-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } /* 2 en móvil */
   }
 
   /* ===== Tarjeta ===== */
   .course-card{
-    background:var(--card-bg);           /* fondo más sólido */
+    background:var(--card-bg);
     border:1px solid var(--bd);
     border-radius:12px;
-    padding:.75rem .75rem 1rem;          /* menos aire en bordes */
+    padding:.75rem .75rem 1rem;
     text-align:center;
     box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+    /* clave para alinear el botón abajo */
+    display:flex;
+    flex-direction:column;
+    height:100%;
   }
 
-  /* Marco uniforme para miniatura */
+  /* Miniatura uniforme (todas igual) */
   .course-thumb{
     width:100%;
-    aspect-ratio:16/9;                   /* TODAS IGUALES */
+    aspect-ratio:16/9;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -74,20 +82,16 @@ author_profile: true
     border:1px solid var(--bd);
     border-radius:8px;
     overflow:hidden;
-    margin:0 auto .6rem;                 /* menos espacio con el título */
-    padding:6px;                         /* pequeño marco blanco */
+    margin:0 auto .55rem;
+    padding:6px;
   }
-  /* Fallback si algún navegador no soporta aspect-ratio */
-  @supports not (aspect-ratio: 16/9){
+  @supports not (aspect-ratio:16/9){
     .course-thumb{ height:150px; }
   }
-
   .course-thumb img{
     max-width:100%;
     max-height:100%;
-    width:auto;
-    height:auto;
-    object-fit:contain;                  /* encaja sin recortar */
+    object-fit:contain;
     display:block;
   }
 
@@ -96,7 +100,10 @@ author_profile: true
     line-height:1.28;
     font-weight:800;
     color:#165dbb;
-    margin:.25rem 0 .6rem;
+    margin:.25rem 0 .4rem;
+
+    /* estabiliza alturas de títulos de 2–3 líneas */
+    min-height:3.1em; /* ~2 líneas; sube a 4.6em si necesitas 3 */
   }
   .course-title a{
     color:inherit;
@@ -104,9 +111,13 @@ author_profile: true
   }
   .course-title a:hover{ text-decoration:underline; }
 
+  /* Empuja el botón al fondo de la tarjeta */
+  .course-spacer{ flex:1; }
+
   .course-actions{
     display:flex;
     justify-content:center;
+    margin-top:auto;   /* pega al fondo */
   }
   .btn{
     display:inline-block;
@@ -119,6 +130,32 @@ author_profile: true
     min-width:120px;
   }
   .btn:hover{ background:var(--brand-2); }
+
+  /* ===== Heading de categoría atractivo ===== */
+  .ud-heading{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    font-size:1.45rem;
+    font-weight:900;
+    margin:1.6rem 0 .8rem;
+    color:var(--ink);
+  }
+  .ud-heading .ud-line{
+    flex:1;
+    height:3px;
+    background:linear-gradient(90deg,var(--grad-a),var(--grad-b));
+    border-radius:2px;
+    opacity:.3;
+  }
+  .ud-heading .ud-count{
+    background:#e0ecff;
+    color:#0f3d8a;
+    font-weight:800;
+    font-size:.78rem;
+    padding:.2rem .5rem;
+    border-radius:999px;
+  }
 </style>
 
 {% assign categorias = site.talks | group_by: "category" %}
@@ -127,9 +164,13 @@ author_profile: true
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
-      <h2 style="font-size:1.6rem; margin:1.4rem 0 .6rem; font-weight:800;">
-        {{ categoria.name }}
-      </h2>
+
+      <!-- Título de sección mejorado -->
+      <div class="ud-heading">
+        <span>🧠 {{ categoria.name }}</span>
+        <span class="ud-count">{{ categoria.items | size }} cursos</span>
+        <span class="ud-line" aria-hidden="true"></span>
+      </div>
 
       <div class="course-grid">
         {% for post in categoria.items %}
@@ -137,7 +178,7 @@ author_profile: true
                    data-title="{{ post.title | downcase }}"
                    data-cat="{{ categoria.name | downcase }}">
 
-            <!-- Miniatura uniforme -->
+            <!-- Miniatura -->
             <a href="{{ post.url | relative_url }}" class="course-thumb" aria-label="{{ post.title | escape }}">
               <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
             </a>
@@ -147,7 +188,10 @@ author_profile: true
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h3>
 
-            <!-- Botón Acceso (sin metadatos) -->
+            <!-- Espaciador flexible para empujar el botón abajo -->
+            <div class="course-spacer"></div>
+
+            <!-- Botón Acceso fijo al fondo -->
             <div class="course-actions">
               {% if post.coupon_url %}
                 <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
@@ -161,20 +205,3 @@ author_profile: true
     {% endif %}
   {% endfor %}
 {% endfor %}
-
-<!-- (Opcional) filtro JS si añades un buscador con id="udSearch" -->
-<script>
-  (function(){
-    var input = document.getElementById('udSearch');
-    if(!input) return;
-    input.addEventListener('input', function(e){
-      var q = e.target.value.trim().toLowerCase();
-      document.querySelectorAll('.ud-item').forEach(function(card){
-        var ok = !q ||
-          card.getAttribute('data-title').includes(q) ||
-          card.getAttribute('data-cat').includes(q);
-        card.style.display = ok ? '' : 'none';
-      });
-    });
-  }());
-</script>
