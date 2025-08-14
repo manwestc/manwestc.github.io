@@ -209,7 +209,7 @@ description: "Scientific publications, books, patents and software contributions
   </div>
 </div>
 
-  <hr class="soft">
+  <hr>
 
   <!-- Articles (1 column) -->
   <div class="section">
@@ -299,7 +299,7 @@ description: "Scientific publications, books, patents and software contributions
   </div>
 </div>
 
-  <hr class="soft">
+  <hr>
 
   <!-- Books & Chapters (GeoGebra first full row; others two columns) -->
   <div class="section">
@@ -322,7 +322,7 @@ description: "Scientific publications, books, patents and software contributions
     </div>
   </div>
 
-  <hr class="soft">
+  <hr>
 
   <!-- Software & Patents (merged) -->
   <div class="section">
@@ -343,7 +343,7 @@ description: "Scientific publications, books, patents and software contributions
     </div>
   </div>
 
-  <hr class="soft">
+  <hr>
 
   <!-- Conferences (now includes the tutorial) -->
   <div class="section">
