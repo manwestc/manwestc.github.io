@@ -109,7 +109,7 @@ description: "Scientific publications, books, patents and software contributions
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 800;
     color: var(--ink);
     background: linear-gradient(to right, #eef2ff, #ffffff);
@@ -119,7 +119,7 @@ description: "Scientific publications, books, patents and software contributions
     box-shadow: 0 1px 6px rgba(0,0,0,.04);
   }
   .section h2::before {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 </style>
 
