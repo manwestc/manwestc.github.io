@@ -73,40 +73,48 @@ author_profile: true
 
 <style>
   /* ===== Overrides de presentación para tarjetas Udemy ===== */
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+    gap: 1.2rem;
+    padding: 0.8rem;
+  }
+  @media (max-width: 768px) {
+    .course-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+    }
+  }
   .ud-card {
     display: flex;
-    align-items: center;              /* Centra verticalmente imagen y texto */
-    gap: 1rem;
-    padding: 0.8rem;
-    border-bottom: 1px solid #ccc;
-    margin-left: 0.5rem;
+    flex-direction: column; /* Imagen arriba, texto debajo */
+    align-items: center;
+    padding: 1rem;
     background: #fff;
     border-radius: 6px;
+    border: 1px solid #ccc;
   }
   .ud-thumb {
-    flex: 0 0 130px;                   /* Ancho fijo para imagen */
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;           /* Centra la imagen en la columna */
+    justify-content: center;
+    margin-bottom: 0.8rem;
   }
   .ud-thumb img {
-    width: 130px;
+    width: 100%;
+    max-width: 180px;
     height: auto;
     object-fit: contain;
     border-radius: 6px;
     border: 1px solid #ddd;
   }
   .ud-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;           /* Centra el bloque texto/botón */
-    gap: 0.5rem;
     flex: 1;
+    text-align: center;
   }
   .ud-title {
     font-size: 1rem;
     line-height: 1.4;
-    margin: 0;
+    margin-bottom: 0.8rem;
   }
   .ud-title a {
     font-weight: bold;
@@ -118,8 +126,7 @@ author_profile: true
   }
   .ud-actions {
     display: flex;
-    justify-content: center;           /* Centra el botón */
-    margin-top: 0.25rem;
+    justify-content: center;
   }
   .btn {
     display: inline-block;
@@ -129,24 +136,12 @@ author_profile: true
     border-radius: 6px;
     text-decoration: none !important;
     font-weight: bold;
-    min-width: 140px;
+    min-width: 120px;
     text-align: center;
   }
 </style>
 
-<div class="ud-wrap">
-
-  <!-- 🔎 Toolbar: buscador rápido -->
-  <div class="ud-toolbar">
-    <div class="ud-search">
-      <input id="udSearch" type="search" placeholder="Search courses by title or category…" aria-label="Search courses">
-    </div>
-    <div style="font-size:.92rem;color:var(--muted)">
-      Total courses: <strong>{{ all_courses | size }}</strong>
-    </div>
-  </div>
-
-  {% assign categorias = site.talks | group_by: "category" %}
+{% assign categorias = site.talks | group_by: "category" %}
 {% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
 
 {% for orden in orden_categorias %}
@@ -156,7 +151,7 @@ author_profile: true
         {{ categoria.name }}
       </h2>
 
-      <div class="course-grid" style="padding-left: 1rem;">
+      <div class="course-grid">
         {% for post in categoria.items %}
           <article class="ud-card ud-item"
                    data-title="{{ post.title | downcase }}"
