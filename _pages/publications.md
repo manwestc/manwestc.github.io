@@ -106,17 +106,26 @@ description: "Scientific publications, books, patents and software contributions
 <style>
   /* Estilo de títulos de sección */
   .section h2 {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 1.3rem;
     font-weight: 800;
     color: var(--ink);
-    background: linear-gradient(90deg, rgba(21,101,192,0.08), #ffffff); /* fondo con suave degradado */
+    background: linear-gradient(to right, #eef2ff, #ffffff);
     padding: 0.4rem 0.8rem;
-    border-left: 6px solid var(--brand); /* línea azul a la izquierda */
+    border-left: 5px solid var(--brand);
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0,0,0,.04);
+  }
+
+  .section h2::after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    background: linear-gradient(to right, #4a90e2, #e91e63);
+    border-radius: 2px;
+    margin-left: 0.5rem;  
   }
 
   .section h2::before {
