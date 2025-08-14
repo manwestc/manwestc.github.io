@@ -177,13 +177,7 @@ related: false
     </div>
   </div>
 
-  <!-- CTA inferior -->
-  <div class="cta-center">
-    <a class="btn btn-primary" href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=AGO_2025" target="_blank" rel="noopener">🎓 Acceder al curso gratis en Udemy</a>
-  </div>
-</div>
-
-<script 
+  <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
 </script>
 
@@ -193,4 +187,12 @@ related: false
     hostedButtonId: "UX7UBGJ8TCPTW",
   }).render("#paypal-container-UX7UBGJ8TCPTW")
 </script>
+
+  <!-- CTA inferior -->
+  <div class="cta-center">
+    <a class="btn btn-primary" href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=AGO_2025" target="_blank" rel="noopener">🎓 Acceder al curso gratis en Udemy</a>
+  </div>
+</div>
+
+
 
