@@ -86,6 +86,26 @@ redirect_from:
   @media (max-width:860px){ .bio-grid{grid-template-columns:1fr} }
 </style>
 
+<style>
+  /* Estilo de títulos de sección (igual que en Publications) */
+  .section h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--ink);
+    background: linear-gradient(to right, #eef2ff, #ffffff);
+    padding: 0.4rem 0.8rem;
+    border-left: 5px solid var(--brand);
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.04);
+  }
+  .section h2::before {
+    font-size: 1.5rem;
+  }
+</style>
+
 <div class="about-wrap">
 
   <!-- HERO -->
@@ -105,86 +125,90 @@ redirect_from:
   </section>
 
   <!-- BIOGRAPHY (fixed layout) -->
-  <h2>👨‍🏫 Biography</h2>
-  <p>
-    I am Manuel Castillo-Cara, PhD in Computer Science, specialized in <strong>Artificial Intelligence</strong>, from the Universidad de Castilla-La Mancha (UCLM), where I received the <em>Cum Laude</em> distinction in 2018. 
-    I am also an <a href="https://www.manuelcastillo.eu/udemy/">instructor on Udemy</a> with courses in Artificial Intelligence and Data Science, reaching students worldwide through practical, hands-on training.
-  </p>
-  <p>
-    My research focuses on <strong>Synthetic Images</strong> and <strong>Hybrid Neural Networks</strong> for applying vision-based deep learning to tabular data. I am the creator of the <strong>TINTO</strong> method and lead developer of <strong>TINTOlib</strong>.
-  </p>
-  <p>
-    Over the last decade, I have participated in <strong>15+ competitive research projects</strong>—serving as <strong>Principal Investigator</strong> on two—and authored <strong>30+ impact-indexed journal articles</strong> (Q1/Q2), along with publications in international conferences, a utility model patent, software registrations, and an academic book.
-  </p>
+  <div class="section">
+    <h2>👨‍🏫 Biography</h2>
+    <p>
+      I am Manuel Castillo-Cara, PhD in Computer Science, specialized in <strong>Artificial Intelligence</strong>, from the Universidad de Castilla-La Mancha (UCLM), where I received the <em>Cum Laude</em> distinction in 2018. 
+      I am also an <a href="https://www.manuelcastillo.eu/udemy/">instructor on Udemy</a> with courses in Artificial Intelligence and Data Science, reaching students worldwide through practical, hands-on training.
+    </p>
+    <p>
+      My research focuses on <strong>Synthetic Images</strong> and <strong>Hybrid Neural Networks</strong> for applying vision-based deep learning to tabular data. I am the creator of the <strong>TINTO</strong> method and lead developer of <strong>TINTOlib</strong>.
+    </p>
+    <p>
+      Over the last decade, I have participated in <strong>15+ competitive research projects</strong>—serving as <strong>Principal Investigator</strong> on two—and authored <strong>30+ impact-indexed journal articles</strong> (Q1/Q2), along with publications in international conferences, a utility model patent, software registrations, and an academic book.
+    </p>
 
-<div class="note-card" style="padding:0; width:100%;">
-  <table class="bio-table" aria-label="Career timeline" style="width:100%;">
-    <thead>
-      <tr>
-        <th style="width:18%">Period</th>
-        <th style="width:30%">Position</th>
-        <th style="width:32%">Institution</th>
-        <th style="width:20%">Research Group</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Since 2023</td>
-        <td>Professor/Researcher</td>
-        <td><a href="https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html" target="_blank" rel="noopener">Universidad Nacional de Educación a Distancia</a></td>
-        <td><a href="https://portalcientifico.uned.es/grupos/17475/detalle" target="_blank" rel="noopener">CISIAD</a></td>
-      </tr>
-      <tr>
-        <td>2021 – 2023</td>
-        <td>Postdoctoral Contract (María Zambrano)</td>
-        <td>Universidad Politécnica de Madrid</td>
-        <td><a href="https://oeg.fi.upm.es/" target="_blank" rel="noopener">OEG</a></td>
-      </tr>
-      <tr>
-        <td>2014 – 2020</td>
-        <td>Professor/Researcher in Peru</td>
-        <td>
-          Universidad Nacional de Ingeniería<br>
-          Universidad de Lima
-        </td>
-        <td>IUT-SCi</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <div class="note-card" style="padding:0; width:100%;">
+      <table class="bio-table" aria-label="Career timeline" style="width:100%;">
+        <thead>
+          <tr>
+            <th style="width:18%">Period</th>
+            <th style="width:30%">Position</th>
+            <th style="width:32%">Institution</th>
+            <th style="width:20%">Research Group</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Since 2023</td>
+            <td>Professor/Researcher</td>
+            <td><a href="https://www.uned.es/universidad/docentes/informatica/jose-manuel-castillo-cara.html" target="_blank" rel="noopener">Universidad Nacional de Educación a Distancia</a></td>
+            <td><a href="https://portalcientifico.uned.es/grupos/17475/detalle" target="_blank" rel="noopener">CISIAD</a></td>
+          </tr>
+          <tr>
+            <td>2021 – 2023</td>
+            <td>Postdoctoral Contract (María Zambrano)</td>
+            <td>Universidad Politécnica de Madrid</td>
+            <td><a href="https://oeg.fi.upm.es/" target="_blank" rel="noopener">OEG</a></td>
+          </tr>
+          <tr>
+            <td>2014 – 2020</td>
+            <td>Professor/Researcher in Peru</td>
+            <td>
+              Universidad Nacional de Ingeniería<br>
+              Universidad de Lima
+            </td>
+            <td>IUT-SCi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <!-- SCIENTIFIC OUTPUT -->
-<h2>🔬 Scientific Artefacts</h2>
-<ul class="bullets">
-  <li>25+ peer-reviewed journal articles (Q1/Q2 indexed)</li>
-  <li>7 international conference contributions (4 Scopus-indexed) and 1 invited tutorial</li>
-  <li>1 utility model patent</li>
-  <li>2 registered software works</li>
-  <li>1 academic book and 1 book chapter</li>
-  <li>Supervision of 6 Master’s theses and 6 Bachelor’s theses</li>
-  <li>Participation in 2 IEEE international robotics competitions (3rd place)</li>
-</ul>
-
+  <div class="section"> 
+      <h2>🔬 Scientific Artefacts</h2>
+      <ul class="bullets">
+        <li>25+ peer-reviewed journal articles (Q1/Q2 indexed)</li>
+        <li>7 international conference contributions (4 Scopus-indexed) and 1 invited tutorial</li>
+        <li>1 utility model patent</li>
+        <li>2 registered software works</li>
+        <li>1 academic book and 1 book chapter</li>
+        <li>Supervision of 6 Master’s theses and 6 Bachelor’s theses</li>
+        <li>Participation in 2 IEEE international robotics competitions (3rd place)</li>
+      </ul>
+  </div>  
   <!-- IMPACT -->
-  <h3>📊 Impact in the Scientific Community</h3>
-  <table class="bio-table" aria-label="Citation impact">
-    <thead>
-      <tr><th>Source</th><th>Citations</th><th>#Q1</th><th>#Q2</th><th>H-Index</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="https://www.webofscience.com/wos/author/record/O-9762-2017" target="_blank" rel="noopener">Web of Science (JCR)</a></td>
-        <td>210</td><td>9</td><td>10</td><td>9</td>
-      </tr>
-      <tr>
-        <td><a href="https://www.scopus.com/authid/detail.uri?authorId=57200871251" target="_blank" rel="noopener">Scopus (SJR)</a></td>
-        <td>344</td><td>15</td><td>8</td><td>11</td>
-      </tr>
-      <tr>
-        <td><a href="https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ" target="_blank" rel="noopener">Google Scholar</a></td>
-        <td>548</td><td>–</td><td>–</td><td>13</td>
-      </tr>
-    </tbody>
-  </table>
-
+  <div class="section">
+    <h3>📊 Impact in the Scientific Community</h3>
+    <table class="bio-table" aria-label="Citation impact">
+      <thead>
+        <tr><th>Source</th><th>Citations</th><th>#Q1</th><th>#Q2</th><th>H-Index</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.webofscience.com/wos/author/record/O-9762-2017" target="_blank" rel="noopener">Web of Science (JCR)</a></td>
+          <td>210</td><td>9</td><td>10</td><td>9</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.scopus.com/authid/detail.uri?authorId=57200871251" target="_blank" rel="noopener">Scopus (SJR)</a></td>
+          <td>344</td><td>15</td><td>8</td><td>11</td>
+        </tr>
+        <tr>
+          <td><a href="https://scholar.google.es/citations?hl=es&authuser=2&user=r0JytwIAAAAJ" target="_blank" rel="noopener">Google Scholar</a></td>
+          <td>548</td><td>–</td><td>–</td><td>13</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
