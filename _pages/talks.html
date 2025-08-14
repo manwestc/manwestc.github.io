@@ -31,130 +31,94 @@ author_profile: true
 
 <style>
   :root{
-    --ink:#1f2937; --muted:#6b7280; --bd:#e5e7eb; --soft:#f8fafc;
-    --brand:#1565c0; --brand-2:#0b67b8; --card:#ffffff;
+    --ink:#1f2937;
+    --muted:#6b7280;
+    --bd:#d7dee6;           /* borde un poco más visible */
+    --card-bg:#f4f7fb;      /* fondo sólido suave para la tarjeta */
+    --frame:#ffffff;        /* marco de la miniatura */
+    --brand:#1976d2;
+    --brand-2:#0f60b6;
   }
-  .ud-wrap{max-width:1100px;margin:0 auto;padding:0 1rem;}
-  .ud-toolbar{
-    display:flex;gap:.75rem;align-items:center;justify-content:space-between;
-    padding:.8rem 1rem;background:var(--soft);border:1px solid var(--bd);border-radius:12px;margin:1rem 0 1.25rem;
+
+  /* ===== Grilla de cursos ===== */
+  .course-grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0,1fr)); /* 4 en escritorio */
+    gap:1rem;
   }
-  .ud-search{flex:1;display:flex;align-items:center;gap:.5rem}
-  .ud-search input{
-    width:100%;padding:.6rem .8rem;border:1px solid var(--bd);border-radius:10px;font-size:.95rem
-  }
-  .ud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-  @media (max-width:980px){ .ud-grid{grid-template-columns:repeat(2,1fr)} }
-  @media (max-width:640px){ .ud-grid{grid-template-columns:1fr} .ud-toolbar{flex-direction:column;align-items:stretch} }
-
-  .ud-card{
-    background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden;
-    display:flex;gap:.9rem;padding:.9rem;box-shadow:0 2px 10px rgba(0,0,0,.03)
-  }
-  .ud-thumb{flex:0 0 120px}
-  .ud-thumb img{width:120px;height:auto;border-radius:8px;border:1px solid var(--bd)}
-  .ud-body{display:flex;flex-direction:column;gap:.35rem}
-  .ud-title{font-weight:700;line-height:1.25;margin:.1rem 0}
-  .ud-meta{font-size:.9rem;color:var(--muted)}
-  .ud-actions{margin-top:.35rem}
-  .btn{
-    display:inline-block;background:var(--brand);color:#fff;text-decoration:none !important;
-    padding:.5rem .8rem;border-radius:8px;font-weight:700;font-size:.92rem
-  }
-  .btn:hover{background:var(--brand-2)}
-  .ud-badge{
-    display:inline-block;background:#e0ecff;color:#0f3d8a;border-radius:999px;
-    padding:.15rem .5rem;font-size:.75rem;font-weight:700;margin-left:.4rem
-  }
-  .ud-section{margin:1.6rem 0 .8rem}
-  .ud-section h2{font-size:1.35rem;margin:0 0 .4rem;font-weight:800}
-  .ud-section p{margin:0;color:var(--muted)}
-</style>
-
-<style>
-  /* ===== Tarjetas Udemy: grid y estilo compacto ===== */
-  .course-card {
-  background-color: #f9fafb; /* gris muy claro */
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 0.8rem; /* menos espacio que antes */
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* sombra suave */
-}
-
-.course-card img {
-  width: 100%;
-  max-width: 160px; /* todas igual de anchas */
-  height: 90px; /* todas igual de altas */
-  object-fit: contain; /* o "cover" si quieres recortar */
-  border-radius: 6px;
-  border: 1px solid #e5e7eb;
-  background-color: white; /* fondo blanco para imágenes con transparencia */
-}
-
-.course-card h3 {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-.course-card .btn {
-  display: inline-block;
-  background-color: #1976d2;
-  color: white;
-  padding: 0.4rem 0.9rem;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 0.4rem;
-}
-
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas escritorio */
-  gap: 1rem;
-}
-
-@media (max-width: 768px) {
-  .course-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas móvil */
-  }
-}
   @media (max-width: 1024px){
-    .course-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); } /* tablet */
+    .course-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); }
   }
   @media (max-width: 768px){
-    .course-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } /* móvil */
+    .course-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } /* 2 en móvil */
   }
 
-  .ud-card{
-    display:flex; flex-direction:column; align-items:center;
-    padding:.75rem;                                 /* menos padding interno */
-    background:#fff; border-radius:8px; 
-    border:1px solid #cfd8dc; box-shadow:0 1px 4px rgba(0,0,0,.03);
+  /* ===== Tarjeta ===== */
+  .course-card{
+    background:var(--card-bg);           /* fondo más sólido */
+    border:1px solid var(--bd);
+    border-radius:12px;
+    padding:.75rem .75rem 1rem;          /* menos aire en bordes */
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
   }
-  .ud-thumb img {
-  width: 100%;
-  max-width: 160px;  /* ancho máximo uniforme */
-  height: 90px;      /* altura fija */
-  object-fit: contain; /* mantiene proporción sin recortar */
-  border-radius: 6px;
-  border: 1px solid #e5e7eb;
-  }
-  .ud-thumb img{
-    width:100%; max-width:160px; height:auto; object-fit:contain;
-    border-radius:6px; border:1px solid #e5e7eb;
-  }
-  .ud-body{ width:100%; text-align:center; }
-  .ud-title{ font-size:1rem; line-height:1.35; margin:.4rem 0 .5rem; }
-  .ud-title a{ color:#1565c0; text-decoration:none; font-weight:700; }
-  .ud-title a:hover{ text-decoration:underline; }
 
-  .ud-actions{ display:flex; justify-content:center; margin-top:.5rem; }
+  /* Marco uniforme para miniatura */
+  .course-thumb{
+    width:100%;
+    aspect-ratio:16/9;                   /* TODAS IGUALES */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--frame);
+    border:1px solid var(--bd);
+    border-radius:8px;
+    overflow:hidden;
+    margin:0 auto .6rem;                 /* menos espacio con el título */
+    padding:6px;                         /* pequeño marco blanco */
+  }
+  /* Fallback si algún navegador no soporta aspect-ratio */
+  @supports not (aspect-ratio: 16/9){
+    .course-thumb{ height:150px; }
+  }
+
+  .course-thumb img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+    object-fit:contain;                  /* encaja sin recortar */
+    display:block;
+  }
+
+  .course-title{
+    font-size:1.02rem;
+    line-height:1.28;
+    font-weight:800;
+    color:#165dbb;
+    margin:.25rem 0 .6rem;
+  }
+  .course-title a{
+    color:inherit;
+    text-decoration:none;
+  }
+  .course-title a:hover{ text-decoration:underline; }
+
+  .course-actions{
+    display:flex;
+    justify-content:center;
+  }
   .btn{
-    display:inline-block; background:#1976d2; color:#fff;
-    padding:.45rem .9rem; border-radius:6px; text-decoration:none !important;
-    font-weight:700; min-width:110px; text-align:center;
+    display:inline-block;
+    background:var(--brand);
+    color:#fff;
+    padding:.5rem 1rem;
+    border-radius:10px;
+    font-weight:800;
+    text-decoration:none !important;
+    min-width:120px;
   }
+  .btn:hover{ background:var(--brand-2); }
 </style>
 
 {% assign categorias = site.talks | group_by: "category" %}
@@ -163,35 +127,33 @@ author_profile: true
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
-      <h2 style="font-size:1.6rem; margin:1.4rem 0 .6rem; font-weight:700;">
+      <h2 style="font-size:1.6rem; margin:1.4rem 0 .6rem; font-weight:800;">
         {{ categoria.name }}
       </h2>
 
       <div class="course-grid">
         {% for post in categoria.items %}
-          <article class="ud-card ud-item"
+          <article class="course-card ud-item"
                    data-title="{{ post.title | downcase }}"
                    data-cat="{{ categoria.name | downcase }}">
-            <div class="ud-thumb">
-              <a href="{{ post.url | relative_url }}">
-                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
-              </a>
-            </div>
 
-            <div class="ud-body">
-              <div class="ud-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </div>
+            <!-- Miniatura uniforme -->
+            <a href="{{ post.url | relative_url }}" class="course-thumb" aria-label="{{ post.title | escape }}">
+              <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
+            </a>
 
-              <!-- (Metadatos ocultos en todas las tarjetas) -->
+            <!-- Título -->
+            <h3 class="course-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
 
-              <div class="ud-actions">
-                {% if post.coupon_url %}
-                  <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
-                {% else %}
-                  <a class="btn" href="{{ post.url | relative_url }}">Acceso</a>
-                {% endif %}
-              </div>
+            <!-- Botón Acceso (sin metadatos) -->
+            <div class="course-actions">
+              {% if post.coupon_url %}
+                <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
+              {% else %}
+                <a class="btn" href="{{ post.url | relative_url }}">Acceso</a>
+              {% endif %}
             </div>
           </article>
         {% endfor %}
@@ -200,9 +162,7 @@ author_profile: true
   {% endfor %}
 {% endfor %}
 
-</div>
-
-<!-- 🔎 Filtro en vivo por título/categoría -->
+<!-- (Opcional) filtro JS si añades un buscador con id="udSearch" -->
 <script>
   (function(){
     var input = document.getElementById('udSearch');
@@ -210,10 +170,10 @@ author_profile: true
     input.addEventListener('input', function(e){
       var q = e.target.value.trim().toLowerCase();
       document.querySelectorAll('.ud-item').forEach(function(card){
-        var hay = !q ||
+        var ok = !q ||
           card.getAttribute('data-title').includes(q) ||
           card.getAttribute('data-cat').includes(q);
-        card.style.display = hay ? '' : 'none';
+        card.style.display = ok ? '' : 'none';
       });
     });
   }());
