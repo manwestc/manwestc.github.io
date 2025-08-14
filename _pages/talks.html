@@ -73,12 +73,52 @@ author_profile: true
 
 <style>
   /* ===== Tarjetas Udemy: grid y estilo compacto ===== */
-  .course-grid{
-    display:grid;
-    grid-template-columns:repeat(4, minmax(0,1fr)); /* 4 columnas escritorio */
-    gap:.9rem;                                      /* menos espacio entre tarjetas */
-    padding:.6rem 0;
+  .course-card {
+  background-color: #f9fafb; /* gris muy claro */
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.8rem; /* menos espacio que antes */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* sombra suave */
+}
+
+.course-card img {
+  width: 100%;
+  max-width: 160px; /* todas igual de anchas */
+  height: 90px; /* todas igual de altas */
+  object-fit: contain; /* o "cover" si quieres recortar */
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: white; /* fondo blanco para imágenes con transparencia */
+}
+
+.course-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.course-card .btn {
+  display: inline-block;
+  background-color: #1976d2;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 0.4rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas escritorio */
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas móvil */
   }
+}
   @media (max-width: 1024px){
     .course-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); } /* tablet */
   }
