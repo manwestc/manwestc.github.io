@@ -8,19 +8,192 @@ description: "Scientific publications, books, patents and software contributions
 
 {% include base_path %}
 
-<!-- ✅ SEO Structured Data -->
+
+<!-- ✅ SEO meta básicos -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="description" content="Scientific publications, books, patents and software contributions by Manuel Castillo-Cara — recent articles, books & chapters, software and conference items.">
+<meta name="keywords" content="Manuel Castillo-Cara, publications, research articles, AI, deep learning, software, patents, books, conferences, JSTSP, Information Fusion, SoftwareX">
+<meta name="author" content="Manuel Castillo-Cara">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Publications — Manuel Castillo-Cara">
+<meta property="og:description" content="Recent publications, books, patents and software by Manuel Castillo-Cara.">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/profile.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publications — Manuel Castillo-Cara">
+<meta name="twitter:description" content="Recent publications, books, patents and software.">
+<meta name="twitter:image" content="{{ site.url }}/images/site-card.jpg">
+
+<!-- ✅ Datos estructurados: página + breadcrumb + lista de obras -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Manuel Castillo-Cara",
-  "url": "https://www.manuelcastillo.eu/",
-  "affiliation": { "@type": "Organization", "name": "Universidad Nacional de Educación a Distancia (UNED)" },
-  "sameAs": [
-    "https://scholar.google.es/citations?user=r0JytwIAAAAJ",
-    "https://www.scopus.com/authid/detail.uri?authorId=57200871251",
-    "https://www.webofscience.com/wos/author/record/O-9762-2017"
-  ]
+  "@type": "WebPage",
+  "name": "Publications",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Scientific publications, books, patents and software contributions by Manuel Castillo-Cara.",
+  "about": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara",
+    "image": "https://www.manuelcastillo.eu/images/profile.jpg"
+    "url": "https://www.manuelcastillo.eu/",
+    "affiliation": { "@type": "Organization", "name": "Universidad Nacional de Educación a Distancia (UNED)" },
+    "sameAs": [
+      "https://scholar.google.es/citations?user=r0JytwIAAAAJ",
+      "https://www.scopus.com/authid/detail.uri?authorId=57200871251",
+      "https://www.webofscience.com/wos/author/record/O-9762-2017"
+    ]
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Publications", "item": "{{ site.url }}{{ page.url }}" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Selected Publications and Outputs",
+    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+    "itemListElement": [
+      {
+        "@type": "ScholarlyArticle",
+        "position": 1,
+        "name": "MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "IEEE Journal of Selected Topics in Signal Processing" },
+        "datePublished": "2025",
+        "identifier": "https://doi.org/10.1109/JSTSP.2025.3555067",
+        "url": "https://doi.org/10.1109/JSTSP.2025.3555067"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 2,
+        "name": "On the Significance of Graph Neural Networks with Pretrained Transformers in Content-Based Recommender Systems for Academic Articles Classification",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "Expert Systems" },
+        "datePublished": "2025",
+        "identifier": "https://doi.org/10.1111/exsy.70073",
+        "url": "https://doi.org/10.1111/exsy.70073"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 3,
+        "name": "Generative Adversarial Networks for Text-to-Face Synthesis & Generation: A Quantitative-Qualitative Analysis of NLP Encoders for Spanish",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "Information Processing & Management" },
+        "datePublished": "2024",
+        "identifier": "https://doi.org/10.1016/j.ipm.2024.103667",
+        "url": "https://doi.org/10.1016/j.ipm.2024.103667"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 4,
+        "name": "From cloud and fog computing to federated-fog computing: A comparative analysis…",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "Future Generation Computer Systems" },
+        "datePublished": "2024",
+        "identifier": "https://doi.org/10.1016/j.future.2024.05.001",
+        "url": "https://doi.org/10.1016/j.future.2024.05.001"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 5,
+        "name": "BeeGOns!: A Wireless Sensor Node for Fog-Computing based Smart City Platforms",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems" },
+        "datePublished": "2024",
+        "identifier": "https://doi.org/10.1109/TCAD.2023.3305575",
+        "url": "https://doi.org/10.1109/TCAD.2023.3305575"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 6,
+        "name": "A Novel Deep Learning Approach using Blurring Image Techniques for Bluetooth-based Indoor Localisation",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "Information Fusion" },
+        "datePublished": "2023",
+        "identifier": "https://doi.org/10.1016/j.inffus.2022.10.011",
+        "url": "https://doi.org/10.1016/j.inffus.2022.10.011"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 7,
+        "name": "TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "SoftwareX" },
+        "datePublished": "2023",
+        "identifier": "https://doi.org/10.1016/j.softx.2023.101391",
+        "url": "https://doi.org/10.1016/j.softx.2023.101391"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "position": 8,
+        "name": "An Analysis of Computational Resources of Event-Driven Streaming Data Flow for Internet of Things",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "isPartOf": { "@type": "Periodical", "name": "The Computer Journal" },
+        "datePublished": "2023",
+        "identifier": "https://doi.org/10.1093/comjnl/bxab143",
+        "url": "https://doi.org/10.1093/comjnl/bxab143"
+      },
+      {
+        "@type": "Book",
+        "position": 9,
+        "name": "GeoGebra en el Aula. Aplicaciones Matemáticas aplicadas al aula con GeoGebra",
+        "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+        "datePublished": "2023",
+        "isbn": "9798379088873",
+        "url": "https://www.manuelcastillo.eu/libros-software/libro-curso-GeoGebra-Aula/"
+      },
+      {
+        "@type": "Chapter",
+        "position": 10,
+        "name": "Cost-Effective Advanced Remote Diagnostics of Sucker Rod Pumping Wells From Dynamometric Charts: A Deep Learning Approach",
+        "author": "Hancco et al.",
+        "isPartOf": { "@type": "Book", "publisher": "IGI Global" },
+        "datePublished": "2024",
+        "url": "https://doi.org/10.4018/979-8-3693-0740-3.ch009"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "position": 11,
+        "name": "TINTORERA",
+        "creator": [{ "@type": "Person", "name": "Manuel Castillo-Cara" }, { "@type": "Person", "name": "Raúl García-Castro" }],
+        "identifier": "Registro PI: 16/2023/4624",
+        "url": "https://www.manuelcastillo.eu/libros-software/software-TINTOlib/"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "position": 12,
+        "name": "TINTORETTO",
+        "creator": [{ "@type": "Person", "name": "Manuel Castillo-Cara" }, { "@type": "Person", "name": "Raúl García-Castro" }],
+        "identifier": "Registro PI: 16/2023/5491",
+        "url": "https://www.manuelcastillo.eu/libros-software/software-TINTO/"
+      },
+      {
+        "@type": "CreativeWork",
+        "position": 13,
+        "additionalType": "https://schema.org/Patent",
+        "name": "Dispositivo electrónico para seguimiento y localización de personas o animales",
+        "identifier": "Título N.º 1151, Perú (Exp. 002758-2016/DIN; Res. 000417-2019/DIN-INDECOPI)",
+        "datePublished": "2019",
+        "url": "https://www.manuelcastillo.eu/libros-software/patente/"
+      },
+      {
+        "@type": "Event",
+        "position": 14,
+        "name": "Improving Deep Learning by Exploiting Synthetic Images — Tutorial (ECAI 2024)",
+        "startDate": "2024",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "url": "https://www.ecai2024.eu/programme/tutorials"
+      }
+    ]
+  }
 }
 </script>
 

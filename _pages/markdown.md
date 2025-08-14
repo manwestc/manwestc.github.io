@@ -18,7 +18,7 @@ description: "List of competitive research and development projects led or co-le
 <meta property="og:title" content="Projects — Manuel Castillo-Cara">
 <meta property="og:description" content="List of competitive research and development projects led or co-led by Manuel Castillo-Cara.">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}/images/site-card.jpg">
+<meta property="og:image" content="{{ site.url }}/images/profile.jpg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">

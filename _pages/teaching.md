@@ -8,20 +8,47 @@ description: "University teaching, thesis supervision, and technical training by
 
 {% include base_path %}
 
+<!-- ✅ Open Graph / Twitter Card -->
+<meta property="og:title" content="Teaching – Manuel Castillo-Cara">
+<meta property="og:description" content="University teaching, thesis supervision, and technical training at undergraduate, master's and doctoral levels by Manuel Castillo-Cara in AI, Data Science and Deep Learning.">
+<meta property="og:image" content="https://www.manuelcastillo.eu/images/profile.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Teaching – Manuel Castillo-Cara">
+<meta name="twitter:description" content="University teaching, thesis supervision, and technical training by Manuel Castillo-Cara in AI, Data Science and Deep Learning.">
+<meta name="twitter:image" content="https://www.manuelcastillo.eu/images/profile.jpg">
+
 <!-- ✅ SEO Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Manuel Castillo-Cara",
-  "jobTitle": "Professor & Researcher",
-  "affiliation": {
-    "@type": "EducationalOrganization",
-    "name": "Universidad Nacional de Educación a Distancia (UNED)"
-  },
+  "@type": "WebPage",
+  "name": "Teaching – Manuel Castillo-Cara",
+  "description": "University teaching, thesis supervision, and technical training by Manuel Castillo-Cara at undergraduate, master's and doctoral levels in AI, Data Science and Deep Learning.",
   "url": "{{ site.url }}{{ page.url }}",
-  "hasCredential": "PhD in Computer Science",
-  "description": "University teaching and thesis supervision at doctoral, master’s, and undergraduate levels, along with technical workshops in artificial intelligence, data science, and deep learning."
+  "image": "https://www.manuelcastillo.eu/images/profile.jpg",
+  "mainEntityOfPage": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara",
+    "jobTitle": "Professor & Researcher",
+    "image": "https://www.manuelcastillo.eu/images/profile.jpg",
+    "hasCredential": "PhD in Computer Science",
+    "affiliation": {
+      "@type": "EducationalOrganization",
+      "name": "Universidad Nacional de Educación a Distancia (UNED)"
+    },
+    "sameAs": [
+      "https://www.manuelcastillo.eu/",
+      "https://scholar.google.es/citations?user=r0JytwIAAAAJ",
+      "https://www.scopus.com/authid/detail.uri?authorId=57200871251",
+      "https://www.webofscience.com/wos/author/record/O-9762-2017",
+      "https://www.linkedin.com/in/manuelcastillocara/"
+    ]
+  }
 }
 </script>
 
