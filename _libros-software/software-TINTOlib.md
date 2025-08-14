@@ -229,42 +229,18 @@ model.fit_transform(data, folder="outputs")
   <div class="card">
     <h2 class="section-title">📚 Cite TINTOlib</h2>
     <p>If you use TINTOlib, please cite the following papers:</p>
-
-- **IEEE Journal of Selected Topics in Signal Processing** (2025):  
-```bib
-@ARTICLE{10946146,
-  author={Castillo-Cara, Manuel and Martínez-Gómez, Jesus and Ballesteros-Jerez, Javier and García-Varea, Ismael and García-Castro, Raúl and Orozco-Barbosa, Luis},
-  journal={IEEE Journal of Selected Topics in Signal Processing},
-  title={MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning},
-  year={2025},
-  pages={1-13},
-  doi={10.1109/JSTSP.2025.3555067}
-}
-```
-- **SofwareX** (2023):
-```bib
-@article{softwarex_TINTO,
-  title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
-  journal = {SoftwareX},
-  author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
-  volume={22},
-  pages={101391},
-  year = {2023},
-  issn = {2352-7110},
-  doi = {10.1016/j.softx.2023.101391}
-}
-```
-- **nformation Fusion** (2023):
-@article{inffus_TINTO,
-  title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
-  journal = {Information Fusion},
-  author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
-  volume = {91},
-  pages = {173-186},
-  year = {2023},
-  issn = {1566-2535},
-  doi = {10.1016/j.inffus.2022.10.011}
-}
+    <section class="tinto-card soft">
+      <h2>🧠 Research and Software Publications</h2>
+      <h3 style="margin:.25rem 0">📄 Research Articles</h3>
+      <ul class="pub-list">
+        <li>Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>. <em>IEEE JSTSP</em>. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">10.1109/JSTSP.2025.3555067</a></li>
+        <li>Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. <strong>Blurring Image Techniques for Bluetooth-based Indoor Localisation</strong>. <em>Information Fusion</em>. DOI: <a href="https://doi.org/10.1016/j.inffus.2022.10.011" target="_blank" rel="noopener">10.1016/j.inffus.2022.10.011</a></li>
+      </ul>
+      <h3 style="margin:.5rem 0 0">💾 Software Articles</h3>
+      <ul class="pub-list">
+        <li>Manuel Castillo-Cara et al. <strong>TINTO: Converting Tidy Data into Images</strong>. <em>SoftwareX</em>. DOI: <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener">10.1016/j.softx.2023.101391</a></li>
+      </ul>
+    </section>
   </div>
 
   <div class="card">
