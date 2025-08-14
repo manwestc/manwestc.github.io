@@ -8,6 +8,150 @@ description: "List of competitive research and development projects led or co-le
 
 {% include base_path %}
 
+<!-- ✅ SEO meta -->
+<meta name="description" content="Competitive research and development projects led or co-led by Manuel Castillo-Cara (ongoing and completed).">
+<meta name="keywords" content="research projects, R&D, grants, FONDECYT, CICYT, Innóvate Perú, UNED, Manuel Castillo-Cara">
+<meta name="author" content="Manuel Castillo-Cara">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects — Manuel Castillo-Cara">
+<meta property="og:description" content="List of competitive research and development projects led or co-led by Manuel Castillo-Cara.">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/site-card.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Manuel Castillo-Cara">
+<meta name="twitter:description" content="Competitive R&D&i projects (ongoing and completed).">
+<meta name="twitter:image" content="{{ site.url }}/images/site-card.jpg">
+
+<!-- ✅ Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Projects",
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": "Competitive research and development projects led or co-led by Manuel Castillo-Cara.",
+  "about": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara",
+    "affiliation": { "@type": "Organization", "name": "Universidad Nacional de Educación a Distancia (UNED)" }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Research and Development Projects",
+    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+    "itemListElement": [
+      {
+        "@type": "ResearchProject",
+        "position": 1,
+        "name": "Cost-Effective Screening of Breast Cancer and Rheumatic Heart Disease Using Artificial Intelligence",
+        "roleName": "Co-investigator",
+        "identifier": "PID2023-150515OB-I00",
+        "funder": { "@type": "Organization", "name": "State Agency for Investigation" },
+        "startDate": "2024-09",
+        "endDate": "2027-08",
+        "location": { "@type": "Country", "name": "Spain" },
+        "status": "Active"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 2,
+        "name": "Development of HPC and data centre services and infrastructure",
+        "roleName": "Co-investigator",
+        "identifier": "PID2021-123627OB-C52",
+        "funder": { "@type": "Organization", "name": "State Agency for Investigation" },
+        "startDate": "2022-09",
+        "endDate": "2025-09",
+        "location": { "@type": "Country", "name": "Spain" },
+        "status": "Active"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 3,
+        "name": "Supercapacitor-based system for small electric vehicles and wireless devices",
+        "roleName": "Co-investigator",
+        "identifier": "026-FONDECYT-BM-INC.INV",
+        "funder": { "@type": "Organization", "name": "FONDECYT & World Bank" },
+        "startDate": "2020",
+        "endDate": "2022",
+        "location": { "@type": "Country", "name": "Peru" },
+        "status": "Completed"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 4,
+        "name": "Energy storage from microbial fuel cells for rural applications",
+        "roleName": "Co-investigator",
+        "identifier": "401-FONDECYT",
+        "funder": { "@type": "Organization", "name": "FONDECYT" },
+        "startDate": "2020",
+        "endDate": "2023",
+        "location": { "@type": "Country", "name": "Peru" },
+        "status": "Completed"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 5,
+        "name": "Smart Technologies for Ibero-American Cities",
+        "roleName": "Principal Investigator",
+        "identifier": "138-2017-FONDECYT",
+        "funder": { "@type": "Organization", "name": "FONDECYT" },
+        "startDate": "2017",
+        "endDate": "2020",
+        "location": { "@type": "Country", "name": "Peru" },
+        "status": "Completed"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 6,
+        "name": "Citizen Safety and Road Applications in Smart Cities",
+        "roleName": "Principal Investigator",
+        "identifier": "PIAP-363",
+        "funder": { "@type": "Organization", "name": "Innóvate Perú / FINCyT" },
+        "startDate": "2014",
+        "endDate": "2017",
+        "location": { "@type": "Country", "name": "Peru" },
+        "status": "Completed"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 7,
+        "name": "Optimizing performance and energy in multimedia systems",
+        "roleName": "Co-investigator",
+        "identifier": "TIN2015-66972-C05-2-R",
+        "funder": { "@type": "Organization", "name": "Ministry of Science and Technology (CICYT)" },
+        "startDate": "2017",
+        "endDate": "2018",
+        "location": { "@type": "Country", "name": "Spain" },
+        "status": "Completed"
+      },
+      {
+        "@type": "ResearchProject",
+        "position": 8,
+        "name": "Microgravity machine validation using parallel algorithms in GRID systems",
+        "roleName": "Co-investigator",
+        "identifier": "PIAP-1-P-622-13",
+        "funder": { "@type": "Organization", "name": "FINCyT" },
+        "startDate": "2013",
+        "endDate": "2016",
+        "location": { "@type": "Country", "name": "Peru" },
+        "status": "Completed"
+      }
+    ]
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+      { "@type": "ListItem", "position": 2, "name": "Projects", "item": "{{ site.url }}{{ page.url }}" }
+    ]
+  }
+}
+</script>
+
 <style>
   :root{
     --ink:#1f2937; --muted:#64748b; --bd:#e5e7eb; --soft:#f8fafc;
