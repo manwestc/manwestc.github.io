@@ -112,11 +112,10 @@ description: "Scientific publications, books, patents and software contributions
     font-size: 1.3rem;
     font-weight: 800;
     color: var(--ink);
-    background: linear-gradient(to right, #eef2ff, #ffffff);
-    padding: 0.4rem 0.8rem;
-    border-left: 5px solid var(--brand);
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.04);
+    background: linear-gradient(90deg, rgba(21,101,192,0.08), #ffffff);
+    border-left: 6px solid var(--brand);
+    border-radius: 12px;
+    padding: 0.5rem 0.8rem;
   }
 
   .section h2::after {
@@ -125,7 +124,7 @@ description: "Scientific publications, books, patents and software contributions
     height: 3px;
     background: linear-gradient(to right, #4a90e2, #e91e63);
     border-radius: 2px;
-    margin-left: 0.5rem;  
+    margin-left: 0.5rem;
   }
 
   .section h2::before {
