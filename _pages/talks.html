@@ -166,7 +166,7 @@ author_profile: true
 </style>
 
 {% assign categorias = site.talks | group_by: "category" %}
-{% assign orden_categorias = "Inteligencia Artificial con Python:,Inteligencia Artificial con R:,Otros cursos de formación avanzada:" | split: "," %}
+{% assign orden_categorias = "Inteligencia Artificial con Python,Inteligencia Artificial con R,Otros cursos de formación avanzada" | split: "," %}
 
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
