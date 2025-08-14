@@ -172,12 +172,8 @@ related: false
   <div class="buy-card">
     <div class="price">💰 Precio: <strong>20€</strong></div>
     <p style="margin:.1rem 0 .6rem; color:var(--muted)">Puedes comprarlo con PayPal o escribirme si prefieres otra forma de pago.</p>
-
-    <!-- Botón PayPal (tu mismo ID, integrado) -->
-    <div id="paypal-container-UX7UBGJ8TCPTW"></div>
-
     <div style="margin-top:.4rem">
-      <a class="btn btn-primary" href="mailto:manwest.c@gmail.com">📩 Solicitar factura o info</a>
+      <a class="btn btn-primary" href="mailto:manwest.c@gmail.com">📩 Solicitar info</a>
     </div>
   </div>
 
@@ -186,7 +182,6 @@ related: false
     <a class="btn btn-primary" href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=AGO_2025" target="_blank" rel="noopener">🎓 Acceder al curso gratis en Udemy</a>
   </div>
 </div>
-
 
 <script 
   src="https://www.paypal.com/sdk/js?client-id=BAAFLtzEbhR-v2Nk6YVEdhvWJzPrGcmQm4dOmmv6DDKyXomXKpToxESEA_da2HErs94WB2HVZrH396-SUg&components=hosted-buttons&disable-funding=venmo&currency=EUR">
@@ -198,3 +193,4 @@ related: false
     hostedButtonId: "UX7UBGJ8TCPTW",
   }).render("#paypal-container-UX7UBGJ8TCPTW")
 </script>
+

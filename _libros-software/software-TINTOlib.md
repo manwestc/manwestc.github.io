@@ -1,15 +1,12 @@
 ---
-layout: single
-title: "TINTOlib — Python library for transforming tabular data into synthetic images"
+layout: archive
+title: "TINTOlib - Python library for transforming tabular data into synthetic images"
+excerpt: "TINTOlib is an open-source, user-extendable framework that offers new opportunities for users to convert tidy data into images through differents algorithmic methods.<br/><img src='/images/tinto-logo.svg' width='150' align='center' />"
 collection: libros-software
 category: "Software"
-permalink: /libros-software/software-TINTOlib/
 image: "/images/tinto-logo.svg"
-description: "TINTOlib is an open-source, user-extendable framework that converts tidy tabular data into synthetic images for deep learning with CNNs, ViTs, and hybrid models."
-show_date: false
-read_time: false
-share: false
-related: false
+permalink: /libros-software/software-TINTOlib/
+author_profile: true
 ---
 
 {% include base_path %}
@@ -17,102 +14,288 @@ related: false
 <!-- ✅ SEO básico -->
 <link rel="canonical" href="{{ site.url }}{{ page.permalink }}">
 <meta name="robots" content="index,follow">
-<meta name="description" content="TINTOlib is a Python library that converts tidy data into synthetic images for deep learning models like CNNs and Vision Transformers.">
+<meta name="description" content="TINTOlib is a Python library that converts tidy tabular data into synthetic images for Deep Learning with CNNs, ViTs and hybrid models.">
+<meta name="keywords" content="TINTOlib, tabular to image, tidy data, synthetic images, deep learning, CNN, ViT, Vision Transformer, hybrid neural networks, Python, Data Science">
+<meta name="author" content="Manuel Castillo-Cara">
 
 <!-- ✅ Open Graph / Twitter -->
-<meta property="og:title" content="TINTOlib — Tabular Data to Synthetic Images">
-<meta property="og:description" content="Convert tidy tabular data into synthetic images for deep learning with CNNs, ViTs, and hybrid models.">
+<meta property="og:title" content="TINTOlib — Tabular Data → Synthetic Images">
+<meta property="og:description" content="Python library to transform tidy tabular data into synthetic images for Deep Learning (CNNs, ViTs, hybrid).">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.permalink }}">
 <meta property="og:image" content="{{ site.url }}{{ page.image }}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="TINTOlib — Tabular Data to Synthetic Images">
-<meta name="twitter:description" content="Open-source Python library to transform tabular data into synthetic images for advanced deep learning.">
+<meta name="twitter:title" content="TINTOlib — Tabular Data → Synthetic Images">
+<meta name="twitter:description" content="Convert tidy data into images and train CNNs/ViTs & hybrid models.">
 <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
 
-<!-- ✅ JSON-LD -->
+<!-- ✅ JSON-LD: Software -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
-  "name":"TINTOlib",
-  "operatingSystem":"Linux, macOS, Windows",
-  "applicationCategory":"Machine Learning Library",
-  "description":"TINTOlib converts tidy tabular data into synthetic images, enabling the use of CNNs, ViTs, and hybrid deep learning models.",
-  "url":"{{ site.url }}{{ page.url }}",
-  "image":"{{ site.url }}{{ page.image }}",
-  "softwareVersion":"1.0",
-  "author":{"@type":"Person","name":"Manuel Castillo-Cara"},
-  "publisher":{"@type":"Organization","name":"Ontology Engineering Group, UPM"},
-  "license":"https://github.com/oeg-upm/TINTOlib-Documentation/blob/main/LICENSE",
-  "downloadUrl":"https://pypi.org/project/TINTOlib/",
-  "codeRepository":"https://github.com/oeg-upm/TINTOlib",
-  "programmingLanguage":"Python",
-  "offers":{"@type":"Offer","price":"0.00","priceCurrency":"EUR"}
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TINTOlib",
+  "operatingSystem": "Linux, macOS, Windows",
+  "applicationCategory": "Machine Learning Library",
+  "description": "TINTOlib is a Python library that converts tabular (tidy) data into synthetic images using various algorithmic methods. It enables the use of CNNs, ViTs and hybrid models with tabular data.",
+  "url": "{{ site.url }}{{ page.url }}",
+  "image": "{{ site.url }}/images/tinto-logo.svg",
+  "softwareVersion": "1.0",
+  "author": { "@type": "Person", "name": "Manuel Castillo-Cara" },
+  "publisher": { "@type": "Organization", "name": "Ontology Engineering Group, UPM" },
+  "license": "https://github.com/oeg-upm/TINTOlib-Documentation/blob/main/LICENSE",
+  "downloadUrl": "https://pypi.org/project/TINTOlib/",
+  "codeRepository": "https://github.com/oeg-upm/TINTOlib",
+  "programmingLanguage": "Python",
+  "offers": { "@type": "Offer", "price": "0.00", "priceCurrency": "EUR" }
 }
 </script>
 
-<!-- 🎨 Estilos -->
+<!-- ✅ JSON-LD: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is TINTOlib?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A Python library that transforms tidy tabular data into synthetic images so you can use computer vision models (CNNs, Vision Transformers) on non-image data." } },
+    { "@type": "Question", "name": "Which methods are supported?",
+      "acceptedAnswer": { "@type": "Answer", "text": "TINTO, IGTD, REFINED, BarGraph, DistanceMatrix, Combination, SuperTML, FeatureWrap, BIE — each with specific hyperparameters." } },
+    { "@type": "Question", "name": "Why convert tables into images?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It lets you leverage the advances of modern vision models on tabular problems, sometimes improving accuracy and generalization." } }
+  ]
+}
+</script>
+
+<!-- 🎨 Estilos (alineados con el resto del sitio) -->
 <style>
-  .hero {display:flex;gap:1rem;align-items:center;flex-wrap:wrap;background:linear-gradient(135deg,#1d4ed8 0%,#9333ea 100%);color:#fff;border-radius:14px;padding:1rem 1.25rem;margin:1.25rem 0 1rem;box-shadow:0 8px 24px rgba(0,0,0,.08);}
-  .hero img{width:120px;height:120px;object-fit:contain;background:#fff;border-radius:12px;padding:.4rem;}
-  .hero h1{font-size:1.6rem;margin:.1rem 0 .3rem;}
-  .hero-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem;}
-  .btn{display:inline-block;padding:.65em 1.05em;border-radius:10px;font-weight:800;text-decoration:none;transition:transform .06s ease,box-shadow .15s ease;background:#2563eb;color:#fff;}
-  .btn:hover{background:#1d4ed8;transform:translateY(-1px);}
-  .btn-secondary{background:#1e40af;}
-  .btn-secondary:hover{background:#1e3a8a;}
-  .section-title{font-size:1.25rem;font-weight:800;margin:1.3rem 0 .8rem;border-left:6px solid #1565c0;padding-left:.8rem;}
-  .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;box-shadow:0 2px 10px rgba(0,0,0,.04);}
+  :root{
+    --ink:#1f2937; --muted:#6b7280; --bd:#e5e7eb; --soft:#f8fafc;
+    --card:#ffffff; --brand:#1565c0; --brand2:#0b67b8;
+    --cta:#2563eb; --cta-hover:#1d4ed8; --pill:#eef2ff;
+  }
+  .tinto-wrap{max-width:1050px;margin:0 auto;padding:0 1rem}
+  .tinto-hero{
+    display:flex; gap:1rem; align-items:center; flex-wrap:wrap;
+    background:linear-gradient(135deg,#1d4ed8 0%, #9333ea 100%);
+    color:#fff; border-radius:14px; padding:1rem 1.25rem; margin:1.25rem 0 1.2rem;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+  }
+  .tinto-hero img{width:90px;height:90px;background:#fff;border-radius:12px;padding:.35rem;border:2px solid rgba(255,255,255,.7);object-fit:contain}
+  .tinto-hero h1{font-size:1.6rem;margin:.1rem 0 .25rem;line-height:1.2}
+  .hero-actions{display:flex;justify-content:center;align-items:center;gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
+  .btn{display:inline-block;padding:.65em 1.05em;border-radius:10px;font-weight:800;text-decoration:none;border:0;cursor:pointer;transition:transform .06s ease, box-shadow .15s ease, background-color .15s ease}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.18)}
+  .btn-primary{background:var(--cta);color:#fff !important}
+  .btn-primary:hover{background:var(--cta-hover)}
+  .btn-ghost{border:2px solid rgba(255,255,255,.85);color:#fff !important;background:transparent}
+  .section-title{
+    display:flex;align-items:center;gap:.5rem;font-size:1.25rem;font-weight:800;color:var(--ink);
+    background:linear-gradient(90deg, rgba(21,101,192,.08), #fff);
+    border-left:6px solid var(--brand); border-radius:12px; padding:.5rem .8rem; margin:1.2rem 0 .8rem;
+  }
+  .section-title::after{content:"";flex:1;height:3px;margin-left:.6rem;background:linear-gradient(to right,#4a90e2,#e91e63);border-radius:2px}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:1rem;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+  .pillbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0}
+  .pill{display:inline-flex;align-items:center;gap:.35rem;font-weight:700;font-size:.88rem;background:var(--pill);border:1px solid var(--bd);color:#111827;border-radius:999px;padding:.2rem .6rem}
+  .methods-table{width:100%;border-collapse:collapse;font-size:.95rem;margin:1rem 0}
+  .methods-table th,.methods-table td{border:1px solid #e6e8eb;padding:.6rem .7rem;vertical-align:top}
+  .methods-table th{background:#f3f6fb;text-align:left}
+  .cta-center{display:flex;justify-content:center;margin:1.6rem 0}
+  .cta-center .btn-primary{padding:1em 2.5em;font-size:1.1rem;min-width:clamp(240px,50vw,440px)}
+  /* Aviso Udemy */
+  .udemy-box{border:1px solid #cfd8dc;border-radius:12px;background:#f5f8fa;padding:1rem;margin:1rem 0 1.2rem}
+  .udemy-box h2{color:#1565c0;margin:.2rem 0 .4rem;text-align:center}
+  .udemy-box p{text-align:center;color:#37474f;margin:.25rem 0}
 </style>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="{{ page.image }}" alt="TINTOlib Logo">
-  <div style="flex:1">
-    <h1>TINTOlib — Python library for transforming tabular data into synthetic images</h1>
-    <p>Convert tidy data into synthetic images for CNNs, ViTs, and hybrid deep learning models.</p>
-    <div class="hero-actions">
-      <a href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" target="_blank" class="btn">🚀 Access Free Udemy Course</a>
-      <a href="https://github.com/oeg-upm/TINTOlib" target="_blank" class="btn btn-secondary">View on GitHub</a>
+<div class="tinto-wrap">
+
+  <!-- HERO -->
+  <section class="tinto-hero">
+    <img src="/images/tinto-logo.svg" alt="TINTOlib logo">
+    <div style="flex:1">
+      <h1>TINTOlib — Tabular Data → Synthetic Images</h1>
+      <p>Open-source Python library to convert tidy tabular data into synthetic images and train CNNs, ViTs, and hybrid architectures.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">⭐ GitHub</a>
+        <a class="btn btn-ghost" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">📘 Documentation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aviso Udemy (conservado) -->
+  <div class="udemy-box">
+    <h2>🎉 New Free Course on Udemy! 🎉</h2>
+    <p>We’ve just launched a <strong>100% free course on Udemy</strong> about using <strong>TINTOlib</strong> and developing <strong>Hybrid Neural Networks</strong>.</p>
+    <p>Learn how to turn tabular data into synthetic images and apply CNNs, ViTs, and hybrid architectures.</p>
+    <p>
+      <a class="btn btn-primary" href="https://www.udemy.com/course/tintolib-deep-learning-tabutar-data-con-imagenes-sinteticas/?referralCode=16B7C59C2E3B0BD249D0" target="_blank" rel="noopener">
+        👉 Access the Course on Udemy
+      </a>
+    </p>
+  </div>
+
+  <!-- Logo centrado adicional (conservado del original) -->
+  <p style="text-align:center;margin:.6rem 0 1rem">
+    <img src="/images/tinto-logo.svg" alt="TINTO Logo" width="170">
+  </p>
+
+  <!-- Overview -->
+  <div class="card">
+    <h2 class="section-title">🧠 Overview</h2>
+    <p><strong>TINTOlib</strong> transforms <strong>tidy tabular data</strong> into <strong>synthetic images</strong>, enabling deep learning with <strong>CNNs</strong> and <strong>Vision Transformers (ViTs)</strong> for classification and regression. It bridges structured data and image-based learning, and supports hybrid models combining both worlds.</p>
+    <div class="pillbar">
+      <span class="pill">📦 pip install TINTOlib</span>
+      <span class="pill">🖥️ Linux / Windows / macOS</span>
+      <span class="pill">🐍 Python 3.7+</span>
+      <span class="pill">🧪 CSV / Pandas DataFrame</span>
     </div>
   </div>
-</section>
 
-<!-- OVERVIEW -->
-<div class="card">
-  <h2 class="section-title">🧠 Overview</h2>
-  <p><strong>TINTOlib</strong> is an open-source Python library that transforms <em>tidy tabular data</em> into <em>synthetic images</em>, enabling the use of deep learning models like <strong>CNNs</strong> and <strong>Vision Transformers</strong>. Ideal for tasks such as classification and regression.</p>
+  <!-- Videotutorial GitHub (conservado) -->
+  <div class="card">
+    <h2 class="section-title">📺 VideoTutorial Course (English/Spanish)</h2>
+    <p>Prefer not to register on Udemy or looking for the English version? Follow the full bilingual course on GitHub, with videos and practical notebooks covering CNNs, ViTs, and hybrid architectures.</p>
+    <p style="text-align:center;margin:.4rem 0 0">
+      <a href="https://github.com/oeg-upm/TINTOlib-Crash_Course/tree/main/5_TINTOlib%20Videotutorial%20course" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/GitHub-VideoTutorial%20Course-black?style=for-the-badge&logo=GitHub&logoColor=white" alt="Access the Course on GitHub">
+      </a>
+    </p>
+  </div>
+
+  <!-- Features -->
+  <div class="card">
+    <h2 class="section-title">🔧 Features</h2>
+    <ul style="margin:.35rem 0 0; padding-left:1.1rem">
+      <li>Input formats: <strong>CSV</strong> or <strong>Pandas DataFrame</strong>.</li>
+      <li>Designed for tidy data (<em>target</em> column at the end).</li>
+      <li>Output: grayscale images produced by reduction/transformation methods.</li>
+      <li>Compatible with <strong>Linux</strong>, <strong>Windows</strong>, <strong>macOS</strong>.</li>
+      <li>Requires <strong>Python 3.7+</strong>.</li>
+    </ul>
+  </div>
+
+  <!-- Supported Models (tabla conservada y mejorada) -->
+  <div class="card">
+    <h2 class="section-title">🧪 Supported Models</h2>
+    <p>Supported image transformation models include:</p>
+    <table class="methods-table">
+      <thead>
+        <tr><th style="width:26%">Models</th><th style="width:12%">Class</th><th style="width:62%">Hyperparameters</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://github.com/oeg-upm/TINTO" target="_blank" rel="noopener">TINTO</a></td><td><code>TINTO()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>pixels</code> <code>algorithm</code> <code>blur</code> <code>submatrix</code> <code>amplification</code> <code>distance</code> <code>steps</code> <code>option</code> <code>times</code> <code>train_m</code> <code>zoom</code> <code>random_seed</code></td></tr>
+        <tr><td><a href="https://github.com/zhuyitan/igtd" target="_blank" rel="noopener">IGTD</a></td><td><code>IGTD()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>scale</code> <code>fea_dist_method</code> <code>image_dist_method</code> <code>error</code> <code>max_step</code> <code>val_step</code> <code>switch_t</code> <code>min_gain</code> <code>zoom</code> <code>random_seed</code></td></tr>
+        <tr><td><a href="https://github.com/omidbazgirTTU/REFINED" target="_blank" rel="noopener">REFINED</a></td><td><code>REFINED()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>hcIterations</code> <code>n_processors</code> <code>zoom</code> <code>random_seed</code></td></tr>
+        <tr><td><a href="https://github.com/anuraganands/Non-image-data-classification-with-CNN/" target="_blank" rel="noopener">BarGraph</a></td><td><code>BarGraph()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>pixel_width</code> <code>gap</code> <code>zoom</code></td></tr>
+        <tr><td><a href="https://github.com/anuraganands/Non-image-data-classification-with-CNN/" target="_blank" rel="noopener">DistanceMatrix</a></td><td><code>DistanceMatrix()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>zoom</code></td></tr>
+        <tr><td><a href="https://github.com/anuraganands/Non-image-data-classification-with-CNN/" target="_blank" rel="noopener">Combination</a></td><td><code>Combination()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>zoom</code></td></tr>
+        <tr><td><a href="https://github.com/GilesStrong/SuperTML_HiggsML_Test" target="_blank" rel="noopener">SuperTML</a></td><td><code>SuperTML()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>pixels</code> <code>feature_importance</code> <code>font_size</code> <code>random_seed</code></td></tr>
+        <tr><td><a href="https://link.springer.com/chapter/10.1007/978-3-319-70139-4_87" target="_blank" rel="noopener">FeatureWrap</a></td><td><code>FeatureWrap()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>size</code> <code>bins</code> <code>zoom</code></td></tr>
+        <tr><td><a href="https://ieeexplore.ieee.org/document/10278393" target="_blank" rel="noopener">BIE</a></td><td><code>BIE()</code></td><td><code>problem</code> <code>normalize</code> <code>verbose</code> <code>precision</code> <code>zoom</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Getting Started -->
+  <div class="card">
+    <h2 class="section-title">🚀 Getting Started</h2>
+    <p>Install via <code>pip</code>:</p>
+<pre><code class="language-bash">pip install TINTOlib
+</code></pre>
+    <ul style="margin:.35rem 0 0; padding-left:1.1rem">
+      <li>Use <code>requirements.txt</code> for the base environment.</li>
+      <li>Use <code>requirements-example.txt</code> for full deep learning workflows.</li>
+    </ul>
+
+    <h3 style="margin:1rem 0 .4rem;font-weight:800">🧩 Example</h3>
+<pre><code class="language-python">from TINTOlib.tinto import TINTO
+
+# Create and run TINTO on your tidy DataFrame (target column last)
+model = TINTO(problem="supervised", blur=True, pixels=64, random_seed=42)
+model.fit_transform(data, folder="outputs")
+</code></pre>
+
+    <div class="pillbar">
+      <a class="pill" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">📘 Documentation</a>
+      <a class="pill" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">🚀 GitHub</a>
+      <a class="pill" href="https://github.com/oeg-upm/TINTOlib-Crash_Course" target="_blank" rel="noopener">📹 Crash Course</a>
+    </div>
+  </div>
+
+  <!-- Cite -->
+  <div class="card">
+    <h2 class="section-title">📚 Cite TINTOlib</h2>
+    <p>If you use TINTOlib, please cite the following papers:</p>
+
+- **IEEE Journal of Selected Topics in Signal Processing** (2025):  
+```bib
+@ARTICLE{10946146,
+  author={Castillo-Cara, Manuel and Martínez-Gómez, Jesus and Ballesteros-Jerez, Javier and García-Varea, Ismael and García-Castro, Raúl and Orozco-Barbosa, Luis},
+  journal={IEEE Journal of Selected Topics in Signal Processing},
+  title={MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning},
+  year={2025},
+  pages={1-13},
+  doi={10.1109/JSTSP.2025.3555067}
+}
+```
+- **SofwareX** (2023):
+```bib
+@article{softwarex_TINTO,
+  title = {TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks},
+  journal = {SoftwareX},
+  author = {Manuel Castillo-Cara and Reewos Talla-Chumpitaz and Raúl García-Castro and Luis Orozco-Barbosa},
+  volume={22},
+  pages={101391},
+  year = {2023},
+  issn = {2352-7110},
+  doi = {10.1016/j.softx.2023.101391}
+}
+```
+- **nformation Fusion** (2023):
+@article{inffus_TINTO,
+  title = {A novel deep learning approach using blurring image techniques for Bluetooth-based indoor localisation},
+  journal = {Information Fusion},
+  author = {Reewos Talla-Chumpitaz and Manuel Castillo-Cara and Luis Orozco-Barbosa and Raúl García-Castro},
+  volume = {91},
+  pages = {173-186},
+  year = {2023},
+  issn = {1566-2535},
+  doi = {10.1016/j.inffus.2022.10.011}
+}
+  </div>
+
+  <div class="card">
+    <h2 class="section-title">🎓 License</h2>
+    <p>TINTOlib is released under the <strong>Apache License 2.0</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2 class="section-title">👥 Authors</h2>
+    <ul style="margin:.35rem 0 0; padding-left:1.1rem">
+      <li><a href="https://github.com/manwestc" target="_blank" rel="noopener">Manuel Castillo-Cara</a></li>
+      <li><a href="https://github.com/rgcmme" target="_blank" rel="noopener">Raúl García-Castro</a></li>
+      <li><a href="https://github.com/DavidGonzalezFernandez" target="_blank" rel="noopener">David González Fernández</a></li>
+      <li><a href="https://github.com/DCY1117" target="_blank" rel="noopener">Jiayun Liu</a></li>
+    </ul>
+  </div>
+
+    <div class="card">
+    <h2 class="section-title">🏛️ Institutions</h2>
+    <p style="text-align:center;margin:.4rem 0 0">
+      <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-oeg.png" alt="Ontology Engineering Group" width="130" style="margin:.35rem">
+      <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-upm.png" alt="UPM" width="130" style="margin:.35rem">
+      <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-uned-.jpg" alt="UNED" width="130" style="margin:.35rem">
+      <img src="https://raw.githubusercontent.com/DCY1117/TEMP-Images/refs/heads/main/TINTOlib-images/logo-uclm.png" alt="UCLM" width="130" style="margin:.35rem">
+    </p>
+  </div>
+
+    <div class="cta-center">
+    <a class="btn btn-primary" href="https://pypi.org/project/TINTOlib/" target="_blank" rel="noopener">⬇️ Install from PyPI</a>
+  </div>
 </div>
 
-<!-- FEATURES -->
-<div class="card">
-  <h2 class="section-title">🔧 Features</h2>
-  <ul>
-    <li>Input formats: CSV or Pandas DataFrame</li>
-    <li>Designed for tidy data (target column last)</li>
-    <li>Output: grayscale synthetic images from multiple algorithms</li>
-    <li>Cross-platform: Linux, Windows, macOS</li>
-    <li>Requires Python 3.7+</li>
-  </ul>
-</div>
 
-<!-- GETTING STARTED -->
-<div class="card">
-  <h2 class="section-title">🚀 Getting Started</h2>
-  <pre><code>pip install TINTOlib</code></pre>
-  <p>Use <code>requirements.txt</code> for the base environment or <code>requirements-example.txt</code> for deep learning workflows.</p>
-</div>
 
-<!-- CITE -->
-<div class="card">
-  <h2 class="section-title">📚 Citation</h2>
-  <p>If you use TINTOlib, please cite our papers:</p>
-  <ul>
-    <li><a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank">IEEE Journal of Selected Topics in Signal Processing (2025)</a></li>
-    <li><a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank">SoftwareX (2023)</a></li>
-    <li><a href="https://doi.org/10.1016/j.inffus.2022.10.011" target="_blank">Information Fusion (2023)</a></li>
-  </ul>
-</div>
