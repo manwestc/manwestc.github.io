@@ -112,12 +112,13 @@ description: "Scientific publications, books, patents and software contributions
     font-size: 1.3rem;
     font-weight: 800;
     color: var(--ink);
-    background: linear-gradient(to right, #eef2ff, #ffffff);
+    background: linear-gradient(90deg, rgba(21,101,192,0.08), #ffffff); /* fondo con suave degradado */
     padding: 0.4rem 0.8rem;
-    border-left: 5px solid var(--brand);
+    border-left: 6px solid var(--brand); /* línea azul a la izquierda */
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0,0,0,.04);
   }
+
   .section h2::before {
     font-size: 1.2rem;
   }
