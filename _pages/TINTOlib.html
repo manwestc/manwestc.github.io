@@ -92,8 +92,20 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   }
   .tinto-hero img{width:84px;height:84px;border-radius:14px;background:#fff;padding:.35rem}
   .tinto-hero h1{font-size:1.75rem;line-height:1.2;margin:.1rem 0 .25rem}
-  .tinto-card{border:1px solid var(--card-bd);border-radius:10px;background:#fff;padding:1rem;box-shadow:0 2px 8px rgba(0,0,0,.04);margin:1rem 0}
-  .tinto-card.soft{background:#f5f8fa}
+  .tinto-card {
+      padding-top: 0.6rem; /* antes 1rem */
+      padding-bottom: 0.6rem;
+    }
+
+    .tinto-card.soft {
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+    }
+
+    /* Opcional: reducir espacio superior entre título y contenido */
+    .tinto-card h2 {
+      margin-top: 0;
+    }
   .btn{display:inline-block;padding:.6em 1em;border-radius:8px;text-decoration:none!important;font-weight:700}
   .btn-primary{background:#1976d2;color:#fff}
   .btn-ghost{border:1px solid #fff;color:#fff}
