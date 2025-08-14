@@ -78,127 +78,85 @@ description: "TINTOlib is a Python library that converts tabular data into synth
 
 <!-- Styles + theme -->
 <style>
+  /* === Variables base (con fallbacks a las de TINTO) === */
   :root{
-    --tinto-primary:#7b0f38; --tinto-accent:#ff0f5e; --tinto-ink:#37474f;
-    --tinto-bg:#f7f8fb; --card-bd:#d0d7de;
+    --ink: var(--tinto-ink, #37474f);
+    --brand: #1565c0;
+    --brand-2: #0b67b8;
+    --card-bd: var(--card-bd, #d0d7de);
+    --surface: #ffffff;
+    --surface-soft: #f5f8fa;
   }
+
+  /* === Layout general === */
   .tinto-container{max-width:980px;margin:0 auto;padding:0 1rem;}
   .tinto-row{display:flex;gap:1.25rem;flex-wrap:wrap;}
+
+  /* === Hero === */
   .tinto-hero{
     display:flex;align-items:center;gap:1.25rem;
-    background:linear-gradient(135deg,var(--tinto-primary),#9e1b51 60%,var(--tinto-accent));
+    background:linear-gradient(135deg,var(--tinto-primary,#7b0f38),#9e1b51 60%,var(--tinto-accent,#ff0f5e));
     color:#fff;border-radius:14px;padding:1.25rem 1.5rem;margin:1.25rem 0 1.5rem;
     box-shadow:0 8px 24px rgba(0,0,0,.08)
   }
   .tinto-hero img{width:84px;height:84px;border-radius:14px;background:#fff;padding:.35rem}
   .tinto-hero h1{font-size:1.75rem;line-height:1.2;margin:.1rem 0 .25rem}
-  .tinto-card {
-      padding-top: 0.6rem; /* antes 1rem */
-      padding-bottom: 0.6rem;
-    }
+  @media (max-width:720px){.tinto-hero{flex-direction:column;text-align:center}.tinto-hero img{width:72px;height:72px}}
 
-    .tinto-card.soft {
-      padding-top: 0.6rem;
-      padding-bottom: 0.6rem;
-    }
-
-    /* Opcional: reducir espacio superior entre título y contenido */
-    .tinto-card h2 {
-      margin-top: 0;
-    }
-  .btn{display:inline-block;padding:.6em 1em;border-radius:8px;text-decoration:none!important;font-weight:700}
+  /* === Botones y utilidades === */
+  .btn{display:inline-block;padding:.6em 1em;border-radius:8px;text-decoration:none;font-weight:700}
   .btn-primary{background:#1976d2;color:#fff}
   .btn-ghost{border:1px solid #fff;color:#fff}
   .btn-inline{margin-right:.5rem}
-  .section-title{font-weight:800;color:#233;margin:1.25rem 0 .5rem}
+  .center-buttons{text-align:center}
+  .center-buttons .btn{display:inline-block;margin:.3rem}
   .map-wrap{border:1px solid var(--card-bd);border-radius:12px;overflow:hidden;background:#fff}
   #map{height:520px}
-  .pub-list li{margin:.4rem 0}
+
+  /* === Tarjetas (recuadros) === */
+  section.tinto-card{
+    border:1px solid var(--card-bd);
+    background:var(--surface);
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+    padding:.75rem 1rem;           /* compacto */
+    margin:1rem 0;
+  }
+  section.tinto-card.soft{ background:var(--surface-soft); }
+  /* Tarjetas internas (Udemy / GitHub) dentro de .tinto-row */
+  .tinto-row .tinto-card{
+    border:1px solid var(--card-bd);
+    background:var(--surface);
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    padding:.75rem .9rem;
+    margin:.75rem 0;
+  }
+  /* Espaciado del título dentro del recuadro grande */
+  section.tinto-card > h2{ margin:.35rem 0 .6rem; }
+
+  /* === Títulos de sección con barra (estilo común del sitio) === */
+  .section-title{
+    display:flex;align-items:center;gap:.5rem;
+    font-size:1.4rem;font-weight:800;color:var(--ink);
+    background:linear-gradient(90deg, rgba(21,101,192,.08), #fff);
+    border-left:6px solid var(--brand);
+    border-radius:12px;
+    padding:.5rem .8rem;
+    width:100%;
+    box-shadow:0 1px 6px rgba(0,0,0,.04);
+  }
+  .section-title::after{
+    content:"";flex:1;height:3px;
+    background:linear-gradient(to right,#4a90e2,#e91e63);
+    border-radius:2px;margin-left:.8rem;
+  }
+
+  /* === Tabla de métodos === */
   .methods-table{width:100%;border-collapse:collapse;font-size:.95rem;margin:1rem 0 2rem}
   .methods-table th,.methods-table td{border:1px solid #e6e8eb;padding:.6rem .7rem;vertical-align:top}
   .methods-table th{background:#f3f6fb;text-align:left}
   .methods-table tbody tr:nth-child(even){background:#fafbfc}
-  @keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
-  @media (max-width:720px){.tinto-hero{flex-direction:column;text-align:center}.tinto-hero img{width:72px;height:72px}}
-
-  .center-buttons {
-    text-align: center;
-  }
-
-  .center-buttons .btn {
-    display: inline-block;
-    margin: 0.3rem; /* espacio entre botones */
-  }
-
-  .tinto-card a.btn,
-  .tinto-card img {
-    display: block;
-    margin: 0.5rem auto; /* centrado horizontal + separación */
-  }
-</style>
-
-<style>
-  /* Títulos de sección con barra azul (igual que About/Publications) */
-  .section-title {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--ink);
-    background: linear-gradient(to right, #eef2ff, #ffffff);
-    padding: 0.4rem 0.8rem;
-    border-left: 5px solid var(--brand);
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.04);
-    width: 100%;
-    position: relative;
-  }
-
-  .section-title::after {
-    content: "";
-    flex: 1;
-    height: 2px;
-    background: var(--brand);
-    margin-left: 0.8rem;
-    opacity: 0.3; /* línea más suave */
-  }
-  /* Estilo clásico solo para secciones en TINTOlib */
-  .tinto-section h2 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    margin: 0.25rem 0 0.75rem;
-    color: var(--ink);
-    background: none;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
-  .tinto-section h2::after {
-    content: none; /* elimina la línea final */
-  }
-</style>
-
-<style>
-  /* Añade esto junto al resto de estilos de TINTOlib */
-  :root{
-    --ink: var(--tinto-ink, #37474f);
-    --brand: #1565c0; /* azul que usas en el resto del sitio */
-  }
-
-  /* (re)defino el estilo de section-title con fallback */
-  .section-title{
-    display:flex; align-items:center; gap:.5rem;
-    font-size:1.4rem; font-weight:800; color:var(--ink);
-    background:linear-gradient(90deg, rgba(21,101,192,.08), #fff);
-    border-left:6px solid var(--brand);
-    border-radius:12px; padding:.5rem .8rem; width:100%;
-  }
-  .section-title::after{
-    content:""; flex:1; height:3px;
-    background:linear-gradient(to right, #4a90e2, #e91e63);
-    border-radius:2px; margin-left:.8rem;
-  }
 </style>
 
 <div class="tinto-container">
