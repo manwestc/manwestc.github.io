@@ -92,7 +92,14 @@ author_profile: true
     background:#fff; border-radius:8px; 
     border:1px solid #cfd8dc; box-shadow:0 1px 4px rgba(0,0,0,.03);
   }
-  .ud-thumb{ width:100%; display:flex; justify-content:center; margin-bottom:.6rem; }
+  .ud-thumb img {
+  width: 100%;
+  max-width: 160px;  /* ancho máximo uniforme */
+  height: 90px;      /* altura fija */
+  object-fit: contain; /* mantiene proporción sin recortar */
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  }
   .ud-thumb img{
     width:100%; max-width:160px; height:auto; object-fit:contain;
     border-radius:6px; border:1px solid #e5e7eb;
