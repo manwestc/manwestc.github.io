@@ -133,28 +133,35 @@ author_profile: true
 
   /* ===== Heading de categoría atractivo ===== */
   .ud-heading{
-    display:flex;
-    align-items:center;
-    gap:.6rem;
-    font-size:1.45rem;
-    font-weight:900;
-    margin:1.6rem 0 .8rem;
-    color:var(--ink);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--ink);
+    background: linear-gradient(to right, #eef2ff, #ffffff);
+    padding: 0.4rem 0.8rem;
+    border-left: 5px solid var(--brand);
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.04);
+    margin: 1.6rem 0 .8rem;
   }
-  .ud-heading .ud-line{
-    flex:1;
-    height:3px;
-    background:linear-gradient(90deg,var(--grad-a),var(--grad-b));
-    border-radius:2px;
-    opacity:.3;
-  }
+
   .ud-heading .ud-count{
-    background:#e0ecff;
-    color:#0f3d8a;
-    font-weight:800;
-    font-size:.78rem;
-    padding:.2rem .5rem;
-    border-radius:999px;
+    background: #e0ecff;
+    color: #0f3d8a;
+    font-weight: 800;
+    font-size: .78rem;
+    padding: .2rem .5rem;
+    border-radius: 999px;
+  }
+
+  .ud-heading .ud-line{
+    flex: 1;
+    height: 3px;
+    background: linear-gradient(90deg,var(--grad-a),var(--grad-b));
+    border-radius: 2px;
+    opacity: .3;
   }
 </style>
 
