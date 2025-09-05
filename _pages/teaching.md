@@ -130,7 +130,7 @@ description: "University teaching, thesis supervision, and technical training by
 
   <h2 class="section-title">🎓 M.Sc. Thesis Supervision</h2>
   <ul class="teach-list">
-    <li>Victor Giovanny Mondragón Ruiz. “Interpretable Hybrid Models for Tabular Data: Integrating Kolmogorov–Arnold and Convolutional Networks via Synthetic Images”. UPM, Spain. 2025. <a href="https://oa.upm.es" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Victor Giovanny Mondragón Ruiz. “Interpretable Hybrid Models for Tabular Data: Integrating Kolmogorov–Arnold and Convolutional Networks via Synthetic Images”. UPM, Spain. 2025. <a href="https://unedo365-my.sharepoint.com/:b:/g/personal/manuelcastillo_dia_uned_es/EdM3sIb0lt5CvQ8h1_4Q5PYBFHoJNsB-ebidEyzr8QGSEQ?e=LO9dzv" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>David González. “Transformación de Datos Tabulares a Imágenes Sintéticas: Optimización y Evaluación de la Librería TINTOlib en Python”. UPM, Spain. 2024. <a href="https://oa.upm.es/82830/" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Borja Reinoso. “TINTOlib: Librería en Python de Transformación de Datos Tabulares en Imágenes…”. UPM, Spain. 2023. <a href="https://oa.upm.es/75351/" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Jiayun Liu. “Sistema de recomendación de revistas para artículos académicos…”. UPM, Spain. 2023. <a href="https://oa.upm.es/75794/" target="_blank" rel="noopener">📂 Link</a>.</li>
