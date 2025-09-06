@@ -241,7 +241,7 @@ description: "List of competitive research and development projects led or co-le
     <h3 class="proj-title">
       <span class="proj-role">José Castillejo International Research Fellowship</span>
     </h3>
-    <p class="proj-desc"><em>“Visiting research stay”</em></p>
+    <p class="proj-desc"><em>“Visiting Research Stay in Artificial Intelligence”</em></p>
     <div class="proj-meta">
       <span class="pill">🏛️ Ministerio de Ciencia, Innovación y Universidades</span>
       <span class="pill">🆔 CAS24/00149</span>
