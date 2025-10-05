@@ -147,9 +147,9 @@ description: "University teaching, thesis supervision, and technical training by
     <li>Javier Pérez Tárraga. “Desarrollo de una aplicación web…” UCLM, Spain. 2023. <span class="teach-note">📖</span> <a href="#" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Edgar Jesús Huaranga Junco. “Optimización del Consumo de Energía…” UNI, Peru. 2021. <a href="http://hdl.handle.net/20.500.14076/22835" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Victor Giovanny Mondragón Ruiz. “Evaluación y optimización…” UNI, Peru. 2019. <a href="http://hdl.handle.net/20.500.14076/18948" target="_blank" rel="noopener">📂 Link</a>.</li>
-    <li>Javier Enrique Villegas Herrera. “Desarrollo de un sistema IoT…” UNI, Perú. 2018. <a href="http://hdl.handle.net/20.500.14076/18443" target="_blank" rel="noopener">📂 Link</a>.</li>
-    <li>Jesús Enrique Lovón Melgarejo. “Técnicas para la localización en interiores…” UNI, Perú. 2018. <a href="http://hdl.handle.net/20.500.14076/15999" target="_blank" rel="noopener">📂 Link</a>.</li>
-    <li>Eduardo Yauri Lozano. “SnorUNI: Aplicación móvil…” UNI, Perú. 2017. <a href="http://hdl.handle.net/20.500.14076/5651" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Javier Enrique Villegas Herrera. “Desarrollo de un sistema IoT…” UNI, Peru. 2018. <a href="http://hdl.handle.net/20.500.14076/18443" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Jesús Enrique Lovón Melgarejo. “Técnicas para la localización en interiores…” UNI, Peru. 2018. <a href="http://hdl.handle.net/20.500.14076/15999" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Eduardo Yauri Lozano. “SnorUNI: Aplicación móvil…” UNI, Peru. 2017. <a href="http://hdl.handle.net/20.500.14076/5651" target="_blank" rel="noopener">📂 Link</a>.</li>
   </ul>
 
   <hr class="teach-sep">
