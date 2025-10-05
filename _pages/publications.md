@@ -535,7 +535,10 @@ description: "Scientific publications, books, patents and software contributions
 
       <article class="pub-card">
         <p class="pub-title">Hybrid Neural Network-Based Indoor Localisation System for Mobile Robots Using CSI Data in a Robotics Simulator. 5th International Conference on Robotics, Computer Vision and Intelligent Systems (ROBOVIS), Portugal, 2025.</p>
-        <div class="btn-row"><a class="btn-doi" href="https://www.insticc.org/node/TechnicalProgram/robovis/2025/personDetails/1d6991cc-c792-4bba-990d-91aed2148de6" target="_blank" rel="noopener">Event</a></div>
+        <div class="btn-row">
+          <a class="btn-doi" href="10.1007/978-3-032-00986-9_11" target="_blank" rel="noopener">Open DOI</a>
+          <a class="btn-doi" style="background:#475569" href="https://www.insticc.org/node/TechnicalProgram/robovis/2025/personDetails/1d6991cc-c792-4bba-990d-91aed2148de6" target="_blank" rel="noopener">Event</a>
+        </div>
       </article>
 
       <article class="pub-card">

@@ -130,12 +130,14 @@ description: "University teaching, thesis supervision, and technical training by
 
   <h2 class="section-title">🎓 M.Sc. Thesis Supervision</h2>
   <ul class="teach-list">
-    <li>Victor Giovanny Mondragón Ruiz. “Interpretable Hybrid Models for Tabular Data: Integrating Kolmogorov–Arnold and Convolutional Networks via Synthetic Images”. UPM, Spain. 2025. <a href="https://oa.upm.es/90918/" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Giovanny Mondragón Ruiz. “Interpretable Hybrid Models for Tabular Data: Integrating Kolmogorov–Arnold and Convolutional Networks via Synthetic Images”. UPM, Spain. 2025. <a href="https://oa.upm.es/90918/" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Felipe Escalera. “PermGrad: Interpretable Hybrid Neural Networks with Synthetic Images for Tabular Data”. UNED, Spain. 2025. <a href="" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Michael Vera. “BeeGOns!: Diseño y Evaluación de un Nodo Sensor Inalámbrico para Computación en la Niebla en Aplicaciones de Ciudades Inteligentes”. UCLM, Spain. 2025. <a href="" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>David González. “Transformación de Datos Tabulares a Imágenes Sintéticas: Optimización y Evaluación de la Librería TINTOlib en Python”. UPM, Spain. 2024. <a href="https://oa.upm.es/82830/" target="_blank" rel="noopener">📂 Link</a>.</li>
-    <li>Borja Reinoso. “TINTOlib: Librería en Python de Transformación de Datos Tabulares en Imágenes…”. UPM, Spain. 2023. <a href="https://oa.upm.es/75351/" target="_blank" rel="noopener">📂 Link</a>.</li>
-    <li>Jiayun Liu. “Sistema de recomendación de revistas para artículos académicos…”. UPM, Spain. 2023. <a href="https://oa.upm.es/75794/" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Borja Reinoso. “TINTOlib: librería en Python de transformación de datos tabulares en imágenes para redes neuronales convolucionales de dos dimensiones”. UPM, Spain. 2023. <a href="https://oa.upm.es/75351/" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Jiayun Liu. “Sistema de recomendación de revistas para artículos académicos: Un enfoque léxico y semántico basado en redes neuronales por grafo”. UPM, Spain. 2023. <a href="https://oa.upm.es/75794/" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Eduardo Yauri. “Redes generativas antagónicas para la síntesis y generación de texto a imagen”. UNI, Peru. 2023. <a href="http://hdl.handle.net/20.500.14076/26927" target="_blank" rel="noopener">📂 Link</a>.</li>
-    <li>Edmundo de Elvira Mori Orrillo. “Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning”. UNI, Peru. 2022. <a href="http://hdl.handle.net/20.500.14076/26917" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Edmundo Mori. “Optimización de las campañas de marketing en la Industria Financiera: Un enfoque basado en Machine Learning”. UNI, Peru. 2022. <a href="http://hdl.handle.net/20.500.14076/26917" target="_blank" rel="noopener">📂 Link</a>.</li>
   </ul>
 
   <hr class="teach-sep">
