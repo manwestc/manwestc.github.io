@@ -119,6 +119,7 @@ description: "University teaching, thesis supervision, and technical training by
 
   <h2 class="section-title">📚 Undergraduate Courses</h2>
   <ul class="teach-list">
+    <li><strong>Machine Learning</strong>. BSc in Computer Science, UNED, Spain. 2025–Current.</li>
     <li><strong>Inteligent Systems</strong>. BSc in Computer Science, UNED, Spain. 2024–Current.</li>
     <li><strong>Data Mining</strong>. BSc in Computer Science, UNED, Spain. 2023–Current.</li>
     <li><strong>Probability and Statistics I</strong>. BSc in Computer Science, UPM, Spain. 2022–2023.</li>
