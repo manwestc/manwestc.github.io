@@ -169,11 +169,10 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     background:var(--surface);
     border-radius:12px;
     box-shadow:0 2px 8px rgba(0,0,0,.06);
-    padding:.75rem 1rem;           /* compacto */
+    padding:.75rem 1rem;
     margin:1rem 0;
   }
   section.tinto-card.soft{ background:var(--surface-soft); }
-  /* Tarjetas internas (Udemy / GitHub) dentro de .tinto-row */
   .tinto-row .tinto-card{
     border:1px solid var(--card-bd);
     background:var(--surface);
@@ -182,10 +181,9 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     padding:.75rem .9rem;
     margin:.75rem 0;
   }
-  /* Espaciado del título dentro del recuadro grande */
   section.tinto-card > h2{ margin:.35rem 0 .6rem; }
 
-  /* === Títulos de sección con barra (estilo común del sitio) === */
+  /* === Títulos de sección con barra === */
   .section-title{
     display:flex;align-items:center;gap:.5rem;
     font-size:1.4rem;font-weight:800;color:var(--ink);
@@ -207,6 +205,18 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   .methods-table th,.methods-table td{border:1px solid #e6e8eb;padding:.6rem .7rem;vertical-align:top}
   .methods-table th{background:#f3f6fb;text-align:left}
   .methods-table tbody tr:nth-child(even){background:#fafbfc}
+
+  /* === Vídeo: estilos === */
+  .video-toggle{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1rem}
+  .vt-btn{
+    background:#eef2ff;border:1px solid #dbe3ff;color:#1f2937;
+    font-weight:800;border-radius:999px;padding:.35rem .8rem;cursor:pointer
+  }
+  .vt-btn.active{background:#2563eb;color:#fff;border-color:#2563eb}
+  .video-wrap{position:relative;width:100%;max-width:900px;margin:0 auto}
+  .vpanel{display:none;width:100%;height:auto;border:1px solid var(--card-bd,#d0d7de);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);background:#000}
+  .vpanel.active{display:block}
+  .video-wrap video.vpanel{aspect-ratio:16/9;object-fit:cover}
 </style>
 
 <div class="tinto-container">
@@ -221,6 +231,76 @@ description: "TINTOlib is a Python library that converts tabular data into synth
         <a class="btn btn-primary btn-inline" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
+  </section>
+
+  <!-- ======== TINTOlib: Overview Video (ES/EN) ======== -->
+  <section class="tinto-card soft" id="tinto-video">
+    <h2 class="section-title">🎬 TINTOlib — Overview Video</h2>
+
+    <!-- Selector de idioma -->
+    <div class="video-toggle" role="tablist" aria-label="Select video language">
+      <button class="vt-btn active" data-target="#video-es" role="tab" aria-selected="true">Español</button>
+      <button class="vt-btn" data-target="#video-en" role="tab" aria-selected="false">English</button>
+    </div>
+
+    <!-- Contenedor responsive -->
+    <div class="video-wrap">
+      <!-- HTML5 - autoalojado en GitHub Pages -->
+      <video id="video-es" class="vpanel active"
+             controls controlsList="nodownload"
+             preload="metadata" playsinline
+             poster="/images/tintolib-poster-es.jpg"
+             aria-label="TINTOlib — Vídeo en español">
+        <source src="/video/TINTOlib-video-Es.mp4" type="video/mp4">
+        Tu navegador no soporta el vídeo.
+        <a href="/video/TINTOlib-video-Es.mp4">Descargar (ES)</a>.
+      </video>
+
+      <video id="video-en" class="vpanel"
+             controls controlsList="nodownload"
+             preload="metadata" playsinline
+             poster="/images/tintolib-poster-en.jpg"
+             aria-label="TINTOlib — Video in English">
+        <source src="/video/TINTOlib-video-Es.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="/video/TINTOlib-video-En.mp4">Download (EN)</a>.
+      </video>
+
+      <!-- Alternativa (YouTube/Vimeo). Sustituir por tus IDs:
+      <iframe id="video-es" class="vpanel active" width="560" height="315"
+              src="https://www.youtube.com/embed/ID_ES?rel=0"
+              title="TINTOlib — Español" loading="lazy" allowfullscreen></iframe>
+
+      <iframe id="video-en" class="vpanel" width="560" height="315"
+              src="https://www.youtube.com/embed/ID_EN?rel=0"
+              title="TINTOlib — English" loading="lazy" allowfullscreen></iframe>
+      -->
+    </div>
+
+    <!-- Script del toggle con pausa del reproductor inactivo -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        const buttons = document.querySelectorAll('.video-toggle .vt-btn');
+        const panels  = document.querySelectorAll('#tinto-video .vpanel');
+
+        buttons.forEach(btn=>{
+          btn.addEventListener('click', ()=>{
+            buttons.forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+            btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+
+            const target = btn.getAttribute('data-target');
+            panels.forEach(p=>{
+              if(('#'+p.id) === target){
+                p.classList.add('active');
+              } else {
+                if(p.tagName.toLowerCase()==='video'){ try{ p.pause(); }catch(e){} }
+                p.classList.remove('active');
+              }
+            });
+          });
+        });
+      });
+    </script>
   </section>
 
   <!-- Courses (Udemy + GitHub) -->
@@ -324,4 +404,3 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     }
   });
 </script>
-
