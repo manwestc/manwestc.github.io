@@ -142,6 +142,62 @@ author_profile: true
     <img src="/images/tinto-logo.svg" alt="TINTO Logo" width="170">
   </p>
 
+ <!-- ======== TINTOlib: Overview Video (ES/EN) ======== -->
+  <section class="tinto-card soft" id="tinto-video">
+    <h2 class="section-title">🎬 TINTOlib — Overview Video</h2>
+
+    <!-- Selector de idioma -->
+    <div class="video-toggle" role="tablist" aria-label="Select video language">
+      <button class="vt-btn active" data-target="#video-es" role="tab" aria-selected="true">Español</button>
+      <button class="vt-btn" data-target="#video-en" role="tab" aria-selected="false">English</button>
+    </div>
+
+    <!-- Contenedor responsive -->
+    <div class="video-wrap">
+      <video id="video-es" class="vpanel active"
+            controls controlsList="nodownload"
+            preload="metadata" playsinline
+            aria-label="TINTOlib — Vídeo en español">
+        <source src="/video/TINTOlib-video-Es.mp4" type="video/mp4">
+        Tu navegador no soporta el vídeo.
+        <a href="/video/TINTOlib-video-Es.mp4">Descargar (ES)</a>.
+      </video>
+
+      <video id="video-en" class="vpanel"
+            controls controlsList="nodownload"
+            preload="metadata" playsinline
+            aria-label="TINTOlib — Video in English">
+        <source src="/video/TINTOlib-video-En.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="/video/TINTOlib-video-En.mp4">Download (EN)</a>.
+      </video>
+    </div>
+
+    <!-- Script del toggle con pausa del reproductor inactivo -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        const buttons = document.querySelectorAll('.video-toggle .vt-btn');
+        const panels  = document.querySelectorAll('#tinto-video .vpanel');
+
+        buttons.forEach(btn=>{
+          btn.addEventListener('click', ()=>{
+            buttons.forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+            btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+            const target = btn.getAttribute('data-target');
+            panels.forEach(p=>{
+              if(('#'+p.id) === target){
+                p.classList.add('active');
+              } else {
+                if(p.tagName.toLowerCase()==='video'){ try{ p.pause(); }catch(e){} }
+                p.classList.remove('active');
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </section>
+
   <!-- Overview -->
   <div class="card">
     <h2 class="section-title">🧠 Overview</h2>
