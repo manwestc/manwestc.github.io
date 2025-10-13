@@ -142,62 +142,6 @@ author_profile: true
     <img src="/images/tinto-logo.svg" alt="TINTO Logo" width="170">
   </p>
 
- <!-- ======== TINTOlib: Overview Video (ES/EN) ======== -->
-  <section class="tinto-card soft" id="tinto-video">
-    <h2 class="section-title">🎬 TINTOlib — Overview Video</h2>
-
-    <!-- Selector de idioma -->
-    <div class="video-toggle" role="tablist" aria-label="Select video language">
-      <button class="vt-btn active" data-target="#video-es" role="tab" aria-selected="true">Español</button>
-      <button class="vt-btn" data-target="#video-en" role="tab" aria-selected="false">English</button>
-    </div>
-
-    <!-- Contenedor responsive -->
-    <div class="video-wrap">
-      <video id="video-es" class="vpanel active"
-            controls controlsList="nodownload"
-            preload="metadata" playsinline
-            aria-label="TINTOlib — Vídeo en español">
-        <source src="/video/TINTOlib-video-Es.mp4" type="video/mp4">
-        Tu navegador no soporta el vídeo.
-        <a href="/video/TINTOlib-video-Es.mp4">Descargar (ES)</a>.
-      </video>
-
-      <video id="video-en" class="vpanel"
-            controls controlsList="nodownload"
-            preload="metadata" playsinline
-            aria-label="TINTOlib — Video in English">
-        <source src="/video/TINTOlib-video-En.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        <a href="/video/TINTOlib-video-En.mp4">Download (EN)</a>.
-      </video>
-    </div>
-
-    <!-- Script del toggle con pausa del reproductor inactivo -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function(){
-        const buttons = document.querySelectorAll('.video-toggle .vt-btn');
-        const panels  = document.querySelectorAll('#tinto-video .vpanel');
-
-        buttons.forEach(btn=>{
-          btn.addEventListener('click', ()=>{
-            buttons.forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-            btn.classList.add('active'); btn.setAttribute('aria-selected','true');
-            const target = btn.getAttribute('data-target');
-            panels.forEach(p=>{
-              if(('#'+p.id) === target){
-                p.classList.add('active');
-              } else {
-                if(p.tagName.toLowerCase()==='video'){ try{ p.pause(); }catch(e){} }
-                p.classList.remove('active');
-              }
-            });
-          });
-        });
-      });
-    </script>
-  </section>
-
   <!-- Overview -->
   <div class="card">
     <h2 class="section-title">🧠 Overview</h2>
@@ -209,6 +153,71 @@ author_profile: true
       <span class="pill">🧪 CSV / Pandas DataFrame</span>
     </div>
   </div>
+
+  <!-- ======== TINTOlib: Overview Video (ES/EN) ======== -->
+<div class="card">
+  <h2 class="section-title">🎬 TINTOlib — Overview Video</h2>
+
+  <div class="video-toggle" role="tablist" aria-label="Select video language">
+    <button class="vt-btn active" data-target="#video-es" role="tab" aria-selected="true">Español</button>
+    <button class="vt-btn" data-target="#video-en" role="tab" aria-selected="false">English</button>
+  </div>
+
+  <div class="video-wrap">
+    <video id="video-es" class="vpanel active"
+           controls controlsList="nodownload"
+           preload="metadata" playsinline
+           aria-label="TINTOlib — Vídeo en español">
+      <source src="/video/TINTOlib-video-Es.mp4" type="video/mp4">
+      Tu navegador no soporta el vídeo.
+      <a href="/video/TINTOlib-video-Es.mp4">Descargar (ES)</a>.
+    </video>
+
+    <video id="video-en" class="vpanel"
+           controls controlsList="nodownload"
+           preload="metadata" playsinline
+           aria-label="TINTOlib — Video in English">
+      <source src="/video/TINTOlib-video-En.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      <a href="/video/TINTOlib-video-En.mp4">Download (EN)</a>.
+    </video>
+  </div>
+
+  <style>
+    .video-toggle{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1rem}
+    .vt-btn{
+      background:#eef2ff;border:1px solid #dbe3ff;color:#1f2937;
+      font-weight:800;border-radius:999px;padding:.35rem .8rem;cursor:pointer
+    }
+    .vt-btn.active{background:#2563eb;color:#fff;border-color:#2563eb}
+    .video-wrap{position:relative;width:100%;max-width:900px;margin:0 auto}
+    .vpanel{display:none;width:100%;height:auto;border:1px solid #d0d7de;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);background:#000}
+    .vpanel.active{display:block}
+    .video-wrap video.vpanel{aspect-ratio:16/9;object-fit:cover}
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const buttons = document.querySelectorAll('.video-toggle .vt-btn');
+      const panels  = document.querySelectorAll('#video-es, #video-en');
+      buttons.forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          buttons.forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+          btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+          const target = btn.getAttribute('data-target');
+          panels.forEach(p=>{
+            if(('#'+p.id) === target){
+              p.classList.add('active');
+            } else {
+              if(p.tagName.toLowerCase()==='video'){ try{ p.pause(); }catch(e){} }
+              p.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</div>
 
   <!-- Videotutorial GitHub (conservado) -->
   <div class="card">
