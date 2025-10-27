@@ -318,12 +318,10 @@ model.fit_transform(data, folder="outputs")
 <div class="card">
   <h2 class="section-title">📚 Additional Resources</h2>
   
-  <div class="pillbar">
-  <center>
+  <div class="pillbar" style="text-align:center;">
     <a class="pill" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">📘 Documentation</a>
     <a class="pill" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">🚀 GitHub</a>
     <a class="pill" href="https://github.com/oeg-upm/TINTOlib-Crash_Course" target="_blank" rel="noopener">📹 Crash Course</a>
-  </center>
   </div>
   
 </div>

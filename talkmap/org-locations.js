@@ -17,5 +17,6 @@ var addressPoints = [
   ["Tacna, Peru", -18.01465, -70.25378],
   ["Barcelona, Spain", 41.385064, 2.173403],
   ["Ibiza, Spain", 38.908832, 1.432065],
-  ["Tarapoto, Peru", -6.483610, -76.372220]
+  ["Tarapoto, Peru", -6.483610, -76.372220],
+  ["Valparaíso, Chile", -33.0472, -71.6127]
 ];
