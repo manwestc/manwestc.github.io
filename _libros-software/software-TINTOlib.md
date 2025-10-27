@@ -233,7 +233,14 @@ author_profile: true
     <!-- Benchmark Section -->
   <div class="card">
     <h2 class="section-title">📊 Benchmark of TINTOlib vs Classical Models</h2>
-    <p>This benchmark compares TINTOlib transformation methods and neural architectures against traditional and ensemble models on multiple datasets.</p>
+    <p>
+      This benchmark compares <strong>TINTOlib</strong> transformation methods and neural architectures 
+      against traditional and ensemble models on multiple datasets.  
+      You can explore the interactive version directly on the official site:
+      <a href="https://oeg-upm.github.io/TINTOlib/" target="_blank" rel="noopener" style="font-weight:700; color:#2563eb; text-decoration:none;">
+        🌐 Visit TINTOlib Benchmark Page
+      </a>
+    </p>
 
     <div style="position:relative; padding-bottom:65%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,.15); border:1px solid #e5e7eb;">
       <iframe 
@@ -245,7 +252,7 @@ author_profile: true
       </iframe>
     </div>
   </div>
-  
+
   <!-- Features -->
   <div class="card">
     <h2 class="section-title">🔧 Features</h2>
