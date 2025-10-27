@@ -236,11 +236,19 @@ author_profile: true
     <p>
       This benchmark compares <strong>TINTOlib</strong> transformation methods and neural architectures 
       against traditional and ensemble models on multiple datasets.  
-      You can explore the interactive version directly on the official site:
-      <a href="https://oeg-upm.github.io/TINTOlib/" target="_blank" rel="noopener" style="font-weight:700; color:#2563eb; text-decoration:none;">
+      You can explore the interactive version directly on the official site.
+    </p>
+
+    <!-- 🔵 Botón centrado -->
+    <div style="text-align:center; margin:20px 0;">
+      <a href="https://oeg-upm.github.io/TINTOlib/" 
+        target="_blank" 
+        rel="noopener" 
+        style="display:inline-block; background-color:#2563eb; color:#fff; font-weight:600; 
+                padding:12px 24px; border-radius:8px; text-decoration:none; box-shadow:0 2px 6px rgba(0,0,0,.2);">
         🌐 Visit TINTOlib Benchmark Page
       </a>
-    </p>
+    </div>
 
     <div style="position:relative; padding-bottom:65%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,.15); border:1px solid #e5e7eb;">
       <iframe 
