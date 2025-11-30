@@ -401,6 +401,14 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
+        Manuel Castillo-Cara, et al. <em>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</em>. SoftwareX, 2025.
+        <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.54 (Q2)</span>
+      </p>
+      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener">Open DOI</a></div>
+    </article>
+
+    <article class="pub-card">
+      <p class="pub-title">
         Jiayun Liu, Manuel Castillo-Cara, et al. <em>On the Significance of Graph Neural Networks with Pretrained Transformers in Content-Based Recommender Systems for Academic Articles Classification</em>. Expert Systems.
         <span class="badge">IF: 2.3 (Q2)</span><span class="badge">SJR 0.74 (Q2)</span>
       </p>
@@ -421,14 +429,6 @@ description: "Scientific publications, books, patents and software contributions
         <span class="badge">IF: 6.1 (Q1)</span><span class="badge">SJR 1.55 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.future.2024.05.001" target="_blank" rel="noopener">Open DOI</a></div>
-    </article>
-
-    <article class="pub-card">
-      <p class="pub-title">
-        Michael Vera, Kewin Cuadros, Manuel Castillo-Cara, et al. <em>BeeGOns!: A Wireless Sensor Node for Fog-Computing based Smart City Platforms</em>. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2024.
-        <span class="badge">IF: 2.9 (Q2)</span><span class="badge">SJR 0.73 (Q1)</span>
-      </p>
-      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/TCAD.2023.3305575" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
 
     <article class="pub-card">
