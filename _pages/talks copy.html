@@ -33,33 +33,27 @@ author_profile: true
   :root{
     --ink:#1f2937;
     --muted:#6b7280;
-    --bd:#cfd8dc;
-    --card-bg:#f4f7fb;
-    --frame:#ffffff;
+    --bd:#cfd8dc;          /* borde más visible */
+    --card-bg:#f4f7fb;     /* fondo sólido suave */
+    --frame:#ffffff;       /* marco de la miniatura */
     --brand:#1976d2;
     --brand-2:#0f60b6;
-    --grad-a:#1565c0;
+    --grad-a:#1565c0;      /* decoración del heading */
     --grad-b:#ff0f5e;
-
-    /* nuevas variables para rutas */
-    --route-bg:#f8fafc;
-    --route-bd:#dbe5f0;
-    --route-pill:#e0ecff;
-    --route-pill-ink:#0f3d8a;
   }
 
   /* ===== Grilla ===== */
   .course-grid{
     display:grid;
-    grid-template-columns:repeat(4, minmax(0,1fr));
+    grid-template-columns:repeat(4, minmax(0,1fr));  /* 4 columnas escritorio */
     gap:1rem;
-    align-items:stretch;
+    align-items:stretch; /* estira las filas a la altura del más alto */
   }
   @media (max-width:1024px){
     .course-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); }
   }
   @media (max-width:768px){
-    .course-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+    .course-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } /* 2 en móvil */
   }
 
   /* ===== Tarjeta ===== */
@@ -70,11 +64,14 @@ author_profile: true
     padding:.75rem .75rem 1rem;
     text-align:center;
     box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+    /* clave para alinear el botón abajo */
     display:flex;
     flex-direction:column;
     height:100%;
   }
 
+  /* Miniatura uniforme (todas igual) */
   .course-thumb{
     width:100%;
     aspect-ratio:16/9;
@@ -94,7 +91,7 @@ author_profile: true
   .course-thumb img{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:cover; /* llena todo el recuadro, puede recortar bordes */
     display:block;
   }
 
@@ -104,7 +101,9 @@ author_profile: true
     font-weight:800;
     color:#165dbb;
     margin:.25rem 0 .4rem;
-    min-height:3.1em;
+
+    /* estabiliza alturas de títulos de 2–3 líneas */
+    min-height:3.1em; /* ~2 líneas; sube a 4.6em si necesitas 3 */
   }
   .course-title a{
     color:inherit;
@@ -112,12 +111,13 @@ author_profile: true
   }
   .course-title a:hover{ text-decoration:underline; }
 
+  /* Empuja el botón al fondo de la tarjeta */
   .course-spacer{ flex:1; }
 
   .course-actions{
     display:flex;
     justify-content:center;
-    margin-top:auto;
+    margin-top:auto;   /* pega al fondo */
   }
   .btn{
     display:inline-block;
@@ -128,15 +128,10 @@ author_profile: true
     font-weight:800;
     text-decoration:none !important;
     min-width:120px;
-    transition:background-color .15s ease, transform .06s ease, box-shadow .15s ease;
   }
-  .btn:hover{
-    background:var(--brand-2);
-    transform: translateY(-1px);
-    box-shadow:0 6px 16px rgba(0,0,0,.12);
-  }
+  .btn:hover{ background:var(--brand-2); }
 
-  /* ===== Heading de categoría ===== */
+  /* ===== Heading de categoría atractivo ===== */
   .ud-heading {
     display:flex;
     align-items:center;
@@ -145,11 +140,12 @@ author_profile: true
     font-weight:900;
     margin:1.6rem 0 .8rem;
     color:var(--ink);
-    background:linear-gradient(90deg,rgba(21,101,192,0.08),#ffffff);
-    border-left:6px solid var(--grad-a);
+    background:linear-gradient(90deg,rgba(21,101,192,0.08),#ffffff); /* suave fondo */
+    border-left:6px solid var(--grad-a); /* línea azul */
     border-radius:12px;
     padding:.5rem .8rem;
   }
+
   .ud-heading .ud-count{
     background:#e0ecff;
     color:#0f3d8a;
@@ -159,49 +155,13 @@ author_profile: true
     border-radius:999px;
     margin-left:auto;
   }
+
   .ud-heading .ud-line{
     flex: 1;
     height: 3px;
     background: linear-gradient(90deg,var(--grad-a),var(--grad-b));
     border-radius: 2px;
     opacity: .3;
-  }
-
-  /* ===========================================================
-     ✅ NUEVO: Caja de ruta recomendada
-     =========================================================== */
-  .ud-route{
-    background:var(--route-bg);
-    border:1px solid var(--route-bd);
-    border-radius:12px;
-    padding:1rem 1.1rem;
-    margin:.2rem 0 1.1rem;
-    box-shadow:0 1px 6px rgba(0,0,0,.04);
-  }
-  .ud-route-title{
-    display:flex; align-items:center; gap:.5rem;
-    font-weight:900; color:var(--ink);
-    margin:0 0 .6rem; font-size:1.05rem;
-  }
-  .ud-route-pill{
-    background:var(--route-pill);
-    color:var(--route-pill-ink);
-    font-weight:800;
-    font-size:.8rem;
-    padding:.18rem .55rem;
-    border-radius:999px;
-  }
-  .ud-route ol{
-    margin:.4rem 0 0; padding-left:1.25rem;
-  }
-  .ud-route li{
-    margin:.35rem 0;
-    line-height:1.55;
-  }
-  .ud-route-note{
-    margin-top:.7rem;
-    color:var(--muted);
-    font-size:.95rem;
   }
 </style>
 
@@ -212,71 +172,33 @@ author_profile: true
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
 
-      <!-- Heading -->
+      <!-- Título de sección mejorado -->
       <div class="ud-heading">
         <span>🧠 {{ categoria.name }}</span>
         <span class="ud-count">{{ categoria.items | size }} cursos</span>
         <span class="ud-line" aria-hidden="true"></span>
       </div>
 
-      <!-- =====================================================
-           ✅ NUEVO: Ruta recomendada por categoría
-           ===================================================== -->
-      {% if categoria.name == "Inteligencia Artificial con Python" %}
-        <div class="ud-route">
-          <div class="ud-route-title">
-            🤖 Ruta recomendada de formación <span class="ud-route-pill">Python</span>
-          </div>
-          <ol>
-            <li>Machine Learning con Python. Aprendizaje Automático Avanzado</li>
-            <li>Máster Especialista en Machine Learning Ensemble con Python</li>
-            <li>Deep Learning con Python y Keras. Redes Neuronales Avanzado</li>
-            <li>Máster en Procesamiento del Lenguaje Natural con Python</li>
-            <li>Máster Especialista en Optimización de Redes Neuronales con Python y TensorFlow</li>
-            <li>Máster Especialista en Series Temporales (Forecasting) con Python</li>
-            <li>Máster Especialista de Deep Learning en Python con PyTorch</li>
-          </ol>
-          <div class="ud-route-note">
-            Tras completar los cursos <strong>1, 2 y 3</strong>, el resto puede seguirse en el orden que prefieras, ya que son transversales.
-          </div>
-        </div>
-      {% endif %}
-
-      {% if categoria.name == "Inteligencia Artificial con R" %}
-        <div class="ud-route">
-          <div class="ud-route-title">
-            📊 Ruta recomendada de formación <span class="ud-route-pill">R</span>
-          </div>
-          <ol>
-            <li>Programación con el Lenguaje Estadístico R (De 0 a Experto)</li>
-            <li>Machine Learning con el Lenguaje Estadístico R (Data Analytics)</li>
-            <li>Deep Learning para Datos Tabulares con R y Keras</li>
-            <li>Deep Learning para Lenguaje Natural y Series Temporales con R y Keras</li>
-            <li>Deep Learning para Visión por Computador con R y Keras</li>
-          </ol>
-          <div class="ud-route-note">
-            Nota: “Deep Learning con R y Keras” y el “Máster en Ciencia de Datos con R” son versiones introductorias y compactas, con una selección de clases de esta ruta completa.
-          </div>
-        </div>
-      {% endif %}
-
-      <!-- Grid de cursos -->
       <div class="course-grid">
         {% for post in categoria.items %}
           <article class="course-card ud-item"
                    data-title="{{ post.title | downcase }}"
                    data-cat="{{ categoria.name | downcase }}">
 
+            <!-- Miniatura -->
             <a href="{{ post.url | relative_url }}" class="course-thumb" aria-label="{{ post.title | escape }}">
               <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
             </a>
 
+            <!-- Título -->
             <h3 class="course-title">
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h3>
 
+            <!-- Espaciador flexible para empujar el botón abajo -->
             <div class="course-spacer"></div>
 
+            <!-- Botón Acceso fijo al fondo -->
             <div class="course-actions">
               {% if post.coupon_url %}
                 <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
@@ -287,7 +209,6 @@ author_profile: true
           </article>
         {% endfor %}
       </div>
-
     {% endif %}
   {% endfor %}
 {% endfor %}
