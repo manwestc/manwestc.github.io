@@ -119,6 +119,22 @@ related: false
 
   /* Ocultar meta del theme */
   .page__meta, .page__meta-title, .page__taxonomy, .page__date{ display:none !important; }
+
+    /* Video */
+  .video-card { margin-top: 1.25rem; }
+  .video-wrap{
+    width:100%;
+    aspect-ratio:16/9;
+    background:#000;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid var(--bd);
+  }
+  .video-player{
+    width:100%;
+    height:100%;
+    display:block;
+  }
 </style>
 
 <div class="book-wrap">
@@ -135,6 +151,24 @@ related: false
       </div>
     </div>
   </section>
+
+    <!-- VIDEO PROMOCIONAL -->
+  <div class="card video-card">
+    <h2 class="section-title">🎬 Vídeo promocional</h2>
+
+    <div class="video-wrap">
+      <video
+        class="video-player"
+        controls
+        preload="metadata"
+        playsinline
+        poster="{{ page.image }}"
+      >
+        <source src="{{ base_path }}/video/videoPromocional-Geogebra.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de vídeo MP4.
+      </video>
+    </div>
+  </div>
 
   <!-- RESUMEN -->
   <div id="resumen" class="card">
