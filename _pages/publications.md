@@ -401,6 +401,14 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
+        Manuel Castillo-Cara, et al. <em>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</em>. Information Fusion.
+        <span class="badge">IF: 15.5 (Q1)</span><span class="badge">SJR 4.13 (Q1)</span>
+      </p>
+      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">Open DOI</a></div>
+    </article>
+
+    <article class="pub-card">
+      <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</em>. SoftwareX, 2025.
         <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.54 (Q2)</span>
       </p>
