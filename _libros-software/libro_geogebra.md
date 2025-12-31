@@ -198,7 +198,7 @@ related: false
       <li>📕 <strong>Libro en PDF</strong></li>
       <li>🎥 <strong>Vídeos tutoriales</strong></li>
       <li>📂 <strong>Archivos fuente de GeoGebra</strong></li>
-      <li>🎓 Acceso <strong>gratuito</strong> al <a href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=DIC_2025" target="_blank" rel="noopener">curso en Udemy</a></li>
+      <li>🎓 Acceso <strong>gratuito</strong> al <a href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=ENE_2026" target="_blank" rel="noopener">curso en Udemy</a></li>
     </ul>
   </div>
 
@@ -224,7 +224,7 @@ related: false
 
   <!-- CTA inferior -->
   <div class="cta-center">
-    <a class="btn btn-primary" href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=DIC_2025" target="_blank" rel="noopener">🎓 Acceder al curso gratis en Udemy</a>
+    <a class="btn btn-primary" href="https://www.udemy.com/course/matematicas-geogebra/?couponCode=ENE_2026" target="_blank" rel="noopener">🎓 Acceder al curso gratis en Udemy</a>
   </div>
 </div>
 
