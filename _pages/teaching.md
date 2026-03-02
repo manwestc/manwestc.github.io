@@ -132,6 +132,7 @@ description: "University teaching, thesis supervision, and technical training by
   <h2 class="section-title">🎓 M.Sc. Thesis Supervision</h2>
   <ul class="teach-list">
     <li>Joel Hancco. “Diagnóstico Concurrente de Unidades de Bombeo Mecánico a Partir de Cartas Dinamométricas Usando Técnicas de Aprendizaje Profundo”. UNI, Peru. 2026. <a href="https://" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Mario Lavado. “Generación y aumento de imágenes sintéticas a partir de datos tabulares mediante GAN: un estudio experimental con Vision Transformers”. UNI, Peru. 2026. <a href="https://" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Giovanny Mondragón Ruiz. “Interpretable Hybrid Models for Tabular Data: Integrating Kolmogorov–Arnold and Convolutional Networks via Synthetic Images”. UPM, Spain. 2025. <a href="https://oa.upm.es/90918/" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Felipe Escalera. “PermGrad: Interpretable Hybrid Neural Networks with Synthetic Images for Tabular Data”. UNED, Spain. 2025. <a href="https://hdl.handle.net/20.500.14468/31806" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Michael Vera. “BeeGOns!: Diseño y Evaluación de un Nodo Sensor Inalámbrico para Computación en la Niebla en Aplicaciones de Ciudades Inteligentes”. UCLM, Spain. 2025. <a href="https://hdl.handle.net/10578/46997" target="_blank" rel="noopener">📂 Link</a>.</li>
