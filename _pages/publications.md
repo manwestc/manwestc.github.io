@@ -40,7 +40,7 @@ description: "Scientific publications, books, patents and software contributions
   "about": {
     "@type": "Person",
     "name": "Manuel Castillo-Cara",
-    "image": "https://www.manuelcastillo.eu/images/profile.jpg"
+    "image": "https://www.manuelcastillo.eu/images/profile.jpg",
     "url": "https://www.manuelcastillo.eu/",
     "affiliation": { "@type": "Organization", "name": "Universidad Nacional de Educación a Distancia (UNED)" },
     "sameAs": [
