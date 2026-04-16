@@ -6,10 +6,9 @@ author_profile: true
 description: "Visual sitemap of all content on the website: pages, posts and collections."
 ---
 
-{% include base_path %}
+{% include base_path %} 
 
-A list of all the posts, pages and collections on this site.  
-For search engines, there's also an [**XML version**]({{ base_path }}/sitemap.xml).
+A list of all the posts, pages and collections on this site.
 
 ---
 
