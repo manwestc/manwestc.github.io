@@ -394,7 +394,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</em>. IEEE Journal of Selected Topics in Signal Processing.
-        <span class="badge">IF: 13.7 (Q1)</span><span class="badge">SJR 4.12 (Q1)</span>
+        <span class="badge">IF: 13.7 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -402,7 +402,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</em>. Information Fusion.
-        <span class="badge">IF: 15.5 (Q1)</span><span class="badge">SJR 4.13 (Q1)</span>
+        <span class="badge">IF: 15.5 (Q1)</span><span class="badge">SJR 4.2 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -410,7 +410,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</em>. SoftwareX, 2025.
-        <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.54 (Q2)</span>
+        <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.5 (Q2)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
