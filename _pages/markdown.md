@@ -237,6 +237,11 @@ description: "List of competitive research and development projects led or co-le
       </div>
     </article>
 
+  </div>
+
+  <div class="subhead" style="margin-top:1rem">🔵 Completed</div>
+  <div class="proj-grid">
+
     <article class="proj-card ongoing">
     <h3 class="proj-title">
       <span class="proj-role">José Castillejo International Research Fellowship</span>
@@ -248,12 +253,7 @@ description: "List of competitive research and development projects led or co-le
       <span class="pill">📅 Nov 2025 – May 2026</span>
       <span class="pill">📍 Universidad de Lima, Peru</span>
     </div>
-  </article>
-
-  </div>
-
-  <div class="subhead" style="margin-top:1rem">🔵 Completed</div>
-  <div class="proj-grid">
+    </article>
 
     <article class="proj-card completed">
       <h3 class="proj-title">
