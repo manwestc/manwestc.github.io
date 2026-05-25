@@ -681,6 +681,14 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
+        Jiayun Liu, Manuel Castillo-Cara, et al. <em>Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations</em>. IEEE Internet of Things.
+        <span class="badge">IF: 8.9 (Q1)</span><span class="badge">SJR 2.14 (Q1)</span>
+      </p>
+      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JIOT.2026.3696106" target="_blank" rel="noopener">Open DOI</a></div>
+    </article>
+    
+    <article class="pub-card">
+      <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</em>. IEEE Journal of Selected Topics in Signal Processing.
         <span class="badge">IF: 13.7 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
       </p>
@@ -689,7 +697,7 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
-        Manuel Castillo-Cara, et al. <em>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</em>. Information Fusion.
+        Jiayun Liu, Manuel Castillo-Cara, et al. <em>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</em>. Information Fusion.
         <span class="badge">IF: 15.5 (Q1)</span><span class="badge">SJR 4.2 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">Open DOI</a></div>
@@ -697,7 +705,7 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
-        Manuel Castillo-Cara, et al. <em>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</em>. SoftwareX, 2025.
+        Jiayun Liu, Manuel Castillo-Cara, et al. <em>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</em>. SoftwareX, 2025.
         <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.5 (Q2)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener">Open DOI</a></div>
@@ -745,26 +753,10 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
-        Alonso Tenorio-Trigoso, Manuel Castillo-Cara, et al. <em>An Analysis of Computational Resources of Event-Driven Streaming Data Flow for Internet of Things</em>. The Computer Journal, 2023.
-        <span class="badge">IF: 1.5 (Q3)</span><span class="badge">SJR 0.48 (Q2)</span>
-      </p>
-      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1093/comjnl/bxab143" target="_blank" rel="noopener">Open DOI</a></div>
-    </article>
-
-    <article class="pub-card">
-      <p class="pub-title">
         Luis Vasquez-Espinoza, Manuel Castillo-Cara, Luis Orozco-Barbosa. <em>On the Relevance of the Metadata used in the Semantic Segmentation of Indoor Image Spaces</em>. Expert Systems with Applications, 2021.
         <span class="badge">IF: 8.67 (Q1)</span><span class="badge">SJR 2.07 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.eswa.2021.115486" target="_blank" rel="noopener">Open DOI</a></div>
-    </article>
-
-    <article class="pub-card">
-      <p class="pub-title">
-        Giovanny Mondragón-Ruiz, Alonso Tenorio-Trigoso, Manuel Castillo-Cara, et al. <em>An Experimental Study of Fog and Cloud Computing in CEP-based Real-Time IoT Applications</em>. Journal of Cloud Computing, 2021.
-        <span class="badge">IF: 3.42 (Q2)</span><span class="badge">SJR 1.05 (Q1)</span>
-      </p>
-      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1186/s13677-021-00245-7" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
 
   </div>
