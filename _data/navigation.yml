@@ -5,6 +5,15 @@ main:
 
   - title: "TINTOlib"
     url: /TINTOlib.html
+    children:
+      - title: "Overview"
+        url: /TINTOlib.html
+      - title: "Documentation"
+        url: https://tintolib.readthedocs.io/
+      - title: "GitHub"
+        url: https://github.com/oeg-upm/TINTOlib
+      - title: "Related Publications"
+        url: /publications/
   
   - title: "Books & Software"
     url: /libros-software/
