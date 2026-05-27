@@ -3,7 +3,6 @@ layout: archive
 title: "Blog"
 permalink: /blog/
 author_profile: true
-description: "Blog de Manuel Castillo-Cara sobre inteligencia artificial, TINTOlib, Python, R, deep learning y docencia."
 ---
 
 {% include base_path %}
@@ -312,7 +311,7 @@ description: "Blog de Manuel Castillo-Cara sobre inteligencia artificial, TINTOl
   <div class="blog-hero-icon">✍️</div>
   <div>
     <h1>Blog</h1>
-    <p>Artículos sobre inteligencia artificial, TINTOlib, Python, R, deep learning y docencia.</p>
+    <p>Articles on artificial intelligence, TINTOlib, Python, R, deep learning, and teaching.</p>
   </div>
 </div>
 
@@ -321,8 +320,8 @@ description: "Blog de Manuel Castillo-Cara sobre inteligencia artificial, TINTOl
   <!-- Estado vacío: no hay posts publicados -->
   <div class="blog-empty" style="display:block">
     <div class="blog-empty-icon">📝</div>
-    <h3>Contenido próximamente</h3>
-    <p>Próximamente se publicarán artículos sobre TINTOlib, inteligencia artificial, Python, R, deep learning y docencia.</p>
+    <h3>Content coming soon</h3>
+    <p>Articles about TINTOlib, artificial intelligence, Python, R, deep learning and teaching will be published soon.</p>
   </div>
 
 {% else %}
@@ -331,15 +330,15 @@ description: "Blog de Manuel Castillo-Cara sobre inteligencia artificial, TINTOl
   <div class="blog-search-wrap">
     <span class="blog-search-icon" aria-hidden="true">🔍</span>
     <input type="search" id="blog-search" class="blog-search"
-           placeholder="Buscar artículos…" aria-label="Buscar artículos">
+           placeholder="Search articles…" aria-label="Search articles">
   </div>
 
   <!-- Filtros -->
   <div role="tablist" aria-label="Filtrar por categoría" class="blog-filters">
-    <button type="button" role="tab" class="blog-filter-btn" aria-selected="true"  data-filter="">Todos</button>
+    <button type="button" role="tab" class="blog-filter-btn" aria-selected="true"  data-filter="">All</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="tintolib">TINTOlib</button>
-    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="ia python">IA Python</button>
-    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="ia r">IA R</button>
+    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="artificial intelligence">Artificial Intelligence</button>
+    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="python">Python</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="deep learning">Deep Learning</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="teaching">Teaching</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="research">Research</button>
@@ -398,14 +397,14 @@ description: "Blog de Manuel Castillo-Cara sobre inteligencia artificial, TINTOl
             </div>
           {% endif %}
 
-          <a class="blog-btn" href="{{ post.url | relative_url }}">Leer artículo →</a>
+          <a class="blog-btn" href="{{ post.url | relative_url }}">Read article →</a>
         </div>
       </article>
     {% endfor %}
   </div>
 
   <div class="blog-no-results" id="blog-no-results">
-    No se encontraron artículos con esos criterios.
+    No articles found for the selected criteria.
   </div>
 
   <script>
