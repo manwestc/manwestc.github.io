@@ -28,7 +28,8 @@ Through this transformation, the vision model's convolutional kernels can extrac
 
 ## What is TINTOlib?
 
-**[TINTOlib](https://github.com/oeg-upm/TINTOlib)** is an open-source Python framework that unifies a comprehensive suite of state-of-the-art tabular-to-image transformation algorithms under a single, cohesive, Scikit-Learn-compliant interface. For a comprehensive overview of the framework's capabilities, consult the official **[TINTOlib Documentation](https://tintolib.readthedocs.io/en/latest/)**.
+![Tabular-to-Image Transformation Concept](/assets/images/tabular_to_image_concept.jpg)
+*(Figure 1: Conceptual diagram illustrating the topological mapping of tabular feature vectors into a structured 2D pixel grid via TINTOlib spatial encoding).*
 
 Historically, evaluating different spatial encoding strategies required integrating disjointed, unstandardized repositories written across varying programming languages. TINTOlib resolves this fragmentation by categorizing and implementing both parametric and non-parametric approaches. While this tutorial focuses on the **TINTO** method (which utilizes manifold learning techniques like t-SNE or Principal Component Analysis to determine spatial feature positions), the library allows researchers to pivot to **any other methodology**—such as **IGTD**, **REFINED**, **SuperTML**, **BarGraph**, or **Binary Image Encoding (BIE)**—by modifying a single line of code, ensuring a seamless benchmarking experience.
 
