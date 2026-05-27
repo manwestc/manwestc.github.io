@@ -18,14 +18,15 @@ main:
   - title: "Books & Software"
     url: /libros-software/
 
-  - title: "Publications"
-    url: /publications/ 
-
-  - title: "Projects"
-    url: /projects/
-
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "Academic"
+    url: /publications/
+    children:
+      - title: "Publications"
+        url: /publications/
+      - title: "Projects"
+        url: /projects/
+      - title: "Teaching"
+        url: /teaching/
 
 #  - title: "Blog Posts"
 #    url: /year-archive/
