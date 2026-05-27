@@ -21,15 +21,14 @@ The primary impediment to directly applying CNNs to tabular datasets is the **ab
 
 To overcome this limitation, spatial encoding methodologies project the feature space onto a discrete 2D coordinate system. Features that exhibit strong statistical correlations or mutual dependencies are mapped to proximal spatial coordinates within a synthetic "canvas," generating a **synthetic pseudo-image**.
 
-![Tabular-to-Image Transformation Concept](/assets/images/tabular_to_image_concept.png)
-*(Note: It is highly recommended to embed a conceptual diagram here illustrating the topological mapping of feature vectors into a structured pixel grid, using representations found in the core literature of TINTOlib or IGTD).*
+![Tabular Data into Synthetic Images Methodology](/images/Blog/blog1-tabular_to_image.png)
+*(Figure 1: Conceptual diagram illustrating the topological mapping of tabular feature vectors into a structured 2D pixel grid via TINTOlib spatial encoding).*
 
 Through this transformation, the vision model's convolutional kernels can extract higher-order hierarchical feature interactions. Furthermore, this paradigm shifts tabular analysis from black-box numeric mapping to a visual space, enabling the direct integration of post-hoc Explainable AI (XAI) frameworks—such as **Grad-CAM**, **SHAP**, or **PermGrad**—to visually interpret feature attributions via saliency maps.
 
 ## What is TINTOlib?
 
-![Tabular-to-Image Transformation Concept](/assets/images/tabular_to_image_concept.jpg)
-*(Figure 1: Conceptual diagram illustrating the topological mapping of tabular feature vectors into a structured 2D pixel grid via TINTOlib spatial encoding).*
+**[TINTOlib](https://github.com/oeg-upm/TINTOlib)** is an open-source Python framework that unifies a comprehensive suite of state-of-the-art tabular-to-image transformation algorithms under a single, cohesive, Scikit-Learn-compliant interface. For a comprehensive overview of the framework's capabilities, consult the official **[TINTOlib Documentation](https://tintolib.readthedocs.io/en/latest/)**.
 
 Historically, evaluating different spatial encoding strategies required integrating disjointed, unstandardized repositories written across varying programming languages. TINTOlib resolves this fragmentation by categorizing and implementing both parametric and non-parametric approaches. While this tutorial focuses on the **TINTO** method (which utilizes manifold learning techniques like t-SNE or Principal Component Analysis to determine spatial feature positions), the library allows researchers to pivot to **any other methodology**—such as **IGTD**, **REFINED**, **SuperTML**, **BarGraph**, or **Binary Image Encoding (BIE)**—by modifying a single line of code, ensuring a seamless benchmarking experience.
 
