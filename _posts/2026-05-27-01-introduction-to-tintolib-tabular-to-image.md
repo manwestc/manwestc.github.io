@@ -25,8 +25,6 @@ excerpt: "Technical introduction to TINTOlib, a Python framework for transformin
 image: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg"
 header:
   teaser: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg"
-  overlay_image: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg"
-  overlay_filter: 0.35
 ---
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -70,6 +68,23 @@ header:
   "keywords": "{{ page.tags | join: ', ' }}"
 }
 </script>
+
+<div style="background: linear-gradient(135deg, #1a237e 0%, #4a148c 50%, #311b92 100%); border-radius: 12px; padding: 2.5rem 2rem; margin: 1.5rem 0 2.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; color: #fff;">
+  <div style="flex: 1 1 280px; min-width: 0;">
+    <p style="margin: 0 0 0.4rem; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: #b39ddb; font-weight: 600;">TINTOlib · Deep Learning · Tabular-to-Image</p>
+    <h1 style="margin: 0 0 0.75rem; font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 800; line-height: 1.2; color: #fff;">Introduction to TINTOlib</h1>
+    <p style="margin: 0 0 1rem; font-size: 0.97rem; color: #e1d5f5; line-height: 1.55;">A Python framework for transforming tabular data into synthetic images and applying CNN-based vision architectures — bridging the gap between structured data and deep learning.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">PyTorch</span>
+      <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">CNN</span>
+      <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">Tabular Data</span>
+      <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">Synthetic Images</span>
+    </div>
+  </div>
+  <div style="flex: 0 0 auto; max-width: 260px; width: 100%;">
+    <img src="/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg" alt="TINTOlib tabular-to-image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+  </div>
+</div>
 
 In contemporary Data Science, an established paradigm governs model selection: Deep Learning architectures dominate unstructured modalities such as computer vision and natural language processing, whereas gradient-boosted decision trees (GBDTs)—including **XGBoost**, **LightGBM**, and **CatBoost**—remain the gold standard for structured tabular datasets. 
 
