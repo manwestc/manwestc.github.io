@@ -167,6 +167,40 @@ author_profile: true
     opacity: .3;
   }
 
+  /* ===== Pestañas de filtrado ===== */
+  .ud-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin: 1rem 0 1.4rem;
+    padding: 0;
+    list-style: none;
+  }
+  .ud-tab-btn {
+    background: #f0f4f8;
+    border: 1px solid var(--bd);
+    border-radius: 999px;
+    padding: .45rem 1.1rem;
+    font-size: .95rem;
+    font-weight: 700;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+  }
+  .ud-tab-btn:hover {
+    background: #e0ecff;
+    border-color: var(--brand);
+    color: var(--brand);
+  }
+  .ud-tab-btn[aria-selected="true"] {
+    background: var(--brand);
+    color: #fff;
+    border-color: var(--brand);
+  }
+  .ud-category-section[hidden] {
+    display: none !important;
+  }
+
   /* ===========================================================
      ✅ NUEVO: Caja de ruta recomendada
      =========================================================== */
@@ -208,89 +242,132 @@ author_profile: true
 {% assign categorias = site.talks | group_by: "category" %}
 {% assign orden_categorias = "Inteligencia Artificial con Python,Inteligencia Artificial con R,Otros cursos de formación avanzada" | split: "," %}
 
+<div role="tablist" aria-label="Filtrar cursos por categoría" class="ud-tabs">
+  <button type="button" role="tab" class="ud-tab-btn" aria-selected="true"  data-filter="todos">Todos</button>
+  <button type="button" role="tab" class="ud-tab-btn" aria-selected="false" data-filter="python">IA con Python</button>
+  <button type="button" role="tab" class="ud-tab-btn" aria-selected="false" data-filter="r">IA con R</button>
+  <button type="button" role="tab" class="ud-tab-btn" aria-selected="false" data-filter="otros">Otros cursos</button>
+</div>
+
 {% for orden in orden_categorias %}
   {% for categoria in categorias %}
     {% if categoria.name == orden %}
 
-      <!-- Heading -->
-      <div class="ud-heading">
-        <span>🧠 {{ categoria.name }}</span>
-        <span class="ud-count">{{ categoria.items | size }} cursos</span>
-        <span class="ud-line" aria-hidden="true"></span>
-      </div>
-
-      <!-- =====================================================
-           ✅ NUEVO: Ruta recomendada por categoría
-           ===================================================== -->
       {% if categoria.name == "Inteligencia Artificial con Python" %}
-        <div class="ud-route">
-          <div class="ud-route-title">
-            🤖 Ruta recomendada de formación <span class="ud-route-pill">Python</span>
-          </div>
-          <ol>
-            <li>Machine Learning con Python. Aprendizaje Automático Avanzado</li>
-            <li>Máster Especialista en Machine Learning Ensemble con Python</li>
-            <li>Deep Learning con Python y Keras. Redes Neuronales Avanzado</li>
-            <li>Máster en Procesamiento del Lenguaje Natural con Python</li>
-            <li>Máster Especialista en Optimización de Redes Neuronales con Python y TensorFlow</li>
-            <li>Máster Especialista en Series Temporales (Forecasting) con Python</li>
-            <li>Máster Especialista de Deep Learning en Python con PyTorch</li>
-          </ol>
-          <div class="ud-route-note">
-            Tras completar los cursos <strong>1, 2 y 3</strong>, el resto puede seguirse en el orden que prefieras, ya que son transversales.
-          </div>
-          <div class="ud-route-note">
-            Nota: “Máster en Ciencia de Datos con Python” es una versión introductoria y compacta, con una selección de clases de esta ruta completa.
-          </div>
-        </div>
+        {% assign cat_key = "python" %}
+      {% elsif categoria.name == "Inteligencia Artificial con R" %}
+        {% assign cat_key = "r" %}
+      {% else %}
+        {% assign cat_key = "otros" %}
       {% endif %}
 
-      {% if categoria.name == "Inteligencia Artificial con R" %}
-        <div class="ud-route">
-          <div class="ud-route-title">
-            📊 Ruta recomendada de formación <span class="ud-route-pill">R</span>
-          </div>
-          <ol>
-            <li>Programación con el Lenguaje Estadístico R (De 0 a Experto)</li>
-            <li>Machine Learning con el Lenguaje Estadístico R (Data Analytics)</li>
-            <li>Deep Learning para Datos Tabulares con R y Keras</li>
-            <li>Deep Learning para Lenguaje Natural y Series Temporales con R y Keras</li>
-            <li>Deep Learning para Visión por Computador con R y Keras</li>
-          </ol>
-          <div class="ud-route-note">
-            Nota: “Deep Learning con R y Keras” y el “Máster en Ciencia de Datos con R” son versiones introductorias y compactas, con una selección de clases de esta ruta completa.
-          </div>
+      <div class="ud-category-section" data-category="{{ cat_key }}">
+
+        <!-- Heading -->
+        <div class="ud-heading">
+          <span>🧠 {{ categoria.name }}</span>
+          <span class="ud-count">{{ categoria.items | size }} cursos</span>
+          <span class="ud-line" aria-hidden="true"></span>
         </div>
-      {% endif %}
 
-      <!-- Grid de cursos -->
-      <div class="course-grid">
-        {% for post in categoria.items %}
-          <article class="course-card ud-item"
-                   data-title="{{ post.title | downcase }}"
-                   data-cat="{{ categoria.name | downcase }}">
-
-            <a href="{{ post.url | relative_url }}" class="course-thumb" aria-label="{{ post.title | escape }}">
-              <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
-            </a>
-
-            <h3 class="course-title">
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h3>
-
-            <div class="course-spacer"></div>
-
-            <div class="course-actions">
-              {% if post.coupon_url %}
-                <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
-              {% else %}
-                <a class="btn" href="{{ post.url | relative_url }}">Acceso</a>
-              {% endif %}
+        <!-- =====================================================
+             ✅ NUEVO: Ruta recomendada por categoría
+             ===================================================== -->
+        {% if categoria.name == "Inteligencia Artificial con Python" %}
+          <div class="ud-route">
+            <div class="ud-route-title">
+              🤖 Ruta recomendada de formación <span class="ud-route-pill">Python</span>
             </div>
-          </article>
-        {% endfor %}
-      </div>
+            <ol>
+              <li>Machine Learning con Python. Aprendizaje Automático Avanzado</li>
+              <li>Máster Especialista en Machine Learning Ensemble con Python</li>
+              <li>Deep Learning con Python y Keras. Redes Neuronales Avanzado</li>
+              <li>Máster en Procesamiento del Lenguaje Natural con Python</li>
+              <li>Máster Especialista en Optimización de Redes Neuronales con Python y TensorFlow</li>
+              <li>Máster Especialista en Series Temporales (Forecasting) con Python</li>
+              <li>Máster Especialista de Deep Learning en Python con PyTorch</li>
+            </ol>
+            <div class="ud-route-note">
+              Tras completar los cursos <strong>1, 2 y 3</strong>, el resto puede seguirse en el orden que prefieras, ya que son transversales.
+            </div>
+            <div class="ud-route-note">
+              Nota: “Máster en Ciencia de Datos con Python” es una versión introductoria y compacta, con una selección de clases de esta ruta completa.
+            </div>
+          </div>
+        {% endif %}
+
+        {% if categoria.name == "Inteligencia Artificial con R" %}
+          <div class="ud-route">
+            <div class="ud-route-title">
+              📊 Ruta recomendada de formación <span class="ud-route-pill">R</span>
+            </div>
+            <ol>
+              <li>Programación con el Lenguaje Estadístico R (De 0 a Experto)</li>
+              <li>Machine Learning con el Lenguaje Estadístico R (Data Analytics)</li>
+              <li>Deep Learning para Datos Tabulares con R y Keras</li>
+              <li>Deep Learning para Lenguaje Natural y Series Temporales con R y Keras</li>
+              <li>Deep Learning para Visión por Computador con R y Keras</li>
+            </ol>
+            <div class="ud-route-note">
+              Nota: “Deep Learning con R y Keras” y el “Máster en Ciencia de Datos con R” son versiones introductorias y compactas, con una selección de clases de esta ruta completa.
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- Grid de cursos -->
+        <div class="course-grid">
+          {% for post in categoria.items %}
+            <article class="course-card ud-item"
+                     data-title="{{ post.title | downcase }}"
+                     data-cat="{{ categoria.name | downcase }}">
+
+              <a href="{{ post.url | relative_url }}" class="course-thumb" aria-label="{{ post.title | escape }}">
+                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title | escape }}">
+              </a>
+
+              <h3 class="course-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+
+              <div class="course-spacer"></div>
+
+              <div class="course-actions">
+                {% if post.coupon_url %}
+                  <a class="btn" href="{{ post.coupon_url }}" target="_blank" rel="noopener">Acceso</a>
+                {% else %}
+                  <a class="btn" href="{{ post.url | relative_url }}">Acceso</a>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+
+      </div><!-- /.ud-category-section -->
 
     {% endif %}
   {% endfor %}
 {% endfor %}
+
+<script>
+(function () {
+  var tabs     = document.querySelectorAll('.ud-tab-btn');
+  var sections = document.querySelectorAll('.ud-category-section');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var filter = this.dataset.filter;
+
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', 'false'); });
+      this.setAttribute('aria-selected', 'true');
+
+      sections.forEach(function (section) {
+        if (filter === 'todos' || section.dataset.category === filter) {
+          section.removeAttribute('hidden');
+        } else {
+          section.setAttribute('hidden', '');
+        }
+      });
+    });
+  });
+}());
+</script>
