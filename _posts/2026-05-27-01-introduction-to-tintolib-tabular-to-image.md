@@ -9,6 +9,7 @@ author_profile: true
 read_time: true
 share: true
 related: true
+classes: wide-blog-post
 category: "TINTOlib"
 categories:
   - TINTOlib

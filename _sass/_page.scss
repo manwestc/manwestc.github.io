@@ -399,3 +399,22 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/* ==========================================================================
+   Wide blog post: expanded reading area + reduced body text size
+   Apply by adding `classes: wide-blog-post` to post front matter.
+   ========================================================================== */
+
+@include breakpoint($large) {
+  .wide-blog-post .page {
+    width: 91%;
+    margin-right: 1%;
+  }
+}
+
+.wide-blog-post .page__content {
+  p, li, dl {
+    font-size: 0.94rem;
+    line-height: 1.62;
+  }
+}
