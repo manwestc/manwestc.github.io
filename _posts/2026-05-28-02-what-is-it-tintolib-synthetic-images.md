@@ -615,7 +615,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Examples of TINTO synthetic images](/images/Blog/2026-05-28-02_TINTO-final.png)
+![Examples of TINTO synthetic images](/images/Blog/synthetic_images/2026-05-28-02_TINTO-final.png)
 *(Figure 3. Visualization of a batch of synthetic images generated with TINTOlib using the TINTO method with blurring. Each panel represents an individual tabular sample from the Wine dataset, encoded as a grayscale two-dimensional image and labeled according to its class. The observed spatial intensity patterns illustrate how different classes may produce distinguishable synthetic representations that can be processed by CNN-based models.)*
 
 ## What should we compare next?
