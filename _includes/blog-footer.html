@@ -4,23 +4,24 @@
   .page__content pre { position: relative; }
   .copy-code-btn {
     position: absolute;
-    top: 0.4rem;
-    right: 0.5rem;
-    padding: 0.18rem 0.6rem;
-    font-size: 0.7rem;
-    font-family: inherit;
-    background: rgba(255,255,255,0.15);
-    color: #e2e8f0;
-    border: 1px solid rgba(255,255,255,0.25);
+    top: 0.35rem;
+    right: 0.45rem;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.72rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
     border-radius: 4px;
     cursor: pointer;
-    transition: background 0.15s;
-    line-height: 1.4;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1.5;
     z-index: 2;
     user-select: none;
+    font-weight: 600;
   }
-  .copy-code-btn:hover { background: rgba(255,255,255,0.28); }
-  .copy-code-btn.copied { background: rgba(80,200,120,0.45); color: #fff; border-color: rgba(80,200,120,0.5); }
+  .copy-code-btn:hover { background: #dbeafe; color: #1e40af; border-color: #93c5fd; }
+  .copy-code-btn.copied { background: #d1fae5; color: #065f46; border-color: #6ee7b7; }
 
   /* ----- Post footer wrapper ----- */
   .blog-post-footer {
@@ -62,19 +63,19 @@
   /* ----- Author card (second) ----- */
   .blog-author-card {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 0.85rem;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
-    padding: 0.9rem 1.25rem;
+    padding: 0.8rem 1.1rem;
     margin-bottom: 0.75rem;
     box-shadow: 0 2px 8px rgba(0,0,0,.05);
   }
   .blog-author-avatar {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+    width: 58px;
+    height: 76px;
+    border-radius: 999px;
     object-fit: cover;
     flex-shrink: 0;
     border: 2px solid #c7d9f0;
@@ -82,11 +83,12 @@
     box-shadow: 0 2px 8px rgba(0,0,0,.12);
   }
   .blog-author-info { flex: 1; min-width: 0; }
-  .blog-author-name { font-weight: 800; font-size: 0.97rem; color: #1f2937; margin: 0 0 0.1rem; }
-  .blog-author-role { font-size: 0.82rem; color: #374151; margin: 0 0 0.05rem; }
-  .blog-author-spec { font-size: 0.8rem; color: #1976d2; font-weight: 600; margin: 0 0 0.08rem; }
-  .blog-author-dept { font-size: 0.78rem; color: #4b5563; margin: 0 0 0.05rem; }
-  .blog-author-inst { font-size: 0.76rem; color: #6b7280; margin: 0; }
+  .blog-author-card p { margin: 0; line-height: 1.25; }
+  .blog-author-name { font-weight: 800; font-size: 0.95rem !important; color: #1f2937; }
+  .blog-author-role { font-size: 0.82rem !important; color: #374151; }
+  .blog-author-spec { font-size: 0.82rem !important; color: #374151; font-weight: 600; }
+  .blog-author-dept { font-size: 0.78rem !important; color: #4b5563; }
+  .blog-author-inst { font-size: 0.76rem !important; color: #6b7280; }
 
   /* ----- License (third) ----- */
   .blog-license {
@@ -120,15 +122,19 @@
     border: 1px solid transparent;
     transition: box-shadow 0.15s, transform 0.1s;
     line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
   .blog-resource-btn:hover { box-shadow: 0 4px 12px rgba(0,0,0,.14); transform: translateY(-1px); }
   .blog-resource-btn--notebook { background: #fff3e0; color: #e65100 !important; border-color: #ffcc80; }
   .blog-resource-btn--pdf      { background: #fce4ec; color: #c62828 !important; border-color: #f48fb1; }
-  .blog-resource-btn--print    { background: #e8f5e9; color: #2e7d32 !important; border-color: #a5d6a7; font-family: inherit; }
-  .blog-resource-btn--save     { background: #e8eaf6; color: #283593 !important; border-color: #9fa8da; font-family: inherit; }
+  .blog-resource-btn--print    { background: #e8f5e9; color: #2e7d32 !important; border-color: #a5d6a7; }
+  .blog-resource-btn--save     { background: #e8eaf6; color: #283593 !important; border-color: #9fa8da; }
+  .blog-resource-btn--python   { background: #fef9c3; color: #713f12 !important; border-color: #fde68a; }
+  .blog-resource-btn--ipynb    { background: #fff7ed; color: #92400e !important; border-color: #fed7aa; }
 
   @media (max-width: 560px) {
     .blog-author-card { flex-direction: column; align-items: center; text-align: center; }
+    .blog-author-avatar { width: 52px; height: 68px; }
     .blog-cta { text-align: center; justify-content: center; }
     .blog-resources { justify-content: center; }
   }
@@ -191,15 +197,55 @@
             id="btn-save-html">
       💾 Save as HTML
     </button>
+    <button type="button" class="blog-resource-btn blog-resource-btn--python"
+            id="btn-download-py">
+      🐍 Download Python
+    </button>
+    <button type="button" class="blog-resource-btn blog-resource-btn--ipynb"
+            id="btn-download-ipynb">
+      📓 Notebook (.ipynb)
+    </button>
   </div>
 
 </div>
 
-<!-- Copy-code buttons + Save as HTML logic -->
+<!-- ===== Copy-code + Export logic ===== -->
 <script>
 (function () {
 
-  /* ---- Copy-code ---- */
+  /* ---------- helpers ---------- */
+  function slugify(str) {
+    return (str || 'blog-post')
+      .replace(/[^a-z0-9\-_]/gi, '-')
+      .replace(/-+/g, '-')
+      .toLowerCase()
+      .substring(0, 60)
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function download(content, filename, mime) {
+    var blob = new Blob([content], { type: mime });
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+  }
+
+  function getCodeBlocks() {
+    var nodes = document.querySelectorAll('.page__content pre code');
+    var blocks = [];
+    nodes.forEach(function (node) {
+      var text = node.textContent.trimEnd();
+      if (text) blocks.push(text);
+    });
+    return blocks;
+  }
+
+  /* ---------- Copy-code buttons ---------- */
   var pres = document.querySelectorAll('.page__content pre');
   pres.forEach(function (pre) {
     var code = pre.querySelector('code');
@@ -234,28 +280,114 @@
   function flash(btn) {
     btn.textContent = 'Copied \u2713';
     btn.classList.add('copied');
-    setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1500);
+    setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
   }
 
-  /* ---- Save as HTML ---- */
-  var saveBtn = document.getElementById('btn-save-html');
-  if (saveBtn) {
-    saveBtn.addEventListener('click', function () {
-      var html = document.documentElement.outerHTML;
-      var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-      var url  = URL.createObjectURL(blob);
-      var title = (document.title || 'blog-post')
-                    .replace(/[^a-z0-9\-_]/gi, '-')
-                    .replace(/-+/g, '-')
-                    .toLowerCase()
-                    .substring(0, 60);
-      var a = document.createElement('a');
-      a.href = url;
-      a.download = title + '.html';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+  /* ---------- Save as HTML ---------- */
+  var saveHtmlBtn = document.getElementById('btn-save-html');
+  if (saveHtmlBtn) {
+    saveHtmlBtn.addEventListener('click', function () {
+      var clone = document.documentElement.cloneNode(true);
+      var origin = window.location.origin;
+      clone.querySelectorAll('img[src]').forEach(function (img) {
+        var src = img.getAttribute('src');
+        if (src && src.charAt(0) === '/') img.setAttribute('src', origin + src);
+      });
+      clone.querySelectorAll('link[href]').forEach(function (el) {
+        var href = el.getAttribute('href');
+        if (href && href.charAt(0) === '/') el.setAttribute('href', origin + href);
+      });
+      clone.querySelectorAll('script[src]').forEach(function (el) {
+        var src = el.getAttribute('src');
+        if (src && src.charAt(0) === '/') el.setAttribute('src', origin + src);
+      });
+      var html = '<!doctype html>\n' + clone.outerHTML;
+      download(html, slugify(document.title) + '.html', 'text/html;charset=utf-8');
+    });
+  }
+
+  /* ---------- Download Python ---------- */
+  var pyBtn = document.getElementById('btn-download-py');
+  if (pyBtn) {
+    pyBtn.addEventListener('click', function () {
+      var blocks = getCodeBlocks();
+      var lines;
+      if (blocks.length === 0) {
+        lines = ['# No code blocks found in this post.\n'];
+      } else {
+        lines = [];
+        blocks.forEach(function (block, i) {
+          lines.push('# ---- Code block ' + (i + 1) + ' ----\n');
+          lines.push(block + '\n\n');
+        });
+      }
+      download(lines.join(''), slugify(document.title) + '.py', 'text/x-python;charset=utf-8');
+    });
+  }
+
+  /* ---------- Download Notebook (.ipynb) ---------- */
+  var ipynbBtn = document.getElementById('btn-download-ipynb');
+  if (ipynbBtn) {
+    ipynbBtn.addEventListener('click', function () {
+      var blocks = getCodeBlocks();
+      var cells = [];
+
+      /* title cell */
+      cells.push({
+        cell_type: 'markdown',
+        metadata: {},
+        source: ['# ' + (document.title || 'Blog Post')]
+      });
+
+      /* URL cell */
+      var pageUrl = window.location.href;
+      cells.push({
+        cell_type: 'markdown',
+        metadata: {},
+        source: ['**Source:** [' + pageUrl + '](' + pageUrl + ')']
+      });
+
+      /* code cells */
+      if (blocks.length === 0) {
+        cells.push({
+          cell_type: 'markdown',
+          metadata: {},
+          source: ['*No code blocks found in this post.*']
+        });
+      } else {
+        blocks.forEach(function (block, i) {
+          cells.push({
+            cell_type: 'markdown',
+            metadata: {},
+            source: ['### Code block ' + (i + 1)]
+          });
+          cells.push({
+            cell_type: 'code',
+            execution_count: null,
+            metadata: {},
+            outputs: [],
+            source: block.split('\n').map(function (l, idx, arr) {
+              return idx < arr.length - 1 ? l + '\n' : l;
+            })
+          });
+        });
+      }
+
+      var nb = {
+        nbformat: 4,
+        nbformat_minor: 5,
+        metadata: {
+          kernelspec: {
+            display_name: 'Python 3',
+            language: 'python',
+            name: 'python3'
+          },
+          language_info: { name: 'python', version: '3.x' }
+        },
+        cells: cells
+      };
+
+      download(JSON.stringify(nb, null, 2), slugify(document.title) + '.ipynb', 'application/json;charset=utf-8');
     });
   }
 
