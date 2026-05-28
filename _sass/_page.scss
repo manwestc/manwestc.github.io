@@ -403,12 +403,31 @@
 /* ==========================================================================
    Wide blog post: expanded reading area + reduced body text size
    Apply by adding `classes: wide-blog-post` to post front matter.
+   Minimal Mistakes generates `.page` with Susy `span(10 of 12 last)` +
+   `suffix(2 of 12)` = padding-right: 16.67%. We override that here.
+   The `classes:` front matter value is added to <body> by the theme.
    ========================================================================== */
 
 @include breakpoint($large) {
   .wide-blog-post .page {
-    width: 91%;
-    margin-right: 1%;
+    width: 95%;
+    padding-right: 1.5rem;   /* cancels suffix(2 of 12) = 16.67% */
+  }
+
+  .wide-blog-post .page__inner-wrap {
+    max-width: 980px;
+  }
+
+  .wide-blog-post .page__content {
+    max-width: 980px;
+  }
+
+  /* Justify prose paragraphs only — exclude headings, code, footer blocks */
+  .wide-blog-post .page__content > p,
+  .wide-blog-post .page__content > blockquote p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
   }
 }
 
