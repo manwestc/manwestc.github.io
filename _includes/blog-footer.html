@@ -164,7 +164,8 @@
       <p class="blog-author-role">Researcher &amp; Professor</p>
       <p class="blog-author-spec">TINTOlib Python Library Developer</p>
       <p class="blog-author-dept">Department of Artificial Intelligence</p>
-      <p class="blog-author-inst">Universidad Nacional de Educación a Distancia (UNED) &middot; Almería, Spain</p>
+      <p class="blog-author-inst">Universidad Nacional de Educación a Distancia (UNED)</p>
+      <p class="blog-author-inst">Almerimar (Almería), Spain</p>
     </div>
   </div>
 
@@ -325,63 +326,135 @@
     });
   }
 
-  /* ---------- Download Notebook (.ipynb) ---------- */
+  /* ---------- Download Notebook (.ipynb) — full article walker ---------- */
   var ipynbBtn = document.getElementById('btn-download-ipynb');
   if (ipynbBtn) {
     ipynbBtn.addEventListener('click', function () {
-      var blocks = getCodeBlocks();
+
+      function mdLines(text) {
+        /* Split into source array as Jupyter expects (lines ending with \n except last) */
+        var lines = text.split('\n');
+        return lines.map(function (l, i) { return i < lines.length - 1 ? l + '\n' : l; });
+      }
+
+      function mkdCell(text) {
+        var t = (text || '').trim();
+        if (!t) return null;
+        return { cell_type: 'markdown', metadata: {}, source: mdLines(t) };
+      }
+
+      function codeCell(text) {
+        var t = (text || '').trimEnd();
+        if (!t) return null;
+        return { cell_type: 'code', execution_count: null, metadata: {}, outputs: [], source: mdLines(t) };
+      }
+
+      function nodeToMd(el) {
+        var tag = el.tagName ? el.tagName.toLowerCase() : '';
+        /* headings */
+        if (/^h[1-6]$/.test(tag)) {
+          var level = parseInt(tag.slice(1), 10);
+          return Array(level + 1).join('#') + ' ' + el.textContent.trim();
+        }
+        /* paragraph */
+        if (tag === 'p') return el.textContent.trim();
+        /* blockquote */
+        if (tag === 'blockquote') {
+          return el.textContent.trim().split('\n').map(function (l) { return '> ' + l; }).join('\n');
+        }
+        /* lists */
+        if (tag === 'ul' || tag === 'ol') {
+          var items = [];
+          el.querySelectorAll('li').forEach(function (li, i) {
+            items.push((tag === 'ol' ? (i + 1) + '. ' : '- ') + li.textContent.trim());
+          });
+          return items.join('\n');
+        }
+        /* figure / img */
+        if (tag === 'figure') {
+          var img = el.querySelector('img');
+          if (img) {
+            var src = img.getAttribute('src') || '';
+            if (src.charAt(0) === '/') src = window.location.origin + src;
+            var alt = img.getAttribute('alt') || '';
+            var cap = el.querySelector('figcaption');
+            return '!['+ alt +']('+ src +')' + (cap ? '\n*' + cap.textContent.trim() + '*' : '');
+          }
+        }
+        if (tag === 'img') {
+          var src2 = el.getAttribute('src') || '';
+          if (src2.charAt(0) === '/') src2 = window.location.origin + src2;
+          return '![' + (el.getAttribute('alt') || '') + '](' + src2 + ')';
+        }
+        return '';
+      }
+
+      function getArticleCellsForNotebook() {
+        var container = document.querySelector('.page__content');
+        if (!container) return [];
+
+        var clone = container.cloneNode(true);
+        /* Remove footer, scripts, styles, copy buttons */
+        ['script','style','.blog-post-footer','.copy-code-btn'].forEach(function (sel) {
+          clone.querySelectorAll(sel).forEach(function (n) { n.parentNode.removeChild(n); });
+        });
+
+        var cells = [];
+        var INLINE_TAGS = /^(h[1-6]|p|ul|ol|blockquote|figure|img)$/;
+
+        function walk(node) {
+          if (node.nodeType !== 1) return; /* element nodes only */
+          var tag = node.tagName.toLowerCase();
+
+          /* code block */
+          if (tag === 'pre') {
+            var code = node.querySelector('code');
+            var text = (code ? code : node).textContent.trimEnd();
+            var cell = codeCell(text);
+            if (cell) cells.push(cell);
+            return;
+          }
+
+          /* inline-mappable tags */
+          if (INLINE_TAGS.test(tag)) {
+            var md = nodeToMd(node);
+            var cell2 = mkdCell(md);
+            if (cell2) cells.push(cell2);
+            return;
+          }
+
+          /* containers: div, section, article — recurse children */
+          Array.prototype.forEach.call(node.childNodes, function (child) {
+            walk(child);
+          });
+        }
+
+        Array.prototype.forEach.call(clone.childNodes, function (child) {
+          walk(child);
+        });
+
+        return cells;
+      }
+
       var cells = [];
-
-      /* title cell */
-      cells.push({
-        cell_type: 'markdown',
-        metadata: {},
-        source: ['# ' + (document.title || 'Blog Post')]
-      });
-
-      /* URL cell */
+      /* Header cells */
+      cells.push(mkdCell('# ' + (document.title || 'Blog Post')));
       var pageUrl = window.location.href;
-      cells.push({
-        cell_type: 'markdown',
-        metadata: {},
-        source: ['**Source:** [' + pageUrl + '](' + pageUrl + ')']
-      });
+      cells.push(mkdCell('**Source:** [' + pageUrl + '](' + pageUrl + ')'));
 
-      /* code cells */
-      if (blocks.length === 0) {
-        cells.push({
-          cell_type: 'markdown',
-          metadata: {},
-          source: ['*No code blocks found in this post.*']
-        });
+      /* Article body cells */
+      var bodyCells = getArticleCellsForNotebook();
+      if (bodyCells.length === 0) {
+        cells.push(mkdCell('*No content extracted from this post.*'));
       } else {
-        blocks.forEach(function (block, i) {
-          cells.push({
-            cell_type: 'markdown',
-            metadata: {},
-            source: ['### Code block ' + (i + 1)]
-          });
-          cells.push({
-            cell_type: 'code',
-            execution_count: null,
-            metadata: {},
-            outputs: [],
-            source: block.split('\n').map(function (l, idx, arr) {
-              return idx < arr.length - 1 ? l + '\n' : l;
-            })
-          });
-        });
+        cells = cells.concat(bodyCells);
       }
 
       var nb = {
         nbformat: 4,
         nbformat_minor: 5,
         metadata: {
-          kernelspec: {
-            display_name: 'Python 3',
-            language: 'python',
-            name: 'python3'
-          },
+          kernelspec: { display_name: 'Python 3', language: 'python', name: 'python3' },
           language_info: { name: 'python', version: '3.x' }
         },
         cells: cells

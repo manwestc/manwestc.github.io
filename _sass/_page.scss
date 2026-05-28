@@ -403,35 +403,61 @@
 /* ==========================================================================
    Wide blog post: expanded reading area + reduced body text size
    Apply by adding `classes: wide-blog-post` to post front matter.
-   Minimal Mistakes generates `.page` with Susy `span(10 of 12 last)` +
-   `suffix(2 of 12)` = padding-right: 16.67%. We override that here.
-   The `classes:` front matter value is added to <body> by the theme.
+
+   HOW IT WORKS:
+   - single.html renders: <article class="page h-entry wide-blog-post">
+   - So the selector is `.page.wide-blog-post` (both classes on the same element).
+   - The base `.page` rule uses Susy suffix(2 of 12) = padding-right: 16.67%.
+     We cancel that padding here.
+   - Publications and other pages are unaffected (they use layout: archive/single
+     without `classes: wide-blog-post`).
    ========================================================================== */
 
 @include breakpoint($large) {
-  .wide-blog-post .page {
-    width: 95%;
-    padding-right: 1.5rem;   /* cancels suffix(2 of 12) = 16.67% */
+  /* --- Moderate right padding for ALL pages (replaces Susy suffix 16.67%) --- */
+  .page {
+    padding-right: 8%;
   }
 
-  .wide-blog-post .page__inner-wrap {
-    max-width: 980px;
+  /* --- Wide blog post: extra horizontal space, correct selector ---
+     single.html renders: <article class="page h-entry wide-blog-post">
+     Both .page and .wide-blog-post are on the SAME element, so use .page.wide-blog-post
+  --- */
+  .page.wide-blog-post {
+    padding-right: 5%;
+    width: 96%;
   }
 
-  .wide-blog-post .page__content {
-    max-width: 980px;
+  .page.wide-blog-post .page__inner-wrap,
+  .page.wide-blog-post .page__content {
+    max-width: 1040px;
   }
 
-  /* Justify prose paragraphs only — exclude headings, code, footer blocks */
-  .wide-blog-post .page__content > p,
-  .wide-blog-post .page__content > blockquote p {
+  /* --- Justify all prose paragraphs in content (not direct-child only,
+     because MM wraps content in <section class="page__content">  and
+     paragraphs from Markdown end up as direct children — but we use
+     the non-direct selector for safety) --- */
+  .page.wide-blog-post .page__content p,
+  .page.wide-blog-post .page__content blockquote p,
+  .page.wide-blog-post .page__content li {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
   }
+
+  /* --- Hard reset for footer: never justify --- */
+  .page.wide-blog-post .blog-post-footer,
+  .page.wide-blog-post .blog-post-footer p,
+  .page.wide-blog-post .blog-cta p,
+  .page.wide-blog-post .blog-cta-text p,
+  .page.wide-blog-post .blog-author-card p,
+  .page.wide-blog-post .blog-license {
+    text-align: left !important;
+    hyphens: none !important;
+  }
 }
 
-.wide-blog-post .page__content {
+.page.wide-blog-post .page__content {
   p, li, dl {
     font-size: 0.94rem;
     line-height: 1.62;
