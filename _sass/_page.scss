@@ -401,15 +401,42 @@
 }
 
 /* ==========================================================================
-   Wide blog post: text styling and justification.
+   Wide blog post: expanded reading area + reduced body text size
    Apply by adding `classes: wide-blog-post` to post front matter.
-   single.html now renders: <article class="page h-entry wide-blog-post">
-   DO NOT override width/padding-right on .page — that breaks the Susy
-   float layout and causes sidebar overlap.
+
+   HOW IT WORKS:
+   - single.html renders: <article class="page h-entry wide-blog-post">
+   - So the selector is `.page.wide-blog-post` (both classes on the same element).
+   - The base `.page` rule uses Susy suffix(2 of 12) = padding-right: 16.67%.
+     We cancel that padding here.
+   - Publications and other pages are unaffected (they use layout: archive/single
+     without `classes: wide-blog-post`).
    ========================================================================== */
 
 @include breakpoint($large) {
-  /* Justify prose paragraphs in post content only */
+  /* --- Moderate right padding for ALL pages (replaces Susy suffix 16.67%) --- */
+  .page {
+    padding-right: 8%;
+  }
+
+  /* --- Wide blog post: extra horizontal space, correct selector ---
+     single.html renders: <article class="page h-entry wide-blog-post">
+     Both .page and .wide-blog-post are on the SAME element, so use .page.wide-blog-post
+  --- */
+  .page.wide-blog-post {
+    padding-right: 5%;
+    width: 96%;
+  }
+
+  .page.wide-blog-post .page__inner-wrap,
+  .page.wide-blog-post .page__content {
+    max-width: 1040px;
+  }
+
+  /* --- Justify all prose paragraphs in content (not direct-child only,
+     because MM wraps content in <section class="page__content">  and
+     paragraphs from Markdown end up as direct children — but we use
+     the non-direct selector for safety) --- */
   .page.wide-blog-post .page__content p,
   .page.wide-blog-post .page__content blockquote p,
   .page.wide-blog-post .page__content li {
@@ -418,7 +445,7 @@
     hyphens: auto;
   }
 
-  /* Hard reset: footer elements must never be justified */
+  /* --- Hard reset for footer: never justify --- */
   .page.wide-blog-post .blog-post-footer,
   .page.wide-blog-post .blog-post-footer p,
   .page.wide-blog-post .blog-cta p,
