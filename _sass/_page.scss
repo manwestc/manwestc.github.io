@@ -399,3 +399,40 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/* ==========================================================================
+   Wide blog post: text styling and justification.
+   Apply by adding `classes: wide-blog-post` to post front matter.
+   single.html now renders: <article class="page h-entry wide-blog-post">
+   DO NOT override width/padding-right on .page — that breaks the Susy
+   float layout and causes sidebar overlap.
+   ========================================================================== */
+
+@include breakpoint($large) {
+  /* Justify prose paragraphs in post content only */
+  .page.wide-blog-post .page__content p,
+  .page.wide-blog-post .page__content blockquote p,
+  .page.wide-blog-post .page__content li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+
+  /* Hard reset: footer elements must never be justified */
+  .page.wide-blog-post .blog-post-footer,
+  .page.wide-blog-post .blog-post-footer p,
+  .page.wide-blog-post .blog-cta p,
+  .page.wide-blog-post .blog-cta-text p,
+  .page.wide-blog-post .blog-author-card p,
+  .page.wide-blog-post .blog-license {
+    text-align: left !important;
+    hyphens: none !important;
+  }
+}
+
+.page.wide-blog-post .page__content {
+  p, li, dl {
+    font-size: 0.94rem;
+    line-height: 1.62;
+  }
+}
