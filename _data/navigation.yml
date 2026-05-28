@@ -27,8 +27,10 @@ main:
         url: /projects/
       - title: "Teaching"
         url: /teaching/
-  - title: "Blog"
+
+  - title: "Blog & Tutorials"
     url: /blog/
+
 #  - title: "Blog Posts"
 #    url: /year-archive/
     

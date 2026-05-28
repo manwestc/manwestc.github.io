@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Blog"
+title: "Blog & Tutorials"
 permalink: /blog/
 author_profile: true
 ---
@@ -10,19 +10,19 @@ author_profile: true
 <!-- ✅ SEO básico -->
 <link rel="canonical" href="{{ site.url }}/blog/">
 <meta name="robots" content="index,follow">
-<meta name="description" content="Blog de Manuel Castillo-Cara sobre inteligencia artificial, TINTOlib, Python, R, deep learning y docencia.">
+<meta name="description" content="Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science. By Manuel Castillo-Cara, PhD.">
 
 <!-- ✅ Open Graph -->
-<meta property="og:title" content="Blog · Manuel Castillo-Cara">
-<meta property="og:description" content="Artículos sobre inteligencia artificial, TINTOlib, Python, R, deep learning y docencia.">
+<meta property="og:title" content="Blog &amp; Tutorials · Manuel Castillo-Cara">
+<meta property="og:description" content="Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}/blog/">
 <meta property="og:image" content="{{ site.url }}/images/profile.jpg">
 
 <!-- ✅ Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog · Manuel Castillo-Cara">
-<meta name="twitter:description" content="Artículos sobre inteligencia artificial, TINTOlib, Python, R, deep learning y docencia.">
+<meta name="twitter:title" content="Blog &amp; Tutorials · Manuel Castillo-Cara">
+<meta name="twitter:description" content="Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science.">
 <meta name="twitter:image" content="{{ site.url }}/images/profile.jpg">
 
 <!-- ✅ JSON-LD Blog -->
@@ -30,9 +30,9 @@ author_profile: true
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Blog de Manuel Castillo-Cara",
+  "name": "Blog & Tutorials — Manuel Castillo-Cara",
   "url": "{{ site.url }}/blog/",
-  "description": "Artículos sobre inteligencia artificial, TINTOlib, Python, R, deep learning y docencia.",
+  "description": "Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science.",
   "author": {
     "@type": "Person",
     "name": "Manuel Castillo-Cara",
@@ -64,6 +64,9 @@ author_profile: true
     --grad-a: #1565c0;
     --grad-b: #ff0f5e;
   }
+
+  /* Hide layout-rendered title (hero replaces it) */
+  .page__title { display: none !important; }
 
   /* ===== Hero ===== */
   .blog-hero {
@@ -310,8 +313,9 @@ author_profile: true
 <div class="blog-hero">
   <div class="blog-hero-icon">✍️</div>
   <div>
-    <h1>Blog</h1>
-    <p>Articles on artificial intelligence, TINTOlib, Python, R, deep learning, and teaching.</p>
+    <h1>Blog &amp; Tutorials</h1>
+    <p>Technical articles, tutorials and research notes on Artificial Intelligence, TINTOlib, tabular-to-image learning, hybrid neural networks, explainable AI and applied deep learning.</p>
+    <p style="margin:.35rem 0 0; font-size:.82rem; opacity:.8;">By Manuel Castillo-Cara, PhD — Researcher and Professor at UNED, developer of TINTO and TINTOlib.</p>
   </div>
 </div>
 
@@ -334,7 +338,7 @@ author_profile: true
   </div>
 
   <!-- Filtros -->
-  <div role="tablist" aria-label="Filtrar por categoría" class="blog-filters">
+  <div role="tablist" aria-label="Filter by category" class="blog-filters">
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="true"  data-filter="">All</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="tintolib">TINTOlib</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="artificial intelligence">Artificial Intelligence</button>

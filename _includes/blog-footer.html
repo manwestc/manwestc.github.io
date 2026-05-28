@@ -1,0 +1,230 @@
+<!-- ===== Blog Post Footer (author, license, CTA, resources, copy-code) ===== -->
+<style>
+  /* ----- Copy-code button ----- */
+  .page__content pre { position: relative; }
+  .copy-code-btn {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    padding: 0.18rem 0.6rem;
+    font-size: 0.7rem;
+    font-family: inherit;
+    background: rgba(255,255,255,0.15);
+    color: #e2e8f0;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s;
+    line-height: 1.4;
+    z-index: 2;
+    user-select: none;
+  }
+  .copy-code-btn:hover { background: rgba(255,255,255,0.28); }
+  .copy-code-btn.copied { background: rgba(80,200,120,0.45); color: #fff; border-color: rgba(80,200,120,0.5); }
+
+  /* ----- Post footer wrapper ----- */
+  .blog-post-footer {
+    margin-top: 3rem;
+    border-top: 2px solid #e2e8f0;
+    padding-top: 2rem;
+  }
+
+  /* ----- Author card ----- */
+  .blog-author-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .blog-author-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #e2e8f0;
+    background: #e8edf5;
+  }
+  .blog-author-info { flex: 1; min-width: 0; }
+  .blog-author-name { font-weight: 800; font-size: 1rem; color: #1f2937; margin: 0 0 0.15rem; }
+  .blog-author-role { font-size: 0.85rem; color: #4b5563; margin: 0 0 0.1rem; }
+  .blog-author-inst { font-size: 0.82rem; color: #6b7280; margin: 0; }
+
+  /* ----- License ----- */
+  .blog-license {
+    font-size: 0.82rem;
+    color: #6b7280;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .blog-license a { color: #1976d2; }
+
+  /* ----- Resource buttons ----- */
+  .blog-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .blog-resource-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.42rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none !important;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: box-shadow 0.15s, transform 0.1s;
+  }
+  .blog-resource-btn:hover { box-shadow: 0 4px 12px rgba(0,0,0,.14); transform: translateY(-1px); }
+  .blog-resource-btn--notebook { background: #fff3e0; color: #e65100 !important; border-color: #ffcc80; }
+  .blog-resource-btn--pdf      { background: #fce4ec; color: #c62828 !important; border-color: #f48fb1; }
+  .blog-resource-btn--print    { background: #e8f5e9; color: #2e7d32 !important; border-color: #a5d6a7; font-family: inherit; }
+
+  /* ----- CTA ----- */
+  .blog-cta {
+    background: linear-gradient(135deg, #1565c0 0%, #6d28d9 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 1.4rem 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .blog-cta-text h3 { margin: 0 0 0.3rem; font-size: 1.05rem; color: #fff; }
+  .blog-cta-text p  { margin: 0; font-size: 0.88rem; color: rgba(255,255,255,0.85); }
+  .blog-cta-btn {
+    display: inline-block;
+    background: #fff;
+    color: #1565c0 !important;
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+    padding: 0.55rem 1.3rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: box-shadow 0.15s, transform 0.1s;
+  }
+  .blog-cta-btn:hover { box-shadow: 0 4px 14px rgba(0,0,0,.22); transform: translateY(-1px); }
+
+  @media (max-width: 560px) {
+    .blog-author-card { flex-direction: column; align-items: center; text-align: center; }
+    .blog-cta { text-align: center; justify-content: center; }
+  }
+</style>
+
+<div class="blog-post-footer">
+
+  <!-- Author -->
+  <div class="blog-author-card">
+    <img class="blog-author-avatar"
+         src="/images/profile.jpg"
+         alt="Manuel Castillo-Cara"
+         onerror="this.style.display='none'">
+    <div class="blog-author-info">
+      <p class="blog-author-name">Manuel Castillo-Cara, PhD</p>
+      <p class="blog-author-role">Researcher &amp; Professor</p>
+      <p class="blog-author-inst">Universidad Nacional de Educación a Distancia (UNED) &middot; Almería, Spain</p>
+    </div>
+  </div>
+
+  <!-- License -->
+  <p class="blog-license">
+    &copy; Manuel Castillo-Cara, PhD. Content licensed under
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>
+    unless otherwise stated.
+  </p>
+
+  <!-- Optional resource buttons -->
+  <div class="blog-resources">
+    {% if page.notebook_url %}
+      <a class="blog-resource-btn blog-resource-btn--notebook"
+         href="{{ page.notebook_url }}" target="_blank" rel="noopener noreferrer">
+        📓 Download Notebook
+      </a>
+    {% endif %}
+    {% if page.pdf_url %}
+      <a class="blog-resource-btn blog-resource-btn--pdf"
+         href="{{ page.pdf_url }}" target="_blank" rel="noopener noreferrer">
+        📄 Download PDF
+      </a>
+    {% endif %}
+    <button type="button" class="blog-resource-btn blog-resource-btn--print"
+            onclick="window.print()">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- CTA -->
+  <div class="blog-cta">
+    <div class="blog-cta-text">
+      <h3>Continue learning Artificial Intelligence</h3>
+      <p>Explore practical courses on AI, Machine Learning, Deep Learning, Python, R and applied data science.</p>
+    </div>
+    <a class="blog-cta-btn"
+       href="https://www.manuelcastillo.eu/udemy/"
+       target="_blank" rel="noopener noreferrer">View AI Courses &rarr;</a>
+  </div>
+
+</div>
+
+<!-- Copy-code buttons injected into .page__content pre blocks -->
+<script>
+(function () {
+  var pres = document.querySelectorAll('.page__content pre');
+  pres.forEach(function (pre) {
+    var code = pre.querySelector('code');
+    var getText = function () {
+      if (code) return code.textContent;
+      var clone = pre.cloneNode(true);
+      clone.querySelectorAll('.copy-code-btn').forEach(function (b) { b.parentNode.removeChild(b); });
+      return clone.textContent;
+    };
+
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'copy-code-btn';
+    btn.textContent = 'Copy';
+    btn.setAttribute('aria-label', 'Copy code to clipboard');
+    pre.appendChild(btn);
+
+    btn.addEventListener('click', function () {
+      var text = getText();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { flash(btn); });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        flash(btn);
+      }
+    });
+  });
+
+  function flash(btn) {
+    btn.textContent = 'Copied \u2713';
+    btn.classList.add('copied');
+    setTimeout(function () {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 1500);
+  }
+}());
+</script>

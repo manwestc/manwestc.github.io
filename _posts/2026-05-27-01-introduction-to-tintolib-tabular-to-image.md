@@ -17,9 +17,9 @@ tags:
   - Tabular-to-Image
   - Synthetic Images
   - Deep Learning
-  - Artificial Intelligence
+  - CNN
   - PyTorch
-  - Deep Learning
+  - Machine Learning
 description: "Technical introduction to TINTOlib, a Python framework for transforming tabular data into synthetic images and applying CNN-based deep learning architectures."
 excerpt: "Technical introduction to TINTOlib, a Python framework for transforming tabular data into synthetic images and applying CNN-based deep learning architectures."
 image: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg"
@@ -76,7 +76,7 @@ header:
     <p style="margin: 0 0 1rem; font-size: 0.97rem; color: #e1d5f5; line-height: 1.55;">A Python framework for transforming tabular data into synthetic images and applying CNN-based vision architectures — bridging the gap between structured data and deep learning.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">PyTorch</span>
-      <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">TINTOlib</span>
+      <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">CNN</span>
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">Tabular Data</span>
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">Synthetic Images</span>
     </div>
@@ -194,3 +194,6 @@ The generated synthetic images stored in `synthetic_dataset/` can be seamlessly 
 Transforming tabular features into synthetic spatial layouts offers a compelling methodology to bridge classical data problems with state-of-the-art visual architectures. Utilizing **TINTOlib** provides data scientists with a rigorous, reproducible, and standardized framework to systematically test, compare, and scale these transformations while avoiding common pitfalls such as data leakage.
 
 In subsequent entries, we will delve deeper into benchmarking comparative analysis (e.g., non-parametric IGTD vs. parallelized REFINED), evaluating performance shifts when deploying Vision Transformers (ViTs), and rendering feature importance maps through advanced XAI methods.
+
+{% include blog-footer.html %}
+
