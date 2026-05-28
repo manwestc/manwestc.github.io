@@ -116,3 +116,38 @@
     display: block;
   }
 }
+
+/* ==========================================================================
+   Mobile: always-visible nested links inside greedy-nav hidden-links
+   ========================================================================== */
+
+.greedy-nav .hidden-links {
+  .masthead__menu-item--dropdown {
+    .masthead__dropdown {
+      display: block;
+      position: static;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+      min-width: 0;
+      padding: 0;
+      margin: 0;
+
+      li {
+        border-bottom: none;
+      }
+
+      a {
+        padding: 6px 16px 6px 34px;
+        font-size: $type-size-6;
+        color: $masthead-link-color;
+        white-space: normal;
+
+        &:hover {
+          color: $masthead-link-color-hover;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
