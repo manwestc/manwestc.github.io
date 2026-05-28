@@ -87,6 +87,9 @@ header:
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e8d5ff;">Deep Learning</span>
     </div>
   </div>
+  <div style="flex: 0 0 auto; max-width: 260px; width: 100%;">
+    <img src="/images/Blog/2026-05-28-02-what-is-it-tintolib-synthetic-images.png" alt="TINTOlib synthetic images from tabular data" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+  </div>
 </div>
 
 In many applied machine learning problems, there is a recurrent practical distinction: for images, text, or audio, we often use Deep Learning; for tabular data, tree-based models and ensembles such as Random Forest, XGBoost, LightGBM, or CatBoost remain extremely competitive.
