@@ -23,9 +23,9 @@ tags:
   - Machine Learning
 description: "Technical introduction to TINTOlib, a Python framework for transforming tabular data into synthetic images and applying CNN-based deep learning architectures."
 excerpt: "Technical introduction to TINTOlib, a Python framework for transforming tabular data into synthetic images and applying CNN-based deep learning architectures."
-image: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg"
+image: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.png"
 header:
-  teaser: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg"
+  teaser: "/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.png"
 ---
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -83,7 +83,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 260px; width: 100%;">
-    <img src="/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.jpeg" alt="TINTOlib tabular-to-image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-05-27-01-introduction-to-tintolib-tabular-to-image.png" alt="TINTOlib tabular-to-image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
