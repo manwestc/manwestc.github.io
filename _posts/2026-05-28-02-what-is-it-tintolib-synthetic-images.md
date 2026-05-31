@@ -745,18 +745,6 @@ In this post, we introduced the motivation behind tabular-to-image transformatio
     </div>
 
   </div>
-
-  <div style="margin-top:1.4rem; padding:1rem; background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px;">
-    <p style="margin:0 0 .75rem; color:#1f2937; line-height:1.55;">
-      You can also explore the official benchmark comparing <strong>TINTOlib</strong> transformation methods,
-      neural architectures, and classical machine learning models.
-    </p>
-
-    <a href="https://oeg-upm.github.io/TINTOlib/" target="_blank" rel="noopener"
-       style="display:inline-block; background:#2563eb; color:#fff; font-weight:700; padding:.65rem 1rem; border-radius:8px; text-decoration:none;">
-      🌐 Visit TINTOlib Benchmark Page
-    </a>
-  </div>
 </section>
 
 {% include blog-footer.html %}
