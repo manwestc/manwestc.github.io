@@ -80,14 +80,6 @@ header:
 }
 </script>
 
----
-
->> - **Author:** Manuel Castillo-Cara, PhD
->> - **Affiliation:** Department of Artificial Intelligence, Universidad Nacional de Educación a Distancia (UNED), Spain
->> - **Role:** Researcher, Professor, and TINTOlib Python Library Developer
->> - **License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
-
----
 
 <div style="background: linear-gradient(135deg, #1a237e 0%, #4a148c 50%, #311b92 100%); border-radius: 12px; padding: 2.5rem 2rem; margin: 1.5rem 0 2.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; color: #fff;">
   <div style="flex: 1 1 280px; min-width: 0;">
@@ -107,6 +99,14 @@ header:
   </div>
 </div>
 
+---
+
+>> - **Author:** Manuel Castillo-Cara, PhD
+>> - **Affiliation:** Department of Artificial Intelligence, Universidad Nacional de Educación a Distancia (UNED), Spain
+>> - **Role:** Researcher, Professor, and TINTOlib Python Library Developer
+>> - **License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
+
+---
 
 
 In many applied machine learning problems, there is a recurrent practical distinction: for images, text, or audio, we often use Deep Learning; for tabular data, tree-based models and ensembles such as Random Forest, XGBoost, LightGBM, or CatBoost remain extremely competitive.
