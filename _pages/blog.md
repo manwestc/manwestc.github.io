@@ -3,49 +3,73 @@ layout: archive
 title: "Blog & Tutorials"
 permalink: /blog/
 author_profile: true
+description: "Technical tutorials and research notes on TINTOlib, tabular-to-image transformation, synthetic image generation from tabular data, deep learning, PyTorch, explainable AI and applied machine learning."
+excerpt: "Tutorials on TINTOlib, tabular-to-image transformation, synthetic images, deep learning, PyTorch and applied machine learning."
 ---
 
 {% include base_path %}
 
-<!-- ✅ SEO básico -->
-<link rel="canonical" href="{{ site.url }}/blog/">
-<meta name="robots" content="index,follow">
-<meta name="description" content="Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science. By Manuel Castillo-Cara, PhD.">
+<!-- SEO metadata -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="{{ page.description }}">
 
-<!-- ✅ Open Graph -->
-<meta property="og:title" content="Blog &amp; Tutorials · Manuel Castillo-Cara">
-<meta property="og:description" content="Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science.">
+<!-- Open Graph metadata -->
+<meta property="og:title" content="{{ page.title }} · Manuel Castillo-Cara">
+<meta property="og:description" content="{{ page.description }}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}/blog/">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:image" content="{{ site.url }}/images/profile.jpg">
 
-<!-- ✅ Twitter Card -->
+<!-- Twitter Card metadata -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog &amp; Tutorials · Manuel Castillo-Cara">
-<meta name="twitter:description" content="Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science.">
+<meta name="twitter:title" content="{{ page.title }} · Manuel Castillo-Cara">
+<meta name="twitter:description" content="{{ page.description }}">
 <meta name="twitter:image" content="{{ site.url }}/images/profile.jpg">
 
-<!-- ✅ JSON-LD Blog -->
+<!-- JSON-LD structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Blog & Tutorials — Manuel Castillo-Cara",
-  "url": "{{ site.url }}/blog/",
-  "description": "Technical articles, tutorials and research notes on AI, TINTOlib, deep learning, explainable AI and applied data science.",
+  "@type": "CollectionPage",
+  "name": {{ page.title | append: " — Manuel Castillo-Cara" | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "description": {{ page.description | jsonify }},
   "author": {
     "@type": "Person",
     "name": "Manuel Castillo-Cara",
     "url": "{{ site.url }}"
   },
-  "blogPost": [
+  "publisher": {
+    "@type": "Person",
+    "name": "Manuel Castillo-Cara",
+    "url": "{{ site.url }}"
+  },
+  "about": [
+    "TINTOlib",
+    "TINTO",
+    "tabular-to-image transformation",
+    "synthetic image generation",
+    "tabular data",
+    "spatial feature encoding",
+    "deep learning",
+    "computer vision",
+    "convolutional neural networks",
+    "hybrid neural networks",
+    "PyTorch",
+    "Scikit-Learn",
+    "explainable artificial intelligence"
+  ],
+  "keywords": "TINTOlib, TINTO, tabular-to-image, synthetic images, tabular data, spatial encoding, CNN, PyTorch, deep learning, hybrid neural networks, explainable AI",
+  "mainEntity": [
     {% assign published_posts = site.posts | where_exp: "p", "p.published != false" %}
     {% for post in published_posts %}
     {
       "@type": "BlogPosting",
-      "headline": "{{ post.title | escape }}",
+      "headline": {{ post.title | jsonify }},
       "url": "{{ site.url }}{{ post.url }}",
-      "datePublished": "{{ post.date | date_to_xmlschema }}"
+      "datePublished": "{{ post.date | date_to_xmlschema }}",
+      "description": {{ post.description | default: post.excerpt | strip_html | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
@@ -314,7 +338,7 @@ author_profile: true
   <div class="blog-hero-icon">✍️</div>
   <div>
     <h1>Blog &amp; Tutorials</h1>
-    <p>Technical articles, tutorials and research notes on Artificial Intelligence, TINTOlib, tabular-to-image learning, hybrid neural networks, explainable AI and applied deep learning.</p>
+    <p>Technical tutorials, research notes and reproducible examples on TINTOlib, tabular-to-image transformation, synthetic image generation from tabular data, hybrid neural networks, explainable AI and applied deep learning.</p>
     <p style="margin:.35rem 0 0; font-size:.82rem; opacity:.8;">By Manuel Castillo-Cara, PhD — Researcher and Professor at UNED, developer of TINTO and TINTOlib.</p>
   </div>
 </div>
@@ -341,6 +365,8 @@ author_profile: true
   <div role="tablist" aria-label="Filter by category" class="blog-filters">
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="true"  data-filter="">All</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="tintolib">TINTOlib</button>
+    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="tabular-to-image">Tabular-to-Image</button>
+    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="synthetic images">Synthetic Images</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="artificial intelligence">Artificial Intelligence</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="python">Python</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="deep learning">Deep Learning</button>
