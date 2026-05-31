@@ -652,6 +652,7 @@ The key element is the spatial arrangement of the features. If related variables
 
 In this post, we introduced the motivation behind tabular-to-image transformation, the role of TINTOlib, the importance of avoiding data leakage, and a first CNN implementation in PyTorch. In future posts, we will compare different TINTOlib methods, build hybrid tabular-image neural networks, and apply explainability techniques to recover the relevance of the original variables.
 
+---
 
 ## References and related publications
 
