@@ -647,4 +647,40 @@ The key element is the spatial arrangement of the features. If related variables
 
 In this post, we introduced the motivation behind tabular-to-image transformation, the role of TINTOlib, the importance of avoiding data leakage, and a first CNN implementation in PyTorch. In future posts, we will compare different TINTOlib methods, build hybrid tabular-image neural networks, and apply explainability techniques to recover the relevance of the original variables.
 
+  <section class="tinto-card soft">
+    <h2>🧠 Research and Software Publications</h2>
+    <h3 style="margin:.25rem 0">📄 Research Articles</h3>
+    <ul class="pub-list">
+      <li>Jiayun Liu, Manuel Castillo-Cara et al. <strong>Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations</strong>. <em>IEEE Internet of Things</em>. DOI: <a href="https://doi.org/10.1109/JIOT.2026.3696106" target="_blank" rel="noopener">10.1109/JIOT.2026.3696106</a></li>
+      <li>Jiayun Liu, Manuel Castillo-Cara et al. <strong>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</strong>. <em>Information Fusion</em>. DOI: <a href="https://doi.org/10.1016/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">10.1016/j.inffus.2025.104088</a></li>
+      <li>Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>. <em>IEEE Journal of Selected Topics in Signal Processing</em>. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">10.1109/JSTSP.2025.3555067</a></li>
+      <li>Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. <strong>Blurring Image Techniques for Bluetooth-based Indoor Localisation</strong>. <em>Information Fusion</em>. DOI: <a href="https://doi.org/10.1016/j.inffus.2022.10.011" target="_blank" rel="noopener">10.1016/j.inffus.2022.10.011</a></li>
+    </ul>
+    <h3 style="margin:.5rem 0 0">💾 Software Articles</h3>
+    <ul class="pub-list">
+      <li>Jiayun Liu et al. <strong>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</strong>. <em>SoftwareX</em>. DOI: <a href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener">10.1016/j.softx.2025.102444</a></li>
+    </ul>
+    <ul class="pub-list">
+      <li>Manuel Castillo-Cara et al. <strong>TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks</strong>. <em>SoftwareX</em>. DOI: <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener">10.1016/j.softx.2023.101391</a></li>
+    </ul>
+  </section>
+
+  <div class="card">
+    <h2 class="section-title">📊 Benchmark of TINTOlib vs Classical Models</h2>
+    <p>
+      This benchmark compares <strong>TINTOlib</strong> transformation methods and neural architectures 
+      against traditional and ensemble models on multiple datasets.  
+      You can explore the interactive version directly on the official site.
+    </p>
+
+    <div style="text-align:center; margin:20px 0;">
+      <a href="https://oeg-upm.github.io/TINTOlib/" 
+        target="_blank" 
+        rel="noopener" 
+        style="display:inline-block; background-color:#2563eb; color:#fff; font-weight:600; 
+                padding:12px 24px; border-radius:8px; text-decoration:none; box-shadow:0 2px 6px rgba(0,0,0,.2);">
+        🌐 Visit TINTOlib Benchmark Page
+      </a>
+    </div>
+
 {% include blog-footer.html %}
