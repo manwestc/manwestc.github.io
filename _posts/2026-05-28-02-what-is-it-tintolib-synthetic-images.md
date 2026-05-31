@@ -1,7 +1,7 @@
 ---
 layout: single
 published: true
-title: "What is TINTOlib and why transform tabular data into synthetic images?"
+title: "What is TINTOlib and why should we transform tabular data into synthetic images?"
 date: 2026-05-28
 last_modified_at: 2026-05-28
 permalink: /blog/2026/05/02-what-is-it-tintolib-synthetic-images/
@@ -30,8 +30,6 @@ header:
   teaser: "/images/Blog/2026-05-28-02-what-is-it-tintolib-synthetic-images.png"
 ---
 
-<!-- TODO: Add main post image at /images/Blog/2026-05-28-02-what-is-it-tintolib-synthetic-images.png -->
-
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="description" content="{{ page.description }}">
@@ -41,6 +39,13 @@ header:
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+<meta property="article:author" content="Manuel Castillo-Cara">
+<meta property="article:section" content="{{ page.category }}">
+{% for tag in page.tags %}
+<meta property="article:tag" content="{{ tag }}">
+{% endfor %}
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }}">
@@ -51,8 +56,8 @@ header:
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ page.title }}",
-  "description": "{{ page.description }}",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
   "image": "{{ site.url }}{{ page.image }}",
   "author": {
     "@type": "Person",
@@ -70,7 +75,8 @@ header:
     "@type": "WebPage",
     "@id": "{{ site.url }}{{ page.url }}"
   },
-  "keywords": "{{ page.tags | join: \', \' }}"
+  "articleSection": {{ page.category | jsonify }},
+  "keywords": {{ page.tags | join: ", " | jsonify }}
 }
 </script>
 
@@ -100,7 +106,7 @@ This leads to a relevant research question:
 
 > Can we transform each tabular instance into a synthetic image so that computer vision architectures can exploit relationships between variables?
 
-This question motivates the field of tabular-to-image transformation, also referred to as *tabular2image*, *spatial encoding for tabular data*, or synthetic image generation from tabular data. In this first post, we will introduce the main idea, explain where TINTOlib fits, and build a simple convolutional neural network in PyTorch to classify synthetic images generated from tabular data.
+This question motivates the field of tabular-to-image transformation, also referred to as *tabular2image*, *spatial encoding for tabular data*, or synthetic image generation from tabular data. In this post, we introduce the main idea, explain where TINTOlib fits, and build a simple convolutional neural network in PyTorch to classify synthetic images generated from tabular data.
 
 ## The problem: tabular data has no natural spatial locality
 
@@ -128,7 +134,7 @@ Tabular data                    Synthetic image
                                    +----+----+----+----+
 ```
 
-*(Figure 1: Conceptual representation of the transformation from tabular data to a synthetic 2D image. Each feature is mapped to a grid position such that related variables are placed close to each other.)*
+*(Conceptual schematic of the transformation from tabular data to a synthetic 2D image. Each feature is mapped to a grid position such that related variables are placed close to each other.)*
 
 This image is not a natural image. It does not represent a real-world scene. It is a spatial representation of a tabular vector. The important point is not whether the image is visually meaningful to a human observer, but whether the representation encodes useful relationships for a vision-based model.
 
@@ -203,7 +209,7 @@ This is the same principle used with scalers, imputers, PCA, feature selectors, 
 
 ## First practical example: generating synthetic images with TINTOlib
 
-For this first example, we will consider a multiclass classification problem. We assume that we have a CSV file where each row is a sample, the input columns are numerical features, and the target column is named `target`.
+For this example, we consider a multiclass classification problem using the Wine dataset from Scikit-Learn. Each row represents a sample, the input columns are numerical features, and the target column identifies the class label.
 
 Install TINTOlib with:
 
@@ -227,7 +233,6 @@ from TINTOlib.tinto import TINTO
 seed = 42
 
 # Load multiclass tabular dataset
-
 raw_data = load_wine()
 
 # Build dataframe
