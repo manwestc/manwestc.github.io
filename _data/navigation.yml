@@ -15,9 +15,6 @@ main:
       - title: "Tutorials"
         url: /blog/#tintolib
   
-  - title: "Books & Software"
-    url: /libros-software/
-
   - title: "Academic"
     url: /publications/
     children:
@@ -27,6 +24,9 @@ main:
         url: /projects/
       - title: "Teaching"
         url: /teaching/
+
+  - title: "Books & Software"
+    url: /libros-software/
 
   - title: "Blog & Tutorials"
     url: /blog/
