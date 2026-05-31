@@ -12,12 +12,9 @@ main:
         url: https://tintolib.readthedocs.io/
       - title: "GitHub"
         url: https://github.com/oeg-upm/TINTOlib
-      - title: "Related Publications"
-        url: /publications/
+      - title: "Tutorials"
+        url: /blog/#tintolib
   
-  - title: "Books & Software"
-    url: /libros-software/
-
   - title: "Academic"
     url: /publications/
     children:
@@ -27,6 +24,9 @@ main:
         url: /projects/
       - title: "Teaching"
         url: /teaching/
+
+  - title: "Books & Software"
+    url: /libros-software/
 
   - title: "Blog & Tutorials"
     url: /blog/

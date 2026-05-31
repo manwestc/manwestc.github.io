@@ -441,14 +441,38 @@ author_profile: true
       noResults.style.display = visible === 0 ? 'block' : 'none';
     }
 
+    function activateFilter(filterValue) {
+      filterBtns.forEach(function (b) { b.setAttribute('aria-selected', 'false'); });
+      var matched = false;
+      filterBtns.forEach(function (btn) {
+        if (btn.dataset.filter === filterValue) {
+          btn.setAttribute('aria-selected', 'true');
+          matched = true;
+        }
+      });
+      if (!matched) {
+        filterBtns[0].setAttribute('aria-selected', 'true');
+      }
+      activeFilter = matched ? filterValue : '';
+      applyFilters();
+    }
+
+    // Apply filter from URL hash on load (e.g. /blog/#tintolib)
+    var hash = window.location.hash.replace('#', '').toLowerCase();
+    if (hash) {
+      activateFilter(hash);
+    }
+
     searchInput.addEventListener('input', applyFilters);
 
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        filterBtns.forEach(function (b) { b.setAttribute('aria-selected', 'false'); });
-        this.setAttribute('aria-selected', 'true');
-        activeFilter = this.dataset.filter;
-        applyFilters();
+        activateFilter(this.dataset.filter);
+        if (this.dataset.filter) {
+          history.replaceState(null, '', '#' + this.dataset.filter);
+        } else {
+          history.replaceState(null, '', window.location.pathname);
+        }
       });
     });
   }());
