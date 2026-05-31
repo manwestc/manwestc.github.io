@@ -95,6 +95,18 @@ header:
   </div>
 </div>
 
+---
+
+### Author
+
+**Manuel Castillo-Cara, PhD**  
+Department of Artificial Intelligence, Universidad Nacional de Educación a Distancia (UNED), Spain  
+Researcher, Professor, and TINTOlib Python Library Developer  
+
+**License:** Content licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
+
+---
+
 In contemporary Data Science, an established paradigm governs model selection: Deep Learning architectures dominate unstructured modalities such as computer vision and natural language processing, whereas gradient-boosted decision trees (GBDTs)—including **XGBoost**, **LightGBM**, and **CatBoost**—remain the gold standard for structured tabular datasets. 
 
 However, recent advancements in deep learning have challenged this dichotomy through the introduction of **spatial encoding techniques**. By transforming tabular features into synthetic multi-dimensional images, researchers can leverage the structural inductive biases of advanced computer vision networks, such as Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs). This article provides a comprehensive theoretical and practical introduction to **TINTOlib**, the state-of-the-art Python library designed to streamline this transformation pipeline.
@@ -210,6 +222,26 @@ The generated synthetic images stored in `synthetic_dataset/` can be seamlessly 
 Transforming tabular features into synthetic spatial layouts offers a compelling methodology to bridge classical data problems with state-of-the-art visual architectures. Utilizing **TINTOlib** provides data scientists with a rigorous, reproducible, and standardized framework to systematically test, compare, and scale these transformations while avoiding common pitfalls such as data leakage.
 
 In subsequent entries, we will delve deeper into benchmarking comparative analysis (e.g., non-parametric IGTD vs. parallelized REFINED), evaluating performance shifts when deploying Vision Transformers (ViTs), and rendering feature importance maps through advanced XAI methods.
+
+## References and related publications
+
+The concepts presented in this tutorial are connected to the following research and software publications on TINTO, TINTOlib, tabular-to-image transformation, synthetic spatial representations, hybrid neural networks, and indoor localisation.
+
+### Research articles
+
+1. Jiayun Liu, Manuel Castillo-Cara et al. **Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations**. *IEEE Internet of Things*. DOI: [10.1109/JIOT.2026.3696106](https://doi.org/10.1109/JIOT.2026.3696106)
+
+2. Jiayun Liu, Manuel Castillo-Cara et al. **A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks**. *Information Fusion*. DOI: [10.1016/j.inffus.2025.104088](https://doi.org/10.1016/j.inffus.2025.104088)
+
+3. Manuel Castillo-Cara et al. **MIMO-Based Indoor Localisation with Hybrid Neural Networks**. *IEEE Journal of Selected Topics in Signal Processing*. DOI: [10.1109/JSTSP.2025.3555067](https://doi.org/10.1109/JSTSP.2025.3555067)
+
+4. Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. **Blurring Image Techniques for Bluetooth-based Indoor Localisation**. *Information Fusion*. DOI: [10.1016/j.inffus.2022.10.011](https://doi.org/10.1016/j.inffus.2022.10.011)
+
+### Software articles
+
+5. Jiayun Liu et al. **TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks**. *SoftwareX*. DOI: [10.1016/j.softx.2025.102444](https://doi.org/10.1016/j.softx.2025.102444)
+
+6. Manuel Castillo-Cara et al. **TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks**. *SoftwareX*. DOI: [10.1016/j.softx.2023.101391](https://doi.org/10.1016/j.softx.2023.101391)
 
 {% include blog-footer.html %}
 
