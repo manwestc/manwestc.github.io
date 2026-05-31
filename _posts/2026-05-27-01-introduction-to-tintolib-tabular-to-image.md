@@ -97,10 +97,12 @@ header:
 
 ---
 
-**Author:** Manuel Castillo-Cara, PhD  
-**Affiliation:** Department of Artificial Intelligence, Universidad Nacional de Educación a Distancia (UNED), Spain  
-**Role:** Researcher, Professor, and TINTOlib Python Library Developer  
-**License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
+## Tutorial metadata
+
+- **Author:** Manuel Castillo-Cara, PhD
+- **Affiliation:** Department of Artificial Intelligence, Universidad Nacional de Educación a Distancia (UNED), Spain
+- **Role:** Researcher, Professor, and TINTOlib Python Library Developer
+- **License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
 
 ---
 
