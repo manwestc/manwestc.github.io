@@ -98,6 +98,11 @@ header:
   </div>
 </div>
 
+> **Author:** Manuel Castillo-Cara, PhD  
+> **Affiliation:** Department of Artificial Intelligence, Universidad Nacional de Educación a Distancia (UNED), Spain  
+> **Role:** Researcher, Professor, and TINTOlib Python Library Developer  
+> **License:** Content licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
+
 In many applied machine learning problems, there is a recurrent practical distinction: for images, text, or audio, we often use Deep Learning; for tabular data, tree-based models and ensembles such as Random Forest, XGBoost, LightGBM, or CatBoost remain extremely competitive.
 
 This distinction is not accidental. Convolutional neural networks were designed to exploit spatial structure: local neighborhoods, edges, textures, shapes, and patterns that repeat across an image. A tabular dataset, however, does not naturally have this type of geometry. The fact that one variable appears in column 2 and another in column 3 does not imply that both variables are semantically or statistically close.
@@ -647,104 +652,30 @@ The key element is the spatial arrangement of the features. If related variables
 
 In this post, we introduced the motivation behind tabular-to-image transformation, the role of TINTOlib, the importance of avoiding data leakage, and a first CNN implementation in PyTorch. In future posts, we will compare different TINTOlib methods, build hybrid tabular-image neural networks, and apply explainability techniques to recover the relevance of the original variables.
 
-<section style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:1.25rem 1.4rem; margin:2rem 0;">
-  <h2 style="margin-top:0; font-size:1.25rem;">📚 Further reading and related publications</h2>
 
-  <p style="margin-bottom:1rem; color:#374151; line-height:1.6;">
-    The concepts discussed in this tutorial are connected to the following research and software publications on
-    <strong>TINTO</strong>, <strong>TINTOlib</strong>, tabular-to-image transformation, synthetic spatial representations,
-    hybrid neural networks, and indoor localisation.
-  </p>
+## References and related publications
 
-  <h3 style="margin:1rem 0 .5rem; font-size:1.05rem;">📄 Research articles</h3>
+The concepts presented in this tutorial are connected to the following research and software publications on TINTO, TINTOlib, tabular-to-image transformation, synthetic spatial representations, hybrid neural networks, and indoor localisation.
 
-  <div style="display:grid; gap:.75rem;">
+### Research articles
 
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:.9rem 1rem;">
-      <p style="margin:0 0 .35rem; line-height:1.45;">
-        <strong>Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations</strong>
-      </p>
-      <p style="margin:0 0 .35rem; color:#4b5563; font-size:.92rem;">
-        Jiayun Liu, Manuel Castillo-Cara et al. <em>IEEE Internet of Things</em>.
-      </p>
-      <a href="https://doi.org/10.1109/JIOT.2026.3696106" target="_blank" rel="noopener"
-         style="font-size:.9rem; font-weight:600; color:#2563eb; text-decoration:none;">
-        DOI: 10.1109/JIOT.2026.3696106 →
-      </a>
-    </div>
+1. Jiayun Liu, Manuel Castillo-Cara et al. **Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations**. *IEEE Internet of Things*. DOI: [10.1109/JIOT.2026.3696106](https://doi.org/10.1109/JIOT.2026.3696106)
 
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:.9rem 1rem;">
-      <p style="margin:0 0 .35rem; line-height:1.45;">
-        <strong>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</strong>
-      </p>
-      <p style="margin:0 0 .35rem; color:#4b5563; font-size:.92rem;">
-        Jiayun Liu, Manuel Castillo-Cara et al. <em>Information Fusion</em>.
-      </p>
-      <a href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener"
-         style="font-size:.9rem; font-weight:600; color:#2563eb; text-decoration:none;">
-        DOI: 10.1016/j.inffus.2025.104088 →
-      </a>
-    </div>
+2. Jiayun Liu, Manuel Castillo-Cara et al. **A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks**. *Information Fusion*. DOI: [10.1016/j.inffus.2025.104088](https://doi.org/10.1016/j.inffus.2025.104088)
 
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:.9rem 1rem;">
-      <p style="margin:0 0 .35rem; line-height:1.45;">
-        <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>
-      </p>
-      <p style="margin:0 0 .35rem; color:#4b5563; font-size:.92rem;">
-        Manuel Castillo-Cara et al. <em>IEEE Journal of Selected Topics in Signal Processing</em>.
-      </p>
-      <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener"
-         style="font-size:.9rem; font-weight:600; color:#2563eb; text-decoration:none;">
-        DOI: 10.1109/JSTSP.2025.3555067 →
-      </a>
-    </div>
+3. Manuel Castillo-Cara et al. **MIMO-Based Indoor Localisation with Hybrid Neural Networks**. *IEEE Journal of Selected Topics in Signal Processing*. DOI: [10.1109/JSTSP.2025.3555067](https://doi.org/10.1109/JSTSP.2025.3555067)
 
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:.9rem 1rem;">
-      <p style="margin:0 0 .35rem; line-height:1.45;">
-        <strong>Blurring Image Techniques for Bluetooth-based Indoor Localisation</strong>
-      </p>
-      <p style="margin:0 0 .35rem; color:#4b5563; font-size:.92rem;">
-        Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. <em>Information Fusion</em>.
-      </p>
-      <a href="https://doi.org/10.1016/j.inffus.2022.10.011" target="_blank" rel="noopener"
-         style="font-size:.9rem; font-weight:600; color:#2563eb; text-decoration:none;">
-        DOI: 10.1016/j.inffus.2022.10.011 →
-      </a>
-    </div>
+4. Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. **Blurring Image Techniques for Bluetooth-based Indoor Localisation**. *Information Fusion*. DOI: [10.1016/j.inffus.2022.10.011](https://doi.org/10.1016/j.inffus.2022.10.011)
 
-  </div>
+### Software articles
 
-  <h3 style="margin:1.4rem 0 .5rem; font-size:1.05rem;">💾 Software articles</h3>
+5. Jiayun Liu et al. **TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks**. *SoftwareX*. DOI: [10.1016/j.softx.2025.102444](https://doi.org/10.1016/j.softx.2025.102444)
 
-  <div style="display:grid; gap:.75rem;">
+6. Manuel Castillo-Cara et al. **TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks**. *SoftwareX*. DOI: [10.1016/j.softx.2023.101391](https://doi.org/10.1016/j.softx.2023.101391)
 
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:.9rem 1rem;">
-      <p style="margin:0 0 .35rem; line-height:1.45;">
-        <strong>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</strong>
-      </p>
-      <p style="margin:0 0 .35rem; color:#4b5563; font-size:.92rem;">
-        Jiayun Liu et al. <em>SoftwareX</em>.
-      </p>
-      <a href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener"
-         style="font-size:.9rem; font-weight:600; color:#2563eb; text-decoration:none;">
-        DOI: 10.1016/j.softx.2025.102444 →
-      </a>
-    </div>
+### Benchmark and resources
 
-    <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:.9rem 1rem;">
-      <p style="margin:0 0 .35rem; line-height:1.45;">
-        <strong>TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks</strong>
-      </p>
-      <p style="margin:0 0 .35rem; color:#4b5563; font-size:.92rem;">
-        Manuel Castillo-Cara et al. <em>SoftwareX</em>.
-      </p>
-      <a href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener"
-         style="font-size:.9rem; font-weight:600; color:#2563eb; text-decoration:none;">
-        DOI: 10.1016/j.softx.2023.101391 →
-      </a>
-    </div>
-
-  </div>
-</section>
+- TINTOlib documentation: [https://tintolib.readthedocs.io/](https://tintolib.readthedocs.io/)
+- TINTOlib source code: [https://github.com/oeg-upm/TINTOlib](https://github.com/oeg-upm/TINTOlib)
 
 {% include blog-footer.html %}
