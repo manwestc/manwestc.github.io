@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Improving Deep Learning by Exploiting Synthetic Images — Part II: From Synthetic Images to Hybrid Neural Networks"
 date: 2026-06-03
 last_modified_at: 2026-06-03
