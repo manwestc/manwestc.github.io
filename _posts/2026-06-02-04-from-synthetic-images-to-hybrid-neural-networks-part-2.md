@@ -312,4 +312,5 @@ The concepts presented in this tutorial are connected to the following research 
 
 6. Manuel Castillo-Cara et al. **TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks**. *SoftwareX*. DOI: [10.1016/j.softx.2023.101391](https://doi.org/10.1016/j.softx.2023.101391)
 
+
 {% include blog-footer.html %}
