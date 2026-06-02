@@ -149,7 +149,7 @@ The separation between fitting and transforming is essential. The spatial layout
 
 The most important methodological distinction is between methods that learn or optimize the spatial structure of the features and methods that remain dependent on the arbitrary column order.
 
-Methods such as **TINTO**, **DeepInsight**, **IGTD**, **REFINED**, **Fotomics** and recent unsupervised learning-based approaches such as **ILUSTRE/ILUSTRES** are preferable when the goal is to build a spatial representation that reflects relationships in the data. They attempt to place related features close to one another through dimensionality reduction, similarity preservation, manifold learning, optimization or unsupervised representation learning.
+Methods such as **TINTO**, **DeepInsight**, **IGTD**, **REFINED**, **Fotomics** and recent unsupervised learning-based approaches such as **Clusters** are preferable when the goal is to build a spatial representation that reflects relationships in the data. They attempt to place related features close to one another through dimensionality reduction, similarity preservation, manifold learning, optimization or unsupervised representation learning.
 
 This is the family of methods that best addresses the original problem. If tabular data have no natural spatial structure, the transformation method should construct one from the data, not inherit one from the arbitrary table layout.
 
@@ -274,7 +274,7 @@ For researchers and students working with TINTOlib, the following recommendation
 
 First, always split the data before fitting the transformation. Data leakage at the representation stage invalidates the evaluation.
 
-Second, do not rely on order-dependent encodings as primary methods when the original feature order is arbitrary. Use them as baselines or teaching tools, but prioritize data-driven spatial encodings such as TINTO, DeepInsight, IGTD, REFINED, Fotomics and ILUSTRE/ILUSTRES.
+Second, do not rely on order-dependent encodings as primary methods when the original feature order is arbitrary. Use them as baselines or teaching tools, but prioritize data-driven spatial encodings such as TINTO, DeepInsight, IGTD, REFINED, Fotomics and Clusters.
 
 Third, compare against strong classical baselines. A synthetic image pipeline should not be evaluated only against weak neural models.
 
@@ -311,11 +311,5 @@ The concepts presented in this tutorial are connected to the following research 
 5. Jiayun Liu et al. **TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks**. *SoftwareX*. DOI: [10.1016/j.softx.2025.102444](https://doi.org/10.1016/j.softx.2025.102444)
 
 6. Manuel Castillo-Cara et al. **TINTO: Converting Tidy Data into Image for Classification with 2-Dimensional Convolutional Neural Networks**. *SoftwareX*. DOI: [10.1016/j.softx.2023.101391](https://doi.org/10.1016/j.softx.2023.101391)
-
-### Resources
-
-- TINTOlib documentation: [https://tintolib.readthedocs.io/](https://tintolib.readthedocs.io/)
-- TINTOlib source code: [https://github.com/oeg-upm/TINTOlib](https://github.com/oeg-upm/TINTOlib)
-- Official TINTOlib benchmark page: [https://oeg-upm.github.io/TINTOlib/](https://oeg-upm.github.io/TINTOlib/)
 
 {% include blog-footer.html %}
