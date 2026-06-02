@@ -25,9 +25,9 @@ tags:
   - Spatial Encoding
 description: "Part II of a theoretical and technical series on synthetic images for tabular data, focusing on TINTOlib, preferred spatial encoding methods, hybrid neural networks, and explainable AI."
 excerpt: "How TINTOlib transforms tabular data into synthetic images, which spatial encoding methods should be preferred, and how hybrid neural networks and explainable AI complete the modelling pipeline."
-image: "/images/Blog/2026-06-02-04-from-synthetic-images-to-hybrid-neural-networks.png"
+image: "/images/Blog/2026-06-02-04-xai-hynn.png"
 header:
-  teaser: "/images/Blog/2026-06-02-04-from-synthetic-images-to-hybrid-neural-networks.png"
+  teaser: "/images/Blog/2026-06-02-04-xai-hynn.png"
 ---
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
