@@ -93,7 +93,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 260px; width: 100%;">
-    <img src="/images/Blog/2026-06-02-04-from-synthetic-images-to-hybrid-neural-networks.png" alt="From synthetic images to hybrid neural networks with TINTOlib" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-06-02-04-xai-hynn.png" alt="From synthetic images to hybrid neural networks with TINTOlib" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
@@ -105,6 +105,23 @@ header:
 >> - **License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
 
 ---
+
+## Video overview
+
+This post is part of a two-part technical summary derived from the conference *Improving Deep Learning by Exploiting Synthetic Images*, delivered in Peru.  
+
+The following short video provides an English overview of the main ideas discussed across both posts: why tabular data remains challenging for deep learning, how synthetic images can introduce spatial representations, and how TINTOlib connects structured data with computer vision, hybrid neural networks and explainable AI.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0;">
+  <video controls preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; background: #000;">
+    <source src="/video/Blog/2026-06-02-03-improving-deep-learning.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+> **Additional material.** The original conference recording is available in **Spanish**. The two blog posts provide an English technical synthesis and discussion based on that conference.
+>
+> [Open the original conference recording in SharePoint](https://unedo365-my.sharepoint.com/:v:/g/personal/manuelcastillo_dia_uned_es/IQDov79-I54sS7jNgIIAaTS3AVs0L5cVinne29xXLZZNsc0?e=DVgrOZ)
 
 ## From theory to modelling
 
@@ -228,6 +245,9 @@ Since the main image of this post already summarizes the hybrid-neural-network i
 
 In indoor localisation, this design is especially meaningful. Wireless measurements can be represented as tabular features, but they may also contain latent spatial or structural patterns. A hybrid architecture can exploit both perspectives simultaneously.
 
+![Unsupervised tabular-to-image methods](/images/Blog/2026-06-02-04-from-synthetic-images-to-hybrid-neural-networks.png)
+*(Figure 3. A simplified illustration of the HyNN architecture. This figure shows that either CNN or ViT can be used as the vision component, while the MLP component processes tabular data directly. It also highlights the flexibility of the model, which allows for using only the vision or MLP part, illustrating the different architectures evaluated in this study.)*
+
 ## Explainable AI over synthetic images
 
 Interpretability is one of the most important motivations for the synthetic image paradigm.
@@ -239,12 +259,12 @@ The key step is to map those regions back to the original variables. Since the s
 The first level of interpretation operates directly over the synthetic image. Since each region of the image is generated from a known spatial encoding of the original variables, visual attribution maps can be inspected not only as image explanations, but also as indirect explanations over the tabular feature space.
 
 ![AIX in TINTOlib feature attribution map](/images/Blog/2026-06-02-04-aix-tintolib-feature-map.png)
-*(Figure 3. AIX-based interpretation of synthetic tabular images in TINTOlib. Visual attribution maps can identify relevant regions of the synthetic image, which can then be related back to the original tabular variables through the known spatial encoding. This provides a bridge between image-based explainability and feature-level interpretation in structured data problems.)*
+*(Figure 4. AIX-based interpretation of synthetic tabular images in TINTOlib. Visual attribution maps can identify relevant regions of the synthetic image, which can then be related back to the original tabular variables through the known spatial encoding. This provides a bridge between image-based explainability and feature-level interpretation in structured data problems.)*
 
 In hybrid architectures, this interpretability layer becomes even more relevant. The model can be analysed from two complementary perspectives: the tabular branch, which operates over the original feature vector, and the image branch, which operates over the synthetic spatial representation. This makes it possible to study whether both branches rely on consistent information or whether each one captures different aspects of the problem.
 
 ![XAI in hybrid neural networks](/images/Blog/2026-06-02-04-xai-hynn.png)
-*(Figure 4. Explainable AI workflow for hybrid neural networks combining tabular and synthetic image representations. The image branch enables visual attribution over the generated synthetic representation, while the tabular branch preserves direct access to the original variables. This makes it possible to connect spatial explanations with feature-level reasoning in hybrid deep learning models.)*
+*(Figure 5. Explainable AI workflow for hybrid neural networks combining tabular and synthetic image representations. The image branch enables visual attribution over the generated synthetic representation, while the tabular branch preserves direct access to the original variables. This makes it possible to connect spatial explanations with feature-level reasoning in hybrid deep learning models.)*
 
 This is one of the reasons why the method is not only useful for prediction. It also creates a framework for studying how neural networks use transformed tabular information.
 
