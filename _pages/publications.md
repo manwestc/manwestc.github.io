@@ -686,14 +686,6 @@ description: "Scientific publications, books, patents and software contributions
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JIOT.2026.3696106" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
-    
-    <article class="pub-card">
-      <p class="pub-title">
-        Manuel Castillo-Cara, et al. <em>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</em>. IEEE Journal of Selected Topics in Signal Processing.
-        <span class="badge">IF: 13.7 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
-      </p>
-      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">Open DOI</a></div>
-    </article>
 
     <article class="pub-card">
       <p class="pub-title">
@@ -701,6 +693,22 @@ description: "Scientific publications, books, patents and software contributions
         <span class="badge">IF: 15.5 (Q1)</span><span class="badge">SJR 4.2 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">Open DOI</a></div>
+    </article>
+    
+    <article class="pub-card">
+      <p class="pub-title">
+        Giovanny Mondragon-Ruiz, Jiayun Liu, Manuel Castillo-Cara, et al. <em>Interpretable CNN–KAN hybrid architectures for tabular data with synthetic image encoding</em>. Information Processing and Management.
+        <span class="badge">IF: 6.9 (Q1)</span><span class="badge">SJR 1.85 (Q1)</span>
+      </p>
+      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.ipm.2026.104954 " target="_blank" rel="noopener">Open DOI</a></div>
+    </article>
+
+    <article class="pub-card">
+      <p class="pub-title">
+        Manuel Castillo-Cara, et al. <em>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</em>. IEEE Journal of Selected Topics in Signal Processing.
+        <span class="badge">IF: 13.7 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
+      </p>
+      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
 
     <article class="pub-card">
