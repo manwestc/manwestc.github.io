@@ -104,6 +104,130 @@ header:
 
 ---
 
+<!-- ======== TINTOlib: Overview Videos (ES/EN) ======== -->
+<section id="tintolib-overview-videos" style="margin: 1.75rem 0 2rem;">
+  <h2 style="margin: 0 0 0.5rem;">TINTOlib overview videos</h2>
+    <p style="margin: 0 0 1rem; line-height: 1.6;">
+      The following short videos provide a bilingual introduction to <strong>TINTOlib</strong>, explaining how tabular data can be transformed into synthetic images and processed with computer vision architectures such as CNNs, Vision Transformers and hybrid neural networks.
+    </p>
+      <div class="tintolib-video-toggle" role="tablist" aria-label="Select video language">
+    <button type="button" class="tintolib-video-btn active" data-target="#tintolib-video-es" role="tab" aria-selected="true">
+      Español
+    </button>
+    <button type="button" class="tintolib-video-btn" data-target="#tintolib-video-en" role="tab" aria-selected="false">
+      English
+    </button>
+  </div>
+    <div class="tintolib-video-wrap">
+    <video id="tintolib-video-es"
+           class="tintolib-video-panel active"
+           controls
+           controlsList="nodownload"
+           preload="metadata"
+           playsinline
+           aria-label="TINTOlib overview video in Spanish">
+      <source src="/video/TINTOlib-video-Es.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      <a href="/video/TINTOlib-video-Es.mp4">Open the Spanish video</a>.
+    </video>
+    <video id="tintolib-video-en"
+       class="tintolib-video-panel"
+       controls
+       controlsList="nodownload"
+       preload="metadata"
+       playsinline
+       aria-label="TINTOlib overview video in English">
+  <source src="/video/TINTOlib-video-En.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  <a href="/video/TINTOlib-video-En.mp4">Open the English video</a>.
+  </video>
+  </div>
+</section>
+<style>
+  #tintolib-overview-videos .tintolib-video-toggle {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0.75rem 0 1rem;
+  }
+
+  #tintolib-overview-videos .tintolib-video-btn {
+    background: #eef2ff;
+    border: 1px solid #dbe3ff;
+    color: #1f2937;
+    font-weight: 800;
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
+  }
+
+  #tintolib-overview-videos .tintolib-video-btn.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+  }
+
+  #tintolib-overview-videos .tintolib-video-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #tintolib-overview-videos .tintolib-video-panel {
+    display: none;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    background: #000;
+  }
+
+  #tintolib-overview-videos .tintolib-video-panel.active {
+    display: block;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('tintolib-overview-videos');
+    if (!container) return;
+
+    const buttons = container.querySelectorAll('.tintolib-video-btn');
+    const panels = container.querySelectorAll('.tintolib-video-panel');
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const target = button.getAttribute('data-target');
+
+        buttons.forEach(function (btn) {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+
+        button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+
+        panels.forEach(function (panel) {
+          if ('#' + panel.id === target) {
+            panel.classList.add('active');
+          } else {
+            if (panel.tagName.toLowerCase() === 'video') {
+              try { panel.pause(); } catch (e) {}
+            }
+            panel.classList.remove('active');
+          }
+        });
+      });
+    });
+  });
+</script>
+
+
+
+
+
 In contemporary Data Science, an established paradigm governs model selection: Deep Learning architectures dominate unstructured modalities such as computer vision and natural language processing, whereas gradient-boosted decision trees (GBDTs)—including **XGBoost**, **LightGBM**, and **CatBoost**—remain the gold standard for structured tabular datasets. 
 
 However, recent advancements in deep learning have challenged this dichotomy through the introduction of **spatial encoding techniques**. By transforming tabular features into synthetic multi-dimensional images, researchers can leverage the structural inductive biases of advanced computer vision networks, such as Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs). This article provides a comprehensive theoretical and practical introduction to **TINTOlib**, the state-of-the-art Python library designed to streamline this transformation pipeline.
