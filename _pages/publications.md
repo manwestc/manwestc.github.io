@@ -737,7 +737,7 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
-        Edgar Huaranga-Junco, Salvador González-Gerpe, Manuel Castillo-Cara, et al. <em>From cloud and fog computing to federated-fog computing: A comparative analysis…</em> Future Generation Computer Systems, 2024.
+        Edgar Huaranga-Junco, Salvador González-Gerpe, Manuel Castillo-Cara, et al. <em>From Cloud and Fog Computing to Federated-Fog Computing: A Comparative Analysis of Computational Resources in Real-Time IoT Applications based on Semantic Interoperability.</em> Future Generation Computer Systems, 2024.
         <span class="badge">IF: 6.1 (Q1)</span><span class="badge">SJR 1.55 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.future.2024.05.001" target="_blank" rel="noopener">Open DOI</a></div>
@@ -757,14 +757,6 @@ description: "Scientific publications, books, patents and software contributions
         <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.54 (Q2)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.softx.2023.101391" target="_blank" rel="noopener">Open DOI</a></div>
-    </article>
-
-    <article class="pub-card">
-      <p class="pub-title">
-        Luis Vasquez-Espinoza, Manuel Castillo-Cara, Luis Orozco-Barbosa. <em>On the Relevance of the Metadata used in the Semantic Segmentation of Indoor Image Spaces</em>. Expert Systems with Applications, 2021.
-        <span class="badge">IF: 8.67 (Q1)</span><span class="badge">SJR 2.07 (Q1)</span>
-      </p>
-      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.eswa.2021.115486" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
 
   </div>
