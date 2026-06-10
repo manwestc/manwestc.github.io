@@ -18,5 +18,6 @@ var addressPoints = [
   ["Barcelona, Spain", 41.385064, 2.173403],
   ["Ibiza, Spain", 38.908832, 1.432065],
   ["Tarapoto, Peru", -6.483610, -76.372220],
-  ["Valparaíso, Chile", -33.0472, -71.6127]
+  ["Valparaíso, Chile", -33.0472, -71.6127],
+  ["Malabo, Equatorial Guinea", 3.750412, 8.737104]
 ];
