@@ -682,7 +682,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Jiayun Liu, Manuel Castillo-Cara, et al. <em>Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations</em>. IEEE Internet of Things.
-        <span class="badge">IF: 8.9 (Q1)</span><span class="badge">SJR 2.14 (Q1)</span>
+        <span class="badge">IF: 8.7 (Q1)</span><span class="badge">SJR 2.14 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JIOT.2026.3696106" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -690,7 +690,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Jiayun Liu, Manuel Castillo-Cara, et al. <em>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</em>. Information Fusion.
-        <span class="badge">IF: 15.5 (Q1)</span><span class="badge">SJR 4.2 (Q1)</span>
+        <span class="badge">IF: 17.4 (Q1)</span><span class="badge">SJR 4.2 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -698,7 +698,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Giovanny Mondragon-Ruiz, Jiayun Liu, Manuel Castillo-Cara, et al. <em>Interpretable CNN–KAN hybrid architectures for tabular data with synthetic image encoding</em>. Information Processing and Management.
-        <span class="badge">IF: 6.9 (Q1)</span><span class="badge">SJR 1.85 (Q1)</span>
+        <span class="badge">IF: 8.1 (Q1)</span><span class="badge">SJR 1.85 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.ipm.2026.104954 " target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -706,7 +706,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</em>. IEEE Journal of Selected Topics in Signal Processing.
-        <span class="badge">IF: 13.7 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
+        <span class="badge">IF: 8.5 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -714,7 +714,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Jiayun Liu, Manuel Castillo-Cara, et al. <em>TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks</em>. SoftwareX, 2025.
-        <span class="badge">IF: 2.4 (Q2)</span><span class="badge">SJR 0.5 (Q2)</span>
+        <span class="badge">IF: 1.9 (Q2)</span><span class="badge">SJR 0.5 (Q2)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
@@ -722,7 +722,7 @@ description: "Scientific publications, books, patents and software contributions
     <article class="pub-card">
       <p class="pub-title">
         Jiayun Liu, Manuel Castillo-Cara, et al. <em>On the Significance of Graph Neural Networks with Pretrained Transformers in Content-Based Recommender Systems for Academic Articles Classification</em>. Expert Systems.
-        <span class="badge">IF: 2.3 (Q2)</span><span class="badge">SJR 0.74 (Q2)</span>
+        <span class="badge">IF: 3.4 (Q2)</span><span class="badge">SJR 0.74 (Q2)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1111/exsy.70073" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
