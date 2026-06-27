@@ -127,7 +127,7 @@ In this post, we compare three representative methods implemented in **TINTOlib*
 
 The objective is not to claim that one method is universally superior, but to understand their different assumptions, strengths, computational costs and practical use cases.
 
-![Same tabular sample transformed with TINTO, REFINED and IGTD](/images/Blog/2026-06-27-05.same-sample-tinto-refined-igtd.png)
+![Same tabular sample transformed with TINTO, REFINED and IGTD](/images/Blog/2026-06-27-05-same-sample-tinto-refined-igtd.png)
 *(Figure 2. Synthetic image representations generated from the same tabular sample using TINTO, REFINED and IGTD. Although all three methods pursue the same objective —constructing a spatial representation from tabular features— they produce different image topologies due to their distinct optimization criteria and spatial encoding assumptions.)*
 
 ---
