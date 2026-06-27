@@ -23,11 +23,11 @@ tags:
   - IGTD
   - REFINED
   - TINTO
-description: "Comparative analysis of TINTO, REFINED and IGTD, three representative tabular-to-image transformation methods available in TINTOlib for generating synthetic images from structured data."
+description: "Comparative analysis of TINTO, REFINED and IGTD, three representative tabular data into synthetic image transformation methods available in TINTOlib for generating synthetic images from structured data."
 excerpt: "A practical and methodological comparison of TINTO, REFINED and IGTD for transforming tabular data into synthetic images and applying vision-based deep learning models."
-image: "/images/Blog/2026-06-27-tinto-vs-refined-vs-igtd.png"
+image: "/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png"
 header:
-  teaser: "/images/Blog/2026-06-27-tinto-vs-refined-vs-igtd.png"
+  teaser: "/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png"
 ---
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -84,7 +84,7 @@ header:
   <div style="flex: 1 1 280px; min-width: 0;">
     <p style="margin: 0 0 0.4rem; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: #bfdbfe; font-weight: 600;">TINTOlib · Synthetic Images · Tabular Data</p>
     <h1 style="margin: 0 0 0.75rem; font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 800; line-height: 1.2; color: #fff;">TINTO vs REFINED vs IGTD</h1>
-    <p style="margin: 0 0 1rem; font-size: 0.97rem; color: #dbeafe; line-height: 1.55;">A methodological comparison of three representative tabular-to-image methods for generating synthetic images from structured data.</p>
+    <p style="margin: 0 0 1rem; font-size: 0.97rem; color: #dbeafe; line-height: 1.55;">A methodological comparison of three representative tabular data into synthetic image methods for generating synthetic images from structured data.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e0f2fe;">TINTO</span>
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e0f2fe;">REFINED</span>
@@ -93,7 +93,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 260px; width: 100%;">
-    <img src="/images/Blog/2026-06-27-tinto-vs-refined-vs-igtd.png" alt="Comparison of TINTO, REFINED and IGTD for tabular-to-image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png" alt="Comparison of TINTO, REFINED and IGTD for tabular data into synthetic image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
@@ -114,10 +114,10 @@ As discussed in previous posts, applying computer vision architectures —such a
 
 In natural images, neighbouring pixels usually encode meaningful local relationships: edges, textures, shapes or spatial continuity. In tabular data, however, the order of the columns is often arbitrary. If we simply reshape a row of numerical values into a square matrix, we are imposing a spatial topology that may not correspond to any real relationship among the original variables.
 
-This is precisely the problem addressed by **tabular-to-image transformation methods**. These algorithms aim to arrange tabular features on a two-dimensional grid so that spatial proximity reflects some form of statistical, geometric or relational similarity among variables.
+This is precisely the problem addressed by **tabular data into synthetic image transformation methods**. These algorithms aim to arrange tabular features on a two-dimensional grid so that spatial proximity reflects some form of statistical, geometric or relational similarity among variables.
 
-![Why tabular data needs spatial encoding](/images/Blog/2026-06-27-tabular-space-problem.png)
-*(Figure 1. Conceptual illustration of the core problem in tabular-to-image transformation. A raw tabular vector has no intrinsic spatial neighbourhood, so directly reshaping it into a matrix may impose arbitrary local relationships. Spatial encoding methods aim to construct a more meaningful two-dimensional layout before applying vision-based models.)*
+![Why tabular data needs spatial encoding](/images/Blog/2026-06-27-05-tabular-space-problem.png)
+*(Figure 1. Conceptual illustration of the core problem in tabular data into synthetic image transformation. A raw tabular vector has no intrinsic spatial neighbourhood, so directly reshaping it into a matrix may impose arbitrary local relationships. Spatial encoding methods aim to construct a more meaningful two-dimensional layout before applying vision-based models.)*
 
 In this post, we compare three representative methods implemented in **TINTOlib**:
 
@@ -127,14 +127,14 @@ In this post, we compare three representative methods implemented in **TINTOlib*
 
 The objective is not to claim that one method is universally superior, but to understand their different assumptions, strengths, computational costs and practical use cases.
 
-![Same tabular sample transformed with TINTO, REFINED and IGTD](/images/Blog/2026-06-27-same-sample-tinto-refined-igtd.png)
+![Same tabular sample transformed with TINTO, REFINED and IGTD](/images/Blog/2026-06-27-05.same-sample-tinto-refined-igtd.png)
 *(Figure 2. Synthetic image representations generated from the same tabular sample using TINTO, REFINED and IGTD. Although all three methods pursue the same objective —constructing a spatial representation from tabular features— they produce different image topologies due to their distinct optimization criteria and spatial encoding assumptions.)*
 
 ---
 
 ## 1. TINTO: dimensionality reduction and blurring
 
-**TINTO** addresses the tabular-to-image problem by projecting the features of the dataset into a two-dimensional space using dimensionality-reduction techniques such as **PCA** or **t-SNE**. Once the features have been located in a continuous coordinate space, their positions are mapped to a discrete image grid.
+**TINTO** addresses the tabular data into synthetic image problem by projecting the features of the dataset into a two-dimensional space using dimensionality-reduction techniques such as **PCA** or **t-SNE**. Once the features have been located in a continuous coordinate space, their positions are mapped to a discrete image grid.
 
 ### How it works
 
@@ -148,14 +148,14 @@ The general workflow followed by TINTO can be summarized as follows:
 
 The blurring step is particularly relevant. When two or more features are projected into nearby or overlapping coordinates, direct pixel assignment can produce sparse or unstable representations. Blurring spreads the feature intensity over local neighbourhoods, creating smoother synthetic images and making local patterns more accessible to convolutional filters.
 
-![TINTO transformation pipeline](/images/Blog/2026-06-27-tinto-pipeline.png)
+![TINTO transformation pipeline](/images/Blog/2026-06-27-05-tinto-pipeline.png)
 *(Figure 3. TINTO transformation pipeline. Features are projected into a two-dimensional space using PCA or t-SNE, mapped onto a discrete image grid, and optionally smoothed through blurring to generate synthetic images with local spatial continuity.)*
 
 ### Strengths and limitations
 
 TINTO is especially useful when the objective is to generate visually interpretable synthetic images and to experiment rapidly with different spatial configurations. It is flexible, relatively efficient, and well suited for hybrid neural architectures that combine the original tabular vector with the generated synthetic image.
 
-However, the final representation depends on the selected dimensionality-reduction algorithm, the image size, the blurring configuration and the characteristics of the dataset. As with any tabular-to-image method, these hyperparameters should be evaluated under a rigorous validation protocol.
+However, the final representation depends on the selected dimensionality-reduction algorithm, the image size, the blurring configuration and the characteristics of the dataset. As with any tabular data into synthetic image method, these hyperparameters should be evaluated under a rigorous validation protocol.
 
 ---
 
@@ -177,7 +177,7 @@ A simplified REFINED workflow can be described as follows:
 
 The optimization process used by REFINED is more computationally demanding than a simple projection, but it can produce layouts that better preserve both local and global relationships among variables.
 
-![REFINED transformation pipeline](/images/Blog/2026-06-27-refined-pipeline.png)
+![REFINED transformation pipeline](/images/Blog/2026-06-27-05-refined-pipeline.png)
 *(Figure 4. REFINED transformation pipeline. Feature relationships are first represented through a distance or dissimilarity matrix. A two-dimensional map is then optimized so that neighbouring pixels encode variables with strong statistical or geometric relationships.)*
 
 ### Strengths and limitations
@@ -208,7 +208,7 @@ The IGTD workflow can be summarized as follows:
 
 This makes IGTD especially suitable when compact image representations are desired. Unlike methods that may create sparse images or require blurring, IGTD tends to generate dense grids where most pixels carry feature information.
 
-![IGTD transformation pipeline](/images/Blog/2026-06-27-igtd-pipeline.png)
+![IGTD transformation pipeline](/images/Blog/2026-06-27-05-igtd-pipeline.png)
 *(Figure 5. IGTD transformation pipeline. The method searches for a dense assignment of features to pixels by minimizing the discrepancy between feature-distance rankings in the original tabular space and spatial-distance rankings in the generated image.)*
 
 ### Strengths and limitations
@@ -223,8 +223,6 @@ However, the optimization process can still be costly for high-dimensional datas
 
 Although TINTO, REFINED and IGTD all transform tabular samples into images, their assumptions are different. TINTO emphasizes projection and optional smoothing. REFINED emphasizes distance-preserving spatial optimization. IGTD emphasizes dense pixel assignment based on ranking preservation.
 
-![Comparison of TINTO, REFINED and IGTD pipelines](/images/Blog/2026-06-27-method-pipelines.png)
-*(Figure 6. High-level comparison of the transformation pipelines followed by TINTO, REFINED and IGTD. TINTO relies on dimensionality reduction and optional blurring, REFINED optimizes a feature map using distance-preserving geometric criteria, and IGTD searches for a dense pixel assignment by preserving the ranking of feature relationships.)*
 
 ## Comparative summary
 
@@ -240,21 +238,21 @@ Although TINTO, REFINED and IGTD all transform tabular samples into images, thei
 | **Data leakage risk** | Must fit only on training data | Must fit only on training data | Must fit only on training data |
 | **Interpretability** | High visual intuition due to blurring and spatial patterns | Strong geometric interpretation | Compact but sometimes less visually intuitive |
 
-![Decision map for selecting TINTO, REFINED or IGTD](/images/Blog/2026-06-27-method-selection-map.png)
-*(Figure 7. Practical decision map for selecting among TINTO, REFINED and IGTD depending on the experimental objective. The choice depends on whether the priority is fast experimentation, distance-preserving spatial optimization, dense image construction, interpretability, or computational efficiency.)*
+![Decision map for selecting TINTO, REFINED or IGTD](/images/Blog/2026-06-27-05-method-selection-map.png)
+*(Figure 6. Practical decision map for selecting among TINTO, REFINED and IGTD depending on the experimental objective. The choice depends on whether the priority is fast experimentation, distance-preserving spatial optimization, dense image construction, interpretability, or computational efficiency.)*
 
 ---
 
 ## Methodological note: avoid data leakage
 
-A critical issue in tabular-to-image transformation is **data leakage**.
+A critical issue in tabular data into synthetic image transformation is **data leakage**.
 
 If the spatial layout of the features is learned using the full dataset before splitting into training and test partitions, information from the test set may influence the generated image representation. This can lead to overly optimistic results and invalid generalization estimates.
 
 For rigorous experimentation, the recommended workflow is:
 
 1. Split the original tabular dataset into training and test partitions.
-2. Fit the tabular-to-image transformation only on the training data.
+2. Fit the tabular data into synthetic images transformation only on the training data.
 3. Apply the learned transformation to both training and test data.
 4. Train the neural model using only the generated training images.
 5. Evaluate the final model on the generated test images.
@@ -265,7 +263,7 @@ This principle is especially important when comparing TINTO, REFINED and IGTD, b
 
 ## Practical implementation in Python with TINTOlib
 
-One of the main advantages of **TINTOlib** is that it provides a unified interface for different tabular-to-image transformation methods. This makes it possible to compare TINTO, REFINED and IGTD within a common experimental workflow.
+One of the main advantages of **TINTOlib** is that it provides a unified interface for different tabular data into synthetic image transformation methods. This makes it possible to compare TINTO, REFINED and IGTD within a common experimental workflow.
 
 The following example uses the *Breast Cancer Wisconsin* dataset from Scikit-Learn. The key methodological point is that the train/test split is performed before fitting any transformation.
 
@@ -289,7 +287,7 @@ df = pd.DataFrame(raw_data.data, columns=raw_data.feature_names)
 df["target"] = raw_data.target
 
 # ---------------------------------------------------------
-# 2. Split before fitting any tabular-to-image transformation
+# 2. Split before fitting any tabular data into synthetic images transformation
 # ---------------------------------------------------------
 train_df, test_df = train_test_split(
     df,
@@ -362,6 +360,17 @@ print("Synthetic image generation completed successfully.")
 
 The generated image folders can then be used with standard PyTorch or TensorFlow pipelines, for example through `torchvision.datasets.ImageFolder` or custom dataset loaders.
 
+After executing the transformation pipeline, each method generates a different synthetic image representation from the original tabular samples. Although the input data are the same, the resulting images are not visually equivalent, because each method follows a different criterion to organize the features in the image space.
+
+* IGTD produces compact grid-like representations where the feature-to-pixel assignment is guided by the preservation of distance relationships.
+* REFINED generates spatial layouts where the arrangement of features is optimized according to pairwise relationships among variables.
+* TINTO creates structured synthetic images with an explicit visual encoding, where dimensionality reduction and optional blurring help introduce spatial continuity.
+
+The following figure illustrates these differences by showing representative synthetic images generated with the three methods. The goal is not to decide which image is visually more appealing, but to highlight that each method creates a different spatial topology. These topologies may affect how CNNs, Vision Transformers or hybrid neural networks learn from the transformed tabular data.
+
+![Synthetic images generated with IGTD, REFINED and TINTO](/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png) 
+*(Figure 7. Visual comparison of synthetic images generated with IGTD, REFINED and TINTO. Each method transforms the same type of tabular data into a different image topology, reflecting its own spatial encoding criterion and potentially influencing how vision-based neural models learn from the generated representations.)*
+
 ---
 
 ## Practical interpretation
@@ -384,51 +393,13 @@ TINTO provides a flexible and visually intuitive transformation based on dimensi
 
 The key point is that these methods should not be evaluated only by the visual appearance of the generated images. They must be assessed through rigorous experimental protocols, strong tabular baselines, leakage-free validation, and downstream performance using CNNs, Vision Transformers or hybrid neural architectures.
 
-TINTOlib makes this comparison practical by providing a unified framework where different tabular-to-image methods can be tested under comparable conditions. This is essential for understanding when synthetic images are genuinely useful, when they provide interpretable spatial structure, and when classical tabular models may still remain the strongest baseline.
-
----
-
-## Suggested figures for this post
-
-The following image files are referenced in the post. They should be created and placed in `/images/Blog/`:
-
-1. `/images/Blog/2026-06-27-tinto-vs-refined-vs-igtd.png`  
-   **Use:** main teaser and hero image.  
-   **Content:** table-to-image comparison with three branches: TINTO, REFINED and IGTD.
-
-2. `/images/Blog/2026-06-27-tabular-space-problem.png`  
-   **Use:** Figure 1.  
-   **Content:** why raw tabular vectors do not have intrinsic spatial neighbourhoods.
-
-3. `/images/Blog/2026-06-27-same-sample-tinto-refined-igtd.png`  
-   **Use:** Figure 2.  
-   **Content:** same tabular sample transformed using TINTO, REFINED and IGTD.
-
-4. `/images/Blog/2026-06-27-tinto-pipeline.png`  
-   **Use:** Figure 3.  
-   **Content:** TINTO pipeline: tabular features → PCA/t-SNE → coordinate mapping → blurring → synthetic image.
-
-5. `/images/Blog/2026-06-27-refined-pipeline.png`  
-   **Use:** Figure 4.  
-   **Content:** REFINED pipeline: feature-distance matrix → MDS/BMDS → hill climbing → optimized feature map.
-
-6. `/images/Blog/2026-06-27-igtd-pipeline.png`  
-   **Use:** Figure 5.  
-   **Content:** IGTD pipeline: feature similarity ranking → pixel-distance ranking → iterative pixel assignment → dense image.
-
-7. `/images/Blog/2026-06-27-method-pipelines.png`  
-   **Use:** Figure 6.  
-   **Content:** side-by-side comparison of the three method pipelines.
-
-8. `/images/Blog/2026-06-27-method-selection-map.png`  
-   **Use:** Figure 7.  
-   **Content:** decision map for choosing TINTO, REFINED or IGTD according to experimental priorities.
+TINTOlib makes this comparison practical by providing a unified framework where different tabular data into synthetic image methods can be tested under comparable conditions. This is essential for understanding when synthetic images are genuinely useful, when they provide interpretable spatial structure, and when classical tabular models may still remain the strongest baseline.
 
 ---
 
 ## References and related publications
 
-The concepts discussed in this tutorial are connected to the following research and software publications on TINTO, TINTOlib, tabular-to-image transformation, synthetic spatial representations, hybrid neural networks and indoor localisation.
+The concepts discussed in this tutorial are connected to the following research and software publications on TINTO, TINTOlib, tabular data into synthetic images transformation, synthetic spatial representations, hybrid neural networks and indoor localisation.
 
 ### Research articles
 
