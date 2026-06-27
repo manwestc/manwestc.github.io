@@ -25,9 +25,9 @@ tags:
   - TINTO
 description: "Comparative analysis of TINTO, REFINED and IGTD, three representative tabular data into synthetic image transformation methods available in TINTOlib for generating synthetic images from structured data."
 excerpt: "A practical and methodological comparison of TINTO, REFINED and IGTD for transforming tabular data into synthetic images and applying vision-based deep learning models."
-image: "/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png"
+image: "/images/Blog/2026-06-27-05-same-sample-tinto-refined-igtd.png"
 header:
-  teaser: "/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png"
+  teaser: "/images/Blog/2026-06-27-05-same-sample-tinto-refined-igtd.png"
 ---
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -93,7 +93,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 260px; width: 100%;">
-    <img src="/images/Blog/2026-06-27-05-tinto-vs-refined-vs-igtd.png" alt="Comparison of TINTO, REFINED and IGTD for tabular data into synthetic image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-06-27-05-same-sample-tinto-refined-igtd.png" alt="Comparison of TINTO, REFINED and IGTD for tabular data into synthetic image transformation" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
