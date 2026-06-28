@@ -108,6 +108,21 @@ header:
 
 ---
 
+## Video overview
+
+This post provides a comprehensive methodological comparison derived from our ongoing research on spatial encoding strategies within the **TINTOlib** ecosystem.
+
+The following short video provides an English overview of the core architectural paradigms compared across this tutorial: how different parametric mapping techniques—namely **TINTO**, **REFINED**, and **IGTD**—construct entirely distinct spatial layouts from the same underlying tabular dataset, and how these unique image topologies influence downstream deep learning pipelines, hybrid neural networks, and visual explainability (XAI) frameworks.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0;">
+  <video controls preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; background: #000;">
+    <source src="/video/Blog/2026-06-27-05-TINTO_REFINED_IGTD.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+> **Additional material.** The original technical workflow and benchmark code are fully documented in our open-source repositories. This blog post provides the corresponding English technical synthesis, pipeline formalization, and a decision map to help you select the optimal transformation method for your tabular data.
+
 ## The challenge of organizing tabular space
 
 As discussed in previous posts, applying computer vision architectures —such as Convolutional Neural Networks (CNNs) or Vision Transformers (ViTs)— to classical tabular datasets is not straightforward. The main reason is methodological: **tabular data do not have an intrinsic spatial structure**.
