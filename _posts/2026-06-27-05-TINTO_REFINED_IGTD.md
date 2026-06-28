@@ -23,7 +23,7 @@ tags:
   - IGTD
   - REFINED
   - TINTO
-description: "Comparative analysis of TINTO, REFINED and IGTD, three representative tabular data into synthetic image transformation methods available in TINTOlib for generating synthetic images from structured data."
+description: "Comparative analysis of TINTO, REFINED and IGTD, three representative tabular data into synthetic image transformation methods available in TINTOlib for generating synthetic images from tabular data."
 excerpt: "A practical and methodological comparison of TINTO, REFINED and IGTD for transforming tabular data into synthetic images and applying vision-based deep learning models."
 image: "/images/Blog/2026-06-27-05-same-sample-tinto-refined-igtd.png"
 header:
@@ -84,7 +84,7 @@ header:
   <div style="flex: 1 1 280px; min-width: 0;">
     <p style="margin: 0 0 0.4rem; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: #bfdbfe; font-weight: 600;">TINTOlib · Synthetic Images · Tabular Data</p>
     <h1 style="margin: 0 0 0.75rem; font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 800; line-height: 1.2; color: #fff;">TINTO vs REFINED vs IGTD</h1>
-    <p style="margin: 0 0 1rem; font-size: 0.97rem; color: #dbeafe; line-height: 1.55;">A methodological comparison of three representative tabular data into synthetic image methods for generating synthetic images from structured data.</p>
+    <p style="margin: 0 0 1rem; font-size: 0.97rem; color: #dbeafe; line-height: 1.55;">A methodological comparison of three representative tabular data into synthetic image methods for generating synthetic images from tabular data.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e0f2fe;">TINTO</span>
       <span style="background: rgba(255,255,255,0.15); border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.78rem; color: #e0f2fe;">REFINED</span>
