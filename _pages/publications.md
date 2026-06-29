@@ -705,6 +705,14 @@ description: "Scientific publications, books, patents and software contributions
 
     <article class="pub-card">
       <p class="pub-title">
+        Felipe Escalera-González, Manuel Castillo-Cara, et al. <em>PermGrad: Interpretable Hybrid Neural Networks with synthetic images for tabular data</em>. Knowledge-Based Systems.
+        <span class="badge">IF: 8.0 (Q1)</span><span class="badge">SJR 1.75 (Q1)</span>
+      </p>
+      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.knosys.2026.116507" target="_blank" rel="noopener">Open DOI</a></div>
+    </article>
+
+    <article class="pub-card">
+      <p class="pub-title">
         Manuel Castillo-Cara, et al. <em>MIMO-Based Indoor Localisation with Hybrid Neural Networks: Leveraging Synthetic Images from Tidy Data for Enhanced Deep Learning</em>. IEEE Journal of Selected Topics in Signal Processing.
         <span class="badge">IF: 8.5 (Q1)</span><span class="badge">SJR 3.06 (Q1)</span>
       </p>
@@ -717,14 +725,6 @@ description: "Scientific publications, books, patents and software contributions
         <span class="badge">IF: 1.9 (Q2)</span><span class="badge">SJR 0.5 (Q2)</span>
       </p>
       <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1016/j.softx.2025.102444" target="_blank" rel="noopener">Open DOI</a></div>
-    </article>
-
-    <article class="pub-card">
-      <p class="pub-title">
-        Jiayun Liu, Manuel Castillo-Cara, et al. <em>On the Significance of Graph Neural Networks with Pretrained Transformers in Content-Based Recommender Systems for Academic Articles Classification</em>. Expert Systems.
-        <span class="badge">IF: 3.4 (Q2)</span><span class="badge">SJR 0.74 (Q2)</span>
-      </p>
-      <div class="btn-row"><a class="btn-doi" href="https://doi.org/10.1111/exsy.70073" target="_blank" rel="noopener">Open DOI</a></div>
     </article>
 
     <article class="pub-card">
