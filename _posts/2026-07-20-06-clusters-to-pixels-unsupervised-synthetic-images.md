@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "From Clusters to Pixels: Unsupervised Synthetic Image Generation in TINTOlib"
 date: 2026-07-20
 last_modified_at: 2026-07-20
