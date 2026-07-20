@@ -1,4 +1,4 @@
-<div class="page__views" aria-label="Page views">
+<div class="page__views">
   <span aria-hidden="true">👁</span>
   <span id="goatcounter-page-views">Loading views…</span>
 </div>
@@ -6,6 +6,7 @@
 <script>
   (function () {
     var attempts = 0;
+
     var timer = window.setInterval(function () {
       attempts += 1;
 
@@ -13,18 +14,17 @@
         window.clearInterval(timer);
 
         var target = document.getElementById("goatcounter-page-views");
-        if (!target) return;
+
+        if (!target) {
+          return;
+        }
 
         target.textContent = "";
 
         window.goatcounter.visit_count({
           append: "#goatcounter-page-views",
           type: "html",
-          no_branding: true,
-          attr: {
-            "aria-label": "Views for this page"
-          },
-          style: "div { border: 0; padding: 0; background: transparent; font: inherit; color: inherit; }"
+          no_branding: true
         });
 
         return;
@@ -32,8 +32,12 @@
 
       if (attempts >= 50) {
         window.clearInterval(timer);
+
         var fallback = document.getElementById("goatcounter-page-views");
-        if (fallback) fallback.textContent = "View count unavailable";
+
+        if (fallback) {
+          fallback.textContent = "View count unavailable";
+        }
       }
     }, 100);
   })();
@@ -47,7 +51,6 @@
     margin: 0.5rem 0 1rem;
     color: #6b7280;
     font-size: 0.85rem;
-    line-height: 1.4;
   }
 
   #goatcounter-page-views > div {
