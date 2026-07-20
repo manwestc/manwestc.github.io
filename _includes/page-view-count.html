@@ -1,0 +1,56 @@
+<div class="page__views" aria-label="Page views">
+  <span aria-hidden="true">👁</span>
+  <span id="goatcounter-page-views">Loading views…</span>
+</div>
+
+<script>
+  (function () {
+    var attempts = 0;
+    var timer = window.setInterval(function () {
+      attempts += 1;
+
+      if (window.goatcounter && window.goatcounter.visit_count) {
+        window.clearInterval(timer);
+
+        var target = document.getElementById("goatcounter-page-views");
+        if (!target) return;
+
+        target.textContent = "";
+
+        window.goatcounter.visit_count({
+          append: "#goatcounter-page-views",
+          type: "html",
+          no_branding: true,
+          attr: {
+            "aria-label": "Views for this page"
+          },
+          style: "div { border: 0; padding: 0; background: transparent; font: inherit; color: inherit; }"
+        });
+
+        return;
+      }
+
+      if (attempts >= 50) {
+        window.clearInterval(timer);
+        var fallback = document.getElementById("goatcounter-page-views");
+        if (fallback) fallback.textContent = "View count unavailable";
+      }
+    }, 100);
+  })();
+</script>
+
+<style>
+  .page__views {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0.5rem 0 1rem;
+    color: #6b7280;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  #goatcounter-page-views > div {
+    display: inline;
+  }
+</style>
