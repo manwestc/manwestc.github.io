@@ -1,6 +1,7 @@
 ---
 layout: single
 published: true
+mathjax: true
 title: "From Clusters to Pixels: Unsupervised Synthetic Image Generation in TINTOlib"
 date: 2026-07-20
 last_modified_at: 2026-07-20
@@ -152,36 +153,40 @@ This distinction is important. The method is called `Clusters`, but not all its 
 
 Let an original tabular sample be represented by
 
-\[
+$$
 \mathbf{x}_i \in \mathbb{R}^{p},
-\]
+$$
 
-where \(p\) is the number of original variables. The selected unsupervised model learns a transformation
+where $p$ is the number of original variables. The selected unsupervised model learns a transformation
 
-\[
+$$
 \phi: \mathbb{R}^{p} \rightarrow \mathbb{R}^{q},
-\]
+$$
 
 and produces an intermediate vector
 
-\[
+$$
 \mathbf{r}_i = \phi(\mathbf{x}_i).
-\]
+$$
 
-The meaning of \(q\) depends on the selected algorithm. For example, it may be the number of centroids, medoids, Gaussian components or latent factors. In KDE, the dimensionality is tied to the original features because one density estimator is fitted per variable.
+The meaning of $q$ depends on the selected algorithm. For example, it may be the number of centroids, medoids, Gaussian components or latent factors. In KDE, the dimensionality is tied to the original features because one density estimator is fitted per variable.
 
-The representation \(\mathbf{r}_i\) is then transformed into an image through the following operations:
+The representation $\mathbf{r}_i$ is then transformed into an image through the following operations:
 
-1. Scale the representation to the range \([0,255]\).
+1. Scale the representation to the range $[0,255]$.
+
 2. Compute the smallest square side capable of containing all values:
 
-\[
-d = \left\lceil \sqrt{q} \right\rceil.
-\]
+   $$
+   d = \left\lceil \sqrt{q} \right\rceil.
+   $$
 
-3. Add zero-padding when \(d^2 > q\).
-4. Reshape the vector into a \(d \times d\) matrix.
+3. Add zero-padding when $d^2 > q$.
+
+4. Reshape the vector into a $d \times d$ matrix.
+
 5. Convert the matrix to an unsigned 8-bit image.
+
 6. In `mixMethod`, repeat the process independently for each selected method and stack the results into the RGB channels.
 
 This design creates a common visual interface for heterogeneous unsupervised models.

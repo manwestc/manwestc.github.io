@@ -5,7 +5,7 @@
 </div>
 
 <script>
-  (function () {
+  (function loadPageViews(attempt) {
     const counter = document.getElementById("page-view-counter");
     const number = document.getElementById("page-view-number");
     const label = document.getElementById("page-view-label");
@@ -15,33 +15,24 @@
     }
 
     /*
-     * Use the canonical URL so that the requested path is identical
-     * to the path recorded by GoatCounter.
+     * GoatCounter's get_data() returns the exact path used
+     * by the tracking script. This avoids discrepancies involving
+     * trailing slashes, canonical URLs or redirected paths.
      */
-    let pagePath = window.location.pathname;
+    if (
+      window.goatcounter &&
+      typeof window.goatcounter.get_data === "function"
+    ) {
+      const pageData = window.goatcounter.get_data();
+      const pagePath = pageData.p;
 
-    const canonical = document.querySelector('link[rel="canonical"]');
+      const endpoint =
+        "https://manwestc.goatcounter.com/counter/" +
+        encodeURIComponent(pagePath) +
+        ".json";
 
-    if (canonical) {
-      try {
-        pagePath = new URL(canonical.href).pathname;
-      } catch (error) {
-        pagePath = window.location.pathname;
-      }
-    }
-
-    const endpoint =
-      "https://manwestc.goatcounter.com/counter/" +
-      encodeURIComponent(pagePath) +
-      ".json";
-
-    function loadCounter(attempt) {
       fetch(endpoint)
         .then(function (response) {
-          /*
-           * A new page may temporarily return 404 until GoatCounter
-           * has registered its first visit.
-           */
           if (response.status === 404) {
             return { count: "0" };
           }
@@ -65,29 +56,22 @@
           counter.hidden = false;
         })
         .catch(function (error) {
-          /*
-           * Retry briefly in case the tracking request is still
-           * being processed.
-           */
-          if (attempt < 2) {
-            window.setTimeout(function () {
-              loadCounter(attempt + 1);
-            }, 1500);
-
-            return;
-          }
-
-          /*
-           * Do not show an unattractive error message to visitors.
-           * Keep the counter hidden and leave diagnostic information
-           * in the browser console.
-           */
           console.warn("Page view counter unavailable:", error);
         });
+
+      return;
     }
 
-    loadCounter(0);
-  })();
+    if (attempt < 100) {
+      window.setTimeout(function () {
+        loadPageViews(attempt + 1);
+      }, 100);
+    } else {
+      console.warn(
+        "GoatCounter was not loaded. Check browser extensions or analytics configuration."
+      );
+    }
+  })(0);
 </script>
 
 <style>
