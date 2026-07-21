@@ -2,7 +2,7 @@
 layout: single
 published: true
 mathjax: true
-title: "From Clusters to Pixels: Unsupervised Synthetic Image Generation in TINTOlib"
+title: "Part 1 - From Clusters to Pixels: Unsupervised Synthetic Image Generation in TINTOlib"
 date: 2026-07-20
 last_modified_at: 2026-07-20
 permalink: /blog/2026/07/20-clusters-to-pixels-unsupervised-synthetic-images/
