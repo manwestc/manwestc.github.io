@@ -27,9 +27,9 @@ tags:
   - Deep Learning
 description: "Technical introduction to the new Clusters method in TINTOlib, which transforms tabular data into grayscale or RGB synthetic images using distance-based, probabilistic, density-based and latent unsupervised representations."
 excerpt: "Learn how the new TINTOlib Clusters method converts distances, membership probabilities, density estimates and latent factors into synthetic images for vision-based deep learning."
-image: "/images/Blog/2026-07-20-06-clusters-to-pixels.png"
+image: "/images/Blog/2026-07-20-06-clusters-family-map.png"
 header:
-  teaser: "/images/Blog/2026-07-20-06-clusters-to-pixels.png"
+  teaser: "/images/Blog/2026-07-20-06-clusters-family-map.png"
 ---
 
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -95,7 +95,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 270px; width: 100%;">
-    <img src="/images/Blog/2026-07-20-06-clusters-to-pixels.png" alt="Unsupervised tabular representations transformed into synthetic images with TINTOlib" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-07-20-06-clusters-family-map.png" alt="Unsupervised tabular representations transformed into synthetic images with TINTOlib" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
@@ -114,12 +114,6 @@ header:
 
 > **Series note.** This is the first article in a four-part series on the new unsupervised representation methods available through the `Clusters` class in TINTOlib. The series covers distance-based encodings, probabilistic and latent representations, RGB fusion through `mixMethod`, and automatic cluster-number selection using SSIM.
 
-<!--
-VIDEO OVERVIEW
-After generating the NotebookLM video, place it at:
-  /video/Blog/2026-07-20-06-clusters-to-pixels.mp4
-
-Then uncomment and insert this block here:
 
 ## Video overview
 
@@ -131,7 +125,7 @@ The following short video summarizes the main concepts introduced in this articl
     Your browser does not support the video tag.
   </video>
 </div>
--->
+
 
 ## A new representation family in TINTOlib
 
