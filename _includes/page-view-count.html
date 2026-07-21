@@ -1,77 +1,66 @@
-<div id="page-view-counter" class="page__views" hidden>
+<div id="page-view-counter" class="page__views">
   <span aria-hidden="true">👁</span>
-  <span id="page-view-number"></span>
+  <span id="page-view-number">0</span>
   <span id="page-view-label">views</span>
 </div>
 
 <script>
-  (function loadPageViews(attempt) {
-    const counter = document.getElementById("page-view-counter");
-    const number = document.getElementById("page-view-number");
-    const label = document.getElementById("page-view-label");
+  (function () {
+    const counterNumber = document.getElementById(
+      "page-view-number"
+    );
 
-    if (!counter || !number || !label) {
+    const counterLabel = document.getElementById(
+      "page-view-label"
+    );
+
+    if (!counterNumber || !counterLabel) {
       return;
     }
 
-    /*
-     * GoatCounter's get_data() returns the exact path used
-     * by the tracking script. This avoids discrepancies involving
-     * trailing slashes, canonical URLs or redirected paths.
-     */
-    if (
-      window.goatcounter &&
-      typeof window.goatcounter.get_data === "function"
-    ) {
-      const pageData = window.goatcounter.get_data();
-      const pagePath = pageData.p;
+    const pagePath = window.location.pathname || "/";
 
-      const endpoint =
-        "https://manwestc.goatcounter.com/counter/" +
-        encodeURIComponent(pagePath) +
-        ".json";
+    const endpoint =
+      "https://manwestc.goatcounter.com/counter/" +
+      encodeURIComponent(pagePath) +
+      ".json";
 
-      fetch(endpoint)
-        .then(function (response) {
-          if (response.status === 404) {
-            return { count: "0" };
-          }
-
-          if (!response.ok) {
-            throw new Error(
-              "GoatCounter returned HTTP " + response.status
-            );
-          }
-
-          return response.json();
-        })
-        .then(function (data) {
-          const count = data.count || "0";
-          const numericCount = Number(
-            String(count).replace(/[^\d]/g, "")
+    fetch(endpoint)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error(
+            "GoatCounter returned HTTP " + response.status
           );
+        }
 
-          number.textContent = count;
-          label.textContent = numericCount === 1 ? "view" : "views";
-          counter.hidden = false;
-        })
-        .catch(function (error) {
-          console.warn("Page view counter unavailable:", error);
-        });
+        return response.json();
+      })
+      .then(function (data) {
+        const count = data.count || "0";
 
-      return;
-    }
+        const numericCount = Number(
+          String(count).replace(/[^\d]/g, "")
+        );
 
-    if (attempt < 100) {
-      window.setTimeout(function () {
-        loadPageViews(attempt + 1);
-      }, 100);
-    } else {
-      console.warn(
-        "GoatCounter was not loaded. Check browser extensions or analytics configuration."
-      );
-    }
-  })(0);
+        counterNumber.textContent = count;
+
+        counterLabel.textContent =
+          numericCount === 1 ? "view" : "views";
+      })
+      .catch(function (error) {
+        /*
+         * Keep a visible zero instead of displaying
+         * an error message to visitors.
+         */
+        counterNumber.textContent = "0";
+        counterLabel.textContent = "views";
+
+        console.warn(
+          "GoatCounter page counter unavailable:",
+          error
+        );
+      });
+  })();
 </script>
 
 <style>
@@ -83,9 +72,5 @@
     color: #6b7280;
     font-size: 0.85rem;
     line-height: 1.4;
-  }
-
-  .page__views[hidden] {
-    display: none;
   }
 </style>
