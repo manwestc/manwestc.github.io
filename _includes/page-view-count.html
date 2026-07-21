@@ -1,45 +1,92 @@
-<div class="page__views">
+<div id="page-view-counter" class="page__views" hidden>
   <span aria-hidden="true">👁</span>
-  <span id="goatcounter-page-views">Loading views…</span>
+  <span id="page-view-number"></span>
+  <span id="page-view-label">views</span>
 </div>
 
 <script>
   (function () {
-    var attempts = 0;
+    const counter = document.getElementById("page-view-counter");
+    const number = document.getElementById("page-view-number");
+    const label = document.getElementById("page-view-label");
 
-    var timer = window.setInterval(function () {
-      attempts += 1;
+    if (!counter || !number || !label) {
+      return;
+    }
 
-      if (window.goatcounter && window.goatcounter.visit_count) {
-        window.clearInterval(timer);
+    /*
+     * Use the canonical URL so that the requested path is identical
+     * to the path recorded by GoatCounter.
+     */
+    let pagePath = window.location.pathname;
 
-        var target = document.getElementById("goatcounter-page-views");
+    const canonical = document.querySelector('link[rel="canonical"]');
 
-        if (!target) {
-          return;
-        }
+    if (canonical) {
+      try {
+        pagePath = new URL(canonical.href).pathname;
+      } catch (error) {
+        pagePath = window.location.pathname;
+      }
+    }
 
-        target.textContent = "";
+    const endpoint =
+      "https://manwestc.goatcounter.com/counter/" +
+      encodeURIComponent(pagePath) +
+      ".json";
 
-        window.goatcounter.visit_count({
-          append: "#goatcounter-page-views",
-          type: "html",
-          no_branding: true
+    function loadCounter(attempt) {
+      fetch(endpoint)
+        .then(function (response) {
+          /*
+           * A new page may temporarily return 404 until GoatCounter
+           * has registered its first visit.
+           */
+          if (response.status === 404) {
+            return { count: "0" };
+          }
+
+          if (!response.ok) {
+            throw new Error(
+              "GoatCounter returned HTTP " + response.status
+            );
+          }
+
+          return response.json();
+        })
+        .then(function (data) {
+          const count = data.count || "0";
+          const numericCount = Number(
+            String(count).replace(/[^\d]/g, "")
+          );
+
+          number.textContent = count;
+          label.textContent = numericCount === 1 ? "view" : "views";
+          counter.hidden = false;
+        })
+        .catch(function (error) {
+          /*
+           * Retry briefly in case the tracking request is still
+           * being processed.
+           */
+          if (attempt < 2) {
+            window.setTimeout(function () {
+              loadCounter(attempt + 1);
+            }, 1500);
+
+            return;
+          }
+
+          /*
+           * Do not show an unattractive error message to visitors.
+           * Keep the counter hidden and leave diagnostic information
+           * in the browser console.
+           */
+          console.warn("Page view counter unavailable:", error);
         });
+    }
 
-        return;
-      }
-
-      if (attempts >= 50) {
-        window.clearInterval(timer);
-
-        var fallback = document.getElementById("goatcounter-page-views");
-
-        if (fallback) {
-          fallback.textContent = "View count unavailable";
-        }
-      }
-    }, 100);
+    loadCounter(0);
   })();
 </script>
 
@@ -51,9 +98,10 @@
     margin: 0.5rem 0 1rem;
     color: #6b7280;
     font-size: 0.85rem;
+    line-height: 1.4;
   }
 
-  #goatcounter-page-views > div {
-    display: inline;
+  .page__views[hidden] {
+    display: none;
   }
 </style>
