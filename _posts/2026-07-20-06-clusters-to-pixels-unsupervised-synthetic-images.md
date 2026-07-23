@@ -16,6 +16,7 @@ categories:
   - TINTOlib
 tags:
   - TINTOlib
+  - Clusters
   - Synthetic Images
   - Tabular Data
   - Unsupervised Learning

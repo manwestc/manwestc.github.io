@@ -365,6 +365,7 @@ excerpt: "Tutorials on TINTOlib, tabular-to-image transformation, synthetic imag
   <div role="tablist" aria-label="Filter by category" class="blog-filters">
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="true"  data-filter="">All</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="tintolib">TINTOlib</button>
+    <button type="button" role="tab" class="blog-filter-btn" aria-selected="false"  data-filter="clusters">Clusters()</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="tabular-to-image">Tabular-to-Image</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="synthetic images">Synthetic Images</button>
     <button type="button" role="tab" class="blog-filter-btn" aria-selected="false" data-filter="artificial intelligence">Artificial Intelligence</button>
