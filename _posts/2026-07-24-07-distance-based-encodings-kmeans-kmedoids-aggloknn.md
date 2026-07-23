@@ -29,9 +29,9 @@ tags:
   - Deep Learning
 description: "Technical comparison of the distance-based representations available in TINTOlib's Clusters class: k-means centroid distances, k-medoids prototype distances, and aggloKNN local-connectivity probabilities."
 excerpt: "Learn how k-means, k-medoids and aggloKNN convert relationships between tabular samples into grayscale synthetic images, including distance metrics, reference ordering and RBF smoothing."
-image: "/images/Blog/2026-07-24-07-distance-based-encodings.png"
+image: "/images/Blog/2026-07-24-07-centroids-medoids-aggloknn.png"
 header:
-  teaser: "/images/Blog/2026-07-24-07-distance-based-encodings.png"
+  teaser: "/images/Blog/2026-07-24-07-centroids-medoids-aggloknn.png"
 ---
 
 <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 42%, #0f766e 100%); border-radius: 12px; padding: 2.5rem 2rem; margin: 1.5rem 0 2.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; color: #fff;">
@@ -47,7 +47,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 270px; width: 100%;">
-    <img src="/images/Blog/2026-07-24-07-distance-based-encodings.png" alt="Distance-based synthetic image representations in TINTOlib using k-means, k-medoids and aggloKNN" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-07-24-07-centroids-medoids-aggloknn.png" alt="Distance-based synthetic image representations in TINTOlib using k-means, k-medoids and aggloKNN" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
@@ -107,7 +107,7 @@ $$
 
 The vector $\mathbf{r}_i$ is scaled to $[0,255]$, padded when necessary and reshaped into the grayscale image $\mathbf{I}_i$.
 
-![Centroids, medoids and local hierarchical groups](/images/Blog/2026-07-24-07-centroids-medoids-aggloknn.png)
+![Centroids, medoids and local hierarchical groups](/images/Blog/2026-07-24-07-distance-based-encodings.png)
 *(Figure 1. Three mechanisms for constructing an intermediate representation from tabular samples. k-means uses synthetic centroids, k-medoids selects representative observations from the training data, and aggloKNN combines a local connectivity graph, hierarchical grouping and KNN membership probabilities.)*
 
 ## 1. k-Means: distances to synthetic centroids
