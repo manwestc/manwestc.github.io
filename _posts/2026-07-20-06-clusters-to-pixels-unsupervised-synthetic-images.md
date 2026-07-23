@@ -109,8 +109,6 @@ header:
 - **Role:** Researcher, Professor, and TINTOlib Python Library Developer
 - **License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise stated.
 
-{% include page-view-count.html %}
-
 ---
 
 > **Series note.** This is the first article in a four-part series on the new unsupervised representation methods available through the `Clusters` class in TINTOlib. The series covers distance-based encodings, probabilistic and latent representations, RGB fusion through `mixMethod`, and automatic cluster-number selection using SSIM.
