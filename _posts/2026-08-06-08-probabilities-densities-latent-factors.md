@@ -64,7 +64,14 @@ header:
 
 ---
 
-> **Series note.** This is the third article in a four-part series on the unsupervised representations available through the `Clusters` class in TINTOlib. [Part I introduces the complete family of methods](/blog/2026/07/20-clusters-to-pixels-unsupervised-synthetic-images/), while [Part II examines k-means, k-medoids and aggloKNN](/blog/2026/07/24-distance-based-encodings-kmeans-kmedoids-aggloknn/). This article focuses on `gaussianMix`, `kde` and `factor`. Part IV will cover RGB fusion through `mixMethod` and SSIM-based structural stability.
+> **Series note — Part III of IV.** This article is the third entry in a four-part technical series on the unsupervised representations available through the TINTOlib `Clusters` class.
+>
+> - **[Part I — From Clusters to Pixels: Unsupervised Synthetic Image Generation in TINTOlib](https://www.manuelcastillo.eu/blog/2026/07/20-clusters-to-pixels-unsupervised-synthetic-images/)**
+> - **[Part II — Distance-Based Encodings in TINTOlib: k-Means, k-Medoids and aggloKNN](https://www.manuelcastillo.eu/blog/2026/07/24-distance-based-encodings-kmeans-kmedoids-aggloknn/)**
+> - **Part III — Probabilities, Densities and Latent Factors in TINTOlib:** `gaussianMix`, `kde` and `factor` — this article.
+>
+> The fourth and final article will examine RGB fusion through `mixMethod`, channel interpretation and SSIM-based structural stability.
+
 
 
 ## Video overview
