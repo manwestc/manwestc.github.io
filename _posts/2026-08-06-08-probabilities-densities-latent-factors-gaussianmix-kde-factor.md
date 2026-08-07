@@ -31,9 +31,9 @@ tags:
   - Deep Learning
 description: "Technical tutorial on the probabilistic, density-based and latent representations available in TINTOlib's Clusters class: Gaussian-mixture responsibilities, per-feature kernel densities and Factor Analysis scores."
 excerpt: "Learn how gaussianMix, KDE and Factor Analysis transform tabular samples into grayscale synthetic images through membership probabilities, density estimates and latent-factor scores."
-image: "/images/Blog/2026-08-06-08-probabilities-densities-latent-factors.png"
+image: "/images/Blog/2026-08-06-08-three-representation-families.png"
 header:
-  teaser: "/images/Blog/2026-08-06-08-probabilities-densities-latent-factors.png"
+  teaser: "/images/Blog/2026-08-06-08-three-representation-families.png"
 ---
 
 <div style="background: linear-gradient(135deg, #0f172a 0%, #312e81 42%, #6d28d9 67%, #0f766e 100%); border-radius: 12px; padding: 2.5rem 2rem; margin: 1.5rem 0 2.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; color: #fff;">
@@ -49,7 +49,7 @@ header:
     </div>
   </div>
   <div style="flex: 0 0 auto; max-width: 270px; width: 100%;">
-    <img src="/images/Blog/2026-08-06-08-probabilities-densities-latent-factors.png" alt="Probabilistic, density-based and latent-factor synthetic image representations in TINTOlib" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
+    <img src="/images/Blog/2026-08-06-08-three-representation-families.png" alt="Probabilistic, density-based and latent-factor synthetic image representations in TINTOlib" style="width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); display: block;">
   </div>
 </div>
 
@@ -116,7 +116,7 @@ and zero-padding is added when the representation does not fill the complete $d 
 
 A crucial interpretability distinction must be made. TINTOlib scales the intermediate values to $[0,255]$ using a `MinMaxScaler` fitted on the training representation. Therefore, the final pixel intensities preserve a relative encoding of the learned representation, but they are not raw calibrated probabilities, densities or signed factor scores.
 
-![Three families of non-distance representations](/images/Blog/2026-08-06-08-three-representation-families.png)
+![Three families of non-distance representations](/images/Blog/2026-08-06-08-probabilities-densities-latent-factors.png)
 *(Figure 1. Three complementary mechanisms for constructing synthetic images from tabular data. `gaussianMix` represents a sample through posterior component responsibilities, `kde` replaces each feature value with its estimated density under the training distribution, and `factor` projects the sample onto a lower-dimensional latent space before pixel scaling and reshaping.)*
 
 ## 1. `gaussianMix`: posterior responsibilities as pixels
