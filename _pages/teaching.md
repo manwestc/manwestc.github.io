@@ -131,7 +131,7 @@ description: "University teaching, thesis supervision, and technical training by
 
   <h2 class="section-title">🎓 M.Sc. Thesis Supervision</h2>
   <ul class="teach-list">
-    <li>Salvador Moreno. “Generación de imágenes sintéticas mediante métodos no supervisados para la librería TINTOlib”. UNED, Spain. 2026. <a href="https://hdl.handle.net/20.500.14468/32070" target="_blank" rel="noopener">📂 Link</a>.</li>
+    <li>Salvador Moreno. “Generación de imágenes sintéticas mediante métodos no supervisados para la librería TINTOlib”. UNED, Spain. 2026. <a href="https://hdl.handle.net/20.500.14468/33233" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Joel Hancco. “Diagnóstico Concurrente de Unidades de Bombeo Mecánico a Partir de Cartas Dinamométricas Usando Técnicas de Aprendizaje Profundo”. UNI, Peru. 2026. <a href="https://" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Mario Lavado. “Generación y aumento de imágenes sintéticas a partir de datos tabulares mediante GAN: un estudio experimental con Vision Transformers”. UNED, Peru. 2026. <a href="https://hdl.handle.net/20.500.14468/32070" target="_blank" rel="noopener">📂 Link</a>.</li>
     <li>Giovanny Mondragón Ruiz. “Interpretable Hybrid Models for Tabular Data: Integrating Kolmogorov–Arnold and Convolutional Networks via Synthetic Images”. UPM, Spain. 2025. <a href="https://oa.upm.es/90918/" target="_blank" rel="noopener">📂 Link</a>.</li>
