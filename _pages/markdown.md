@@ -245,7 +245,7 @@ description: "List of competitive research and development projects led or co-le
       <p class="proj-desc"><em>“Advanced Data Modeling Through Synthetic Images and Vision-Based Models: Application to Medical Decision Systems”</em></p>
       <div class="proj-meta">
         <span class="pill">🏛️ French Embassy in Spain</span>
-        <span class="pill">📅 Sept. 2026 – Dec. 2027</span>
+        <span class="pill">📅 Apr. 2026 – Dec. 2026</span>
         <span class="pill">📍 Spain · France</span>
       </div>
     </article>
