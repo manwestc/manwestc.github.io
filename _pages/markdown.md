@@ -229,7 +229,7 @@ description: "List of competitive research and development projects led or co-le
         <span class="proj-role">UNED Lead · WP5 Leader (Dissemination &amp; Exploitation)</span>
       </h3>
       <p class="proj-desc"><em>“QC3AI-LA: Developing quantum computing capabilities for cybersecurity and artificial intelligence for Latin America”</em></p>
-      <p class="proj-desc">Erasmus+ Capacity Building in Higher Education project (12 beneficiaries) building education, training and academia–industry capacity in quantum computing applied to cybersecurity and AI in Chile, Colombia, Panama and Peru.</p>
+      <p class="proj-desc">Erasmus+ Capacity Building project (12 beneficiaries) building education, training and academia–industry capacity in quantum computing applied to cybersecurity and AI.</p>
       <div class="proj-meta">
         <span class="pill">🏛️ European Union · Erasmus+ (EACEA)</span>
         <span class="pill">🆔 101324075</span>
