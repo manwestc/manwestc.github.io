@@ -233,8 +233,20 @@ description: "List of competitive research and development projects led or co-le
       <div class="proj-meta">
         <span class="pill">🏛️ European Union · Erasmus+ (EACEA)</span>
         <span class="pill">🆔 101324075</span>
-        <span class="pill">📅 [Month Year] – [Month Year]</span>
+        <span class="pill">📅 Oct. 2026 – Oct. 2029</span>
         <span class="pill">📍 Spain · Sweden · Italy · Chile · Peru · Colombia · Panama</span>
+      </div>
+    </article>
+    
+    <article class="proj-card ongoing">
+      <h3 class="proj-title">
+        <span class="proj-role">Investigator Principal</span>
+      </h3>
+      <p class="proj-desc"><em>“Advanced Data Modeling Through Synthetic Images and Vision-Based Models: Application to Medical Decision Systems”</em></p>
+      <div class="proj-meta">
+        <span class="pill">🏛️ French Embassy in Spain</span>
+        <span class="pill">📅 Sept. 2026 – Dec. 2027</span>
+        <span class="pill">📍 Spain · France</span>
       </div>
     </article>
 
@@ -246,7 +258,7 @@ description: "List of competitive research and development projects led or co-le
       <div class="proj-meta">
         <span class="pill">🏛️ State Agency for Investigation</span>
         <span class="pill">🆔 PID2023-150515OB-I00</span>
-        <span class="pill">📅 Sept. 2024 – Dec. 2027</span>
+        <span class="pill">📅 Sept. 2024 – Dec. 2026</span>
         <span class="pill">📍 Spain</span>
       </div>
     </article>
