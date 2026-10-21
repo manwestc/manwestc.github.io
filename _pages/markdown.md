@@ -226,13 +226,27 @@ description: "List of competitive research and development projects led or co-le
 
     <article class="proj-card ongoing">
       <h3 class="proj-title">
+        <span class="proj-role">UNED Lead · WP5 Leader (Dissemination &amp; Exploitation)</span>
+      </h3>
+      <p class="proj-desc"><em>“QC3AI-LA: Developing quantum computing capabilities for cybersecurity and artificial intelligence for Latin America”</em></p>
+      <p class="proj-desc">Erasmus+ Capacity Building in Higher Education project (12 beneficiaries) building education, training and academia–industry capacity in quantum computing applied to cybersecurity and AI in Chile, Colombia, Panama and Peru.</p>
+      <div class="proj-meta">
+        <span class="pill">🏛️ European Union · Erasmus+ (EACEA)</span>
+        <span class="pill">🆔 101324075</span>
+        <span class="pill">📅 [Month Year] – [Month Year]</span>
+        <span class="pill">📍 Spain · Sweden · Italy · Chile · Peru · Colombia · Panama</span>
+      </div>
+    </article>
+
+    <article class="proj-card ongoing">
+      <h3 class="proj-title">
         <span class="proj-role">Co-investigator</span>
       </h3>
       <p class="proj-desc"><em>“Cost-Effective Screening of Breast Cancer and Rheumatic Heart Disease Using Artificial Intelligence”</em></p>
       <div class="proj-meta">
         <span class="pill">🏛️ State Agency for Investigation</span>
         <span class="pill">🆔 PID2023-150515OB-I00</span>
-        <span class="pill">📅 Sept. 2024 – Aug. 2027</span>
+        <span class="pill">📅 Sept. 2024 – Dec. 2027</span>
         <span class="pill">📍 Spain</span>
       </div>
     </article>
