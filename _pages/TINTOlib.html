@@ -364,6 +364,7 @@ description: "TINTOlib is a Python library that converts tabular data into synth
       <li>Felipe Escalera-González, Manuel Castillo-Cara, et al. <strong>PermGrad: Interpretable Hybrid Neural Networks with synthetic images for tabular data</strong>. <em>Knowledge-Based Systems</em>. DOI: <a href="https://doi.org/10.1016/j.knosys.2026.116507" target="_blank" rel="noopener">10.1016/j.knosys.2026.116507 </a></li>
       <li>Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>. <em>IEEE Journal of Selected Topics in Signal Processing</em>. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">10.1109/JSTSP.2025.3555067</a></li>
       <li>Reewos Talla-Chumpitaz, Manuel Castillo-Cara et al. <strong>Blurring Image Techniques for Bluetooth-based Indoor Localisation</strong>. <em>Information Fusion</em>. DOI: <a href="https://doi.org/10.1016/j.inffus.2022.10.011" target="_blank" rel="noopener">10.1016/j.inffus.2022.10.011</a></li>
+      <li><strong>Additional research record (HAL)</strong>. <a href="https://hal.science/hal-05755301/" target="_blank" rel="noopener noreferrer">hal-05755301</a>.</li>
     </ul>
     <h3 style="margin:.5rem 0 0">💾 Software Articles</h3>
     <ul class="pub-list">
@@ -463,8 +464,9 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   document.addEventListener('DOMContentLoaded', function () {
     if (!window.L || typeof addressPoints === 'undefined') return;
     var map = L.map('map').setView([20, -30], 2);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://carto.com/">CARTO</a>', subdomains: 'abcd', maxZoom: 18
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+      maxZoom: 19
     }).addTo(map);
     var icon = L.icon({
       iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
