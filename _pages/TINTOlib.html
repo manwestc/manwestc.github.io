@@ -217,6 +217,16 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   .vpanel{display:none;width:100%;height:auto;border:1px solid var(--card-bd,#d0d7de);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);background:#000}
   .vpanel.active{display:block}
   .video-wrap video.vpanel{aspect-ratio:16/9;object-fit:cover}
+
+  /* === CLEI seminar: responsive YouTube embed === */
+  .clei-video-embed{
+    position:relative;width:100%;aspect-ratio:16/9;
+    overflow:hidden;border-radius:12px;background:#000;
+    border:1px solid var(--card-bd,#d0d7de);
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+  }
+  .clei-video-embed iframe{display:block;width:100%;height:100%;border:0}
+  .clei-video-meta{color:var(--ink);font-size:.95rem;margin:.5rem 0 1rem}
 </style>
 
 <div class="tinto-container">
@@ -307,6 +317,33 @@ description: "TINTOlib is a Python library that converts tabular data into synth
         });
       });
     </script>
+  </section>
+
+  <!-- CLEI invited seminar (Spanish) -->
+  <section class="tinto-card soft" id="clei-seminar" aria-labelledby="clei-seminar-title">
+    <h2 class="section-title" id="clei-seminar-title">🎓 Invited Seminar — CLEI</h2>
+    <h3 style="margin:.8rem 0 .35rem">Improving Deep Learning on Tabular Data by Exploiting Synthetic Images</h3>
+    <p class="clei-video-meta"><strong>Language:</strong> Spanish · <strong>Host:</strong> CLEI</p>
+    <p>
+      This invited seminar explores how tabular data can be transformed into synthetic images
+      for deep learning, including CNNs, Vision Transformers, and hybrid architectures.
+      It also discusses methodological considerations from the scientific literature,
+      such as sensitivity to feature placement and the importance of evaluating generalization.
+    </p>
+    <div class="clei-video-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/tpqqdWLaJsw?start=10"
+        title="CLEI seminar: Improving Deep Learning on Tabular Data by Exploiting Synthetic Images (Spanish)"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="margin:.8rem 0 .25rem">
+      <a href="https://www.youtube.com/watch?v=tpqqdWLaJsw&amp;t=10s"
+         target="_blank" rel="noopener noreferrer">Watch the seminar on YouTube</a>
+    </p>
   </section>
 
   <!-- Talk Map -->
