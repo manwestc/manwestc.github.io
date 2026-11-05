@@ -721,6 +721,8 @@ The final article in this series will examine **RGB fusion through `mixMethod`**
 
 2. TINTOlib documentation. **Clusters**. [Read the current parameter and API documentation](https://tintolib.readthedocs.io/en/latest/clusters.html).
 
+3. Martínez-Moreno, S., Liu, J., Castillo-Cara, M., Suni-Lopez, F., & García-Castro, R. (2026). **CLUSTERS: Instance-Centric Synthetic Images for Tabular Learning and Functional Analysis of Hybrid Fusion**. *HAL Open Science* (preprint). [HAL: hal-05755301](https://hal.science/hal-05755301/).
+
 ### Research articles
 
 3. Jiayun Liu, Manuel Castillo-Cara, Raúl García-Castro, Luis Orozco-Barbosa. **Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations**. *IEEE Internet of Things*. DOI: [10.1109/JIOT.2026.3696106](https://doi.org/10.1109/JIOT.2026.3696106)

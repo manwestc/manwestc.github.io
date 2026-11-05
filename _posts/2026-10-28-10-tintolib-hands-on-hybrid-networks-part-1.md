@@ -956,5 +956,19 @@ The curves are stable, and early stopping keeps the epoch with the lowest valida
 
 Continue with **[Part II — Reliable Evaluation and Explainability](/blog/2026/10/28-tintolib-hands-on-hybrid-networks-part-2/)** for repeated cross-validation, statistical tests and feature attribution.
 
+## References
+
+- **TINTOlib**. Documentation: https://tintolib.readthedocs.io · Code: https://github.com/oeg-upm/TINTOlib
+- **TINTOlib crash course** (notebooks and videos): https://github.com/oeg-upm/TINTOlib-Crash_Course
+- **Evaluation and statistics.** Nadeau, C. & Bengio, Y. (2003). *Inference for the generalization error*. Machine Learning, 52(3), 239–281 · Bouckaert, R. R. & Frank, E. (2004). *Evaluating the replicability of significance tests for comparing learning algorithms*. PAKDD, LNCS 3056, 3–12 · Dietterich, T. G. (1998). *Approximate statistical tests for comparing supervised classification learning algorithms*. Neural Computation, 10(7), 1895–1923 · Varma, S. & Simon, R. (2006). *Bias in error estimation when using cross-validation for model selection*. BMC Bioinformatics, 7, 91 · Holm, S. (1979). *A simple sequentially rejective multiple test procedure*. Scandinavian Journal of Statistics, 6(2), 65–70 · Brier, G. W. (1950). *Verification of forecasts expressed in terms of probability*. Monthly Weather Review, 78(1), 1–3.
+- **Explainability.** Selvaraju, R. R. et al. (2017). *Grad-CAM*. ICCV · Sundararajan, M. et al. (2017). *Axiomatic attribution for deep networks*. ICML · Abnar, S. & Zuidema, W. (2020). *Quantifying attention flow in transformers*. ACL.
+- **Blogs & Tutorials**: https://www.manuelcastillo.eu/blog/
+- **Scientific Articles**:  
+    - Liu, J., Castillo-Cara, M., & García-Castro, R. (2026). **A comprehensive benchmark of spatial encoding methods for tabular data with deep neural networks**. *Information Fusion, 130*, 104088. DOI: [10.1016/j.inffus.2025.104088](https://doi.org/10.1016/j.inffus.2025.104088).
+    - Liu, J., González-Fernández, D., Castillo-Cara, M., & García-Castro, R. (2025). **TINTOlib: A Python library for transforming tabular data into synthetic images for deep neural networks**. *SoftwareX, 32*, 102444. DOI: [10.1016/j.softx.2025.102444](https://doi.org/10.1016/j.softx.2025.102444).
+    - Castillo-Cara, M., Martínez-Gómez, J., Ballesteros-Jerez, J., García-Varea, I., García-Castro, R., & Orozco-Barbosa, L. (2025). **MIMO-Based Indoor Localisation With Hybrid Neural Networks: Leveraging Synthetic Images From Tidy Data for Enhanced Deep Learning**. *IEEE Journal of Selected Topics in Signal Processing, 19*(3), 559–571. DOI: [10.1109/JSTSP.2025.3555067](https://doi.org/10.1109/JSTSP.2025.3555067).
+    - Escalera-González, F., Castillo-Cara, M., Rincón-Zamorano, M., & Orozco-Barbosa, L. (2026). **PermGrad: Interpretable Hybrid Neural Networks with synthetic images for tabular data**. *Knowledge-Based Systems, 350*, 116507. DOI: [10.1016/j.knosys.2026.116507](https://doi.org/10.1016/j.knosys.2026.116507).
+    - Mondragon-Ruiz, G., Liu, J., Castillo-Cara, M., & García-Castro, R. (2026). **Interpretable CNN–KAN hybrid architectures for tabular data with synthetic image encoding**. *Information Processing & Management, 63*(8), 104954. DOI: [10.1016/j.ipm.2026.104954](https://doi.org/10.1016/j.ipm.2026.104954).
+    - Martínez-Moreno, S., Liu, J., Castillo-Cara, M., Suni-Lopez, F., & García-Castro, R. (2026). **CLUSTERS: Instance-Centric Synthetic Images for Tabular Learning and Functional Analysis of Hybrid Fusion**. *HAL Open Science* (preprint). [HAL: hal-05755301](https://hal.science/hal-05755301/).
 
 {% include blog-footer.html %}
