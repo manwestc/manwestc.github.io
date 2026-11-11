@@ -124,6 +124,25 @@ excerpt: "Tutorials on TINTOlib, tabular-to-image transformation, synthetic imag
     font-size: 0.95rem;
   }
 
+  /* ===== Canal UNED series resource ===== */
+  .blog-uned-resource{
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+    gap:.8rem 1rem;padding:1rem 1.15rem;margin:0 0 1.25rem;
+    border:1px solid #c8d9ec;border-left:5px solid #1565c0;
+    border-radius:12px;background:#f5f9ff;
+  }
+  .blog-uned-resource strong{display:block;color:#183153;font-size:1rem;margin-bottom:.2rem}
+  .blog-uned-resource p{margin:0;color:#475569;font-size:.9rem;line-height:1.5}
+  .blog-uned-links{display:flex;gap:.5rem;flex-wrap:wrap}
+  .blog-uned-links a{
+    display:inline-block;border:1px solid #b2cbe5;border-radius:8px;
+    padding:.5rem .8rem;background:#fff;color:#155eaa;font-weight:700;
+    text-decoration:none !important;font-size:.87rem;
+  }
+  .blog-uned-links a:first-child{background:#1565c0;color:#fff;border-color:#1565c0}
+  .blog-uned-links a:hover{filter:brightness(.94)}
+  .blog-uned-links a:focus-visible{outline:3px solid #6a91ff;outline-offset:3px}
+
   /* ===== Search ===== */
   .blog-search-wrap {
     position: relative;
@@ -388,6 +407,20 @@ excerpt: "Tutorials on TINTOlib, tabular-to-image transformation, synthetic imag
     </p>
   </div>
 </div>
+
+<!-- Complementary audiovisual resource, separate from the article index. -->
+<aside class="blog-uned-resource" aria-label="TINTOlib videos on Canal UNED">
+  <div>
+    <strong>TINTOlib on Canal UNED</strong>
+    <p>Watch the Spanish-language research seminar and explore the growing video series alongside these practical tutorials.</p>
+  </div>
+  <div class="blog-uned-links">
+    <a href="https://canal.uned.es/series/6aec47392477260040014253"
+       target="_blank" rel="noopener noreferrer">View the video series</a>
+    <a href="https://canal.uned.es/video/6af2edd5ee984709ae0feaf3"
+       target="_blank" rel="noopener noreferrer">Featured seminar</a>
+  </div>
+</aside>
 
 {% if published_posts.size == 0 %}
 

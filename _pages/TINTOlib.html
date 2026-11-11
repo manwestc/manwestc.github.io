@@ -4,7 +4,7 @@ title: "TINTOlib — From Tabular Data to Synthetic Images for Deep Learning"
 excerpt: "TINTOlib is an open-source Python library that transforms tabular data into synthetic images using multiple algorithmic methods, enabling deep learning with CNNs, Vision Transformers, and hybrid models."
 permalink: /TINTOlib.html
 author_profile: true
-description: "TINTOlib is a Python library that converts tabular data into synthetic images for deep learning with CNNs, Vision Transformers, and hybrid architectures. Includes tutorials, publications, and conference presentations by Manuel Castillo-Cara."
+description: "TINTOlib converts tabular data into synthetic images for CNNs, Vision Transformers, and hybrid learning. Explore the Canal UNED video series, tutorials, benchmark, and research publications."
 ---
 
 <!-- ✅ Meta básicos -->
@@ -39,7 +39,6 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "description": "TINTOlib converts tabular data into synthetic images for CNNs, ViTs, and hybrid architectures.",
   "url": "https://www.manuelcastillo.eu/TINTOlib.html",
-  "softwareVersion": "1.0.6",
   "softwareHelp": "https://tintolib.readthedocs.io/en/latest/",
   "creator": { "@type": "Person", "name": "Manuel Castillo-Cara", "url": "https://www.manuelcastillo.eu/" },
   "publisher": { "@type": "Organization", "name": "Ontology Engineering Group - UPM", "url":"https://oeg.fi.upm.es/" },
@@ -66,7 +65,7 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     },
     { "@type": "Question", "name": "Why convert tabular data into images?",
       "acceptedAnswer": { "@type": "Answer",
-        "text": "Converting tabular data into images allows leveraging computer vision models for tabular data tasks, often improving accuracy and generalization."
+        "text": "Converting tabular data into images enables researchers to evaluate CNNs, Vision Transformers, and hybrid models on alternative representations. Predictive performance and generalization depend on the dataset, transformation, architecture, and evaluation protocol."
       }
     },
     { "@type": "Question", "name": "Where can I learn to use TINTOlib?",
@@ -133,7 +132,7 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     --ink: var(--tinto-ink, #37474f);
     --brand: #1565c0;
     --brand-2: #0b67b8;
-    --card-bd: var(--card-bd, #d0d7de);
+    --card-bd: #d0d7de;
     --surface: #ffffff;
     --surface-soft: #f5f8fa;
   }
@@ -218,15 +217,34 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   .vpanel.active{display:block}
   .video-wrap video.vpanel{aspect-ratio:16/9;object-fit:cover}
 
-  /* === CLEI seminar: responsive YouTube embed === */
-  .clei-video-embed{
-    position:relative;width:100%;aspect-ratio:16/9;
-    overflow:hidden;border-radius:12px;background:#000;
-    border:1px solid var(--card-bd,#d0d7de);
-    box-shadow:0 2px 8px rgba(0,0,0,.06);
+  /* Canal UNED: responsive featured recording and series links. */
+  .uned-feature{
+    border-color:#c5d7f0 !important;
+    background:linear-gradient(180deg,#ffffff 0%,#f5f9ff 100%) !important;
   }
-  .clei-video-embed iframe{display:block;width:100%;height:100%;border:0}
-  .clei-video-meta{color:var(--ink);font-size:.95rem;margin:.5rem 0 1rem}
+  .uned-feature .uned-eyebrow{
+    color:#215e9d;font-size:.82rem;font-weight:800;letter-spacing:.03em;
+    text-transform:uppercase;margin:0 0 .4rem;
+  }
+  .uned-feature .uned-meta{color:#475569;font-size:.9rem;margin:.3rem 0 .8rem}
+  .uned-feature .uned-description{max-width:820px;line-height:1.6;margin:.5rem 0 1rem}
+  .uned-feature .uned-embed{
+    width:100%;max-width:900px;aspect-ratio:16/9;margin:0 auto;
+    overflow:hidden;border-radius:12px;background:#0b1830;
+    border:1px solid #cbd5e1;box-shadow:0 2px 8px rgba(0,0,0,.08);
+  }
+  .uned-feature .uned-embed iframe{display:block;width:100%;height:100%;border:0}
+  .uned-feature .uned-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:.85rem 0 .25rem}
+  .uned-feature .uned-link{
+    display:inline-flex;align-items:center;justify-content:center;padding:.6rem .9rem;
+    border-radius:9px;font-weight:700;text-decoration:none !important;
+    background:#155eaa;color:#fff !important;
+  }
+  .uned-feature .uned-link-secondary{
+    background:#fff;color:#155eaa !important;border:1px solid #b7cee8;
+  }
+  .uned-feature .uned-link:hover{filter:brightness(.94)}
+  .uned-feature .uned-link:focus-visible{outline:3px solid #6a91ff;outline-offset:3px}
 </style>
 
 <div class="tinto-container">
@@ -240,6 +258,37 @@ description: "TINTOlib is a Python library that converts tabular data into synth
         <a class="btn btn-ghost btn-inline" href="https://tintolib.readthedocs.io/en/latest/" target="_blank" rel="noopener">Documentation</a>
         <a class="btn btn-primary btn-inline" href="https://github.com/oeg-upm/TINTOlib" target="_blank" rel="noopener">GitHub</a>
       </div>
+    </div>
+  </section>
+
+
+  <!-- Featured official video collection. This recording is the same CLEI seminar
+       previously embedded from YouTube; only the Canal UNED version is shown. -->
+  <section class="tinto-card soft uned-feature" id="tintolib-uned-series" aria-labelledby="uned-series-title">
+    <p class="uned-eyebrow">Canal UNED · Research videos</p>
+    <h2 class="section-title" id="uned-series-title">TINTOlib — Video Series on Canal UNED</h2>
+    <p class="uned-description">
+      Discover how tabular data can be transformed into synthetic images and used with
+      CNNs, Vision Transformers, and hybrid tabular–visual neural networks.
+      The series brings together presentations and new videos about TINTOlib and
+      this research direction.
+    </p>
+    <h3 style="margin:.6rem 0 .2rem">Featured recording: Improving Deep Learning on Tabular Data by Exploiting Synthetic Images</h3>
+    <p class="uned-meta"><strong>Language:</strong> Spanish &middot; <strong>Original seminar:</strong> CLEI &middot; <strong>Video hosted by:</strong> Canal UNED</p>
+    <div class="uned-embed">
+      <iframe
+        src="https://canal.uned.es/iframe/6af2edd5ee984709ae0feaf3"
+        title="TINTOlib: Improving Deep Learning on Tabular Data by Exploiting Synthetic Images — Canal UNED (Spanish)"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="uned-actions">
+      <a class="uned-link" href="https://canal.uned.es/series/6aec47392477260040014253"
+         target="_blank" rel="noopener noreferrer">Explore the complete UNED series</a>
+      <a class="uned-link uned-link-secondary" href="https://canal.uned.es/video/6af2edd5ee984709ae0feaf3"
+         target="_blank" rel="noopener noreferrer">Open the featured video on Canal UNED</a>
     </div>
   </section>
 
@@ -265,7 +314,8 @@ description: "TINTOlib is a Python library that converts tabular data into synth
 
  <!-- ======== TINTOlib: Overview Video (ES/EN) ======== -->
   <section class="tinto-card soft" id="tinto-video">
-    <h2 class="section-title">🎬 TINTOlib — Overview Video</h2>
+    <h2 class="section-title">🎬 More TINTOlib Overview Videos (Spanish / English)</h2>
+    <p>Additional video introductions are available in both languages.</p>
 
     <!-- Selector de idioma -->
     <div class="video-toggle" role="tablist" aria-label="Select video language">
@@ -319,33 +369,6 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     </script>
   </section>
 
-  <!-- CLEI invited seminar (Spanish) -->
-  <section class="tinto-card soft" id="clei-seminar" aria-labelledby="clei-seminar-title">
-    <h2 class="section-title" id="clei-seminar-title">🎓 Invited Seminar — CLEI</h2>
-    <h3 style="margin:.8rem 0 .35rem">Improving Deep Learning on Tabular Data by Exploiting Synthetic Images</h3>
-    <p class="clei-video-meta"><strong>Language:</strong> Spanish · <strong>Host:</strong> CLEI</p>
-    <p>
-      This invited seminar explores how tabular data can be transformed into synthetic images
-      for deep learning, including CNNs, Vision Transformers, and hybrid architectures.
-      It also discusses methodological considerations from the scientific literature,
-      such as sensitivity to feature placement and the importance of evaluating generalization.
-    </p>
-    <div class="clei-video-embed">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/tpqqdWLaJsw?start=10"
-        title="CLEI seminar: Improving Deep Learning on Tabular Data by Exploiting Synthetic Images (Spanish)"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <p style="margin:.8rem 0 .25rem">
-      <a href="https://www.youtube.com/watch?v=tpqqdWLaJsw&amp;t=10s"
-         target="_blank" rel="noopener noreferrer">Watch the seminar on YouTube</a>
-    </p>
-  </section>
-
   <!-- Talk Map -->
   <section>
     <h2 class="section-title">🌍 Talk Map: TINTOlib Around the World</h2>
@@ -360,7 +383,7 @@ description: "TINTOlib is a Python library that converts tabular data into synth
     <ul class="pub-list">
       <li>Salvador Martínez-Moreno, Jiayun Liu, Manuel Castillo-Cara, Franci Suni-Lopez, Raúl García-Castro. <strong>CLUSTERS: Instance-Centric Synthetic Images for Tabular Learning and Functional Analysis of Hybrid Fusion</strong>. <em>HAL Open Science (preprint, 2026)</em>. HAL: <a href="https://hal.science/hal-05755301/" target="_blank" rel="noopener noreferrer">hal-05755301</a></li>
       <li>Jiayun Liu, Manuel Castillo-Cara et al. <strong>Interpretable Hybrid Vision Transformer Architectures for MIMO-Based Indoor Localization using Synthetic Spatial Representations</strong>. <em>IEEE Internet of Things</em>. DOI: <a href="https://doi.org/10.1109/JIOT.2026.3696106" target="_blank" rel="noopener">10.1109/JIOT.2026.3696106</a></li>
-      <li>Jiayun Liu, Manuel Castillo-Cara et al. <strong>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</strong>. <em>Information Fusion</em>. DOI: <a href="https://doi.org/10.1016/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">10.1016/j.inffus.2025.104088</a></li>
+      <li>Jiayun Liu, Manuel Castillo-Cara et al. <strong>A Comprehensive Benchmark of Spatial Encoding Methods for Tabular Data with Deep Neural Networks</strong>. <em>Information Fusion</em>. DOI: <a href="https://doi.org/10.1016/j.inffus.2025.104088" target="_blank" rel="noopener">10.1016/j.inffus.2025.104088</a></li>
       <li>Giovanny Mondragon, Jiayun Liu, Manuel Castillo-Cara et al. <strong>Interpretable CNN–KAN hybrid architectures for tabular data with synthetic image encoding</strong>. <em>Information Processing and Management</em>. DOI: <a href="https://doi.org/10.1016/j.ipm.2026.104954" target="_blank" rel="noopener">10.1016/j.ipm.2026.104954 </a></li>
       <li>Felipe Escalera-González, Manuel Castillo-Cara, et al. <strong>PermGrad: Interpretable Hybrid Neural Networks with synthetic images for tabular data</strong>. <em>Knowledge-Based Systems</em>. DOI: <a href="https://doi.org/10.1016/j.knosys.2026.116507" target="_blank" rel="noopener">10.1016/j.knosys.2026.116507 </a></li>
       <li>Manuel Castillo-Cara et al. <strong>MIMO-Based Indoor Localisation with Hybrid Neural Networks</strong>. <em>IEEE Journal of Selected Topics in Signal Processing</em>. DOI: <a href="https://doi.org/10.1109/JSTSP.2025.3555067" target="_blank" rel="noopener">10.1109/JSTSP.2025.3555067</a></li>
@@ -405,6 +428,10 @@ description: "TINTOlib is a Python library that converts tabular data into synth
   </div>
   <!-- Methods table -->
   <h2 class="section-title">🧪 Supported Methods in TINTOlib</h2>
+  <p>These methods produce different image representations. Their suitability should be
+     assessed for the intended dataset and predictive architecture, including sensitivity
+     to feature ordering and generalization. Image conversion alone does not guarantee
+     better predictive performance.</p>
   <table class="methods-table">
     <thead><tr><th style="width:25%;">Method</th><th style="width:75%;">Description</th></tr></thead>
     <tbody>
